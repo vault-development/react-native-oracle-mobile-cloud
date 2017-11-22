@@ -114,7 +114,7 @@ public class RNOracleMobileCloudModule extends ReactContextBaseJavaModule {
 
 
   @ReactMethod
-  public void logout(final Callback callback) {
+  public void logOut(final Callback callback) {
     try {
       AuthorizationCallback mLoginCallback = new AuthorizationCallback() {
         @Override

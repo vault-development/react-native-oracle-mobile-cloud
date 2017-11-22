@@ -5,12 +5,18 @@
 
 `$ npm install react-native-oracle-mobile-cloud --save`
 
-### Mostly automatic installation
+### Automatic installation
 
 `$ react-native link react-native-oracle-mobile-cloud`
 
-### Manual installation
+#### iOS
+  Do step 4 of Manual installation
 
+#### Android
+  Do step 4 and 5 of Manual installation
+
+
+### Manual installation
 
 #### iOS
 
@@ -139,6 +145,7 @@
       </mobileBackend>
     </mobileBackends>
    ```
+
 ## Usage
 ```javascript
 import RNOracleMobileCloud from 'react-native-oracle-mobile-cloud';
