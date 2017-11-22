@@ -34,20 +34,20 @@ OMCAuthorization *auth = nil;
 RCT_EXPORT_METHOD(loginUser:(NSString *)user password:(NSString *)password callback:(RCTResponseSenderBlock)callback)
 {
     @try {
-        
+
         OMCUserRegistrationCompletionBlockWithUser userBlock = ^(NSError *error, OMCUser *user){
             if (error == nil ) {
                 NSDictionary *userDetails = @{ @"user" : user.username,
                                                @"email" : user.email,
                                                @"lastName" : user.lastName,
                                                @"firstName" : user.firstName };
-                
+
                 callback(@[@true, userDetails]);
             } else {
                 callback(@[@false, error.localizedDescription]);
             }
         };
-        
+
         OMCAuthorizationAuthCompletionBlock authBlock = ^(NSError *error) {
             if (error == nil ) {
                 [auth getCurrentUser: userBlock];
@@ -55,26 +55,26 @@ RCT_EXPORT_METHOD(loginUser:(NSString *)user password:(NSString *)password callb
                 callback(@[@false, error.localizedDescription]);
             }
         };
-        
+
         // Get the backend
         OMCMobileBackend* mbe = [[OMCMobileBackendManager sharedManager] defaultMobileBackend];
-        
+
         // Get authorization object
         auth = [mbe authorization];
-        
+
         //Authenticate
         [auth authenticate:user password:password completionBlock:authBlock];
     }
     @catch (NSException *exception) {
         callback(@[@false, exception.reason]);
     }
-    
+
 }
 
 RCT_EXPORT_METHOD(loginAnonymous:(RCTResponseSenderBlock)callback)
 {
     @try {
-        
+
         OMCAuthorizationAuthCompletionBlock authBlock = ^(NSError *error) {
             if (error == nil ) {
                 callback(@[@true, @"Successfully authenticated anonymous"]);
@@ -82,37 +82,37 @@ RCT_EXPORT_METHOD(loginAnonymous:(RCTResponseSenderBlock)callback)
                 callback(@[@false, error.localizedDescription]);
             }
         };
-        
+
         // Get the backend
         OMCMobileBackend* mbe = [[OMCMobileBackendManager sharedManager] defaultMobileBackend];
-        
+
         // Get authorization object
         OMCAuthorization *auth = [mbe authorization];
-        
+
         //Authenticate
         [auth authenticateAnonymous:authBlock];
     }
     @catch (NSException *exception) {
         callback(@[@false, exception.reason]);
     }
-    
+
 }
 
 RCT_EXPORT_METHOD(invokeEndPoint:(NSString *)apiEndPoint body:(NSString *)body  httpMethod:(NSString *)httpMethod callback:(RCTResponseSenderBlock)callback)
 {
     @try {
-        
+
         // Get the backend
         OMCMobileBackend* mbe = [[OMCMobileBackendManager sharedManager] defaultMobileBackend];
-        
+
         // Get authorization object
         OMCAuthorization *auth = [mbe authorization];
-        
+
         if(!auth.authorized) {
             callback(@[@false, @"You need to login"]);
         }
         else {
-            
+
             OMCCustomRequestCompletionHandler requestBlock = ^(NSError* error, NSHTTPURLResponse *response, id responseData) {
                 if (error == nil) {
                     callback(@[@true, responseData]);
@@ -120,9 +120,9 @@ RCT_EXPORT_METHOD(invokeEndPoint:(NSString *)apiEndPoint body:(NSString *)body  
                     callback(@[@false, error.localizedDescription]);
                 }
             };
-            
+
             OMCCustomCodeClient* ccClient = mbe.customCodeClient;
-            
+
             //NSDictionary *jsonPayload = @{@"myKey", @"myValue"};
             [ccClient invokeCustomRequest: apiEndPoint
                                    method: httpMethod
@@ -133,12 +133,12 @@ RCT_EXPORT_METHOD(invokeEndPoint:(NSString *)apiEndPoint body:(NSString *)body  
     @catch (NSException *exception) {
         callback(@[@false, exception.reason]);
     }
-    
+
 }
 
-RCT_EXPORT_METHOD(logout:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(logOut:(RCTResponseSenderBlock)callback) {
     @try {
-        
+
         OMCAuthorizationLogoutCompletionBlock authBlock = ^(NSError *error) {
             if (error == nil ) {
                 callback(@[@true, @"Successfully user logout"]);
@@ -146,13 +146,13 @@ RCT_EXPORT_METHOD(logout:(RCTResponseSenderBlock)callback) {
                 callback(@[@false, error.localizedDescription]);
             }
         };
-        
+
         // Get the backend
         OMCMobileBackend* mbe = [[OMCMobileBackendManager sharedManager] defaultMobileBackend];
-        
+
         // Get authorization object
         OMCAuthorization *auth = [mbe authorization];
-        
+
         [auth logout:authBlock];
     }
     @catch (NSException *exception) {
