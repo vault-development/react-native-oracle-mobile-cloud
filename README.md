@@ -76,7 +76,7 @@ import RNOracleMobileCloud from 'react-native-oracle-mobile-cloud';
 ```javascript
     RNOracleMobileCloud.invokeEndPoint("oracle_dev_api/movies",
       null, //Body for POST, PUT, DELETE
-      OracleMobileCloud.HTTP_METHOD_GET,
+      RNOracleMobileCloud.HTTP_METHOD_GET,
       (success, data) => {
         if(success) {
           console.log("Success", data.moviesList);          
