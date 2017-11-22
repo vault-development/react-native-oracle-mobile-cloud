@@ -149,7 +149,6 @@
 		59E195721FC5C3C000BFFCA2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		59E195741FC5C3CC00BFFCA2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		59E195761FC5C3DE00BFFCA2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		59E195E11FC5CCD500BFFCA2 /* OMC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OMC.plist; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNOracleMobileCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOracleMobileCloud.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNOracleMobileCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOracleMobileCloud.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,7 +185,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				59E195E11FC5CCD500BFFCA2 /* OMC.plist */,
 				59E194E91FC5C2D200BFFCA2 /* MCS */,
 				B3E7B5881CC2AC0600A0062D /* RNOracleMobileCloud.h */,
 				B3E7B5891CC2AC0600A0062D /* RNOracleMobileCloud.m */,
