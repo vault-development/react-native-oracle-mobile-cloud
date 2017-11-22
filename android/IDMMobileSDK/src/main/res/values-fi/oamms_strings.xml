@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-fi/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/10 07:32:36 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile ja Social SDK for Android</string>
+    <string name="oamms_processing">Käsitellään...</string>
+    <string name="oamms_activity_excep">Toiminta ei voi olla tyhjä. Kirjaa nykyinen toiminta käyttämällä valintaa OMMobileSecurityService#registerActivity(Activity) mieluiten onResume()-menetelmässä.</string>
+    <string name="oamms_sec_profile_excep">Määrityksen API:a ei kutsuttu.</string>
+    <string name="oamms_servicename_null">Todennuskaavaa ei ole määritetty.</string>
+    <string name="oamms_invalid_server_type">Todennuspalvelimen tyyppi on virheellinen.</string>
+    <string name="oamms_not_connect_to_server">Palvelimeen ei saada yhteyttä määritetyssä osoitteessa. Pyydä apua pääkäyttäjältä.</string>
+    <string name="oamms_network_unavailable">Verkko ei ole käytettävissä. Varmista, että sinulla on yhteys Internetiin, ja yritä uudelleen.</string>
+    <string name="oamms_not_parse_response">Palvelimen lähettämää vastausta ei voitu jäsentää.</string>
+    <string name="oamms_certificate_not_accepted">Käyttäjä hylkäsi palvelinvarmenteen.</string>
+    <string name="oamms_internal_error">Sisäinen virhe</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Argumentit eivät voi olla null tai tyhjiä merkkijonoja</string>
+    <string name="oamms_update_cookies_validation_failure">Cookie-tiedoston arvon päivitys epäonnistui, koska cookie-tiedoston määritteitä ei voitu tarkistaa</string>
+    <string name="oamms_cookie_not_found">Päivitettävää cookie-tiedostoa ei ole</string>
+    <string name="oamms_invalid_arguments_null">Argumentit eivät voi olla tyhjiä</string>
+    <string name="oamms_clear_username_password_failed">Upotettuun Web-näkymään tallennettua käyttäjätunnusta ja salasanaa ei voitu poistaa, koska toimen rekisteröinti poistettiin toimintojen välillä.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Tiettyjä HTTP-otsikoita, jotka on määritetty avainta OM_PROP_CUSTOM_AUTH_HEADERS vastaan välitetyssä määrityksessä, ei voi lisätä. Katso dokumentaatiosta lista HTTP-otsikoista, joita ei sallita.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Kohteen OM_PROP_CUSTOM_AUTH_HEADERS osana määritettyjen räätälöityjen todennusotsikoiden määrä ylittää enimmäismäärän (%1$d).</string>
+    <string name="oamms_application_not_available">Pyydetty sovellus ei ole käytettävissä.</string>
+    <string name="oamms_http_callback_null">Asynkronisen pyynnön vastakutsu ei voi olla tyhjä</string>
+    <string name="oamms_http_res_url_null">Http-resurssin URL ei voi olla tyhjä</string>
+    <string name="oamms_logout_in_progress">Uloskirjaus on käynnissä. Yritä myöhemmin uudelleen.</string>
+    <string name="oamms_logout_timed_out">Uloskirjaus epäonnistui, koska yhteys päättyi aikakatkaisuun.</string>
+    <string name="oamms_logout_failure">Uloskirjaus epäonnistui seuraavan virheen takia: %1$s</string>
+    <string name="oamms_not_found">Pyydettyä URL-osoitetta ei ole. Pyydä apua pääkäyttäjältä.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Käyttäjätunnus on pakollinen.</string>
+    <string name="oamms_identity_domain_required">Tunnistuksen toimialue on pakollinen.</string>
+    <string name="oamms_username_identity_domain_required">Käyttäjätunnus ja tunnistuksen toimialue ovat pakollisia.</string>
+    <string name="oamms_password_null">Vaaditaan salasana.</string>
+    <string name="oamms_un_pwd_missing">Väärä käyttäjätunnus tai salasana.</string>
+    <string name="oamms_un_pwd_tenant_missing">Virheellinen käyttäjätunnus, salasana tai tunnistuksen toimialue.</string>
+    <string name="oamms_chalg_missing">Haasteen vastaus on virheellinen.</string>
+    <string name="oamms_user_canceled">Käyttäjä peruutti sisäänkirjaustoiminnon.</string>
+    <string name="oamms_auth_failed">Käyttäjän todennus epäonnistui.</string>
+    <string name="oamms_auth_success">Käyttäjän todennus onnistui.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Käyttäjätunn.</string>
+    <string name="oamms_username_hint">Syötä käyttäjätunnus</string>
+    <string name="oamms_password">Salasana</string>
+    <string name="oamms_password_hint">Syötä salasana</string>
+    <string name="oamms_tenant">Tunnistuksen toimialue</string>
+    <string name="oamms_tenant_hint">Syötä tunnistuksen toimialue</string>
+    <string name="oamms_login">Sisäänkirjaus</string>
+    <string name="oamms_cancel">Peruuta</string>
+    <string name="oamms_challenge_head">Määritä lisätiedot</string>
+    <string name="oamms_challenge_ques">Kysymys</string>
+    <string name="oamms_challenge_ans">Vastaus</string>
+    <string name="oamms_challenge_answer_hint">Anna vastaus suojakysymykseen</string>
+    <string name="oamms_submit">Lähetä</string>
+    <string name="oamms_remember_username">Muista käyttäjätunnus</string>
+    <string name="oamms_remember_credentials">Muista valtuudet</string>
+    <string name="oamms_auto_login">Automaattinen sisäänkirjaus</string>
+    <string name="oamms_back_button">Takaisin</string>
+    <string name="oamms_forward_button">Eteenpäin</string>
+    <string name="oamms_refresh_button">Päivitä</string>
+    <string name="oamms_cancel_button">Peruuta</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Kokoonpanon ominaisuuksia ei löydy kohteesta SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">Välitetty aie ei sisällä palvelimen määritystietojen URI-osoitetta.</string>
+    <string name="oamms_config_intent_uri_invalid">Välitetty aie ei sisällä sallittua palvelimen määritystietojen URI-osoitetta.</string>
+    <string name="oamms_could_not_retrieve_configuration">Määritysominaisuuksia ei voi noutaa kohteesta SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Kokoonpanon ominaisuuksia ei voi tallentaa kohteeseen SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">SDK:n alustus epäonnistui, koska vaadittuja palvelimen tietoja ei ole määritetty.</string>
+    <string name="oamms_setup_failed_ms">Sovelluksen profiilia ei voi ladata puuttuvan kokoonpanon takia</string>
+    <string name="oamms_setup_failed_default">Sovelluksen profiili tai sovelluksen nimi on virheellinen</string>
+    <string name="oamms_setup_failed_oauth">OAuth-työasemaprofiilia ei voi ladata.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Sovelluksen nimi on virheellinen.</string>
+    <string name="oamms_invalid_server_url">Palvelimen URL on virheellinen.</string>
+    <string name="oamms_invalid_service_domain">Palvelun toimialue on virheellinen.</string>
+    <string name="oamms_token_missing">Laitetta ei ole vielä todennettu Mobile- ja Social-palvelimella.</string>
+    <string name="oamms_no_user_token">Käyttäjää ei ole vielä todennettu.</string>
+    <string name="oamms_no_rp_login_url">RP-todennuksen URL-osoitetta ei voi avata.</string>
+    <string name="oamms_req_failed">Käyttäjän %1$s todennuspyyntö epäonnistui.</string>
+    <string name="oamms_req_denied">Todennuspyyntö hylättiin.</string>
+    <string name="oamms_oaam_denied_action">Palvelin esti todennuksen. Pyydä apua pääkäyttäjältä.</string>
+    <string name="oamms_oaam_wipeout_action">Vastaanotettiin tyhjennyskomento palvelimesta. Luottamukselliset sovellustiedot poistetaan.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Kutsusovelluksen allekirjoituksen todennus epäonnistui.</string>
+    <string name="oamms_sso_activity_missing">SSO-sovelluksen nimeä ei ole annettu.</string>
+    <string name="oamms_init_SSOAgent_success">SSO-agenttisovelluksen alustus onnistui.</string>
+    <string name="oamms_service_domain_not_same">Agentti hylkäsi todennuksen, koska palvelutoimialue ei täsmää.</string>
+    <string name="oamms_invalid_config">Työasemasovelluksella ei ole valtuuksia osallistua SSO-todennukseen.</string>
+    <string name="oamms_no_agent_avail">SSO-todennuksen URL-osoitetta ei voi avata.</string>
+    <string name="oamms_tokens_not_available">OAM_ID-merkki ei ole saatavilla. Tarkista palvelimen asetukset. Varmista, että todennuskaavaksi on valittu MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Väärä kirjautumisen URL.</string>
+    <string name="oamms_server_returned_error">Virhe palvelimessa: %1$s. Pyydä apua pääkäyttäjältä.</string>
+    <string name="oamms_forbidden">Käyttäjällä ei ole valtuuksia.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Todennus aikakatkaistiin.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Räätälöidyllä todennussivulla ei ole valtuuskenttää.</string>
+    <string name="oamms_kba_html_fields_invalid">Räätälöidyllä vahvan todennuksen sivulla ei ole valtuuskenttää.</string>
+    <string name="oamms_html_file_exception">Räätälöity HTML-tiedosto ei voi olla tyhjä.</string>
+    <string name="oamms_invalid_html_file">Räätälöidyn HTML-tiedoston polun tyyppi on virheellinen</string>
+    <string name="oamms_remote_html_file">Räätälöity HTML-sivu ei voi olla etäsivu, SDK tukee vain paikallisten HTML-sivujen latausta</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Tämä varmenne ei ole luotetun myöntäjän myöntämä.</string>
+    <string name="oamms_ssl_security_certificate">Suojausvarmenne</string>
+    <string name="oamms_ssl_issued_to">Aihe:</string>
+    <string name="oamms_ssl_common_name">Yleinen nimi:</string>
+    <string name="oamms_ssl_organization">Organisaatio:</string>
+    <string name="oamms_ssl_organization_unit">Organisaatioyksikkö:</string>
+    <string name="oamms_ssl_issued_by">Myöntäjä:</string>
+    <string name="oamms_ssl_validity">Voimassaolo:</string>
+    <string name="oamms_ssl_issued_on">Alkamispäivä:</string>
+    <string name="oamms_ssl_expires_on">Loppumispäivä:</string>
+    <string name="oamms_security_warning">Suojausvaroitus</string>
+    <string name="oamms_ssl_continue">Hyväksy</string>
+    <string name="oamms_ssl_view_certificate">Tiedot</string>
+    <string name="oamms_ssl_message">Tämän URL-osoitteen suojausvarmenteessa on ongelmia.</string>
+    <string name="oamms_serial_number">Sarjanumero:</string>
+    <string name="oamms_fingerprint">Sormenjäljet:</string>
+    <string name="oamms_sha_fp">SHA1-sormenjälki:</string>
+    <string name="oamms_md5_fp">MD5-sormenjälki:</string>
+    <string name="oamms_ssl_alert_icon">Ilmoituskuvake</string>
+    <string name="oamms_import_certificate_failure">Varmennetta ei voi asentaa.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth-todennus epäonnistui.</string>
+    <string name="oamms_oauth_invalid_state">Vastaus palautti virheellisen tilan.</string>
+    <string name="oamms_oauth_context_invalid">Määritetylle pyynnölle ei ole sallittua käyttömerkkiä. Todenna käyttämällä sopivaa aluetta.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Pyynnöltä puuttuu pakollinen parametri, sillä on parametrin arvo, jota ei tueta, sillä on toistuva parametri, siihen sisältyy useita valtuuksia, se käyttää useita työaseman todennusmenetelmiä tai se on muuten väärin muodostettu.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Todennettua työasemaa ei ole valtuutettu käyttämään tätä valtuutuksen myöntötyyppiä.</string>
+    <string name="oamms_oauth_access_denied_desc">Resurssin omistaja tai valtuutuspalvelin hylkäsi pyynnön.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Valtuutuspalvelin ei tue valtuutuskoodin noutoa tällä menetelmällä.</string>
+    <string name="oamms_oauth_server_error_desc">Valtuutuspalvelin kohtasi odottamattoman tilan, joka esti sitä toteuttamasta pyyntöä.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Valtuutuspalvelin ei voi juuri nyt käsitellä pyyntöä palvelimen tilapäisen ylikuormituksen tai huollon vuoksi.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Pyydetty alue on virheellinen, tuntematon, väärin muodostettu tai on resurssin omistajan myöntämän alueen ulkopuolella.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Valtuutuspalvelin ei tue valtuutuksen myöntötyyppiä.</string>
+    <string name="oamms_oauth_invalid_client_desc">Työaseman todennus epäonnistui.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Myönnetty valtuutus tai päivitysmerkki on virheellinen, vanhentunut tai peruttu, se ei vastaa valtuutuspyynnön uudelleenohjauksen URI-osoitetta tai se on myönnetty toiselle työasemalle.</string>
+    <string name="oamms_oauth_auth_url_invalid">Virheelliset loppupisteet OAuth-todennukselle.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Virheellinen työaseman vahvistus. Käynnistä todennusprosessi uudelleen.</string>
+    <string name="oamms_oauth_client_secret_invalid">Työaseman salaisuus ei voi olla null tai tyhjä tälle myöntötyypille.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Edeltävä AuthZ-koodi työaseman rekisteröintiin on virheellinen.</string>
+    <string name="oamms_oauth_oam_token_request_failed">OAM-merkkien luonti epäonnistui.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Käyttäjän vahvistuksen luonti epäonnistui.</string>
+    <string name="oamms_oauth_user_assertion_null">Käyttäjän vahvistus on tyhjä.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Työaseman tunnistusvarmenne</string>
+    <string name="oamms_client_certificate_import_empty_password">Salasana ei voi olla tyhjä.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Virheellinen salasana.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Käyttäjä peruutti varmenteen tuonnin</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Virheellinen varmenne.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Annettiin virheellinen työaseman alias molemminpuolisen SSL-todennuksen aikana.</string>
+    <string name="oamms_client_certificate_dialog_title">Työaseman tunnistuksen valinta</string>
+    <string name="oamms_client_certificate_import_enter_password">Poimi varmenne antamalla salasana.</string>
+    <string name="oamms_client_certificate_import_failed">Varmenteen tuonti epäonnistui.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Todennuspalvelin %1$s on pyytänyt varmennetta. Valitse varmenne käytettävissä olevista tunnistuksista.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

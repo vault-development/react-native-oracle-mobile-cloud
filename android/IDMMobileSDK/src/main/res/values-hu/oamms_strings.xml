@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-hu/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 12:47:21 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile and Social SDK for Android</string>
+    <string name="oamms_processing">Feldolgozás...</string>
+    <string name="oamms_activity_excep">A tevékenység nem lehet null értékű. Regisztrálja az aktuális tevékenységet az OMMobileSecurityService#registerActivity(Activity) használatával lehetőség szerint az onResume() metódussal.</string>
+    <string name="oamms_sec_profile_excep">Az API telepítése nincs meghívva.</string>
+    <string name="oamms_servicename_null">Nincs megadva hitelesítési séma.</string>
+    <string name="oamms_invalid_server_type">A hitelesítési kiszolgáló típusa érvénytelen.</string>
+    <string name="oamms_not_connect_to_server">Kiszolgáló nem érhető el a megadott címen. Kérjen segítséget a rendszergazdától.</string>
+    <string name="oamms_network_unavailable">A hálózat nem érhető el. Ellenőrizze internetkapcsolatát, majd próbálja újra.</string>
+    <string name="oamms_not_parse_response">Nem értelmezhető a kiszolgálóról küldött válasz.</string>
+    <string name="oamms_certificate_not_accepted">A felhasználó visszautasította a kiszolgáló tanúsítványát.</string>
+    <string name="oamms_internal_error">Belső hiba</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Egyik argumentum sem lehet null vagy üres karakterlánc</string>
+    <string name="oamms_update_cookies_validation_failure">Nem sikerült módosítani a cookie értékét, mivel nem érvényesíthetők a cookie attribútumai</string>
+    <string name="oamms_cookie_not_found">A módosítandó cookie nem létezik</string>
+    <string name="oamms_invalid_arguments_null">Egyik argumentum sem lehet null.</string>
+    <string name="oamms_clear_username_password_failed">A beágyazott webes nézetben nem törölhető a felhasználónév és a jelszó, mivel közben törölve lett a tevékenység regisztrálása.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Az átadott leképezésben az OM_PROP_CUSTOM_AUTH_HEADERS kulcs értékként megadott néhány HTTP fejléc nem adható hozzád. Nézze meg a dokumentációban a nem megengedett HTTP fejlécek listáját.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Az OM_PROP_CUSTOM_AUTH_HEADERS részeként megadott felhasználói hitelesítési fejlécek száma túllépte a megengedett maximumot (%1$d).</string>
+    <string name="oamms_application_not_available">A kért alkalmazás nem érhető el.</string>
+    <string name="oamms_http_callback_null">Aszinkron kérelemnél a visszahívás nem lehet null</string>
+    <string name="oamms_http_res_url_null">A HTTP erőforrás URL-címe nem lehet null</string>
+    <string name="oamms_logout_in_progress">A kijelentkezés folyamatban van. Próbálja újra kicsit később.</string>
+    <string name="oamms_logout_timed_out">A kijelentkezési művelet kapcsolati időtúllépés miatt sikertelen.</string>
+    <string name="oamms_logout_failure">A kijelentkezés a következő hiba miatt sikertelen: %1$s</string>
+    <string name="oamms_not_found">A kért URL nem létezik. Kérjen segítséget a rendszergazdától.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">A felhasználónév kötelező.</string>
+    <string name="oamms_identity_domain_required">Azonosságkezelési tartomány megadása kötelező.</string>
+    <string name="oamms_username_identity_domain_required">Felhasználónév és azonosságkezelési tartomány megadása kötelező.</string>
+    <string name="oamms_password_null">A jelszót meg kell adni.</string>
+    <string name="oamms_un_pwd_missing">Érvénytelen felhasználónév vagy jelszó.</string>
+    <string name="oamms_un_pwd_tenant_missing">Érvénytelen felhasználónév, jelszó vagy azonosságkezelési tartomány.</string>
+    <string name="oamms_chalg_missing">A biztonsági válasz érvénytelen.</string>
+    <string name="oamms_user_canceled">A felhasználó törölte a bejelentkezési műveletet.</string>
+    <string name="oamms_auth_failed">Nem sikerült a felhasználó hitelesítése.</string>
+    <string name="oamms_auth_success">A felhasználó hitelesítése sikerült.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Felhaszn.név</string>
+    <string name="oamms_username_hint">Adja meg a felhasználónevet</string>
+    <string name="oamms_password">Jelszó</string>
+    <string name="oamms_password_hint">Adja meg a jelszót</string>
+    <string name="oamms_tenant">Azonosságkezelési tartomány</string>
+    <string name="oamms_tenant_hint">Adja meg az azonosságkezelési tartományt</string>
+    <string name="oamms_login">Bejelentkezés</string>
+    <string name="oamms_cancel">Mégse</string>
+    <string name="oamms_challenge_head">További adatok megadása</string>
+    <string name="oamms_challenge_ques">Kérdés</string>
+    <string name="oamms_challenge_ans">Válasz</string>
+    <string name="oamms_challenge_answer_hint">Adja meg a választ a biztonsági kérdésre</string>
+    <string name="oamms_submit">Küldés</string>
+    <string name="oamms_remember_username">Felhasználónév mentése</string>
+    <string name="oamms_remember_credentials">Hitelesítőadatok mentése</string>
+    <string name="oamms_auto_login">Automatikus bejelentkezés</string>
+    <string name="oamms_back_button">Vissza</string>
+    <string name="oamms_forward_button">Előre</string>
+    <string name="oamms_refresh_button">Frissítés</string>
+    <string name="oamms_cancel_button">Mégse</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Nem találhatók konfigurálási tulajdonságok a SharedPreferences beállításban</string>
+    <string name="oamms_config_intent_uri_null">Az átadott szándék nem tartalmazza az URI azonosítót a kiszolgáló konfigurálási részleteihez.</string>
+    <string name="oamms_config_intent_uri_invalid">Az átadott szándék nem tartalmaz érvényes URI azonosítót a kiszolgáló konfigurálási részleteihez.</string>
+    <string name="oamms_could_not_retrieve_configuration">Nem lehetett visszakeresni a konfigurálási tulajdonságokat a SharedPreferences beállításaiból</string>
+    <string name="oamms_could_not_store_configuration">Nem tárolhatók a SharedPreferences konfigurálási tulajdonságai</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Az SDK inicializálása sikertelen, mivel nincsenek megadva a kiszolgáló szükséges adatai.</string>
+    <string name="oamms_setup_failed_ms">Hiányzó konfiguráció miatt az alkalmazásprofil nem tölthető le</string>
+    <string name="oamms_setup_failed_default">Az alkalmazásprofil vagy az alkalmazás neve érvénytelen</string>
+    <string name="oamms_setup_failed_oauth">Az OAuth ügyfélprofil nem tölthető le.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Az alkalmazás neve érvénytelen.</string>
+    <string name="oamms_invalid_server_url">A kiszolgáló URL-címe érvénytelen.</string>
+    <string name="oamms_invalid_service_domain">A szolgáltatás tartománya érvénytelen.</string>
+    <string name="oamms_token_missing">Az eszköz még nincs hitelesítve a Mobile és Social kiszolgálónál.</string>
+    <string name="oamms_no_user_token">A felhasználó még nincs hitelesítve.</string>
+    <string name="oamms_no_rp_login_url">Nem nyitható meg az RP-hitelesítési URL.</string>
+    <string name="oamms_req_failed">A hitelesítési kérelem sikertelen a felhasználónál: %1$s.</string>
+    <string name="oamms_req_denied">A hitelesítési kérelem megtagadva.</string>
+    <string name="oamms_oaam_denied_action">A hitelesítést a kiszolgáló letiltotta. Kérjen segítséget a rendszergazdától.</string>
+    <string name="oamms_oaam_wipeout_action">Teljes törlési parancs érkezett a kiszolgálóról. Bizalmas alkalmazásadatok törlése.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Hiba a hívó alkalmazás aláírásának érvényesítésekor.</string>
+    <string name="oamms_sso_activity_missing">Nem lett megadva az SSO alkalmazás neve.</string>
+    <string name="oamms_init_SSOAgent_success">Az SSO ügynökalkalmazás inicializálása sikerült.</string>
+    <string name="oamms_service_domain_not_same">A hitelesítést visszautasította az ügynök, mivel nem megfelelő a szolgáltatás tartománya.</string>
+    <string name="oamms_invalid_config">Az ügyfélalkalmazás nincs hitelesítve, hogy a globális bejelentkezés részese legyen.</string>
+    <string name="oamms_no_agent_avail">Nem nyitható meg az SSO-hitelesítési URL.</string>
+    <string name="oamms_tokens_not_available">Az OAM_ID token nem érhető el. Ellenőrizze a kiszolgáló beállításait. A hibás konfigurációk közé tartozik, ha a hitelesítési séma beállítása nem MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Érvénytelen a bejel. URL.</string>
+    <string name="oamms_server_returned_error">A kiszolgálónál %1$s hiba fordult elő. Kérjen segítséget a rendszergazdától.</string>
+    <string name="oamms_forbidden">A felhasználónak nincs jogosultsága.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">A hitel. túllépte az időkorlátot.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Az egyéni hitelesítés oldal nem tartalmaz hitelesítőadatok mezőt.</string>
+    <string name="oamms_kba_html_fields_invalid">Az egyéni erős hitelesítés oldal nem tartalmaz hitelesítőadatok mezőt.</string>
+    <string name="oamms_html_file_exception">Az egyéni HTML fájl nem lehet null értékű.</string>
+    <string name="oamms_invalid_html_file">Az egyéni HTML fájl elérési útvonala érvénytelen típusú</string>
+    <string name="oamms_remote_html_file">A felhasználói HTML lap nem lehet távelérési lap, az SDK csak a helyi HTML lap betöltését támogatja</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">A tanúsítvány nem megbízható szolgáltatótól származik.</string>
+    <string name="oamms_ssl_security_certificate">Biztonsági tanúsítvány</string>
+    <string name="oamms_ssl_issued_to">Tárgy:</string>
+    <string name="oamms_ssl_common_name">Általános név:</string>
+    <string name="oamms_ssl_organization">Szervezet:</string>
+    <string name="oamms_ssl_organization_unit">Szervezeti egység:</string>
+    <string name="oamms_ssl_issued_by">Kiállító:</string>
+    <string name="oamms_ssl_validity">Érvényesség:</string>
+    <string name="oamms_ssl_issued_on">Kezdő dátum:</string>
+    <string name="oamms_ssl_expires_on">Záró dátum:</string>
+    <string name="oamms_security_warning">Biztonsági figyelmeztetés</string>
+    <string name="oamms_ssl_continue">Elfogadás</string>
+    <string name="oamms_ssl_view_certificate">Részletek</string>
+    <string name="oamms_ssl_message">Problémák vannak az URL-cím biztonsági tanúsítványával.</string>
+    <string name="oamms_serial_number">Sorozatszám:</string>
+    <string name="oamms_fingerprint">Ujjlenyomatok:</string>
+    <string name="oamms_sha_fp">SHA1 ujjlenyomat:</string>
+    <string name="oamms_md5_fp">MD5 ujjlenyomat:</string>
+    <string name="oamms_ssl_alert_icon">Riasztás ikonja</string>
+    <string name="oamms_import_certificate_failure">A tanúsítvány nem telepíthető.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Az OAuth hitelesítés sikertelen.</string>
+    <string name="oamms_oauth_invalid_state">A válaszból érvénytelen állapot lett helyreállítva.</string>
+    <string name="oamms_oauth_context_invalid">Az adott kérelemhez nincs érvényes hozzáférési token. Hitelesítse a megfelelő hatókörön belül.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">A kérelemnek vagy hiányzik az egyik kötelező paramétere, vagy nem támogatott paraméterértéket tartalmaz, vagy valamelyik paramétere ismétlődő, vagy többféle hitelesítőadatot tartalmaz, vagy az ügyfél hitelesítéséhez több mechanizmust használ, illetve egyéb okból nem megfelelő kialakítású.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">A hitelesített ügyfél nem jogosult ezt a jogosultságot biztosító típust használni.</string>
+    <string name="oamms_oauth_access_denied_desc">Az erőforrás tulajdonosa vagy a hitelesítési kiszolgáló megtagadta a kérelem teljesítését.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">A hitelesítési kiszolgáló nem támogatja a hitelesítési kódnak ilyen módszerrel történő megszerzését.</string>
+    <string name="oamms_oauth_server_error_desc">A hitelesítési kiszolgáló olyan váratlan feltételt talált, amely megakadályozza a kérelem teljesítésében.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">A hitelesítési kiszolgáló átmeneti túlterheltség vagy karbantartás miatt jelenleg nem képes a kérelmet kezelni.</string>
+    <string name="oamms_oauth_invalid_scope_desc">A kért hatókör érvénytelen, ismeretlen, rosszul formázott, illetve túllépi az erőforrás tulajdonosa által biztosított hatókört.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">A hitelesítési kiszolgáló nem támogatja a hitelesítés-nyújtás ilyen típusát.</string>
+    <string name="oamms_oauth_invalid_client_desc">Az ügyfél hitelesítése nem sikerült.</string>
+    <string name="oamms_oauth_invalid_grant_desc">A kapott hitelesítési vagy frissítési token érvénytelen, lejárt, visszavont, nem ugyanaz, mint a hitelesítési kérelemben használt átirányítási URI, illetve más ügyfél részére lett kiadva.</string>
+    <string name="oamms_oauth_auth_url_invalid">Az OAuth-hitelesítés végpontjai érvénytelenek.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Az ügyfél állítása érvénytelen. Indítsa újra a hitelesítési folyamatot.</string>
+    <string name="oamms_oauth_client_secret_invalid">Az ügyfél titka ennél a jogosultságtípusnál nem lehet null értékű vagy üres.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid"> Az ügyfél regisztrációjának Pre AuthZ-kódja érvénytelen.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Nem sikerült az OAM tokenek létrehozása.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Nem sikerült létrehozni felhasználói állítást.</string>
+    <string name="oamms_oauth_user_assertion_null">A felhasználói állítás üres.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Ügyfél-azonosító tanúsítványa.</string>
+    <string name="oamms_client_certificate_import_empty_password">A jelszó nem lehet üres.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Érvénytelen jelszó.</string>
+    <string name="oamms_client_certificate_import_user_canceled">A felhasználó törölte a tanúsítvány importálását.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Érvénytelen tanúsítvány.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Az SSL kölcsönös azonosítása során megadott ügyfélalias érvénytelen.</string>
+    <string name="oamms_client_certificate_dialog_title">Válassza ki az ügyfél azonos.</string>
+    <string name="oamms_client_certificate_import_enter_password">A tanúsítvány kibontásához adja meg a jelszót.</string>
+    <string name="oamms_client_certificate_import_failed">Tanúsítvány importálása sikertelen.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">A(z) %1$s hitelesítési kiszolgáló tanúsítványt kért. Válasszon ki egy tanúsítványt a rendelkezésre álló azonosítók közül.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

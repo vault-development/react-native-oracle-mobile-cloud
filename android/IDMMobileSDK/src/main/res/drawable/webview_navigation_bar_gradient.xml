@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Header: idmmobile/src/Android/IDMMobileSDK/res/drawable/webview_navigation_bar_gradient.xml /main/2 2013/09/06 07:25:15 arunpras Exp $ -->
+
+<!--
+ Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved. 
+
+   NAME
+     webview_navigation_bar_gradient.xml
+
+   DESCRIPTION
+     Defines the gradient to be shown as the background of the navigation bar above Embedded Browser
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   arunpras    07/08/13 - Creation
+
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:endColor="#FFFFFF"
+        android:startColor="#d4d4d4"
+        android:angle="90" />
+
+</shape>

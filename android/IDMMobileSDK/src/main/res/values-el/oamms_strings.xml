@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-el/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/10 09:09:24 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile και Social SDK για Android</string>
+    <string name="oamms_processing">Γίνεται επεξεργασία...</string>
+    <string name="oamms_activity_excep">Η δραστηριότητα δεν μπορεί να είναι null. Καταχωρίστε την τρέχουσα δραστηριότητα χρησιμοποιώντας την εντολή OMMobileSecurityService#registerActivity(Activity), κατά προτίμηση στην ενέργεια onResume().</string>
+    <string name="oamms_sec_profile_excep">Δεν έγινε κλήση του API ρύθμισης.</string>
+    <string name="oamms_servicename_null">Δεν έχει καθοριστεί σχήμα ελέγχου ταυτότητας.</string>
+    <string name="oamms_invalid_server_type">Ο τύπος server ελέγχου ταυτότητας δεν είναι έγκυρος.</string>
+    <string name="oamms_not_connect_to_server">Ο server της καθορισμένης διεύθυνσης δεν είναι προσβάσιμος. Επικοινωνήστε με το διαχειριστή για βοήθεια.</string>
+    <string name="oamms_network_unavailable">Το δίκτυο δεν είναι διαθέσιμο. Βεβαιωθείτε ότι έχετε συνδεθεί στο Internet και δοκιμάστε ξανά.</string>
+    <string name="oamms_not_parse_response">Δεν ήταν δυνατή η ανάλυση της απόκρισης που εστάλη από το server.</string>
+    <string name="oamms_certificate_not_accepted">Ο χρήστης απέρριψε το πιστοποιητικό server.</string>
+    <string name="oamms_internal_error">Εσωτερικό σφάλμα</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Τα ορίσματα δεν μπορούν να είναι null ή κενές συμβολοσειρές</string>
+    <string name="oamms_update_cookies_validation_failure">Απέτυχε η ενημέρωση της τιμής του cookie, διότι δεν είναι δυνατή η επικύρωση των χαρακτηριστικών του cookie</string>
+    <string name="oamms_cookie_not_found">Το προς ενημέρωση cookie δεν υπάρχει</string>
+    <string name="oamms_invalid_arguments_null">Τα ορίσματα δεν μπορούν να είναι null</string>
+    <string name="oamms_clear_username_password_failed">Δεν είναι δυνατή αποθήκευση του ονόματος χρήστη και του κωδικού πρόσβασης στην Ενσωματωμένη προβολή ιστού, διότι στο μεταξύ καταργήθηκε η καταχώριση της δραστηριότητας.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Δεν μπορούν να προστεθούν κάποιες από τις κεφαλίδες HTTP που καθορίστηκαν στον χάρτη ο οποίος μεταβιβάστηκε ως μια τιμή έναντι του κλειδιού OM_PROP_CUSTOM_AUTH_HEADERS. Ανατρέξτε στην τεκμηρίωση για τη λίστα με τις κεφαλίδες HTTP που δεν επιτρέπονται.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Ο αριθμός των προσαρμοσμένων κεφαλίδων ελέγχου ταυτότητας που καθορίστηκαν ως μέρος του OM_PROP_CUSTOM_AUTH_HEADERS υπερβαίνει το μέγιστο πλήθος (%1$d).</string>
+    <string name="oamms_application_not_available">Η εφαρμογή που ζητήσατε δεν είναι διαθέσιμη.</string>
+    <string name="oamms_http_callback_null">Για ασύγχρονη αίτηση, η επανάκληση δεν μπορεί ναι είναι null</string>
+    <string name="oamms_http_res_url_null">Η διεύθυνση τοποθεσίας πόρων Http δεν μπορεί να είναι null</string>
+    <string name="oamms_logout_in_progress">Η αποσύνδεση βρίσκεται σε εξέλιξη. Δοκιμάστε ξανά αργότερα.</string>
+    <string name="oamms_logout_timed_out">Η διεργασία αποσύνδεσης απέτυχε, επειδή έληξε το χρονικό όριο της σύνδεσης.</string>
+    <string name="oamms_logout_failure">Η αποσύνδεση απέτυχε λόγω του ακόλουθου σφάλματος: %1$s</string>
+    <string name="oamms_not_found">Η ζητηθείσα διεύθυνση τοποθεσίας δεν υπάρχει. Επικοινωνήστε με το διαχειριστή για βοήθεια.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Απαιτείται όνομα χρήστη.</string>
+    <string name="oamms_identity_domain_required">Απαιτείται τομέας ταυτότητας.</string>
+    <string name="oamms_username_identity_domain_required">Απαιτείται όνομα χρήστη και τομέας ταυτότητας.</string>
+    <string name="oamms_password_null">Απαιτείται κωδικός πρόσβασης.</string>
+    <string name="oamms_un_pwd_missing">Μη αποδεκτό όνομα χρήστη ή κωδικός πρόσβασης.</string>
+    <string name="oamms_un_pwd_tenant_missing">Μη αποδεκτό όνομα χρήστη, κωδικός πρόσβασης ή τομέας ταυτότητας.</string>
+    <string name="oamms_chalg_missing">Η απάντηση στην πρόκληση δεν είναι έγκυρη.</string>
+    <string name="oamms_user_canceled">Ο χρήστης ακύρωσε τη λειτουργία σύνδεσης.</string>
+    <string name="oamms_auth_failed">Ο έλεγχος ταυτότητας χρήστη απέτυχε.</string>
+    <string name="oamms_auth_success">Ο έλεγχος ταυτότητας χρήστη ολοκληρώθηκε με επιτυχία.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Όνομα χρήστη</string>
+    <string name="oamms_username_hint">Καταχωρίστε το όνομα χρήστη</string>
+    <string name="oamms_password">Κωδικός πρόσβασης</string>
+    <string name="oamms_password_hint">Εισαγωγή κωδικού πρόσβασης</string>
+    <string name="oamms_tenant">Τομέας ταυτότητας</string>
+    <string name="oamms_tenant_hint">Καταχωρίστε τον τομέα ταυτότητας</string>
+    <string name="oamms_login">Σύνδεση</string>
+    <string name="oamms_cancel">Άκυρο</string>
+    <string name="oamms_challenge_head">Καταχωρίστε πρόσθετες πληροφορίες</string>
+    <string name="oamms_challenge_ques">Ερώτηση</string>
+    <string name="oamms_challenge_ans">Απάντηση</string>
+    <string name="oamms_challenge_answer_hint">Καταχωρίστε μια απάντηση για την ερώτηση ασφαλείας</string>
+    <string name="oamms_submit">Υποβολή</string>
+    <string name="oamms_remember_username">Απομνημόνευση ονόματος χρήστη</string>
+    <string name="oamms_remember_credentials">Απομνημόνευση διαπιστευτηρίων</string>
+    <string name="oamms_auto_login">Αυτόματη σύνδεση</string>
+    <string name="oamms_back_button">Πίσω</string>
+    <string name="oamms_forward_button">Εμπρός</string>
+    <string name="oamms_refresh_button">Ανανέωση</string>
+    <string name="oamms_cancel_button">Άκυρο</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Δεν βρέθηκαν οι ιδιότητες διαμόρφωσης στο SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">Η πρόθεση που μεταβιβάστηκε δεν περιέχει URI για τις λεπτομέρειες διαμόρφωσης server.</string>
+    <string name="oamms_config_intent_uri_invalid">Η πρόθεση που μεταβιβάστηκε δεν περιέχει έγκυρο URI για τις λεπτομέρειες διαμόρφωσης server.</string>
+    <string name="oamms_could_not_retrieve_configuration">Δεν ήταν δυνατή η ανάκτηση των ιδιοτήτων διαμόρφωσης από το SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Δεν ήταν δυνατή η αποθήκευση ιδιοτήτων διαμόρφωσης στο SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Η εκκίνηση του SDK απέτυχε, διότι δεν έχουν καταχωριστεί οι απαιτούμενες πληροφορίες server.</string>
+    <string name="oamms_setup_failed_ms">Δεν είναι δυνατή η λήψη του προφίλ εφαρμογής λόγω της διαμόρφωσης που λείπει</string>
+    <string name="oamms_setup_failed_default">Το προφίλ ή το όνομα της εφαρμογής δεν είναι έγκυρο</string>
+    <string name="oamms_setup_failed_oauth">Δεν είναι δυνατή η λήψη του προφίλ client OAuth.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Το όνομα της εφαρμογής δεν είναι έγκυρο.</string>
+    <string name="oamms_invalid_server_url">Η διεύθυνση τοποθεσίας server δεν είναι έγκυρη.</string>
+    <string name="oamms_invalid_service_domain">Ο τομέας υπηρεσίας δεν είναι έγκυρος.</string>
+    <string name="oamms_token_missing">Αυτή η συσκευή δεν έχει ολοκληρώσει ακόμη τον έλεγχο ταυτότητας για τον Server Mobile και Social.</string>
+    <string name="oamms_no_user_token">Η ταυτότητα του χρήστη δεν έχει πιστοποιηθεί ακόμη.</string>
+    <string name="oamms_no_rp_login_url">Δεν είναι δυνατό το άνοιγμα της διεύθυνσης τοποθεσίας ελέγχου ταυτότητας RP.</string>
+    <string name="oamms_req_failed">Το αίτημα ελέγχου ταυτότητας απέτυχε για τον χρήστη %1$s.</string>
+    <string name="oamms_req_denied">Το αίτημα για έλεγχο ταυτότητας απορρίφθηκε.</string>
+    <string name="oamms_oaam_denied_action">Αποκλεισμός ελέγχου ταυτότητας από το server. Επικοινωνήστε με το διαχειριστή για βοήθεια.</string>
+    <string name="oamms_oaam_wipeout_action">Ελήφθη εντολή σβησίματος από τον server. Εκκαθάριση ευαίσθητων δεδομένων εφαρμογής.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Αποτυχία επικύρωσης της υπογραφής εφαρμογής κλήσης.</string>
+    <string name="oamms_sso_activity_missing">Το όνομα της εφαρμογής SSO δεν έχει καταχωριστεί.</string>
+    <string name="oamms_init_SSOAgent_success">Η εφαρμογή παράγοντα SSO εκκινήθηκε με επιτυχία.</string>
+    <string name="oamms_service_domain_not_same">Ο έλεγχος ταυτότητας απορρίφθηκε από τον παράγοντα επειδή ο τομέας υπηρεσίας δεν συμφωνεί.</string>
+    <string name="oamms_invalid_config">Η εφαρμογή client δεν διαθέτει εξουσιοδότηση για να συμμετάσχει στο SSO.</string>
+    <string name="oamms_no_agent_avail">Δεν είναι δυνατό το άνοιγμα της διεύθυνσης τοποθεσίας ελέγχου ταυτότητας SSO URL.</string>
+    <string name="oamms_tokens_not_available">Το διακριτικό OAM_ID δεν είναι διαθέσιμο. Εξετάστε τις ρυθμίσεις του server. Μία από τις ενδεχόμενες εσφαλμένες διαμορφώσεις είναι ότι το σχήμα ελέγχου ταυτότητας δεν έχει οριστεί ως MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Μη έγκυρη δ/νση σύνδεσης.</string>
+    <string name="oamms_server_returned_error">Παρουσιάστηκε σφάλμα %1$s στον server. Επικοινωνήστε με το διαχειριστή για βοήθεια.</string>
+    <string name="oamms_forbidden">Ο χρήστης δεν έχει εξουσιοδότηση.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Έληξε το χρονικό όριο ελέγχου ταυτ.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Η προσαρμοσμένη σελίδα ελέγχου ταυτότητας δεν έχει πεδίο διαπιστευτηρίων.</string>
+    <string name="oamms_kba_html_fields_invalid">Η προσαρμοσμένη σελίδα αυστηρού ελέγχου ταυτότητας δεν έχει πεδίο διαπιστευτηρίων.</string>
+    <string name="oamms_html_file_exception">Το προσαρμοσμένο αρχείο HTML δεν μπορεί να είναι null.</string>
+    <string name="oamms_invalid_html_file">Ο τύπος της προσαρμοσμένης διαδρομής αρχείου HTML δεν είναι έγκυρος</string>
+    <string name="oamms_remote_html_file">Η προσαρμοσμένη σελίδα HTML δεν μπορεί να είναι απομακρυσμένη σελίδα, το SDK υποστηρίζει τη φόρτωση μόνο τοπικής σελίδας HTML</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Αυτό το πιστοποιητικό δεν προέρχεται από αξιόπιστη αρχή έκδοσης.</string>
+    <string name="oamms_ssl_security_certificate">Πιστοποιητικό ασφάλειας</string>
+    <string name="oamms_ssl_issued_to">Θέμα:</string>
+    <string name="oamms_ssl_common_name">Κοινό όνομα:</string>
+    <string name="oamms_ssl_organization">Οργανισμός:</string>
+    <string name="oamms_ssl_organization_unit">Μονάδα οργανισμού:</string>
+    <string name="oamms_ssl_issued_by">Εκδότης:</string>
+    <string name="oamms_ssl_validity">Ισχύει:</string>
+    <string name="oamms_ssl_issued_on">Ημερομηνία έναρξης:</string>
+    <string name="oamms_ssl_expires_on">Ημερομηνία λήξης:</string>
+    <string name="oamms_security_warning">Προειδοποίηση ασφάλειας</string>
+    <string name="oamms_ssl_continue">Αποδοχή</string>
+    <string name="oamms_ssl_view_certificate">Λεπτομέρειες</string>
+    <string name="oamms_ssl_message">Υπάρχουν προβλήματα με το πιστοποιητικό ασφάλειας για αυτήν την διεύθυνση τοποθεσίας.</string>
+    <string name="oamms_serial_number">Αριθμός σειράς:</string>
+    <string name="oamms_fingerprint">Δαχτυλικά αποτυπώματα:</string>
+    <string name="oamms_sha_fp">Δαχτυλικό αποτύπωμα SHA1:</string>
+    <string name="oamms_md5_fp">Δαχτυλικό αποτύπωμα MD5:</string>
+    <string name="oamms_ssl_alert_icon">Εικονίδιο ειδοποίησης</string>
+    <string name="oamms_import_certificate_failure">Δεν είναι δυνατή η εγκατάσταση του πιστοποιητικού.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Απέτυχε ο έλεγχος ταυτότητας OAuth.</string>
+    <string name="oamms_oauth_invalid_state">Ανακτήθηκε μη αποδεκτή κατάσταση από την απόκριση.</string>
+    <string name="oamms_oauth_context_invalid">Δεν υπάρχει κανένα έγκυρο διακριτικό πρόσβασης για τη δεδομένη αίτηση. Εκτέλεση ελέγχου ταυτότητας με την κατάλληλη εμβέλεια.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Το αίτημα δεν έχει μια απαιτούμενη παράμετρο, περιλαμβάνει μια μη υποστηριζόμενη τιμή παραμέτρου, επαναλαμβάνει μια παράμετρο, περιλαμβάνει πολλαπλά διαπιστευτήρια, χρησιμοποιεί περισσότερους από έναν μηχανισμούς για τον έλεγχο της ταυτότητας του client ή έχει εσφαλμένη μορφή λόγω άλλων αιτιών.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Ο client που υποβλήθηκε σε έλεγχο δεν είναι εξουσιοδοτημένος για τη χρήση αυτού του τύπου εκχώρησης εξουσιοδότησης.</string>
+    <string name="oamms_oauth_access_denied_desc">Ο κάτοχος πόρου ή ο server εξουσιοδότησης απέρριψε την αίτηση.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Ο server εξουσιοδότησης δεν υποστηρίζει τη λήψη ενός κωδικού εξουσιοδότησης χρησιμοποιώντας αυτήν τη μέθοδο.</string>
+    <string name="oamms_oauth_server_error_desc">Ο server εξουσιοδότησης εντόπισε μια μη αναμενόμενη συνθήκη που δεν του επέτρεψε να διεκπεριώσει την αίτηση.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Ο server εξουσιοδότησης δεν μπορεί να χειριστεί την αίτηση προς το παρόν, εξαιτίας προσωρινής υπερφόρτωσης ή συντήρησης του server.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Η ζητηθείσα εμβέλεια είναι μη αποδεκτή, άγνωστη, έχει εσφαλμένη μορφή ή υπερβαίνει την εμβέλεια που εκχωρήθηκε από τον κάτοχο πόρου.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Ο τύπος εκχώρησης εξουσιοδότησης δεν υποστηρίζεται από το server εξουσιοδότησης.</string>
+    <string name="oamms_oauth_invalid_client_desc">Ο έλεγχος ταυτότητας client απέτυχε.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Η παρεχόμενη εκχώρηση εξουσιοδότησης ή το διακριτικό ανανέωσης είναι μη έγκυρο, έχει λήξει, έχει ανακληθεί, δεν συμφωνεί με το URI ανακατεύθυνσης που χρησιμοποιείται στο αίτημα εξουσιοδότησης ή έχει εκδοθεί σε άλλο client.</string>
+    <string name="oamms_oauth_auth_url_invalid">Μη έγκυρα τελικά σημεία για τον έλεγχο ταυτότητας OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Μη έγκυρη δήλωση client. Επανεκκινήστε τη διαδικασία ελέγχου ταυτότητας.</string>
+    <string name="oamms_oauth_client_secret_invalid">Το μυστικό client δεν μπορεί να είναι null ή κενό για αυτόν τον τύπο εκχώρησης.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Μη έγκυρος κωδικός πριν το AuthZ για την εγγραφή client.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Αποτυχία δημιουργίας διακριτικών OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Αποτυχία δημιουργίας δήλωσης χρήστη.</string>
+    <string name="oamms_oauth_user_assertion_null">Η δήλωση χρήστη είναι null.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Πιστοποιητικό ταυτότητας client.</string>
+    <string name="oamms_client_certificate_import_empty_password">Ο κωδικός πρόσβασης δεν μπορεί να είναι κενός.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Μη έγκυρος κωδ.πρόσβασης.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Ο χρήστης ακύρωσε την εισαγωγή πιστοποιητικού.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Μη έγκυρο πιστοποιητικό.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Παρουσιάστηκε μη έγκυρο ψευδώνυμο client κατά τον αμοιβαίο έλεγχο ταυτότητας SSL.</string>
+    <string name="oamms_client_certificate_dialog_title">Επιλογή ταυτότητας client.</string>
+    <string name="oamms_client_certificate_import_enter_password">Εισαγωγή κωδικού πρόσβασης για εξαγωγή του πιστοποιητικού.</string>
+    <string name="oamms_client_certificate_import_failed">Η εισαγωγή πιστοποιητικού απέτυχε.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Ο server ελέγχου ταυτότητας %1$s έχει υποβάλει αίτημα για πιστοποιητικό. Επιλέξτε ένα πιστοποιητικό από διαθέσιμες ταυτότητες.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

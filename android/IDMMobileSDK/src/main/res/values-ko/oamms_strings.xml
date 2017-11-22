@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-ko/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/12 02:24:30 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Android용 Mobile and Social SDK</string>
+    <string name="oamms_processing">처리 중...</string>
+    <string name="oamms_activity_excep">Activity는 널일 수 없습니다. onResume()에서 OMMobileSecurityService#registerActivity(Activity)를 사용하여 현재 작업을 등록하십시오.</string>
+    <string name="oamms_sec_profile_excep">설정 API가 호출되지 않았습니다.</string>
+    <string name="oamms_servicename_null">지정된 인증 체계가 없습니다.</string>
+    <string name="oamms_invalid_server_type">인증 서버 유형이 부적합합니다.</string>
+    <string name="oamms_not_connect_to_server">지정된 주소로 서버에 연결할 수 없습니다. 도움이 필요하면 관리자에게 문의하십시오.</string>
+    <string name="oamms_network_unavailable">네트워크를 사용할 수 없습니다. 인터넷에 접속되어 있는지 확인하고 다시 시도하십시오.</string>
+    <string name="oamms_not_parse_response">서버에서 보낸 응답 구문을 분석할 수 없습니다.</string>
+    <string name="oamms_certificate_not_accepted">사용자가 서버 인증서를 거부했습니다.</string>
+    <string name="oamms_internal_error">내부 오류</string>
+    <string name="oamms_invalid_arguments_null_or_empty">인수는 널 또는 빈 문자열일 수 없습니다.</string>
+    <string name="oamms_update_cookies_validation_failure">쿠키 속성을 검증할 수 없어서 쿠키 값 업데이트를 실패했습니다.</string>
+    <string name="oamms_cookie_not_found">업데이트할 쿠키가 존재하지 않습니다.</string>
+    <string name="oamms_invalid_arguments_null">인수는 널일 수 없습니다.</string>
+    <string name="oamms_clear_username_password_failed">작업이 중간에 등록 해제되었기 때문에 내장된 Webview에 저장된 사용자 이름 및 비밀번호를 삭제할 수 없습니다.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">키 OM_PROP_CUSTOM_AUTH_HEADERS에 대해 값으로 전달된 맵에 지정되어 있는 일부 HTTP 헤더를 추가할 수 없습니다. 허용되지 않는 HTTP 헤더 목록은 설명서를 참조하십시오.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">OM_PROP_CUSTOM_AUTH_HEADERS의 일부로 지정된 사용자 정의 인증 헤더 수가 최대 수(%1$d)를 초과합니다.</string>
+    <string name="oamms_application_not_available">요청된 응용 프로그램을 사용할 수 없습니다.</string>
+    <string name="oamms_http_callback_null">비동기 요청의 경우 콜백은 널일 수 없습니다.</string>
+    <string name="oamms_http_res_url_null">HTTP 리소스 URL은 널일 수 없습니다.</string>
+    <string name="oamms_logout_in_progress">로그아웃이 진행 중입니다. 잠시 후에 다시 시도하십시오.</string>
+    <string name="oamms_logout_timed_out">접속 시간이 초과되어 로그아웃 작업을 실패했습니다.</string>
+    <string name="oamms_logout_failure">다음 오류로 인해 로그아웃 실패: %1$s</string>
+    <string name="oamms_not_found">요청한 URL이 존재하지 않습니다. 도움이 필요하면 관리자에게 문의하십시오.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">사용자 이름은 필수입니다.</string>
+    <string name="oamms_identity_domain_required">ID 도메인은 필수입니다.</string>
+    <string name="oamms_username_identity_domain_required">사용자 이름과 ID 도메인은 필수입니다.</string>
+    <string name="oamms_password_null">비밀번호는 필수입니다.</string>
+    <string name="oamms_un_pwd_missing">부적합한 사용자 이름 또는 비밀번호입니다.</string>
+    <string name="oamms_un_pwd_tenant_missing">부적합한 사용자 이름, 비밀번호 또는 ID 도메인입니다.</string>
+    <string name="oamms_chalg_missing">상기 문구 답변이 부적합합니다.</string>
+    <string name="oamms_user_canceled">사용자가 로그인 작업을 취소했습니다.</string>
+    <string name="oamms_auth_failed">사용자 인증을 실패했습니다.</string>
+    <string name="oamms_auth_success">사용자 인증을 성공했습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">사용자 이름</string>
+    <string name="oamms_username_hint">사용자 이름 입력</string>
+    <string name="oamms_password">비밀번호</string>
+    <string name="oamms_password_hint">비밀번호 입력</string>
+    <string name="oamms_tenant">Identity 도메인</string>
+    <string name="oamms_tenant_hint">ID 도메인을 입력합니다.</string>
+    <string name="oamms_login">사인인</string>
+    <string name="oamms_cancel">취소</string>
+    <string name="oamms_challenge_head">추가 정보 제공</string>
+    <string name="oamms_challenge_ques">질문</string>
+    <string name="oamms_challenge_ans">응답</string>
+    <string name="oamms_challenge_answer_hint">보안 질문에 대한 대답을 입력합니다.</string>
+    <string name="oamms_submit">제출</string>
+    <string name="oamms_remember_username">사용자 이름 저장</string>
+    <string name="oamms_remember_credentials">인증서 저장</string>
+    <string name="oamms_auto_login">자동 로그인</string>
+    <string name="oamms_back_button">뒤로</string>
+    <string name="oamms_forward_button">앞으로</string>
+    <string name="oamms_refresh_button">새로 고침</string>
+    <string name="oamms_cancel_button">취소</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">구성 속성을 SharedPreferences에서 찾을 수 없습니다.</string>
+    <string name="oamms_config_intent_uri_null">전달된 인텐트에 서버 구성 세부 정보에 대한 URI가 포함되어 있지 않습니다.</string>
+    <string name="oamms_config_intent_uri_invalid">전달된 인텐트에 서버 구성 세부 정보에 대해 적합한 URI가 포함되어 있지 않습니다.</string>
+    <string name="oamms_could_not_retrieve_configuration">SharedPreferences에서 구성 속성을 검색할 수 없습니다.</string>
+    <string name="oamms_could_not_store_configuration">SharedPreferences에 구성 속성을 저장할 수 없습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">필요한 서버 정보가 제공되지 않아 SDK 초기화를 실패했습니다.</string>
+    <string name="oamms_setup_failed_ms">누락된 구성으로 인해 응용 프로그램 프로파일을 다운로드할 수 없습니다.</string>
+    <string name="oamms_setup_failed_default">응용 프로그램 프로파일 또는 응용 프로그램 이름이 부적합합니다.</string>
+    <string name="oamms_setup_failed_oauth">OAuth 클라이언트 프로파일은 다운로드할 수 없습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">응용 프로그램 이름이 부적합합니다.</string>
+    <string name="oamms_invalid_server_url">서버 URL이 부적합합니다.</string>
+    <string name="oamms_invalid_service_domain">서비스 도메인이 부적합합니다.</string>
+    <string name="oamms_token_missing">이 장치는 Mobile and Social 서버에 아직 인증되지 않았습니다.</string>
+    <string name="oamms_no_user_token">사용자가 아직 인증되지 않았습니다.</string>
+    <string name="oamms_no_rp_login_url">RP 인증 URL을 열 수 없습니다.</string>
+    <string name="oamms_req_failed">사용자 %1$s에 대한 인증 요청을 실패했습니다.</string>
+    <string name="oamms_req_denied">인증 요청이 거부되었습니다.</string>
+    <string name="oamms_oaam_denied_action">서버에 의해 인증이 차단되었습니다. 도움이 필요하면 관리자에게 문의하십시오.</string>
+    <string name="oamms_oaam_wipeout_action">서버에서 지우기 명령이 수신되었습니다. 민감한 응용 프로그램 데이터를 지우는 중입니다.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">호출 응용 프로그램 서명을 검증하는 데 실패했습니다.</string>
+    <string name="oamms_sso_activity_missing">SSO 응용 프로그램 이름이 제공되지 않았습니다.</string>
+    <string name="oamms_init_SSOAgent_success">SSO 에이전트 응용 프로그램이 성공적으로 초기화되었습니다.</string>
+    <string name="oamms_service_domain_not_same">서비스 도메인이 일치하지 않아서 에이전트에서 인증이 거부되었습니다.</string>
+    <string name="oamms_invalid_config">클라이언트 응용 프로그램이 SSO에 참여할 권한이 없습니다.</string>
+    <string name="oamms_no_agent_avail">SSO 인증 URL을 열 수 없습니다.</string>
+    <string name="oamms_tokens_not_available">OAM_ID 토큰을 사용할 수 없습니다. 서버 설정을 확인하십시오. 가능한 잘못된 구성 중 하나는 인증 체계가 MobileOAMAuthentication으로 설정되지 않은 것입니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">로그인 URL이 부적합합니다.</string>
+    <string name="oamms_server_returned_error">서버에 %1$s 오류가 발생했습니다. 도움이 필요하면 관리자에게 문의하십시오.</string>
+    <string name="oamms_forbidden">사용자에게 권한이 부여되지 않았습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">인증 시간이 초과되었습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">사용자 정의 인증 페이지에 인증서 필드가 없습니다.</string>
+    <string name="oamms_kba_html_fields_invalid">사용자 정의 강력한 인증 페이지에 인증서 필드가 없습니다.</string>
+    <string name="oamms_html_file_exception">사용자 정의 HTML 파일은 널일 수 없습니다.</string>
+    <string name="oamms_invalid_html_file">사용자 정의 HTML 파일 경로의 유형이 부적합합니다.</string>
+    <string name="oamms_remote_html_file">사용자 정의 HTML 페이지는 원격 페이지일 수 없습니다. SDK는 로컬 HTML 페이지만 로드할 수 있도록 지원합니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">이 인증서는 신뢰된 기관에서 받은 것이 아닙니다.</string>
+    <string name="oamms_ssl_security_certificate">보안 인증서</string>
+    <string name="oamms_ssl_issued_to">주체:</string>
+    <string name="oamms_ssl_common_name">일반 이름:</string>
+    <string name="oamms_ssl_organization">조직:</string>
+    <string name="oamms_ssl_organization_unit">조직 단위:</string>
+    <string name="oamms_ssl_issued_by">발행자:</string>
+    <string name="oamms_ssl_validity">유효성:</string>
+    <string name="oamms_ssl_issued_on">시작 날짜:</string>
+    <string name="oamms_ssl_expires_on">종료 날짜:</string>
+    <string name="oamms_security_warning">보안 경고</string>
+    <string name="oamms_ssl_continue">승인</string>
+    <string name="oamms_ssl_view_certificate">세부 정보</string>
+    <string name="oamms_ssl_message">이 URL에 대한 보안 인증서에 문제가 있습니다.</string>
+    <string name="oamms_serial_number">일련 번호:</string>
+    <string name="oamms_fingerprint">지문:</string>
+    <string name="oamms_sha_fp">SHA1 지문:</string>
+    <string name="oamms_md5_fp">MD5 지문:</string>
+    <string name="oamms_ssl_alert_icon">경보 아이콘</string>
+    <string name="oamms_import_certificate_failure">인증서를 설치할 수 없습니다.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth 인증을 실패했습니다.</string>
+    <string name="oamms_oauth_invalid_state">응답에서 부적합한 상태가 복구되었습니다.</string>
+    <string name="oamms_oauth_context_invalid">제공된 요청에 대해 적합한 액세스 토큰이 없습니다. 적합한 범위로 인증하십시오.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">요청에 필수 매개변수가 누락되었거나, 지원되지 않는 매개변수 값이 포함되거나, 매개변수가 반복되거나, 다중 인증서가 포함되거나, 클라이언트 인증을 위해 두 개 이상의 방식이 사용되거나, 형식이 잘못되었습니다.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">인증된 클라이언트가 이 권한 부여 유형을 사용하도록 권한이 부여되지 않았습니다.</string>
+    <string name="oamms_oauth_access_denied_desc">리소스 소유자 또는 권한 부여 서버에서 요청을 거부했습니다.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">권한 부여 서버에서 이 메소드를 사용한 권한 부여 코드 획득이 지원되지 않습니다.</string>
+    <string name="oamms_oauth_server_error_desc">권한 부여 서버에서 요청 이행을 방해하는 예상치 않은 조건이 발견되었습니다.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">권한 부여 서버의 일시적인 오버로드 또는 유지 관리로 인해 서버가 현재 요청을 처리할 수 없습니다.</string>
+    <string name="oamms_oauth_invalid_scope_desc">요청된 범위가 부적합하거나, 알 수 없거나, 형식이 잘못되었거나, 리소스 소유자에 의해 부여된 범위를 초과합니다.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">권한 부여 유형이 권한 부여 서버에서 지원되지 않습니다.</string>
+    <string name="oamms_oauth_invalid_client_desc">클라이언트 인증을 실패했습니다.</string>
+    <string name="oamms_oauth_invalid_grant_desc">제공된 권한 부여 또는 새로 고침 토큰이 부적합하거나, 만료되었거나, 취소되었거나, 권한 부여 요청에 사용된 재지정 URI와 일치하지 않거나, 다른 클라이언트에 발급되었습니다.</string>
+    <string name="oamms_oauth_auth_url_invalid">OAuth 인증에 대한 끝점이 부적합합니다.</string>
+    <string name="oamms_oauth_client_assertion_invalid">클라이언트 검증이 부적합합니다. 인증 프로세스를 재시작하십시오.</string>
+    <string name="oamms_oauth_client_secret_invalid">이 권한 부여 유형의 경우 클라이언트 비밀이 널이거나 비워 둘 수 없습니다.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">클라이언트 등록에 대한 사전 권한 부여 코드가 부적합합니다.</string>
+    <string name="oamms_oauth_oam_token_request_failed">OAM 토큰 생성을 실패했습니다.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">사용자 검증 생성을 실패했습니다.</string>
+    <string name="oamms_oauth_user_assertion_null">사용자 검증이 널입니다.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">클라이언트 ID 인증서입니다.</string>
+    <string name="oamms_client_certificate_import_empty_password">비밀번호는 비워 둘 수 없습니다.</string>
+    <string name="oamms_client_certificate_import_invalid_password">부적합한 비밀번호입니다.</string>
+    <string name="oamms_client_certificate_import_user_canceled">사용자가 인증서 임포트를 취소했습니다.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">부적합한 인증서.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">SSL 상호 인증 중 제공된 클라이언트 별칭이 부적합합니다.</string>
+    <string name="oamms_client_certificate_dialog_title">클라이언트 ID를 선택하십시오.</string>
+    <string name="oamms_client_certificate_import_enter_password">인증서를 추출하려면 비밀번호를 입력하십시오.</string>
+    <string name="oamms_client_certificate_import_failed">인증서 임포트를 실패했습니다.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">인증서에 대해 인증 서버 %1$s이(가) 요청되었습니다. 사용 가능한 ID에서 인증서를 선택하십시오.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

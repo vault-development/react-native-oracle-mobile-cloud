@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-nl/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 11:29:25 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">SDK mobiel en sociaal voor Android</string>
+    <string name="oamms_processing">Bezig met verwerken...</string>
+    <string name="oamms_activity_excep">Activiteit kan niet NULL zijn. Registreer de huidige activiteit met behulp van OMMobileSecurityService#registerActivity(Activity), bij voorkeur in onResume().</string>
+    <string name="oamms_sec_profile_excep">Installatie-API is niet opgeroepen.</string>
+    <string name="oamms_servicename_null">Geen verificatieschema opgegeven.</string>
+    <string name="oamms_invalid_server_type">Het type verificatieserver is ongeldig.</string>
+    <string name="oamms_not_connect_to_server">Server is niet bereikbaar op het opgegeven adres. Neem voor hulp contact op met de beheerder.</string>
+    <string name="oamms_network_unavailable">Netwerk is niet beschikbaar. Controleer of u bent verbonden met internet en probeer het opnieuw.</string>
+    <string name="oamms_not_parse_response">De respons die vanaf de server is verstuurd, kan niet worden ontleed.</string>
+    <string name="oamms_certificate_not_accepted">Gebruiker heeft servercertificaat afgewezen.</string>
+    <string name="oamms_internal_error">Interne fout</string>
+    <string name="oamms_invalid_arguments_null_or_empty">De argumenten kunnen niet NULL of lege strings zijn.</string>
+    <string name="oamms_update_cookies_validation_failure">Het bijwerken van de cookiewaarde is mislukt omdat de cookieattributen niet kunnen worden gevalideerd.</string>
+    <string name="oamms_cookie_not_found">De bij te werken cookie bestaat niet.</string>
+    <string name="oamms_invalid_arguments_null">De argumenten kunnen niet NULL zijn.</string>
+    <string name="oamms_clear_username_password_failed">De gebruikersnaam en het wachtwoord die zijn opgeslagen in Embedded Webview kunnen niet worden verwijderd omdat de registratie van de activiteit in de tussentijd ongedaan is gemaakt.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Enkele van de HTTP-kopteksten die zijn opgegeven in de toewijzing die is doorgegeven als waarde voor de sleutel OM_PROP_CUSTOM_AUTH_HEADERS kunnen niet worden toegevoegd. Raadpleeg de documentatie voor de lijst met HTTP-kopteksten die niet zijn toegestaan.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Het aantal aangepaste verificatiekopteksten die zijn opgegeven als onderdeel van OM_PROP_CUSTOM_AUTH_HEADERS overschrijdt het maximumaantal (%1$d).</string>
+    <string name="oamms_application_not_available">De aangevraagde applicatie is niet beschikbaar.</string>
+    <string name="oamms_http_callback_null">Voor een asynchrone aanvraag kan de callback niet NULL zijn.</string>
+    <string name="oamms_http_res_url_null">HTTP-resource-URL kan niet NULL zijn.</string>
+    <string name="oamms_logout_in_progress">Er wordt momenteel uitgelogd. Probeer het over enige tijd opnieuw.</string>
+    <string name="oamms_logout_timed_out">Uitlogbewerking is mislukt omdat er een time-out voor de verbinding is opgetreden.</string>
+    <string name="oamms_logout_failure">Uitloggen is mislukt vanwege de volgende fout: %1$s.</string>
+    <string name="oamms_not_found">De aangevraagde URL bestaat niet. Neem voor hulp contact op met de beheerder.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Gebruikersnaam is vereist.</string>
+    <string name="oamms_identity_domain_required">Identiteitsdomein is vereist.</string>
+    <string name="oamms_username_identity_domain_required">Gebruikersnaam en identiteitsdomein zijn vereist.</string>
+    <string name="oamms_password_null">Wachtwoord is vereist.</string>
+    <string name="oamms_un_pwd_missing">Ongeldige gebruikersnaam of ongeldig wachtwoord</string>
+    <string name="oamms_un_pwd_tenant_missing">Ongeldige gebruikersnaam of ongeldig wachtwoord of identiteitsdomein</string>
+    <string name="oamms_chalg_missing">Controleantwoord is ongeldig.</string>
+    <string name="oamms_user_canceled">Gebruiker heeft inlogbewerking geannuleerd.</string>
+    <string name="oamms_auth_failed">Gebruikersverificatie is mislukt.</string>
+    <string name="oamms_auth_success">Gebruikersverificatie is gelukt.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Gebruiker</string>
+    <string name="oamms_username_hint">Gebruikersnaam invoeren</string>
+    <string name="oamms_password">Wachtwoord</string>
+    <string name="oamms_password_hint">Wachtwoord invoeren</string>
+    <string name="oamms_tenant">Identiteitsdomein</string>
+    <string name="oamms_tenant_hint">Identiteitsdomein invoeren</string>
+    <string name="oamms_login">Aanmelden</string>
+    <string name="oamms_cancel">Annuleren</string>
+    <string name="oamms_challenge_head">Aanvullende gegevens opgeven</string>
+    <string name="oamms_challenge_ques">Vraag</string>
+    <string name="oamms_challenge_ans">Antwoord</string>
+    <string name="oamms_challenge_answer_hint">Antwoord voor beveiligingsvraag invoeren</string>
+    <string name="oamms_submit">Versturen</string>
+    <string name="oamms_remember_username">Gebruikersnaam onthouden</string>
+    <string name="oamms_remember_credentials">Referenties onthouden</string>
+    <string name="oamms_auto_login">Automatisch inloggen</string>
+    <string name="oamms_back_button">Terug</string>
+    <string name="oamms_forward_button">Vooruit</string>
+    <string name="oamms_refresh_button">Vernieuwen</string>
+    <string name="oamms_cancel_button">Annuleren</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Configuratie-eigenschappen zijn niet gevonden in SharedPreferences.</string>
+    <string name="oamms_config_intent_uri_null">De doorgegeven intent bevat geen URL voor details serverconfiguratie.</string>
+    <string name="oamms_config_intent_uri_invalid">De doorgegeven intent bevat geen geldige URL voor details serverconfiguratie.</string>
+    <string name="oamms_could_not_retrieve_configuration">Configuratie-eigenschappen kunnen niet worden opgehaald uit SharedPreferences.</string>
+    <string name="oamms_could_not_store_configuration">Configuratie-eigenschappen kunnen niet worden opgeslagen in SharedPreferences.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Initialisatie van de SDK is mislukt omdat de vereiste servergegevens niet zijn opgegeven.</string>
+    <string name="oamms_setup_failed_ms">Applicatieprofiel kan niet worden gedownload vanwege ontbrekende configuratie.</string>
+    <string name="oamms_setup_failed_default">Applicatieprofiel of applicatienaam is ongeldig.</string>
+    <string name="oamms_setup_failed_oauth">OAuth-clientprofiel kan niet worden gedownload.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Applicatienaam is ongeldig.</string>
+    <string name="oamms_invalid_server_url">Server-URL is ongeldig.</string>
+    <string name="oamms_invalid_service_domain">Servicedomein is ongeldig.</string>
+    <string name="oamms_token_missing">Dit apparaat is niet geverifieerd bij de server voor mobiel en sociaal.</string>
+    <string name="oamms_no_user_token">De gebruiker is nog niet geverifieerd.</string>
+    <string name="oamms_no_rp_login_url">URL voor RP-verificatie kan niet worden geopend.</string>
+    <string name="oamms_req_failed">Verificatieaanvraag is mislukt voor gebruiker %1$s.</string>
+    <string name="oamms_req_denied">Aanvraag voor verificatie is geweigerd.</string>
+    <string name="oamms_oaam_denied_action">Verificatie geblokkeerd door de server. Neem voor hulp contact op met de beheerder.</string>
+    <string name="oamms_oaam_wipeout_action">Wisopdracht ontvangen van server. Gevoelige applicatiegegevens worden gewist.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Validatie van handtekening aanroepende applicatie is mislukt.</string>
+    <string name="oamms_sso_activity_missing">Er is geen SSO-applicatienaam opgegeven.</string>
+    <string name="oamms_init_SSOAgent_success">SSO-agentapplicatie is geïnitialiseerd.</string>
+    <string name="oamms_service_domain_not_same">Verificatie is geweigerd door de agent omdat het servicedomein niet overeenkomt.</string>
+    <string name="oamms_invalid_config">Clientapplicatie is niet gemachtigd voor deelname aan SSO.</string>
+    <string name="oamms_no_agent_avail">URL voor SSO-verificatie kan niet worden geopend.</string>
+    <string name="oamms_tokens_not_available">Token \'OAM_ID\' is niet beschikbaar. Controleer de serverinstellingen. Mogelijk is het verificatieschema niet ingesteld op \'MobileOAMAuthentication\'.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Ongeldige inlog-URL</string>
+    <string name="oamms_server_returned_error">Er is een fout %1$s aangetroffen op de server. Neem voor hulp contact op met de beheerder.</string>
+    <string name="oamms_forbidden">De gebruiker is niet bevoegd.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Time-out bij verificatie</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">De aangepaste verificatiepagina bevat geen referentieveld.</string>
+    <string name="oamms_kba_html_fields_invalid">De aangepaste strenge-verificatiepagina bevat geen referentieveld.</string>
+    <string name="oamms_html_file_exception">Het aangepaste HTML-bestand kan niet NULL zijn.</string>
+    <string name="oamms_invalid_html_file">Het aangepaste HTML-bestandspad is van een ongeldig type.</string>
+    <string name="oamms_remote_html_file">De aangepaste HTML-pagina mag geen externe pagina zijn. De SDK ondersteunt alleen het laden van een lokale HTML-pagina.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Dit certificaat is niet afkomstig van een vertrouwde instantie.</string>
+    <string name="oamms_ssl_security_certificate">Beveiligingscertificaat</string>
+    <string name="oamms_ssl_issued_to">Onderwerp:</string>
+    <string name="oamms_ssl_common_name">Algemene naam:</string>
+    <string name="oamms_ssl_organization">Organisatie:</string>
+    <string name="oamms_ssl_organization_unit">Organisatie-eenheid:</string>
+    <string name="oamms_ssl_issued_by">Uitgever:</string>
+    <string name="oamms_ssl_validity">Geldigheid:</string>
+    <string name="oamms_ssl_issued_on">Begindatum:</string>
+    <string name="oamms_ssl_expires_on">Einddatum:</string>
+    <string name="oamms_security_warning">Beveiligingswaarschuwing</string>
+    <string name="oamms_ssl_continue">Accepteren</string>
+    <string name="oamms_ssl_view_certificate">Details</string>
+    <string name="oamms_ssl_message">Er zijn problemen met het beveiligingscertificaat van deze URL.</string>
+    <string name="oamms_serial_number">Serienummer:</string>
+    <string name="oamms_fingerprint">Vingerafdrukken:</string>
+    <string name="oamms_sha_fp">SHA1-vingerafdruk:</string>
+    <string name="oamms_md5_fp">MD5-vingerafdruk:</string>
+    <string name="oamms_ssl_alert_icon">Waarschuwingspictogram</string>
+    <string name="oamms_import_certificate_failure">Certificaat kan niet worden geïnstalleerd.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth-verificatie is mislukt.</string>
+    <string name="oamms_oauth_invalid_state">Er is een ongeldige staat teruggehaald uit de respons.</string>
+    <string name="oamms_oauth_context_invalid">Er is geen geldig toegangstoken aanwezig voor de opgegeven aanvraag. Verifieer met het juiste bereik.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Er ontbreekt een vereiste parameter in de aanvraag, de aanvraag bevat een niet-ondersteunde parameterwaarde, er wordt een parameter herhaald, er zijn meerdere referenties, er wordt meer dan één mechanisme voor het verifiëren van de client gebruikt of er is een andere onjuistheid.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">De geverifieerde client is niet geautoriseerd om dit autorisatietoekenningstype te gebruiken.</string>
+    <string name="oamms_oauth_access_denied_desc">De aanvraag is geweigerd door de resource-eigenaar of autorisatieserver.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Het verkrijgen van een autorisatiecode met behulp van deze methode wordt niet ondersteund door de autorisatieserver.</string>
+    <string name="oamms_oauth_server_error_desc">De autorisatieserver heeft een onverwachte toestand aangetroffen waardoor de aanvraag niet kan worden uitgevoerd.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">De autorisatieserver is op het moment niet in staat de aanvraag uit te voeren, vanwege een tijdelijke overbelasting of vanwege onderhoud van de server.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Het aangevraagde bereik is ongeldig, onbekend, heeft een onjuiste indeling of overschrijdt het bereik dat is toegekend door de resource-eigenaar.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Het autorisatietoekenningstype wordt niet ondersteund door de autorisatieserver.</string>
+    <string name="oamms_oauth_invalid_client_desc">Clientverificatie is mislukt.</string>
+    <string name="oamms_oauth_invalid_grant_desc">De opgegeven autorisatietoekenning of het opgegeven vernieuwingstoken is ongeldig, verlopen, ingetrokken, komt niet overeen met de omleidings-URI gebruikt in de autorisatieaanvraag of is verstrekt aan een andere client.</string>
+    <string name="oamms_oauth_auth_url_invalid">Ongeldige eindpunten voor OAuth-verificatie</string>
+    <string name="oamms_oauth_client_assertion_invalid">Ongeldige clientverklaring. Start het verificatieproces opnieuw.</string>
+    <string name="oamms_oauth_client_secret_invalid">Clientgeheim mag niet NULL of leeg zijn voor dit toekenningstype.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Pre-AuthZ-code voor clientregistratie is ongeldig.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Maken van OAM-tokens is mislukt.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Maken van gebruikersassertion is mislukt.</string>
+    <string name="oamms_oauth_user_assertion_null">Gebruikersassertion is NULL.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Certificaat clientidentiteit</string>
+    <string name="oamms_client_certificate_import_empty_password">Wachtwoord mag niet leeg zijn.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Ongeldig wachtwoord</string>
+    <string name="oamms_client_certificate_import_user_canceled">Gebruiker heeft de certificaatimport geannuleerd.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Ongeldig certificaat.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Ongeldige clientalias aangeboden tijdens wederzijdse SSL-verificatie.</string>
+    <string name="oamms_client_certificate_dialog_title">Kies de clientidentiteit.</string>
+    <string name="oamms_client_certificate_import_enter_password">Voer het wachtwoord in om het certificaat te extraheren.</string>
+    <string name="oamms_client_certificate_import_failed">Certificaatimport is mislukt.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">De verificatieserver %1$s heeft om een certificaat gevraagd. Selecteer een certificaat in de beschikbare identiteiten.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

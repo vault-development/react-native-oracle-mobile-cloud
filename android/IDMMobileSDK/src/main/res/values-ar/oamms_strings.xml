@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-ar/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 04:54:07 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">مجموعة SDK لخدمة Mobile and Social  لـ Android</string>
+    <string name="oamms_processing">جارٍ المعالجة...</string>
+    <string name="oamms_activity_excep">لا يمكن ترك النشاط خاليًا. قم بتسجيل النشاط الحالي باستخدام OMMobileSecurityService#registerActivity(Activity) والمفضل أن يكون في onResume().</string>
+    <string name="oamms_sec_profile_excep">لم يتم استدعاء واجهة API للإعداد.</string>
+    <string name="oamms_servicename_null">لم يتم تحديد مخطط تصديق.</string>
+    <string name="oamms_invalid_server_type">نوع خادم التصديق غير صالح.</string>
+    <string name="oamms_not_connect_to_server">لا يمكن الوصول إلى الخادم في العنوان المحدد. اتصل بالمسئول لطلب المساعدة.</string>
+    <string name="oamms_network_unavailable">الشبكة غير متاحة. تأكد من اتصالك بالإنترنت وحاول مرة أخرى.</string>
+    <string name="oamms_not_parse_response">تعذر تحليل الاستجابة المرسلة من الخادم.</string>
+    <string name="oamms_certificate_not_accepted">رفض المستخدم شهادة الخادم.</string>
+    <string name="oamms_internal_error">خطأ داخلي</string>
+    <string name="oamms_invalid_arguments_null_or_empty">الوسيطة (الوسائط) لا يمكن أن تكون سلسلة خالية أو فارغة</string>
+    <string name="oamms_update_cookies_validation_failure">فشل تحديث قيمة ملف تعريف الارتباط لتعذر تدقيق سمات ملف تعريف الارتباط</string>
+    <string name="oamms_cookie_not_found">ملف تعريف الارتباط المطلوب تحديثه غير موجود</string>
+    <string name="oamms_invalid_arguments_null">لا يمكن أن تكون الوسيطة (الوسائط) خالية</string>
+    <string name="oamms_clear_username_password_failed">تعذر حذف اسم المستخدم وكلمة السر المخزنين في Embedded Webview حيث تم إلغاء ذلك النشاط في تلك الأثناء.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">بعض رؤوس HTTP المحددة في التخطيط وتم تمريرها كقيمة مقابل المفتاح OM_PROP_CUSTOM_AUTH_HEADERS لا يمكن إضافتها. راجع الوثائق للاطلاع على قائمة برؤوس HTTP غير المسموح بها.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">عدد رؤوس التصديق المخصصة والتي تم تحديدها كجزء من OM_PROP_CUSTOM_AUTH_HEADERS تتجاوز الحد الأقصى للعدد (%1$d).</string>
+    <string name="oamms_application_not_available">التطبيق المطلوب غير متاح.</string>
+    <string name="oamms_http_callback_null">بالنسبة لطلب غير متزامن، لا يمكن ترك الاستدعاء خاليًا</string>
+    <string name="oamms_http_res_url_null">يجب عدم ترك عنوان URL لمورد Http خالٍ</string>
+    <string name="oamms_logout_in_progress">الخروج قيد التنفيذ. حاول مرة أخرى بعد قليل.</string>
+    <string name="oamms_logout_timed_out">فشلت عملية الخروج لانتهاء الاتصال.</string>
+    <string name="oamms_logout_failure">فشل الخروج لحدوث الخطأ التالي: %1$s</string>
+    <string name="oamms_not_found">عنوان URL المطلوب غير موجود. اتصل بالمسئول لطلب المساعدة.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">اسم المستخدم مطلوب.</string>
+    <string name="oamms_identity_domain_required">نطاق الهوية مطلوب.</string>
+    <string name="oamms_username_identity_domain_required">اسم المستخدم ونطاق الهوية مطلوبان.</string>
+    <string name="oamms_password_null">مطلوب كلمة السر</string>
+    <string name="oamms_un_pwd_missing">اسم المستخدم أو كلمة السر غير صالح.</string>
+    <string name="oamms_un_pwd_tenant_missing">اسم المستخدم أو كلمة السر أو نطاق الهوية غير صالح.</string>
+    <string name="oamms_chalg_missing">إجابة التحقق من الهوية غير صالحة.</string>
+    <string name="oamms_user_canceled">قام المستخدم بإلغاء عملية الدخول الحالية.</string>
+    <string name="oamms_auth_failed">فشلت التصديق على المستخدم.</string>
+    <string name="oamms_auth_success">تمت مصادقة المستخدم بنجاح.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">اسم المستخدم</string>
+    <string name="oamms_username_hint">إدخال اسم مستخدم</string>
+    <string name="oamms_password">كلمة السر</string>
+    <string name="oamms_password_hint">أدخل كلمة السر</string>
+    <string name="oamms_tenant">نطاق الهوية</string>
+    <string name="oamms_tenant_hint">إدخال نطاق هوية</string>
+    <string name="oamms_login">تسجيل الدخول</string>
+    <string name="oamms_cancel">إلغاء</string>
+    <string name="oamms_challenge_head">توفير معلومات إضافية</string>
+    <string name="oamms_challenge_ques">السؤال</string>
+    <string name="oamms_challenge_ans">الإجابة</string>
+    <string name="oamms_challenge_answer_hint">إدخال إجابات على أسئلة التأمين</string>
+    <string name="oamms_submit">تقديم</string>
+    <string name="oamms_remember_username">تذكر اسم المستخدم</string>
+    <string name="oamms_remember_credentials">تذكر بيانات الصلاحية</string>
+    <string name="oamms_auto_login">الدخول التلقائي</string>
+    <string name="oamms_back_button">للخلف</string>
+    <string name="oamms_forward_button">للأمام</string>
+    <string name="oamms_refresh_button">تجديد</string>
+    <string name="oamms_cancel_button">إلغاء</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">خصائص التكوين غير موجودة في SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">الهدف الذي تم تمريره لا يشتمل على معرف URI لبيانات تكوين الخادم.</string>
+    <string name="oamms_config_intent_uri_invalid">الهدف الذي تم تمريره لا يشتمل على معرف URI صالح لبيانات تكوين الخادم.</string>
+    <string name="oamms_could_not_retrieve_configuration">تعذر استرجاع خصائص التكوين من SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">تعذر تخزين خصائص التكوين في SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">فشلت تهيئة SDK لأنه لم يتم إدخال \tمعلومات الخادم المطلوبة.</string>
+    <string name="oamms_setup_failed_ms">لا يمكن تنزيل ملف تعريف التطبيق بسبب عدم وجود تكوين</string>
+    <string name="oamms_setup_failed_default">ملف تعريف التطبيق أو اسم التطبيق غير صالح</string>
+    <string name="oamms_setup_failed_oauth">لا يمكن تنزيل ملف تعريف عميل OAuth.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">اسم التطبيق غير صالح.</string>
+    <string name="oamms_invalid_server_url">عنوان Url للخادم غير صالح.</string>
+    <string name="oamms_invalid_service_domain">نطاق الخدمة غير صالح.</string>
+    <string name="oamms_token_missing">لم يتم التصديق على هذا الجهاز عبر خادم Mobile and Social حتى الآن.</string>
+    <string name="oamms_no_user_token">لم يتم التصديق على المستخدم حتى الآن.</string>
+    <string name="oamms_no_rp_login_url">يتعذر فتح عنوان URL لتصديق حماية التوجيه.</string>
+    <string name="oamms_req_failed">فشل طلب التصديق على المستخدم %1$s.</string>
+    <string name="oamms_req_denied">تم رفض طلب التصديق.</string>
+    <string name="oamms_oaam_denied_action">التصديق محظور بواسطة الخادم. اتصل بالمسئول لطلب المساعدة.</string>
+    <string name="oamms_oaam_wipeout_action">تم تلقي أمر مسح من الخادم. تتم إزالة بيانات التطبيق الحساسة.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">فشل تدقيق توقيع تطبيق الاستدعاء.</string>
+    <string name="oamms_sso_activity_missing">لم يتم إدخال اسم تطبيق SSO.</string>
+    <string name="oamms_init_SSOAgent_success">تمت تهيئة تطبيق وكيل SSO بنجاح.</string>
+    <string name="oamms_service_domain_not_same">تم رفض التصديق بواسطة الوكيل بسبب عدم تطابق نطاق الخدمة.</string>
+    <string name="oamms_invalid_config">تطبيق العميل غير معتمد للمشاركة في تسجيل الدخول الموحد.</string>
+    <string name="oamms_no_agent_avail">يتعذر فتح عنوان URL لتصديق تسجيل الدخول الموحد.</string>
+    <string name="oamms_tokens_not_available">مقطع OAM_ID غير متاح. تحقق من إعدادات الخادم. أحد أوجه سوء التكوين الممكنة هو عدم تعيين مخطط التصديق كـ MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">عنوان URL للدخول غير صالح.</string>
+    <string name="oamms_server_returned_error">تعرض الخادم للخطأ %1$s. اتصل بالمسئول لطلب المساعدة.</string>
+    <string name="oamms_forbidden">المستخدم غير معتمَد.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">انتهت مهلة التصديق.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">صفحة التصديق المخصصة لا تشتمل على حقل بيانات الصلاحية.</string>
+    <string name="oamms_kba_html_fields_invalid">صفحة التصديق الفعال المخصصة لا تشتمل على حقل بيانات الصلاحية.</string>
+    <string name="oamms_html_file_exception">لا يمكن ترك ملف HTML المخصص خاليًا.</string>
+    <string name="oamms_invalid_html_file">مسار ملف HTML المخصص من نوع غير صالح</string>
+    <string name="oamms_remote_html_file">لا يمكن أن تكون صفحة HTML المخصصة صفحة بعيدة، فحزمة SDK لا تدعم سوى صفحة HTML المحلية المطلوب تحميلها</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">هذه الشهادة ليست من جهة موثوقة.</string>
+    <string name="oamms_ssl_security_certificate">شهادة التأمين</string>
+    <string name="oamms_ssl_issued_to">الموضوع:</string>
+    <string name="oamms_ssl_common_name">الاسم العام:</string>
+    <string name="oamms_ssl_organization">التنظيم:</string>
+    <string name="oamms_ssl_organization_unit">الوحدة التنظيمية:</string>
+    <string name="oamms_ssl_issued_by">جهة الإصدار:</string>
+    <string name="oamms_ssl_validity">الصلاحية:</string>
+    <string name="oamms_ssl_issued_on">تاريخ البداية:</string>
+    <string name="oamms_ssl_expires_on">تاريخ النهاية:</string>
+    <string name="oamms_security_warning">تحذير تأميني</string>
+    <string name="oamms_ssl_continue">قبول</string>
+    <string name="oamms_ssl_view_certificate">البيانات</string>
+    <string name="oamms_ssl_message">توجد مشكلات في شهادة التأمين الخاصة بعنوان URL هذا.</string>
+    <string name="oamms_serial_number">الرقم المسلسل:</string>
+    <string name="oamms_fingerprint">البصمات:</string>
+    <string name="oamms_sha_fp">بصمة SHA1:</string>
+    <string name="oamms_md5_fp">بصمة MD5:</string>
+    <string name="oamms_ssl_alert_icon">أيقونة التنبيه</string>
+    <string name="oamms_import_certificate_failure">يتعذر تثبيت الشهادة.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">فشل تصديق OAuth.</string>
+    <string name="oamms_oauth_invalid_state">تمت استعادة حالة غير صالحة من الاستجابة.</string>
+    <string name="oamms_oauth_context_invalid">لا يوجد مقطع وصول صالح للطلب المحدد. يلزم التصديق في المجال الملائم.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">يفتقر الطلب لمعلمة مطلوبة، أو يشتمل على قيمة معلمة غير مدعومة، أو يتضمن معلمة مكررة، أو يشتمل على بيانات صلاحية متعددة، أو يستخدم أكثر من آلية في تصديق العميل، أو هو سيء التكوين بصورة أخرى.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">عميل التصديق غير معتمد لاستخدام نوع منح الاعتماد.</string>
+    <string name="oamms_oauth_access_denied_desc">مالك المورد أو خادم الاعتماد رفض الطلب.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">خادم الاعتماد لا يدعم الحصول على رمز اعتماد بهذا الأسلوب.</string>
+    <string name="oamms_oauth_server_error_desc">تعرض خادم الاعتماد لظرف غير متوقع حال دون تنفيذ الطلب.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">خادم الاعتماد غير قادر حاليًا على التعامل مع الطلب نتيجة لحالة مؤقتة من التحميل الزائد أو إجراء أعمال صيانة على الخادم.</string>
+    <string name="oamms_oauth_invalid_scope_desc">مجال الطلب غير صالح أو غير معروف أو سيء التكوين أو يتجاوز النطاق الممنوح من جانب مالك المورد.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">نوع منح الاعتماد غير مدعوم بواسطة خادم الاعتماد.</string>
+    <string name="oamms_oauth_invalid_client_desc">فشل التصديق على العميل.</string>
+    <string name="oamms_oauth_invalid_grant_desc">منح الاعتماد المقدم أو مقطع التجديد غير صالح أو منتهى الصلاحية أو تم سحبه أو غير مطابق لمعرف URI لإعادة التوجيه المستخدم في طلب الاعتماد، أو تم إصداره لعميل آخر.</string>
+    <string name="oamms_oauth_auth_url_invalid">نقاط نهاية غير صالحة لتصديق OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">توكيد العميل غير صالح. الرجاء إعادة تشغيل عملية التصديق.</string>
+    <string name="oamms_oauth_client_secret_invalid">لا يمكن أن يكون سر العميل خاليًا أو فارغًا لنوع المنح هذا.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">رمز AuthZ السابق لتسجيل العميل غير صالح.</string>
+    <string name="oamms_oauth_oam_token_request_failed">فشل تكوين مقاطع OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">فشل تكوين توكيد المستخدم.</string>
+    <string name="oamms_oauth_user_assertion_null">توكيد المستخدم خالٍ.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">شهادة هوية العميل.</string>
+    <string name="oamms_client_certificate_import_empty_password">لا يمكن أن تكون كلمة السر فارغة.</string>
+    <string name="oamms_client_certificate_import_invalid_password">كلمة السر غير صالحة.</string>
+    <string name="oamms_client_certificate_import_user_canceled">ألغى المستخدم استيراد الشهادة.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">شهادة غير صالحة.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">تم تقديم اسم بديل للعميل غير صالح خلال تصديق SSL المتبادل.</string>
+    <string name="oamms_client_certificate_dialog_title">اختر هوية عميل.</string>
+    <string name="oamms_client_certificate_import_enter_password">أدخل كلمة السر لاستخراج الشهادة.</string>
+    <string name="oamms_client_certificate_import_failed">فشل استيراد الشهادة.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">خادم التصديق %1$s طلب شهادة. حدد شهادة من الهويات المتوفرة.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

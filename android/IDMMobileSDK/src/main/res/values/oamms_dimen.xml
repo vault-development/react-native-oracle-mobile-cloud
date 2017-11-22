@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Header: idmmobile/src/Android/IDMMobileSDK/res/values/dimen.xml /main/5 2014/08/24 09:04:32 ajulka Exp $ -->
+
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     dimen.xml
+
+   DESCRIPTION
+     Contains the dimensions being used by the SDK layout files
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+   ayjindal    03/29/14 - Updated dimensions for icon size and address bar margin.
+   arunpras    09/02/13 - Added dimensions related to navigation bar shown in case of Embedded Browser
+
+-->
+<resources>
+	<dimen name="oamms_seperator">1dp</dimen>
+	<dimen name="oamms_border">5dp</dimen>
+	<dimen name="oamms_ssl_header_space">5dp</dimen>
+	
+	<dimen name="oamms_embedded_browser_address_bar_margin">4dp</dimen>
+	<dimen name="oamms_embedded_browser_navigation_bar_icon_size">30dp</dimen>
+</resources>

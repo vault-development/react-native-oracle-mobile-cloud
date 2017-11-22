@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2012, 2014, Oracle and/or its affiliates. All rights reserved.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/oamms_background_gray" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/oamms_background_gray"
+        android:padding="5dp"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/indicator_input_error"
+            android:drawablePadding="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/usernamelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/errorMsg"
+            android:contentDescription="@string/oamms_username"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/oamms_username"
+            android:textColor="@android:color/darker_gray" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamelbl"
+            android:background="@drawable/text_round_corner"
+            android:hint="@string/oamms_username_hint"
+            android:inputType="text" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/passwordlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:contentDescription="@string/oamms_password"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/oamms_password"
+            android:textColor="@android:color/darker_gray" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordlbl"
+            android:background="@drawable/text_round_corner"
+            android:hint="@string/oamms_password_hint"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tenantlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:contentDescription="@string/oamms_tenant"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/oamms_tenant"
+            android:textColor="@android:color/darker_gray" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/tenantVal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenantlbl"
+            android:background="@drawable/text_round_corner"
+            android:hint="@string/oamms_tenant_hint"
+            android:inputType="text" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/rememberCredLyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tenantVal"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:paddingTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/autoLoginCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/oamms_auto_login"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/rememberCredentialsCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoLoginCB"
+                android:text="@string/oamms_remember_credentials"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/rememberUsernameCB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rememberCredentialsCB"
+                android:text="@string/oamms_remember_username"
+                android:textColor="@android:color/darker_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonLyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rememberCredLyt"
+            android:gravity="center_horizontal"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_round_corner"
+                android:text="@string/oamms_login"
+                android:textColor="@android:color/white" >
+            </Button>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/login"
+                android:background="@drawable/button_round_corner"
+                android:text="@string/oamms_cancel"
+                android:textColor="@android:color/white" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/progressLyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLyt"
+            android:gravity="center_horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/processing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/progressBar1"
+                android:gravity="center"
+                android:text="@string/oamms_processing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

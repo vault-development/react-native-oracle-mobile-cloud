@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-tr/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/10 04:40:00 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Android için Mobile and Social SDK</string>
+    <string name="oamms_processing">İşleniyor...</string>
+    <string name="oamms_activity_excep">Etkinlik boş olamaz. Geçerli etkinliği tercihen onResume() içinde OMMobileSecurityService#registerActivity(Activity) kullanarak kaydedin.</string>
+    <string name="oamms_sec_profile_excep">Kurulum API\'si çağrılmadı.</string>
+    <string name="oamms_servicename_null">Kimlik doğrulama şeması belirtilmedi.</string>
+    <string name="oamms_invalid_server_type">Kimlik doğrulama sunucusu türü geçersiz.</string>
+    <string name="oamms_not_connect_to_server">Sunucu belirtilen adreste erişilebilir değil. Yardım için yöneticiye başvurun.</string>
+    <string name="oamms_network_unavailable">Ağlar kullanılamıyor. Internet\'e bağlı olduğunuzdan emin olun ve tekrar deneyin.</string>
+    <string name="oamms_not_parse_response">Sunucudan gönderilen yanıt ayrıştırılamadı.</string>
+    <string name="oamms_certificate_not_accepted">Kullanıcı, sunucu sertifikasını reddetti.</string>
+    <string name="oamms_internal_error">Dahili Hata</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Bağımsız değişkenler null veya boş dize olamaz</string>
+    <string name="oamms_update_cookies_validation_failure">Tanımlama bilgisi özellikleri doğrulanamadığından tanımlama bilgisi değeri güncellenemedi</string>
+    <string name="oamms_cookie_not_found">Güncellenecek tanımlama bilgisi yok</string>
+    <string name="oamms_invalid_arguments_null">Bağımsız değişkenler null (boş) olamaz</string>
+    <string name="oamms_clear_username_password_failed">Aralarındaki etkinlik kaydı silindiğinden katıştırılmış Web Görünümünde depolanan kullanıcı adı ve parola silinemedi</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Eşlemede belirtilen, OM_PROP_CUSTOM_AUTH_HEADERS anahtarına göre değer olarak iletilen HTTP başlıklarından bazıları eklenemiyor. İzin verilmeyen HTTP başlıklarının listesi için dokümanlara bakın.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">OM_PROP_CUSTOM_AUTH_HEADERS anahtarının parçası olarak belirtilen özel kimlik doğrulama başlıklarının sayısı maksimum sayıyı (%1$d) aştı.</string>
+    <string name="oamms_application_not_available">İstenen uygulama kullanılamıyor.</string>
+    <string name="oamms_http_callback_null">Eşzamansız isteği geri çağırma null (boş) olamaz</string>
+    <string name="oamms_http_res_url_null">Http Kaynak URL\'si null (boş) olamaz</string>
+    <string name="oamms_logout_in_progress">Oturumu kapatma devam ediyor. Bir süre sonra tekrar deneyin.</string>
+    <string name="oamms_logout_timed_out">Bağlantı zaman aşımına uğradığından oturum kapatma işlemi başarısız oldu.</string>
+    <string name="oamms_logout_failure">Şu hata nedeniyle oturum kapatılamadı: %1$s</string>
+    <string name="oamms_not_found">İstenen URL mevcut değil. Yardım için yöneticiye başvurun.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Kullanıcı adı gereklidir.</string>
+    <string name="oamms_identity_domain_required">Kimlik Etki Alanı gereklidir.</string>
+    <string name="oamms_username_identity_domain_required">Kullanıcı adı ve kimlik etki alanı gereklidir.</string>
+    <string name="oamms_password_null">Parola gerekli.</string>
+    <string name="oamms_un_pwd_missing">Geçersiz kullanıcı adı veya parola.</string>
+    <string name="oamms_un_pwd_tenant_missing">Kullanıcı adı, parola veya kimlik etki alanı geçersiz.</string>
+    <string name="oamms_chalg_missing">Parola hatırlatma yanıtı geçersiz.</string>
+    <string name="oamms_user_canceled">Oturum açma işlemi kullanıcı tarafından iptal edildi.</string>
+    <string name="oamms_auth_failed">Kullanıcı kimlik doğrulaması gerçekleştirilemedi.</string>
+    <string name="oamms_auth_success">Kullanıcı kimliği doğrulandı.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Kullanıcı Adı</string>
+    <string name="oamms_username_hint">Kullanıcı adı girin</string>
+    <string name="oamms_password">Parola</string>
+    <string name="oamms_password_hint">Parola girin</string>
+    <string name="oamms_tenant">Kimlik Etki Alanı</string>
+    <string name="oamms_tenant_hint">Kimlik etki alanını girin</string>
+    <string name="oamms_login">Oturum aç</string>
+    <string name="oamms_cancel">İptal</string>
+    <string name="oamms_challenge_head">Ek bilgi sağlayın</string>
+    <string name="oamms_challenge_ques">Soru</string>
+    <string name="oamms_challenge_ans">Yanıt</string>
+    <string name="oamms_challenge_answer_hint">Güvenlik sorusu için yanıt girin</string>
+    <string name="oamms_submit">Gönder</string>
+    <string name="oamms_remember_username">Kullanıcı Adını Hatırla</string>
+    <string name="oamms_remember_credentials">Kimlik Bilgilerini Hatırla</string>
+    <string name="oamms_auto_login">Otomatik Oturum Açma</string>
+    <string name="oamms_back_button">Geri</string>
+    <string name="oamms_forward_button">İleri</string>
+    <string name="oamms_refresh_button">Yenile</string>
+    <string name="oamms_cancel_button">İptal</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Konfigürasyon nitelikleri SharedPreferences içinde bulunamadı</string>
+    <string name="oamms_config_intent_uri_null">İletilen eğilim, sunucu konfigürasyon detayları için URI içermiyor.</string>
+    <string name="oamms_config_intent_uri_invalid">İletilen eğilim, sunucu konfigürasyon detayları için geçerli bir URI içermiyor.</string>
+    <string name="oamms_could_not_retrieve_configuration">SharedPreferences öğesinden konfigürasyon nitelikleri alınamadı</string>
+    <string name="oamms_could_not_store_configuration">Konfigürasyon neitelikleri SharedPreferences içinde depolanamadı</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">SDK başlatılamadı; gereken sunucu bilgileri sağlanmadı.</string>
+    <string name="oamms_setup_failed_ms">Eksik konfigürasyon nedeniyle uygulama profili indirilemiyor</string>
+    <string name="oamms_setup_failed_default">Uygulama profili veya uygulama adı geçersiz</string>
+    <string name="oamms_setup_failed_oauth">OAUTH istemci profili indirilemiyor</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Uygulama adı geçersiz.</string>
+    <string name="oamms_invalid_server_url">Sunucu Url\'si geçersiz.</string>
+    <string name="oamms_invalid_service_domain">Hizmet Etki Alanı geçersiz.</string>
+    <string name="oamms_token_missing">Bu aygıtın kimliği Mobile and Social Server ile henüz doğrulanmadı.</string>
+    <string name="oamms_no_user_token">Kullanıcı kimliği henüz doğrulanmadı.</string>
+    <string name="oamms_no_rp_login_url">RP Kimlik Doğrulama URL\'si açılamadı.</string>
+    <string name="oamms_req_failed">%1$s kullanıcısı için kimlik doğrulama isteği başarısız oldu.</string>
+    <string name="oamms_req_denied">Kimlik doğrulama isteği geri çevrildi.</string>
+    <string name="oamms_oaam_denied_action">Kimlik doğrulaması sunucu tarafından engellendi. Yardım için yöneticiye başvurun.</string>
+    <string name="oamms_oaam_wipeout_action">Sunucudan temizleme komutu alındı. Duyarlı uygulama verileri temizleniyor.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Çağırma uygulaması imzası doğrulanamadı.</string>
+    <string name="oamms_sso_activity_missing">SSO Uygulaması adı sağlanmadı.</string>
+    <string name="oamms_init_SSOAgent_success">SSO Aracı uygulaması başarıyla başlatıldı.</string>
+    <string name="oamms_service_domain_not_same">Hizmet etki alanı eşleşmediğinden kimlik doğrulama, aracı tarafından reddedildi.</string>
+    <string name="oamms_invalid_config">İstemci uygulaması SSO\'ya dahil olma yetkisine sahip değil.</string>
+    <string name="oamms_no_agent_avail">SSO Kimlik Doğrulama URL\'si açılamadı.</string>
+    <string name="oamms_tokens_not_available">OAM_ID belirteci kullanılamıyor. Sunucu ayarlarını kontrol edin. Olası hatalı konfigürasyon: kimlik doğrulama şeması MobileOAMAuthentication olarak ayarlanmamış olabilir.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Otrm açma URL\'si geçersiz.</string>
+    <string name="oamms_server_returned_error">Sunucuda bir hata oluştu: %1$s Yardım için yöneticiye başvurun.</string>
+    <string name="oamms_forbidden">Kullanıcı yetkili değil.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Kimlik dğrlms zaman aşımına uğradı.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Özel kimlik doğrulama sayfası kimlik bilgileri alanı içermiyor.</string>
+    <string name="oamms_kba_html_fields_invalid">Özelleştirilmiş güçlü kimlik doğrulama sayfası kimlik bilgileri alanı içermiyor.</string>
+    <string name="oamms_html_file_exception">Özel HTML dosyası boş olamaz.</string>
+    <string name="oamms_invalid_html_file">Özel HTML dosyasının dizin yolu türü geçersiz.</string>
+    <string name="oamms_remote_html_file">Özel HTML sayfası bir uzak sayfa olamaz; SDK sadece yerel HTML sayfası yüklenmesini destekler</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Bu sertifika güvenilir bir kuruma ait değil.</string>
+    <string name="oamms_ssl_security_certificate">Güvenlik Sertifikası</string>
+    <string name="oamms_ssl_issued_to">Konu:</string>
+    <string name="oamms_ssl_common_name">Ortak ad:</string>
+    <string name="oamms_ssl_organization">Organizasyon:</string>
+    <string name="oamms_ssl_organization_unit">Organizasyon Birimi:</string>
+    <string name="oamms_ssl_issued_by">Yayınlayan:</string>
+    <string name="oamms_ssl_validity">Geçerlilik:</string>
+    <string name="oamms_ssl_issued_on">Başlangıç Tarihi:</string>
+    <string name="oamms_ssl_expires_on">Bitiş Tarihi:</string>
+    <string name="oamms_security_warning">Güvenlik Uyarısı</string>
+    <string name="oamms_ssl_continue">Kabul Et</string>
+    <string name="oamms_ssl_view_certificate">Detaylar</string>
+    <string name="oamms_ssl_message">Bu URL\'nin güvenlik sertifikasıyla ilgili sorunlar var.</string>
+    <string name="oamms_serial_number">Seri Numarası:</string>
+    <string name="oamms_fingerprint">Parmak İzi:</string>
+    <string name="oamms_sha_fp">SHA1 Parmak İzi:</string>
+    <string name="oamms_md5_fp">MD5 Parmak İzi:</string>
+    <string name="oamms_ssl_alert_icon">Uyarı Simgesi</string>
+    <string name="oamms_import_certificate_failure">Sertifika yüklenemiyor.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth Kmlk Doğrulaması başarısız oldu.</string>
+    <string name="oamms_oauth_invalid_state">Yanıttan geçersiz durumu giderildi.</string>
+    <string name="oamms_oauth_context_invalid">Belirtilen istek için geçerli bir erişim belirteci yok. En uygun kapsamla kimlik doğrulaması yapın.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">İstek için gerekli bir parametre eksik, desteklenmeyen bir parametre değeri içeriyor, bir parametre yineleniyor, birden çok kimlik bilgisi mevcut, istemcinin kimlik doğrulaması için birden fazla mekanizma kullanıyor veya başka bir hata oluştu.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Kimliği doğrulanan istemci bu yetki verme tipini kullanma yetkisine sahip değil.</string>
+    <string name="oamms_oauth_access_denied_desc">Kaynak sahibi veya yetkilendirme sunucusu isteği geri çevirdi.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Yetkilendirme sunucusu bu yöntemi kullanarak yetki kodu temin etmeyi desteklemiyor.</string>
+    <string name="oamms_oauth_server_error_desc">Yetkilendirme sunucusu, isteği karşılamasını engelleyen beklenmeyen bir durumla karşılaştı.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Yetkilendirme sunucusu geçicici olarak aşırı yüklendiğinden veya bakımda olduğundan şu an isteği işleyemiyor.</string>
+    <string name="oamms_oauth_invalid_scope_desc">İstenen kapsam geçersiz, bilinmiyor, hatalı veya kaynak sahibi tarafından yetki verilen kapsamı aşıyor.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Yetki verme tipi yetkilendirme sunucusu tarafından desteklenmiyor.</string>
+    <string name="oamms_oauth_invalid_client_desc">İstemci kimlik doğrulaması başarısız oldu.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Sağlanan yetki verme veya yenileme belirteci geçersiz, süresi dolmuş, kaldırılmış, yetki isteğinde kullanılan tekrar yönlendirme URI\'si ile eşleşmiyor veya başka bir istemci için düzenlenmiş.</string>
+    <string name="oamms_oauth_auth_url_invalid">OAuth yetkisi için geçersiz uç noktalar.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Geçersiz istemci bildirimi. Yetki işlemini tekrar başlatın.</string>
+    <string name="oamms_oauth_client_secret_invalid">İstemci şifresi bu devir tipi için boşluk ya da boş olamaz.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">İstemci kaydının ön Yetkilendirme kodu geçersiz.</string>
+    <string name="oamms_oauth_oam_token_request_failed">OAM belirteçleri yaratılamadı.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Kullanıcı Bildirimi belirteçleri yaratılamadı.</string>
+    <string name="oamms_oauth_user_assertion_null">Kullanıcı Bildirimi null (boş).</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">İstemci Kimliği Sertifikası.</string>
+    <string name="oamms_client_certificate_import_empty_password">Parola boş olamaz.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Geçersiz Parola. </string>
+    <string name="oamms_client_certificate_import_user_canceled">Kullanıcı, sertifika içe aktarmayı iptal etti.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Geçersiz Sertifika.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">SSL ortak yetkilendirmesi sırasında geçersiz İstemci rumuzu sunuldu.</string>
+    <string name="oamms_client_certificate_dialog_title">İstemci Kimliği Seçin.</string>
+    <string name="oamms_client_certificate_import_enter_password">Sertifikayı çıkartmak için parola girin.</string>
+    <string name="oamms_client_certificate_import_failed">Sertifika içe aktarılamadı.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">%1$s yetkilendirme sunucusu sertifika isteğinde bulundu. Mevcut kimliklerden bir sertifika seçin.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

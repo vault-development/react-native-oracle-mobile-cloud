@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2012, 2014, Oracle and/or its affiliates. 
+All rights reserved.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/oamms_background_gray"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/addInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oamms_challenge_head"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/cqhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addInfo"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/oamms_challenge_ques"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cques"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cqhead" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/cahead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cques"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/oamms_challenge_ans"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/cans"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cahead"
+        android:background="@drawable/text_round_corner"
+        android:hint="@string/oamms_challenge_answer_hint"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonLyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cans"
+        android:gravity="center_horizontal"
+        android:minHeight="50dp"
+        android:padding="5dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/casubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_round_corner"
+            android:text="@string/oamms_submit"
+            android:textColor="@android:color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/cacancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/casubmit"
+            android:background="@drawable/button_round_corner"
+            android:text="@string/oamms_cancel"
+            android:textColor="@android:color/white" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progressLyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLyt"
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/processing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/progressBar1"
+            android:gravity="center"
+            android:text="@string/oamms_processing"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</RelativeLayout>
