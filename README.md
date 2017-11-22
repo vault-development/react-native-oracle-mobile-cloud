@@ -33,22 +33,56 @@
   	```
       compile project(':react-native-oracle-mobile-cloud')
   	```
-4. Open up `android/app/src/main/[...]/AndroidManifest.xml.java`
+4. Open up `android/app/src/main/[...]/AndroidManifest.xml`
   - Add `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>`
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNOracleMobileCloud.sln` in `node_modules/react-native-oracle-mobile-cloud/windows/RNOracleMobileCloud.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Oracle.Mobile.Cloud.RNOracleMobileCloud;` to the usings at the top of the file
-  - Add `new RNOracleMobileCloudPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
 ## Usage
 ```javascript
 import RNOracleMobileCloud from 'react-native-oracle-mobile-cloud';
 
-// TODO: What to do with the module?
-RNOracleMobileCloud;
+What to do with the module?
+
+  #### Login
+
+    RNOracleMobileCloud.loginUser(this.state.usuario, this.state.password,
+      (success, data) => {
+        if(success) {
+          console.log("Success", data);
+        } else {
+          console.log("Error", data);
+        }
+    });
+
+    RNOracleMobileCloud.loginAnonymous(
+      (success, data) => {
+        if(success) {
+          console.log("Success", data);
+        } else {
+          console.log("Error", data);
+        }
+      });
+
+    RNOracleMobileCloud.logout(
+      (success, data) => {
+        if(success) {
+          console.log("Success", data);
+        } else {
+          console.log("Error", data);
+        }
+      });
+
+
+  #### Invoke custom api
+
+      RNOracleMobileCloud.invokeEndPoint("oracle_dev_api/movies",
+        null, //Body for POST, PUT, DELETE
+        OracleMobileCloud.HTTP_METHOD_GET,
+        (success, data) => {
+          if(success) {
+            console.log("Success", data.moviesList);
+          } else {
+            console.log("Error", data);
+          }
+        });
 ```
