@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59E195691FC5C2D200BFFCA2 /* libOMCAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195281FC5C2D200BFFCA2 /* libOMCAnalytics.a */; };
+		59E1956A1FC5C2D200BFFCA2 /* libOMCCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195291FC5C2D200BFFCA2 /* libOMCCore.a */; };
+		59E1956B1FC5C2D200BFFCA2 /* libOMCLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E1952A1FC5C2D200BFFCA2 /* libOMCLocation.a */; };
+		59E1956C1FC5C2D200BFFCA2 /* libOMCNotifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E1952B1FC5C2D200BFFCA2 /* libOMCNotifications.a */; };
+		59E1956D1FC5C2D200BFFCA2 /* libOMCStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E1952C1FC5C2D200BFFCA2 /* libOMCStorage.a */; };
+		59E1956E1FC5C2D200BFFCA2 /* libOMCSynchronization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E1952D1FC5C2D200BFFCA2 /* libOMCSynchronization.a */; };
+		59E1956F1FC5C2D200BFFCA2 /* libIDMMobileSDKv2Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195341FC5C2D200BFFCA2 /* libIDMMobileSDKv2Library.a */; };
+		59E195731FC5C3C100BFFCA2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195721FC5C3C000BFFCA2 /* SystemConfiguration.framework */; };
+		59E195751FC5C3CC00BFFCA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195741FC5C3CC00BFFCA2 /* Security.framework */; };
+		59E195771FC5C3DE00BFFCA2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E195761FC5C3DE00BFFCA2 /* CoreLocation.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNOracleMobileCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNOracleMobileCloud.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +34,122 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNOracleMobileCloud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOracleMobileCloud.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E194ED1FC5C2D200BFFCA2 /* OMCAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCAnalytics.h; sourceTree = "<group>"; };
+		59E194EE1FC5C2D200BFFCA2 /* OMCAnalyticsApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCAnalyticsApplicationDelegate.h; sourceTree = "<group>"; };
+		59E194EF1FC5C2D200BFFCA2 /* OMCAnalyticsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCAnalyticsDelegate.h; sourceTree = "<group>"; };
+		59E194F01FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OMCMobileBackend+OMC_Analytics.h"; sourceTree = "<group>"; };
+		59E194F21FC5C2D200BFFCA2 /* OMCAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCAppConfig.h; sourceTree = "<group>"; };
+		59E194F31FC5C2D200BFFCA2 /* OMCAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCAuthorization.h; sourceTree = "<group>"; };
+		59E194F41FC5C2D200BFFCA2 /* OMCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCCore.h; sourceTree = "<group>"; };
+		59E194F51FC5C2D200BFFCA2 /* OMCCustomCodeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCCustomCodeClient.h; sourceTree = "<group>"; };
+		59E194F61FC5C2D200BFFCA2 /* OMCDiagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCDiagnostics.h; sourceTree = "<group>"; };
+		59E194F71FC5C2D200BFFCA2 /* OMCMobileBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileBackend.h; sourceTree = "<group>"; };
+		59E194F81FC5C2D200BFFCA2 /* OMCMobileBackendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileBackendManager.h; sourceTree = "<group>"; };
+		59E194F91FC5C2D200BFFCA2 /* OMCServiceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCServiceProxy.h; sourceTree = "<group>"; };
+		59E194FA1FC5C2D200BFFCA2 /* OMCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCUser.h; sourceTree = "<group>"; };
+		59E194FC1FC5C2D200BFFCA2 /* OMCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocation.h; sourceTree = "<group>"; };
+		59E194FD1FC5C2D200BFFCA2 /* OMCLocationAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationAddress.h; sourceTree = "<group>"; };
+		59E194FE1FC5C2D200BFFCA2 /* OMCLocationAltBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationAltBeacon.h; sourceTree = "<group>"; };
+		59E194FF1FC5C2D200BFFCA2 /* OMCLocationAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationAsset.h; sourceTree = "<group>"; };
+		59E195001FC5C2D200BFFCA2 /* OMCLocationAssetQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationAssetQuery.h; sourceTree = "<group>"; };
+		59E195011FC5C2D200BFFCA2 /* OMCLocationBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationBeacon.h; sourceTree = "<group>"; };
+		59E195021FC5C2D200BFFCA2 /* OMCLocationDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationDevice.h; sourceTree = "<group>"; };
+		59E195031FC5C2D200BFFCA2 /* OMCLocationDeviceContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationDeviceContainer.h; sourceTree = "<group>"; };
+		59E195041FC5C2D200BFFCA2 /* OMCLocationDeviceContainerQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationDeviceContainerQuery.h; sourceTree = "<group>"; };
+		59E195051FC5C2D200BFFCA2 /* OMCLocationDeviceQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationDeviceQuery.h; sourceTree = "<group>"; };
+		59E195061FC5C2D200BFFCA2 /* OMCLocationEddystoneBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationEddystoneBeacon.h; sourceTree = "<group>"; };
+		59E195071FC5C2D200BFFCA2 /* OMCLocationGeoCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationGeoCircle.h; sourceTree = "<group>"; };
+		59E195081FC5C2D200BFFCA2 /* OMCLocationGeoPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationGeoPoint.h; sourceTree = "<group>"; };
+		59E195091FC5C2D200BFFCA2 /* OMCLocationGeoPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationGeoPolygon.h; sourceTree = "<group>"; };
+		59E1950A1FC5C2D200BFFCA2 /* OMCLocationIBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationIBeacon.h; sourceTree = "<group>"; };
+		59E1950B1FC5C2D200BFFCA2 /* OMCLocationObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationObject.h; sourceTree = "<group>"; };
+		59E1950C1FC5C2D200BFFCA2 /* OMCLocationObjectQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationObjectQuery.h; sourceTree = "<group>"; };
+		59E1950D1FC5C2D200BFFCA2 /* OMCLocationObjectQueryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationObjectQueryResult.h; sourceTree = "<group>"; };
+		59E1950E1FC5C2D200BFFCA2 /* OMCLocationPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationPlace.h; sourceTree = "<group>"; };
+		59E1950F1FC5C2D200BFFCA2 /* OMCLocationPlaceQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCLocationPlaceQuery.h; sourceTree = "<group>"; };
+		59E195101FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OMCMobileBackend+OMC_Location.h"; sourceTree = "<group>"; };
+		59E195121FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OMCMobileBackend+OMC_Notifications.h"; sourceTree = "<group>"; };
+		59E195131FC5C2D200BFFCA2 /* OMCNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCNotifications.h; sourceTree = "<group>"; };
+		59E195151FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OMCMobileBackend+OMC_Storage.h"; sourceTree = "<group>"; };
+		59E195161FC5C2D200BFFCA2 /* OMCStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCStorage.h; sourceTree = "<group>"; };
+		59E195171FC5C2D200BFFCA2 /* OMCStorageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCStorageCollection.h; sourceTree = "<group>"; };
+		59E195181FC5C2D200BFFCA2 /* OMCStorageConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCStorageConstants.h; sourceTree = "<group>"; };
+		59E195191FC5C2D200BFFCA2 /* OMCStorageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCStorageObject.h; sourceTree = "<group>"; };
+		59E1951B1FC5C2D200BFFCA2 /* OMCFetchFileBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCFetchFileBuilder.h; sourceTree = "<group>"; };
+		59E1951C1FC5C2D200BFFCA2 /* OMCFetchObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCFetchObjectBuilder.h; sourceTree = "<group>"; };
+		59E1951D1FC5C2D200BFFCA2 /* OMCFetchObjectCollectionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCFetchObjectCollectionBuilder.h; sourceTree = "<group>"; };
+		59E1951E1FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OMCMobileBackend+OMC_Synchronization.h"; sourceTree = "<group>"; };
+		59E1951F1FC5C2D200BFFCA2 /* OMCMobileEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileEndpoint.h; sourceTree = "<group>"; };
+		59E195201FC5C2D200BFFCA2 /* OMCMobileFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileFile.h; sourceTree = "<group>"; };
+		59E195211FC5C2D200BFFCA2 /* OMCMobileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileObject.h; sourceTree = "<group>"; };
+		59E195221FC5C2D200BFFCA2 /* OMCMobileObjectCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileObjectCollection.h; sourceTree = "<group>"; };
+		59E195231FC5C2D200BFFCA2 /* OMCMobileResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCMobileResource.h; sourceTree = "<group>"; };
+		59E195241FC5C2D200BFFCA2 /* OMCSyncGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCSyncGlobals.h; sourceTree = "<group>"; };
+		59E195251FC5C2D200BFFCA2 /* OMCSynchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCSynchronization.h; sourceTree = "<group>"; };
+		59E195261FC5C2D200BFFCA2 /* OMCSyncPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCSyncPolicy.h; sourceTree = "<group>"; };
+		59E195271FC5C2D200BFFCA2 /* OMCSyncStoreState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCSyncStoreState.h; sourceTree = "<group>"; };
+		59E195281FC5C2D200BFFCA2 /* libOMCAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCAnalytics.a; sourceTree = "<group>"; };
+		59E195291FC5C2D200BFFCA2 /* libOMCCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCCore.a; sourceTree = "<group>"; };
+		59E1952A1FC5C2D200BFFCA2 /* libOMCLocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCLocation.a; sourceTree = "<group>"; };
+		59E1952B1FC5C2D200BFFCA2 /* libOMCNotifications.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCNotifications.a; sourceTree = "<group>"; };
+		59E1952C1FC5C2D200BFFCA2 /* libOMCStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCStorage.a; sourceTree = "<group>"; };
+		59E1952D1FC5C2D200BFFCA2 /* libOMCSynchronization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOMCSynchronization.a; sourceTree = "<group>"; };
+		59E1952F1FC5C2D200BFFCA2 /* SyncStore.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = SyncStore.mom; sourceTree = "<group>"; };
+		59E195301FC5C2D200BFFCA2 /* VersionInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = VersionInfo.plist; sourceTree = "<group>"; };
+		59E195331FC5C2D200BFFCA2 /* INFO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INFO.txt; sourceTree = "<group>"; };
+		59E195341FC5C2D200BFFCA2 /* libIDMMobileSDKv2Library.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIDMMobileSDKv2Library.a; sourceTree = "<group>"; };
+		59E195361FC5C2D200BFFCA2 /* IDMMobileSDKv2Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDMMobileSDKv2Library.h; sourceTree = "<group>"; };
+		59E195371FC5C2D200BFFCA2 /* NSData+OMBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OMBase32.h"; sourceTree = "<group>"; };
+		59E195381FC5C2D200BFFCA2 /* NSData+OMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OMBase64.h"; sourceTree = "<group>"; };
+		59E195391FC5C2D200BFFCA2 /* OMAuthenticationChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMAuthenticationChallenge.h; sourceTree = "<group>"; };
+		59E1953A1FC5C2D200BFFCA2 /* OMAuthenticationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMAuthenticationContext.h; sourceTree = "<group>"; };
+		59E1953B1FC5C2D200BFFCA2 /* OMAuthenticationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMAuthenticationDelegate.h; sourceTree = "<group>"; };
+		59E1953C1FC5C2D200BFFCA2 /* OMAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMAuthenticationRequest.h; sourceTree = "<group>"; };
+		59E1953D1FC5C2D200BFFCA2 /* OMCertInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCertInfo.h; sourceTree = "<group>"; };
+		59E1953E1FC5C2D200BFFCA2 /* OMCertService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCertService.h; sourceTree = "<group>"; };
+		59E1953F1FC5C2D200BFFCA2 /* OMCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCredential.h; sourceTree = "<group>"; };
+		59E195401FC5C2D200BFFCA2 /* OMCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCredentialStore.h; sourceTree = "<group>"; };
+		59E195411FC5C2D200BFFCA2 /* OMCryptoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCryptoService.h; sourceTree = "<group>"; };
+		59E195421FC5C2D200BFFCA2 /* OMDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMDefinitions.h; sourceTree = "<group>"; };
+		59E195431FC5C2D200BFFCA2 /* OMErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMErrorCodes.h; sourceTree = "<group>"; };
+		59E195441FC5C2D200BFFCA2 /* OMMobileSecurityConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMobileSecurityConfiguration.h; sourceTree = "<group>"; };
+		59E195451FC5C2D200BFFCA2 /* OMMobileSecurityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMMobileSecurityService.h; sourceTree = "<group>"; };
+		59E195461FC5C2D200BFFCA2 /* OMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMObject.h; sourceTree = "<group>"; };
+		59E195471FC5C2D200BFFCA2 /* OMOTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMOTPService.h; sourceTree = "<group>"; };
+		59E195481FC5C2D200BFFCA2 /* OMToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMToken.h; sourceTree = "<group>"; };
+		59E1954C1FC5C2D200BFFCA2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1954D1FC5C2D200BFFCA2 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1954E1FC5C2D200BFFCA2 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1954F1FC5C2D200BFFCA2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195501FC5C2D200BFFCA2 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195511FC5C2D200BFFCA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195521FC5C2D200BFFCA2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195531FC5C2D200BFFCA2 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195541FC5C2D200BFFCA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195551FC5C2D200BFFCA2 /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195561FC5C2D200BFFCA2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195571FC5C2D200BFFCA2 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195581FC5C2D200BFFCA2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195591FC5C2D200BFFCA2 /* iw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = iw; path = iw.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955A1FC5C2D200BFFCA2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955B1FC5C2D200BFFCA2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955C1FC5C2D200BFFCA2 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955D1FC5C2D200BFFCA2 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955E1FC5C2D200BFFCA2 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E1955F1FC5C2D200BFFCA2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195601FC5C2D200BFFCA2 /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = pt_BR.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195611FC5C2D200BFFCA2 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195621FC5C2D200BFFCA2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195631FC5C2D200BFFCA2 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195641FC5C2D200BFFCA2 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195651FC5C2D200BFFCA2 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195661FC5C2D200BFFCA2 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195671FC5C2D200BFFCA2 /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195681FC5C2D200BFFCA2 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/OMLocalizable.strings; sourceTree = "<group>"; };
+		59E195701FC5C2DB00BFFCA2 /* OMC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = OMC.plist; path = MCS/OMC.plist; sourceTree = "<group>"; };
+		59E195721FC5C3C000BFFCA2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		59E195741FC5C3CC00BFFCA2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		59E195761FC5C3DE00BFFCA2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B3E7B5881CC2AC0600A0062D /* RNOracleMobileCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOracleMobileCloud.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNOracleMobileCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOracleMobileCloud.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +159,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E195771FC5C3DE00BFFCA2 /* CoreLocation.framework in Frameworks */,
+				59E195751FC5C3CC00BFFCA2 /* Security.framework in Frameworks */,
+				59E195731FC5C3C100BFFCA2 /* SystemConfiguration.framework in Frameworks */,
+				59E1956D1FC5C2D200BFFCA2 /* libOMCStorage.a in Frameworks */,
+				59E1956C1FC5C2D200BFFCA2 /* libOMCNotifications.a in Frameworks */,
+				59E1956E1FC5C2D200BFFCA2 /* libOMCSynchronization.a in Frameworks */,
+				59E1956A1FC5C2D200BFFCA2 /* libOMCCore.a in Frameworks */,
+				59E1956F1FC5C2D200BFFCA2 /* libIDMMobileSDKv2Library.a in Frameworks */,
+				59E195691FC5C2D200BFFCA2 /* libOMCAnalytics.a in Frameworks */,
+				59E1956B1FC5C2D200BFFCA2 /* libOMCLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +186,226 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				59E194E91FC5C2D200BFFCA2 /* MCS */,
 				B3E7B5881CC2AC0600A0062D /* RNOracleMobileCloud.h */,
+				59E195701FC5C2DB00BFFCA2 /* OMC.plist */,
 				B3E7B5891CC2AC0600A0062D /* RNOracleMobileCloud.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				59E195711FC5C3C000BFFCA2 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		59E194E91FC5C2D200BFFCA2 /* MCS */ = {
+			isa = PBXGroup;
+			children = (
+				59E194EA1FC5C2D200BFFCA2 /* release-iphoneos */,
+				59E195311FC5C2D200BFFCA2 /* thirdParty */,
+			);
+			path = MCS;
+			sourceTree = "<group>";
+		};
+		59E194EA1FC5C2D200BFFCA2 /* release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				59E194EB1FC5C2D200BFFCA2 /* include */,
+				59E195281FC5C2D200BFFCA2 /* libOMCAnalytics.a */,
+				59E195291FC5C2D200BFFCA2 /* libOMCCore.a */,
+				59E1952A1FC5C2D200BFFCA2 /* libOMCLocation.a */,
+				59E1952B1FC5C2D200BFFCA2 /* libOMCNotifications.a */,
+				59E1952C1FC5C2D200BFFCA2 /* libOMCStorage.a */,
+				59E1952D1FC5C2D200BFFCA2 /* libOMCSynchronization.a */,
+				59E1952E1FC5C2D200BFFCA2 /* SyncStore.momd */,
+			);
+			path = "release-iphoneos";
+			sourceTree = "<group>";
+		};
+		59E194EB1FC5C2D200BFFCA2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				59E194EC1FC5C2D200BFFCA2 /* OMCAnalytics */,
+				59E194F11FC5C2D200BFFCA2 /* OMCCore */,
+				59E194FB1FC5C2D200BFFCA2 /* OMCLocation */,
+				59E195111FC5C2D200BFFCA2 /* OMCNotifications */,
+				59E195141FC5C2D200BFFCA2 /* OMCStorage */,
+				59E1951A1FC5C2D200BFFCA2 /* OMCSynchronization */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		59E194EC1FC5C2D200BFFCA2 /* OMCAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				59E194ED1FC5C2D200BFFCA2 /* OMCAnalytics.h */,
+				59E194EE1FC5C2D200BFFCA2 /* OMCAnalyticsApplicationDelegate.h */,
+				59E194EF1FC5C2D200BFFCA2 /* OMCAnalyticsDelegate.h */,
+				59E194F01FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Analytics.h */,
+			);
+			path = OMCAnalytics;
+			sourceTree = "<group>";
+		};
+		59E194F11FC5C2D200BFFCA2 /* OMCCore */ = {
+			isa = PBXGroup;
+			children = (
+				59E194F21FC5C2D200BFFCA2 /* OMCAppConfig.h */,
+				59E194F31FC5C2D200BFFCA2 /* OMCAuthorization.h */,
+				59E194F41FC5C2D200BFFCA2 /* OMCCore.h */,
+				59E194F51FC5C2D200BFFCA2 /* OMCCustomCodeClient.h */,
+				59E194F61FC5C2D200BFFCA2 /* OMCDiagnostics.h */,
+				59E194F71FC5C2D200BFFCA2 /* OMCMobileBackend.h */,
+				59E194F81FC5C2D200BFFCA2 /* OMCMobileBackendManager.h */,
+				59E194F91FC5C2D200BFFCA2 /* OMCServiceProxy.h */,
+				59E194FA1FC5C2D200BFFCA2 /* OMCUser.h */,
+			);
+			path = OMCCore;
+			sourceTree = "<group>";
+		};
+		59E194FB1FC5C2D200BFFCA2 /* OMCLocation */ = {
+			isa = PBXGroup;
+			children = (
+				59E194FC1FC5C2D200BFFCA2 /* OMCLocation.h */,
+				59E194FD1FC5C2D200BFFCA2 /* OMCLocationAddress.h */,
+				59E194FE1FC5C2D200BFFCA2 /* OMCLocationAltBeacon.h */,
+				59E194FF1FC5C2D200BFFCA2 /* OMCLocationAsset.h */,
+				59E195001FC5C2D200BFFCA2 /* OMCLocationAssetQuery.h */,
+				59E195011FC5C2D200BFFCA2 /* OMCLocationBeacon.h */,
+				59E195021FC5C2D200BFFCA2 /* OMCLocationDevice.h */,
+				59E195031FC5C2D200BFFCA2 /* OMCLocationDeviceContainer.h */,
+				59E195041FC5C2D200BFFCA2 /* OMCLocationDeviceContainerQuery.h */,
+				59E195051FC5C2D200BFFCA2 /* OMCLocationDeviceQuery.h */,
+				59E195061FC5C2D200BFFCA2 /* OMCLocationEddystoneBeacon.h */,
+				59E195071FC5C2D200BFFCA2 /* OMCLocationGeoCircle.h */,
+				59E195081FC5C2D200BFFCA2 /* OMCLocationGeoPoint.h */,
+				59E195091FC5C2D200BFFCA2 /* OMCLocationGeoPolygon.h */,
+				59E1950A1FC5C2D200BFFCA2 /* OMCLocationIBeacon.h */,
+				59E1950B1FC5C2D200BFFCA2 /* OMCLocationObject.h */,
+				59E1950C1FC5C2D200BFFCA2 /* OMCLocationObjectQuery.h */,
+				59E1950D1FC5C2D200BFFCA2 /* OMCLocationObjectQueryResult.h */,
+				59E1950E1FC5C2D200BFFCA2 /* OMCLocationPlace.h */,
+				59E1950F1FC5C2D200BFFCA2 /* OMCLocationPlaceQuery.h */,
+				59E195101FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Location.h */,
+			);
+			path = OMCLocation;
+			sourceTree = "<group>";
+		};
+		59E195111FC5C2D200BFFCA2 /* OMCNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				59E195121FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Notifications.h */,
+				59E195131FC5C2D200BFFCA2 /* OMCNotifications.h */,
+			);
+			path = OMCNotifications;
+			sourceTree = "<group>";
+		};
+		59E195141FC5C2D200BFFCA2 /* OMCStorage */ = {
+			isa = PBXGroup;
+			children = (
+				59E195151FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Storage.h */,
+				59E195161FC5C2D200BFFCA2 /* OMCStorage.h */,
+				59E195171FC5C2D200BFFCA2 /* OMCStorageCollection.h */,
+				59E195181FC5C2D200BFFCA2 /* OMCStorageConstants.h */,
+				59E195191FC5C2D200BFFCA2 /* OMCStorageObject.h */,
+			);
+			path = OMCStorage;
+			sourceTree = "<group>";
+		};
+		59E1951A1FC5C2D200BFFCA2 /* OMCSynchronization */ = {
+			isa = PBXGroup;
+			children = (
+				59E1951B1FC5C2D200BFFCA2 /* OMCFetchFileBuilder.h */,
+				59E1951C1FC5C2D200BFFCA2 /* OMCFetchObjectBuilder.h */,
+				59E1951D1FC5C2D200BFFCA2 /* OMCFetchObjectCollectionBuilder.h */,
+				59E1951E1FC5C2D200BFFCA2 /* OMCMobileBackend+OMC_Synchronization.h */,
+				59E1951F1FC5C2D200BFFCA2 /* OMCMobileEndpoint.h */,
+				59E195201FC5C2D200BFFCA2 /* OMCMobileFile.h */,
+				59E195211FC5C2D200BFFCA2 /* OMCMobileObject.h */,
+				59E195221FC5C2D200BFFCA2 /* OMCMobileObjectCollection.h */,
+				59E195231FC5C2D200BFFCA2 /* OMCMobileResource.h */,
+				59E195241FC5C2D200BFFCA2 /* OMCSyncGlobals.h */,
+				59E195251FC5C2D200BFFCA2 /* OMCSynchronization.h */,
+				59E195261FC5C2D200BFFCA2 /* OMCSyncPolicy.h */,
+				59E195271FC5C2D200BFFCA2 /* OMCSyncStoreState.h */,
+			);
+			path = OMCSynchronization;
+			sourceTree = "<group>";
+		};
+		59E1952E1FC5C2D200BFFCA2 /* SyncStore.momd */ = {
+			isa = PBXGroup;
+			children = (
+				59E1952F1FC5C2D200BFFCA2 /* SyncStore.mom */,
+				59E195301FC5C2D200BFFCA2 /* VersionInfo.plist */,
+			);
+			path = SyncStore.momd;
+			sourceTree = "<group>";
+		};
+		59E195311FC5C2D200BFFCA2 /* thirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				59E195321FC5C2D200BFFCA2 /* oamms_sdk_for_ios */,
+			);
+			path = thirdParty;
+			sourceTree = "<group>";
+		};
+		59E195321FC5C2D200BFFCA2 /* oamms_sdk_for_ios */ = {
+			isa = PBXGroup;
+			children = (
+				59E195331FC5C2D200BFFCA2 /* INFO.txt */,
+				59E195341FC5C2D200BFFCA2 /* libIDMMobileSDKv2Library.a */,
+				59E195351FC5C2D200BFFCA2 /* Public Headers */,
+				59E195491FC5C2D200BFFCA2 /* PublicResources */,
+			);
+			path = oamms_sdk_for_ios;
+			sourceTree = "<group>";
+		};
+		59E195351FC5C2D200BFFCA2 /* Public Headers */ = {
+			isa = PBXGroup;
+			children = (
+				59E195361FC5C2D200BFFCA2 /* IDMMobileSDKv2Library.h */,
+				59E195371FC5C2D200BFFCA2 /* NSData+OMBase32.h */,
+				59E195381FC5C2D200BFFCA2 /* NSData+OMBase64.h */,
+				59E195391FC5C2D200BFFCA2 /* OMAuthenticationChallenge.h */,
+				59E1953A1FC5C2D200BFFCA2 /* OMAuthenticationContext.h */,
+				59E1953B1FC5C2D200BFFCA2 /* OMAuthenticationDelegate.h */,
+				59E1953C1FC5C2D200BFFCA2 /* OMAuthenticationRequest.h */,
+				59E1953D1FC5C2D200BFFCA2 /* OMCertInfo.h */,
+				59E1953E1FC5C2D200BFFCA2 /* OMCertService.h */,
+				59E1953F1FC5C2D200BFFCA2 /* OMCredential.h */,
+				59E195401FC5C2D200BFFCA2 /* OMCredentialStore.h */,
+				59E195411FC5C2D200BFFCA2 /* OMCryptoService.h */,
+				59E195421FC5C2D200BFFCA2 /* OMDefinitions.h */,
+				59E195431FC5C2D200BFFCA2 /* OMErrorCodes.h */,
+				59E195441FC5C2D200BFFCA2 /* OMMobileSecurityConfiguration.h */,
+				59E195451FC5C2D200BFFCA2 /* OMMobileSecurityService.h */,
+				59E195461FC5C2D200BFFCA2 /* OMObject.h */,
+				59E195471FC5C2D200BFFCA2 /* OMOTPService.h */,
+				59E195481FC5C2D200BFFCA2 /* OMToken.h */,
+			);
+			path = "Public Headers";
+			sourceTree = "<group>";
+		};
+		59E195491FC5C2D200BFFCA2 /* PublicResources */ = {
+			isa = PBXGroup;
+			children = (
+				59E1954A1FC5C2D200BFFCA2 /* Localization */,
+			);
+			path = PublicResources;
+			sourceTree = "<group>";
+		};
+		59E1954A1FC5C2D200BFFCA2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				59E1954B1FC5C2D200BFFCA2 /* OMLocalizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		59E195711FC5C3C000BFFCA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E195761FC5C3DE00BFFCA2 /* CoreLocation.framework */,
+				59E195741FC5C3CC00BFFCA2 /* Security.framework */,
+				59E195721FC5C3C000BFFCA2 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +448,34 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ar,
+				cs,
+				da,
+				de,
+				el,
+				es,
+				fi,
+				fr,
+				fr_CA,
+				hr,
+				hu,
+				it,
+				iw,
+				ja,
+				ko,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_BR,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
@@ -117,6 +497,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		59E1954B1FC5C2D200BFFCA2 /* OMLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59E1954C1FC5C2D200BFFCA2 /* ar */,
+				59E1954D1FC5C2D200BFFCA2 /* cs */,
+				59E1954E1FC5C2D200BFFCA2 /* da */,
+				59E1954F1FC5C2D200BFFCA2 /* de */,
+				59E195501FC5C2D200BFFCA2 /* el */,
+				59E195511FC5C2D200BFFCA2 /* en */,
+				59E195521FC5C2D200BFFCA2 /* es */,
+				59E195531FC5C2D200BFFCA2 /* fi */,
+				59E195541FC5C2D200BFFCA2 /* fr */,
+				59E195551FC5C2D200BFFCA2 /* fr_CA */,
+				59E195561FC5C2D200BFFCA2 /* hr */,
+				59E195571FC5C2D200BFFCA2 /* hu */,
+				59E195581FC5C2D200BFFCA2 /* it */,
+				59E195591FC5C2D200BFFCA2 /* iw */,
+				59E1955A1FC5C2D200BFFCA2 /* ja */,
+				59E1955B1FC5C2D200BFFCA2 /* ko */,
+				59E1955C1FC5C2D200BFFCA2 /* nl */,
+				59E1955D1FC5C2D200BFFCA2 /* no */,
+				59E1955E1FC5C2D200BFFCA2 /* pl */,
+				59E1955F1FC5C2D200BFFCA2 /* pt */,
+				59E195601FC5C2D200BFFCA2 /* pt_BR */,
+				59E195611FC5C2D200BFFCA2 /* ro */,
+				59E195621FC5C2D200BFFCA2 /* ru */,
+				59E195631FC5C2D200BFFCA2 /* sk */,
+				59E195641FC5C2D200BFFCA2 /* sv */,
+				59E195651FC5C2D200BFFCA2 /* th */,
+				59E195661FC5C2D200BFFCA2 /* tr */,
+				59E195671FC5C2D200BFFCA2 /* zh_CN */,
+				59E195681FC5C2D200BFFCA2 /* zh_TW */,
+			);
+			name = OMLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		58B511ED1A9E6C8500147676 /* Debug */ = {
@@ -203,32 +622,44 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNOracleMobileCloud;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MCS/release-iphoneos",
+					"$(PROJECT_DIR)/MCS/thirdParty/oamms_sdk_for_ios",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNOracleMobileCloud;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MCS/release-iphoneos/**";
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MCS/release-iphoneos",
+					"$(PROJECT_DIR)/MCS/thirdParty/oamms_sdk_for_ios",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNOracleMobileCloud;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MCS/release-iphoneos/**";
 			};
 			name = Release;
 		};

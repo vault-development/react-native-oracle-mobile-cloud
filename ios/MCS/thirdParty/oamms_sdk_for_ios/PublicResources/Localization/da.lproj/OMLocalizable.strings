@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Operationen blev udført.";
+"00001" = "Kunne ikke oprette forbindelse til serveren %1$@.";
+"00002" = "OIC-serveren returnerede fejlen: %ld - %1$@";
+"00003" = "URL %1$@ er ugyldig. Den overholder ikke RFC 2396.";
+"00004" = "OIC-server-URL er påkrævet.";
+"00005" = "Brugeren annullerede logon-handlingen.";
+"00006" = "Denne enhed er endnu ikke autentificeret med OIC-serveren.";
+"00007" = "Der blev ikke fundet en tilsvarende klasse for %1$@-autentificeringsskemaet.";
+"00008" = "Der er ikke angivet et autentificeringsskema.";
+"00009" = "Enhedsregistreringen mislykkedes.";
+"00010" = "Brugerautentificeringen mislykkedes.";
+"00011" = "Autentificeringsskemaet %1$@ er ikke kendt for denne SDK.";
+"00012" = "Kan ikke åbne RP-autentificerings-URL.";
+"00013" = "Kan ikke åbne SSO-autentificerings-URL.";
+"00014" = "Klientapplikationen er ikke godkendt til at deltage i SSO.";
+"00015" = "Applikationsprofilen er ugyldig, eller den er ikke downloadet.";
+"00016" = "Brugeren har afvist adgang til lokationen";
+"00017" = "Fremlæggervisnings-controller kan ikke være nul.";
+"00018" = "REST-anmodningen er ugyldig";
+"00019" = "Brugeren er endnu ikke autentificeret";
+"00020" = "OIC-serveren afviste adgang for token-anmodning.";
+"00021" = "Installations-API er ikke kaldt.";
+"00022" = "KeyChainItem-nøglen er nul";
+"00023" = "Inputværdien er ugyldig";
+
+/*  OMCryptoService Messages */
+"00024" = "Fejl i hukommelsesallokering.";
+"00025" = "Fejl i system til vilkårlig talgenerering - %ld.";
+"00026" = "Den længde, der anmodes om, er for kort.";
+"00027" = "Inputtekst kan ikke være tom.";
+"00028" = "Ukendt eller ikke-understøttet algoritme.";
+"00029" = "Nøgle kan ikke være tom.";
+"00030" = "Nøglestørrelse understøttes ikke af algoritme.";
+"00031" = "Initialiseringsvektorens længde skal matche algoritmeblokkens størrelse.";
+"00032" = "Længde på almindelig tekst er ikke et multiplum af blokstørrelse. Invendig margen er påkrævet.";
+"00033" = "Ukendt eller ikke-understøttet indvendig margen.";
+"00034" = "Fejl i krypteringssystem - %ld.";
+"00035" = "Den længde, der anmodes om, er ikke et multiplum af 4.";
+"00036" = "SALT er påkrævet for valgt algoritme.";
+"00037" = "SALT understøttes ikke for valgt algoritme.";
+"00038" = "Kan ikke bruge SALT som præfiks, når der bruges en ikke-SALTED algoritme.";
+"00039" = "Algoritmenavn er ikke brugt som præfiks til input.";
+"00040" = "Input skal være NSString, når Base64-kodning er aktiveret.";
+"00041" = "Ukendt inputtype. Skal være NSString eller NSData.";
+"00042" = "Inputlængde skal være mindre end eller lig med %ld.";
+"00043" = "Fejl i system til generering af nøglepar - %ld.";
+"00044" = "Tag er påkrævet til identificering af nøgle i nøglekæde.";
+"00045" = "Fejl i nøglekædesystem - %ld.";
+"00046" = "Nøglekædeelement blev ikke fundet.";
+"00047" = "Fejl i signeringssystem - %ld.";
+"00048" = "Inputsignatur kan ikke være tom.";
+"00049" = "Fejl i verificeringssystem - %ld.";
+"00050" = "Fejl i dekrypteringssystem - %ld.";
+"00051" = "Nøglekædeelement er allerede fundet.";
+"00052" = "Ukendt eller ikke-understøttet nøgletype";
+"00053" = "Ugyldigt beskyttelsesniveau for nøglekædedata er angivet.";
+"00054" = "Systemfejl under PBKDF2-nøglegenerering - %ld.";
+
+"00100" = "Ugyldigt brugernavn eller adgangskode.";
+"00101" = "Brugeren er ikke autoriseret.";
+"00102" = "Ugyldig logon-URL.";
+"00103" = "Klientapplikationen er ikke registreret. Kan ikke udføre offline autentifikation.";
+"00104" = "Klientapplikationen er ikke godkendt til at deltage i SSO.";
+"00105" = "Ekstern browsertilstand understøttes ikke";
+"00106" = "Den tilpassede autentificeringsside har ikke alle de påkrævede felter med ID-oplysninger.";
+"00107" = "Logout er i gang. Logon efter logout er fuldført.";
+"00108" = "Anmodningen mangler en påkrævet parameter, inkluderer en ugyldig parameterværdi, inkluderer en parameter mere end én gang eller er på anden måde forkert udformet.";
+"00109" = "Klienten er ikke autoriseret til at anmode om en autorisationskode ved hjælp af denne metode.";
+"00110" = "Ressourceejeren eller autorisationsserveren afviste anmodningen.";
+"00111" = "Autorisationsserveren understøtter ikke hentning af en autorisationskode ved brug af denne metode.";
+"00112" = "Det anmodede omfang er ugyldigt, ukendt eller forkert udformet.";
+"00113" = "Autorisationsserveren fandt en uventet tilstand, som forhindrede den i at imødekomme anmodningen.";
+"00114" = "Autorisationsserveren kan p.t. ikke håndtere anmodningen, da den er midlertidigt overbelastet, eller den vedligeholdes.";
+"00116" = "Autentificering er allerede i gang.";
+"00117" = "Angivet token-slutpunkt er ikke gyldigt.";
+"00118" = "Ugyldigt token-slutpunkt, token-anmodning mangler nogle påkrævede parametre, eller en ugyldig værdi er angivet for nogle parametre.";
+"00119" = "Brugernavn er påkrævet.";
+"00120" = "Timeout opstod for autentificering.";
+
+"00121" = "Ressource er ikke tilgængelig i angivet filsti.";
+"00122" = "Identitetsdomæne er påkrævet";
+"00123" = "Brugernavn og identitetsdomæne er påkrævet";
+"00124" = "Bruger afviste servercertifikatet.";
+"00125" = "Ugyldigt brugernavn, ugyldig adgangskode eller ugyldigt identitetsdomæne.";
+
+"00126" = "Ugyldigt svar er modtaget fra applikation. Prøv igen.";
+"00127" = "Ugyldigt svar på autentificering af social identitet.";
+"00128" = "Bruger-token er tomt.";
+"00129" = "Klientregistrerings-handle er tomt.";
+
+"00130" = "Autentificering er blokeret af server.";
+"00131" = "Fjern-kommando er modtaget fra server. Rydder følsomme applikationsdata.";
+
+"00132" = "Den anmodede URL findes ikke. Kontakt administratoren for at få hjælp.";
+"00133" = "Den anmodede URL er ugyldig. Tjek den URL, som du forsøger at få adgang til.";
+"00134" = "Netværket er ikke tilgængeligt. Sørg for, at du har forbindelse til internettet, og prøv igen.";
+"00135" = "Serveren kan ikke nås på den angivne adresse. Kontakt administratoren for at få hjælp.";
+"00136" = "Serveren fandt en fejl %@. Kontakt administratoren for at få hjælp.";
+"00137" = "Ugyldig logoff-URL";
+"00138" = "Adgangskoden er forkert.";
+"00139" = "Ingen identiteter er til stede.";
+"00140" = "Bruger annullerede import af klientcertifikat";
+
+"00141" = "Klient har ikke tilladelse til at bruge overført OAuth-autorisationstildelingstype.";
+"00142" = "Serversidens SSO understøttes kun fra OAM_CREDENTIAL-tildeling.";
+"00143" = "Ugyldige ID-oplysninger for klient";
+"00144" = "Handling er ikke tilladt";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Log på";
+"10002" = "Annuller";
+"10003" = "Brugernavn";
+"10004" = "Adgangskode";
+"10005" = "Besvar sikkerhedsspørgsmålet";
+"10006" = "Autentificering af internetidentitet";
+"10007" = "Indtast adgangskode";
+"10008" = "Indtast brugernavn";
+"10009" = "Indtast svar";
+"10010" = "Indtast ID-oplysninger";
+"10011" = "Log på";
+"10012" = "Sikkerhedscertifikatet er ugyldigt. Tryk på Acceptér for at oprette forbindelse alligevel.";
+"10013" = "Accepter";
+"10014" = "Sikkerhedsadvarsel!";
+"10015" = "Certifikatoversigt";
+"10016" = "Samlet autentificering";
+"10017" = "Indlæser ...";
+"10018" = "Autentificering er i gang ...";
+"10019" = "Automatisk logon";
+"10020" = "Husk ID-oplysninger";
+"10021" = "Husk kun brugernavn";
+"10022" = "Identitetsdomæne";
+"10023" = "Indtast identitetsdomæne";
+"10024" = "Identiteten er beskyttet med adgangskode. Indtast adgangskoden for at låse op og importere";
+"10025" = "Klientidentitet";
+"10026" = "Importer";
+"10027" = "Vælg klientidentitet";
+"10028" = "Gyldighed";
+"10029" = "Fejl";
+"10030" = "OK";

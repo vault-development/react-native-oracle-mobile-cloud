@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "De bewerking is voltooid.";
+"00001" = "Er kan geen verbinding worden gemaakt met server %1$@.";
+"00002" = "OIC-server heeft fout geretourneerd: %ld - %1$@";
+"00003" = "URL %1$@ is ongeldig. Voldoet niet aan RFC 2396.";
+"00004" = "URL van OIC-server is vereist.";
+"00005" = "Gebruiker heeft inlogbewerking geannuleerd.";
+"00006" = "Dit apparaat is niet geverifieerd bij de OIC-server.";
+"00007" = "Geen overeenkomende klasse gevonden voor verificatieschema %1$@.";
+"00008" = "Geen verificatieschema opgegeven.";
+"00009" = "Apparaatregistratie is mislukt.";
+"00010" = "Gebruikersverificatie is mislukt.";
+"00011" = "Verificatieschema %1$@ is onbekend bij deze SDK.";
+"00012" = "URL voor RP-verificatie kan niet worden geopend.";
+"00013" = "URL voor SSO-verificatie kan niet worden geopend.";
+"00014" = "Clientapplicatie is niet gemachtigd voor deelname aan SSO.";
+"00015" = "Applicatieprofiel is ongeldig of niet gedownload.";
+"00016" = "Gebruiker heeft toegang tot de locatie geweigerd.";
+"00017" = "Viewcontroller presentator mag niet nul zijn.";
+"00018" = "De REST-aanvraag is ongeldig.";
+"00019" = "De gebruiker is nog niet geverifieerd.";
+"00020" = "OIC-server heeft toegangstokenaanvraag geweigerd.";
+"00021" = "Installatie-API is niet opgeroepen.";
+"00022" = "KeyChainItem-sleutel is nul.";
+"00023" = "Invoerwaarde is ongeldig.";
+
+/*  OMCryptoService Messages */
+"00024" = "Geheugentoewijzingsfout";
+"00025" = "Systeemfout bij genereren toevalsgetallen - %ld";
+"00026" = "Aangevraagde lengte is te kort.";
+"00027" = "De invoertekst mag niet leeg zijn.";
+"00028" = "Onbekend of niet-ondersteund algoritme.";
+"00029" = "Sleutel mag niet leeg zijn.";
+"00030" = "Sleutelgrootte wordt niet door algoritme ondersteund.";
+"00031" = "Lengte van initialisatievector moet overeenkomen met blokgrootte algoritme.";
+"00032" = "Lengte van platte tekst is geen veelvoud van de blokgrootte. Opvulling is vereist.";
+"00033" = "Onbekende of niet-ondersteunde opvulling.";
+"00034" = "Systeemfout bij codering - %ld";
+"00035" = "De aangevraagde lengte is geen veelvoud van 4.";
+"00036" = "Salt vereist voor gekozen algoritme.";
+"00037" = "Salt niet ondersteund voor gekozen algoritme.";
+"00038" = "Er kan geen prefix voor een salt worden gebruikt bij gebruik van een algoritme zonder salt.";
+"00039" = "Invoer heeft geen algoritmenaam als prefix.";
+"00040" = "Invoer moet NSString zijn als Base64-codering is geactiveerd.";
+"00041" = "Onbekend invoertype. Moet NSString of NSData zijn.";
+"00042" = "Invoerlengte moet kleiner dan of gelijk aan %ld zijn.";
+"00043" = "Systeemfout met genereren sleutelpaar - %ld";
+"00044" = "Tag vereist om sleutel in keychain te identificeren.";
+"00045" = "Systeemfout bij keychain - %ld";
+"00046" = "Keychain-item niet gevonden.";
+"00047" = "Systeemfout bij ondertekening - %ld";
+"00048" = "Ondertekening invoer mag niet leeg zijn.";
+"00049" = "Systeemfout bij verificatie - %ld";
+"00050" = "Systeemfout bij decoderen - %ld";
+"00051" = "Keychain-item is al gevonden.";
+"00052" = "Onbekend of niet-ondersteund sleuteltype";
+"00053" = "Ongeldig gegevensbeveiligingsniveau van keychain opgegeven.";
+"00054" = "Systeemfout bij genereren PBKDF2-sleutel - %ld";
+
+"00100" = "Ongeldige gebruikersnaam of ongeldig wachtwoord";
+"00101" = "De gebruiker is niet bevoegd.";
+"00102" = "Ongeldige inlog-URL";
+"00103" = "Clientapplicatie is niet geregistreerd. Offlineverificatie kan niet worden uitgevoerd.";
+"00104" = "Clientapplicatie is niet gemachtigd voor deelname aan SSO.";
+"00105" = "Externe browsermodus wordt niet ondersteund.";
+"00106" = "De aangepaste verificatiepagina bevat niet alle vereiste referentievelden.";
+"00107" = "Bezig met uitloggen. Log in nadat het uitloggen is voltooid.";
+"00108" = "Er ontbreekt een vereiste parameter in de aanvraag, er is een ongeldige parameterwaarde, er is een parameter meer dan één keer in de aanvraag opgenomen of er is een andere onjuistheid.";
+"00109" = "De client is niet gemachtigd voor het aanvragen van een autorisatiecode met behulp van deze methode.";
+"00110" = "De aanvraag is geweigerd door de resource-eigenaar of autorisatieserver.";
+"00111" = "Het verkrijgen van een autorisatiecode met behulp van deze methode wordt niet ondersteund door de autorisatieserver.";
+"00112" = "Het aangevraagde bereik is ongeldig, onbekend of heeft een onjuiste indeling.";
+"00113" = "De autorisatieserver heeft een onverwachte toestand aangetroffen waardoor de aanvraag niet kan worden uitgevoerd.";
+"00114" = "De autorisatieserver is op het moment niet in staat de aanvraag uit te voeren, vanwege een tijdelijke overbelasting of vanwege onderhoud van de server.";
+"00116" = "Verificatie wordt al uitgevoerd.";
+"00117" = "Opgegeven tokeneindpunt is niet geldig.";
+"00118" = "Tokeneindpunt is ongeldig, in de tokenaanvraag ontbreken enkele vereiste parameters, of er is een ongeldige waarde opgegeven voor bepaalde parameters.";
+"00119" = "Gebruikersnaam is vereist.";
+"00120" = "Time-out bij verificatie";
+
+"00121" = "Resource is niet beschikbaar in opgegeven bestandspad.";
+"00122" = "Identiteitsdomein is vereist.";
+"00123" = "Gebruikersnaam en identiteitsdomein zijn vereist.";
+"00124" = "Gebruiker heeft servercertificaat afgewezen.";
+"00125" = "Ongeldige gebruikersnaam of ongeldig wachtwoord of identiteitsdomein";
+
+"00126" = "Ongeldige respons ontvangen van applicatie. Probeer het opnieuw.";
+"00127" = "Ongeldige verificatierespons sociale identiteit";
+"00128" = "Gebruikerstoken is leeg.";
+"00129" = "Clientregistratiehandle is leeg.";
+
+"00130" = "Verificatie geblokkeerd door server";
+"00131" = "Wisopdracht ontvangen van server. Gevoelige applicatiegegevens worden gewist.";
+
+"00132" = "De aangevraagde URL bestaat niet. Neem voor hulp contact op met de beheerder.";
+"00133" = "De aangevraagde URL is ongeldig. Controleer de URL die u wilt openen.";
+"00134" = "Netwerk is niet beschikbaar. Controleer of u bent verbonden met internet en probeer het opnieuw.";
+"00135" = "Server is niet bereikbaar op het opgegeven adres. Neem voor hulp contact op met de beheerder.";
+"00136" = "Er is een fout %@ aangetroffen op de server. Neem voor hulp contact op met de beheerder.";
+"00137" = "Ongeldige uitlog-URL";
+"00138" = "Het wachtwoord is onjuist.";
+"00139" = "Er zijn geen identiteiten aanwezig.";
+"00140" = "Import clientcertificaat geannuleerd door gebruiker";
+
+"00141" = "De client heeft geen toestemming het autorisatietoekenningstype OAuth te gebruiken.";
+"00142" = "Server-side SSO wordt alleen ondersteund vanuit de OAM_CREDENTIAL-toekenning.";
+"00143" = "Ongeldige clientreferenties";
+"00144" = "Actie is niet toegestaan.";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Inloggen";
+"10002" = "Annuleren";
+"10003" = "Gebruikersnaam";
+"10004" = "Wachtwoord";
+"10005" = "Uw beveiligingsvraag beantwoorden";
+"10006" = "Internetidentiteitsverificatie";
+"10007" = "Wachtwoord invoeren";
+"10008" = "Gebruikersnaam invoeren";
+"10009" = "Antwoord invoeren";
+"10010" = "Uw referenties invoeren";
+"10011" = "Aanmelden";
+"10012" = "Beveiligingscertificaat is ongeldig. Tik op 'Accepteren' om toch verbinding te maken.";
+"10013" = "Accepteren";
+"10014" = "Beveiligingswaarschuwing";
+"10015" = "Certificaatoverzicht";
+"10016" = "Gecombineerde verificatie";
+"10017" = "Laden...";
+"10018" = "Verificatie wordt uitgevoerd...";
+"10019" = "Automatisch inloggen";
+"10020" = "Referenties onthouden";
+"10021" = "Alleen gebruikersnaam onthouden";
+"10022" = "Identiteitsdomein";
+"10023" = "Identiteitsdomein invoeren";
+"10024" = "De identiteit is beveiligd met een wachtwoord. Voer een wachtwoord in om te ontgrendelen en importeren.";
+"10025" = "Clientidentiteit";
+"10026" = "Importeren";
+"10027" = "Clientidentiteit selecteren";
+"10028" = "Geldigheid";
+"10029" = "Fout";
+"10030" = "OK";

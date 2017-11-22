@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Operace byla úspěšně dokončena.";
+"00001" = "Nelze se připojit k serveru %1$@.";
+"00002" = "Server OIC vrátil chybu: %ld - %1$@";
+"00003" = "Adresa URL %1$@ je neplatná. Nevyhovuje standardu RFC 2396.";
+"00004" = "Adresa URL serveru OIC je povinná.";
+"00005" = "Uživatel zrušil operaci přihlášení.";
+"00006" = "Toto zařízení nebylo ještě ověřeno na serveru OIC.";
+"00007" = "Pro schéma ověřování %1$@ nebyla nalezena žádná odpovídající třída.";
+"00008" = "Není zadáno žádné schéma ověřování.";
+"00009" = "Registrace zařízení selhala";
+"00010" = "Ověření uživatele selhalo.";
+"00011" = "Schéma ověřování %1$@ je v rámci tohoto SDK neznámé.";
+"00012" = "Nelze otevřít adresu URL pro ověření RL.";
+"00013" = "Nelze otevřít adresu URL pro ověření SSO.";
+"00014" = "Klientská aplikace není autorizována ke spoluúčasti v SSO.";
+"00015" = "Profil aplikace je neplatný nebo není stažen.";
+"00016" = "Uživateli byl přístup do zadaného umístění";
+"00017" = "Řadič zobrazení moderátora nemůže mít hodnotu null.";
+"00018" = "Požadavek REST je neplatný";
+"00019" = "Uživatel ještě není ověřen";
+"00020" = "Server OIC zamítnul požadavek na token přístupu.";
+"00021" = "Setup API není ještě voláno.";
+"00022" = "Klíč KeyChainItem má hodnotu null";
+"00023" = "Vstupní hodnota je neplatná";
+
+/*  OMCryptoService Messages */
+"00024" = "Selhání přidělení paměti";
+"00025" = "Systémová chyba při generování náhodného čísla - %ld.";
+"00026" = "Požadovaná délka je příliš krátká.";
+"00027" = "Vstupní text nemůže být prázdný.";
+"00028" = "Neznámý nebo nepodporovaný algoritmus.";
+"00029" = "Klíč nemůže být prázdný.";
+"00030" = "Algoritmus nepodporuje velikost klíče.";
+"00031" = "Délka vektoru inicializace musí odpovídat velikosti bloku algoritmu.";
+"00032" = "Délka prostého textu není násobkem velikosti bloku. Je požadována výplň.";
+"00033" = "Neznámá nebo nepodporovaná výplň.";
+"00034" = "Systémová chyba šifrování - %ld.";
+"00035" = "Požadovaná délka není násobkem 4.";
+"00036" = "Pro vybraný algoritmus jsou požadována náhodná data.";
+"00037" = "Náhodná data nejsou u vybraného algoritmu podporována.";
+"00038" = "Nelze nastavit předponu náhodných dat při použití algoritmu bez náhodných dat.";
+"00039" = "Vstup nemá předponu názvu algoritmu.";
+"00040" = "Pokud je aktivováno kódování Base64, musí být vstup NSString.";
+"00041" = "Neznámý typ vstupu. Musí být NSString nebo NSData.";
+"00042" = "Délka vstupu musí být menší nebo se rovnat %ld.";
+"00043" = "Systémová chyba generování dvojice klíčů - %ld.";
+"00044" = "Značka požadovaná k identifikaci klíče v řetězci klíčů.";
+"00045" = "Systémová chyba řetězce klíčů - %ld.";
+"00046" = "Položka řetězce klíčů nebyla nalezena.";
+"00047" = "Systémová chyba podepisování - %ld.";
+"00048" = "Vstupní podpis nemůže být prázdný.";
+"00049" = "Systémová chyba ověřování - %ld.";
+"00050" = "Systémová chyba dešifrování - %ld.";
+"00051" = "Položka řetězce klíčů již byla nalezena.";
+"00052" = "Neznámý nebo nepodporovaný typ klíče";
+"00053" = "Byla zadána neplatná úroveň ochrany dat řetězce klíčů.";
+"00054" = "Systémová chyba při generování klíče PBKDF2 - %ld.";
+
+"00100" = "Neplatné uživatelské jméno nebo heslo.";
+"00101" = "Uživatel nemá oprávnění.";
+"00102" = "Neplatná URL přihlášení.";
+"00103" = "Klientská aplikace není registrovaná. Ověření offline nelze provést.";
+"00104" = "Klientská aplikace není autorizována ke spoluúčasti v SSO.";
+"00105" = "Režim externího prohlížeče není podporován";
+"00106" = "Uživatelská stránka ověření neobsahuje všechna požadovaná pole s ověřovacími údaji";
+"00107" = "Probíhá odhlášení. Přihlaste se až po dokončení odhlášení.";
+"00108" = "V požadavku schází povinný parametr, zahrnuje nesprávnou hodnotu parametru, zahrnuje vícekrát stejný parametr, nebo je jinak poškozen.";
+"00109" = "Klient není oprávněn požadovat ověřovací kód tímto způsobem.";
+"00110" = "Vlastník zdroje nebo ověřovací server požadavek zamítl.";
+"00111" = "Server ověření nepodporuje získávání kódu ověření pomocí této metody.";
+"00112" = "Požadovaný rozsah je neplatný, neznámý nebo poškozený.";
+"00113" = "Ověřovací server narazil na neočekávaný stav, který mu zabránil ve splnění požadavku.";
+"00114" = "Ověřovací server nyní nemůže zpracovat požadavek, protože je dočasně přetížen nebo ve stavu údržby.";
+"00116" = "Ověřování již probíhá.";
+"00117" = "Zadaný koncový bod tokenu není platný.";
+"00118" = "Neplatný koncový bod tokenu, nebo v požadavku tokenu schází některé povinné parametry, nebo mají některé parametry neplatnou hodnotu.";
+"00119" = "Uživatelské jméno je povinné.";
+"00120" = "Vypršel čas ověřování.";
+
+"00121" = "Zdroj není v dané cestě k souboru dostupný.";
+"00122" = "Doména identity je povinný údaj.";
+"00123" = "Uživatelské jméno a doména identity jsou povinné údaje.";
+"00124" = "Uživatel odmítl certifikát serveru.";
+"00125" = "Neplatné uživatelské jméno, heslo nebo doména identity.";
+
+"00126" = "Z aplikace byla obdržena neplatná odpověď. Opakujte pokus.";
+"00127" = "Neplatná odpověď ověření sociální identity.";
+"00128" = "Prázdná už. lex. jednotka.";
+"00129" = "Deskriptor registrace klientu je prázdný.";
+
+"00130" = "Ověření je blokováno serverem.";
+"00131" = "Ze serveru byl obdržen příkaz k vymazání. Probíhá mazání citlivých dat aplikace.";
+
+"00132" = "Požadovaná adresa URL neexistuje. Požádejte správce o pomoc.";
+"00133" = "Požadovaná adresa URL je neplatná. Zkontrolujte adresu URL, ke které se snažíte přistoupit.";
+"00134" = "Síť je nedostupná. Ujistěte se, že jste připojen k internetu a opakujte pokus.";
+"00135" = "Server není na zadané adrese dostupný. Požádejte správce o pomoc.";
+"00136" = "Na serveru došlo k chybě %@. Požádejte správce o pomoc.";
+"00137" = "Neplatná adresa URL odhlášení";
+"00138" = "Zadané heslo je nesprávné.";
+"00139" = "Nejsou k dispozici žádné identity.";
+"00140" = "Uživatel zrušil import certifikátu klientu";
+
+"00141" = "Klientu není povoleno použít předaný typ udělení pro ověření OAuth.";
+"00142" = "SSO na straně serveru je podporováno pouze z udělení OAM_CREDENTIAL.";
+"00143" = "Neplatné ověřovací údaje klientu";
+"00144" = "Akce není povolena";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Přihlášení";
+"10002" = "Zrušit";
+"10003" = "Uživatelské jméno";
+"10004" = "Heslo";
+"10005" = "Odpovězte na tajnou otázku";
+"10006" = "Ověřování internetové identity";
+"10007" = "Zadejte heslo";
+"10008" = "Zadejte uživatelské jméno";
+"10009" = "Zadejte odpověď";
+"10010" = "Zadejte svá pověření";
+"10011" = "Přihlášení";
+"10012" = "Bezpečnostní certifikát je neplatný. Kliknutím na Přijmout se přesto připojíte.";
+"10013" = "Přijmout";
+"10014" = "Varování zabezpečení!";
+"10015" = "Stručný popis certifikátu";
+"10016" = "Federované ověřování";
+"10017" = "Probíhá načítání ...";
+"10018" = "Probíhá ověřování ...";
+"10019" = "Automatické přihlášení";
+"10020" = "Pamatovat si ověřovací údaje";
+"10021" = "Pamatovat si jen jméno";
+"10022" = "Doména identity";
+"10023" = "Zadejte doménu identity";
+"10024" = "Identita je chráněna heslem. Zadejte heslo k odemknutí a importu";
+"10025" = "Identita klientu";
+"10026" = "Importovat";
+"10027" = "Zvolte identitu klientu";
+"10028" = "Platnost";
+"10029" = "Chyba";
+"10030" = "OK";

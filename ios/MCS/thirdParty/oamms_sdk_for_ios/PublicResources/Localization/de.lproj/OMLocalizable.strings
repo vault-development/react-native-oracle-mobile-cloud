@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Vorgang erfolgreich abgeschlossen.";
+"00001" = "Anmeldung bei Server %1$@ nicht erfolgreich.";
+"00002" = "OIC-Server gab folgenden Fehler zurück: %ld - %1$@";
+"00003" = "URL %1$@ ist ungültig. Sie ist nicht RFC 2396-konform.";
+"00004" = "OIC-Server-URL ist erforderlich.";
+"00005" = "Benutzer hat die Anmeldung abgebrochen.";
+"00006" = "Dieses Gerät wurde noch nicht beim OIC-Server authentifiziert.";
+"00007" = "Es wurde keine übereinstimmende Klasse für das Authentifizierungsschema %1$@ gefunden.";
+"00008" = "Es wurde kein Authentifizierungsschema angegeben.";
+"00009" = "Die Registrierung des Geräts war nicht erfolgreich.";
+"00010" = "Benutzerauthentifizierung war nicht erfolgreich.";
+"00011" = "Authentifizierungsschema %1$@ ist diesem SDK unbekannt.";
+"00012" = "RP-Authentifizierungs-URL konnte nicht geöffnet werden.";
+"00013" = "SSO-Authentifizierungs-URL konnte nicht geöffnet werden.";
+"00014" = "Die Clientanwendung ist nicht zur Teilnahme am SSO autorisiert.";
+"00015" = "Das Anwendungsprofil ist ungültig oder wurde nicht heruntergeladen.";
+"00016" = "Der Benutzer hat den Zugriff auf den Speicherort verweigert.";
+"00017" = "Der Controller der Präsentatoransicht darf nicht null sein.";
+"00018" = "Die REST-Anforderung ist ungültig";
+"00019" = "Der Benutzer ist noch nicht authentifiziert";
+"00020" = "Der OIC-Server hat die Zugriffsanforderung für den Token verweigert.";
+"00021" = "Setup API wurde nicht aufgerufen.";
+"00022" = "KeyChainItem-Schlüssel ist null";
+"00023" = "Eingabewert ist ungültig";
+
+/*  OMCryptoService Messages */
+"00024" = "Fehler bei Speicherzuweisung.";
+"00025" = "Zufallszahlenerstellung - Systemfehler - %ld.";
+"00026" = "Angeforderte Länge zu kurz.";
+"00027" = "Eingabetext darf nicht leer sein.";
+"00028" = "Unbekannter oder nicht unterstützter Algorithmus.";
+"00029" = "Schlüssel darf nicht leer sein.";
+"00030" = "Schlüsselgröße nicht vom Algorithmus unterstützt.";
+"00031" = "Initialisierungsvektorlänge muss mit Algorithmusblockgröße übereinstimmen.";
+"00032" = "Klartextlänge ist kein Vielfaches der Blockgröße. Padding erforderlich.";
+"00033" = "Unbekanntes oder nicht unterstütztes Padding.";
+"00034" = "Verschlüsselungssystemfehler - %ld.";
+"00035" = "Angeforderte Länge ist kein Vielfaches von 4.";
+"00036" = "Salt für gewählten Algorithmus erforderlich.";
+"00037" = "Salt für gewählten Algorithmus nicht unterstützt.";
+"00038" = "Salt kann nicht als Präfix verwendet werden, wenn ein Nicht-Salt-Algorithmus verwendet wird.";
+"00039" = "Algorithmusname wurde der Eingabe nicht als Präfix vorangestellt.";
+"00040" = "Eingabe muss NSString sein, wenn Base64-Codierung aktiviert ist.";
+"00041" = "Unbekannter Eingabetyp. Muss NSString oder NSData sein.";
+"00042" = "Eingabelänge muss kleiner als oder gleich %ld sein.";
+"00043" = "Schlüsselpaargenerierung - Systemfehler - %ld.";
+"00044" = "Tag erforderlich, um Schlüssel in Schlüsselbund zu identifizieren.";
+"00045" = "Schlüsselbund-Systemfehler - %ld.";
+"00046" = "Schlüsselbundelement nicht gefunden.";
+"00047" = "Signierungssystemfehler - %ld.";
+"00048" = "Eingabesignatur darf nicht leer sein.";
+"00049" = "Überprüfungssystemfehler - %ld.";
+"00050" = "Entschlüsselungssystemfehler - %ld.";
+"00051" = "Schlüsselbundelement bereits gefunden.";
+"00052" = "Unbekannter oder nicht unterstützter Schlüsseltyp";
+"00053" = "Ungültige Schlüsselbund-Datensicherungsebene angegeben.";
+"00054" = "Systemfehler bei der PBKDF2-Schlüsselgenerierung - %ld.";
+
+"00100" = "Benutzername oder Kennwort ungültig.";
+"00101" = "Der Benutzer ist nicht autorisiert.";
+"00102" = "Ungültige Anmelde-URL.";
+"00103" = "Clientanwendung ist nicht registriert. Offlineauthentifizierung kann nicht ausführt werden.";
+"00104" = "Die Clientanwendung ist nicht zur Teilnahme am SSO autorisiert.";
+"00105" = "Externer Browsermodus wird nicht unterstützt";
+"00106" = "Die benutzerdefinierte Authentifizierungsseite enthält nicht alle erforderlichen Zugangsdatenfelder.";
+"00107" = "Abmeldung erfolgt. Anmeldung nach Abmeldung ist abgeschlossen.";
+"00108" = "Entweder fehlt der Anforderung ein erforderlicher Parameter, sie beinhaltet einen ungültigen Parameterwert, sie wiederholt einen Parameter, oder sie ist auf eine andere Weise falsch formatiert.";
+"00109" = "Der Client ist nicht autorisiert, mithilfe dieser Methode einen Autorisierungscode anzufordern.";
+"00110" = "Die Anforderung wurde vom Ressourceneigentümer oder Autorisierungsserver abgelehnt.";
+"00111" = "Der Abruf eines Autorisierungscodes mithilfe dieser Methode wird vom Autorisierungsserver nicht unterstützt.";
+"00112" = "Der angeforderte Geltungsbereich ist ungültig, unbekannt oder falsch formatiert.";
+"00113" = "Der Autorisierungsserver ist auf eine unerwartete Bedingung gestoßen, die die Ausführung der Anforderung verhindert hat.";
+"00114" = "Der Autorisierungsserver kann die Anforderung im Augenblick nicht verarbeiten, weil der Server vorübergehend überlastet ist oder gewartet wird.";
+"00116" = "Authentifizierung wird bereits ausgeführt.";
+"00117" = "Der angegebene Tokenendpunkt ist ungültig.";
+"00118" = "Der Tokenendpunkt ist ungültig, in der Tokenanforderung fehlen erforderliche Parameter, oder für mindestens einen Parameter wurde ein ungültiger Wert angegeben.";
+"00119" = "Benutzername erforderlich.";
+"00120" = "Timeout bei Authentifizierung.";
+
+"00121" = "Ressource unter angegebenem Dateipfad nicht verfügbar.";
+"00122" = "Identitätsdomain ist erforderlich.";
+"00123" = "Benutzername und Identitätsdomain erforderlich.";
+"00124" = "Benutzer hat Serverzertifikat abgelehnt.";
+"00125" = "Benutzername, Kennwort oder Identitätsdomain ungültig.";
+
+"00126" = "Ungültige Antwort von Anwendung empfangen. Wiederholen Sie den Vorgang.";
+"00127" = "Ungültige Antwort bei Authentifizierung der Netzidentität.";
+"00128" = "Benutzertoken ist leer.";
+"00129" = "Clientregistrierungs-Handle ist leer.";
+
+"00130" = "Authentifizierung vom Server blockiert.";
+"00131" = "Wischbefehl von Server empfangen. Vertrauliche Anwendungsdaten werden gelöscht.";
+
+"00132" = "Die angeforderte URL ist nicht vorhanden. Wenden Sie sich an den Administrator.";
+"00133" = "Die angeforderte URL ist ungültig. Prüfen Sie die URL, auf die Sie zugreifen möchten.";
+"00134" = "Netzwerk nicht verfügbar. Prüfen Sie die Internetverbindung, und wiederholen Sie den Vorgang.";
+"00135" = "Server ist unter der angegebenen Adresse nicht zugänglich. Wenden Sie sich an den Administrator.";
+"00136" = "Der Server hat einen Fehler ermittelt %@. Wenden Sie sich an den Administrator.";
+"00137" = "Ungültige Abmelde-URL";
+"00138" = "Das Kennwort ist falsch.";
+"00139" = "Keine Identitäten vorhanden.";
+"00140" = "Benutzer hat Import von Clientzertifikat abgebrochen";
+
+"00141" = "Client nicht berechtigt, übergebenen OAuth-Autorisierungstyp zu verwenden.";
+"00142" = "Serverseitiges SSO wird nur bei OAM_CREDENTIAL-Berechtigung unterstützt.";
+"00143" = "Ungültige Clientzugangsdaten";
+"00144" = "Aktion nicht zulässig";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Anmelden";
+"10002" = "Abbrechen";
+"10003" = "Benutzername";
+"10004" = "Kennwort";
+"10005" = "Beantworten Sie die Sicherheitsfrage";
+"10006" = "Internet-Identity-Authentifizierung";
+"10007" = "Kennwort eingeben";
+"10008" = "Benutzername eingeben";
+"10009" = "Antwort eingeben";
+"10010" = "Zugangsdaten eingeben";
+"10011" = "Anmelden";
+"10012" = "Das Sicherheitszertifikat ist ungültig. Klicken Sie auf \"Annehmen\", um trotzdem eine Verbindung herzustellen.";
+"10013" = "Annehmen";
+"10014" = "Sicherheitswarnung!";
+"10015" = "Zertifikatzusammenfassung";
+"10016" = "Kombinierte Authentifizierung";
+"10017" = "Wird geladen...";
+"10018" = "Authentifizierung läuft...";
+"10019" = "Automatische Anmeldung";
+"10020" = "Zugangsdaten speichern";
+"10021" = "Nur Benutzernamen speichern";
+"10022" = "Identitätsdomain";
+"10023" = "Identitätsdomain eingeben";
+"10024" = "Die Identität ist kennwortgeschützt. Geben Sie zum Entsperren und Importieren das Kennwort ein";
+"10025" = "Clientidentität";
+"10026" = "Import";
+"10027" = "Clientidentität auswählen";
+"10028" = "Gültigkeit";
+"10029" = "Fehler";
+"10030" = "OK";

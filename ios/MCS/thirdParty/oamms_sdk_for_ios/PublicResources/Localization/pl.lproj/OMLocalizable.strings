@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Operacja została pomyślnie ukończona.";
+"00001" = "Nie udało się połączyć z serwerem %1$@.";
+"00002" = "Serwer OIC zwrócił błąd: %ld - %1$@";
+"00003" = "URL %1$@ jest niepoprawny. Nie jest zgodny ze specyfikacją RFC 2396.";
+"00004" = "URL serwera OIC jest wymagany.";
+"00005" = "Użytkownik anulował operację logowania.";
+"00006" = "To urządzenie nie zostało jeszcze zidentyfikowane z użyciem serwera OIC.";
+"00007" = "Nie znaleziono zgodnej klasy dla schematu identyfikacji %1$@.";
+"00008" = "Nie określono schematu identyfikacji.";
+"00009" = "Nie udało się zarejestrować obiektu urządzenia.";
+"00010" = "Nie udało się zidentyfikować użytkownika.";
+"00011" = "Schemat identyfikacji %1$@ jest nieznany dla tego SDK.";
+"00012" = "Nie można otworzyć URL identyfikacji RP.";
+"00013" = "Nie można otworzyć URL identyfikacji SSO.";
+"00014" = "Aplikacja kliencka nie jest autoryzowana do uczestnictwa w SSO.";
+"00015" = "Profil aplikacji jest niepoprawny lub nie został pobrany.";
+"00016" = "Użytkownikowi odmówiono dostępu do lokalizacji";
+"00017" = "Kontroler widoku prezentera nie może mieć wartości nil.";
+"00018" = "Żądanie REST jest niepoprawne";
+"00019" = "Użytkownik nie został jeszcze zidentyfikowany";
+"00020" = "Serwer OIC odmówił dostępu żądaniu z tokenem.";
+"00021" = "Konfiguracyjny interfejs API nie został jeszcze wywołany.";
+"00022" = "Klucz KeyChainItem ma wartość nil";
+"00023" = "Wartość wejściowa jest niepoprawna";
+
+/*  OMCryptoService Messages */
+"00024" = "Nie udało się przydzielić pamięci.";
+"00025" = "Błąd systemu podczas generowania liczby losowej - %ld.";
+"00026" = "Za krótka żądana długość.";
+"00027" = "Tekst wejściowy nie może być pusty.";
+"00028" = "Nieznany lub nieobsługiwany algorytm.";
+"00029" = "Klucz nie może być pusty.";
+"00030" = "Rozmiar klucza nieobsługiwany przez algorytm.";
+"00031" = "Długość wektora inicjalizacji musi być zgodna z rozmiarem bloku z algorytmu.";
+"00032" = "Długość tekstu zwykłego nie jest wielokrotnością rozmiaru bloku. Wymagane jest dopełnienie.";
+"00033" = "Nieznane lub nieobsługiwane dopełnienie.";
+"00034" = "Błąd systemu podczas szyfrowania - %ld.";
+"00035" = "Żądana długość nie jest wielokrotnością 4.";
+"00036" = "Dla wybranego algorytmu trzeba określić \"salt\".";
+"00037" = "\"Salt\" nie jest obsługiwany dla wybranego algorytmu.";
+"00038" = "Nie można wprowadzić prefiksu \"salt\", gdy jest używany algorytm bez \"salt\".";
+"00039" = "Dane wejściowe nie zostały poprzedzone nazwą algorytmu.";
+"00040" = "Gdy jest włączone kodowanie Base64, dane wejściowe muszą być typu NSString.";
+"00041" = "Nieznany typ danych wejściowych. Musi to być typ NSString lub NSData.";
+"00042" = "Długość danych wejściowych nie może przekraczać %ld znaków.";
+"00043" = "Błąd systemu podczas generowania pary kluczy - %ld.";
+"00044" = "Znacznik wymagany do rozpoznania klucza w łańcuchu kluczy.";
+"00045" = "Błąd systemu związany z łańcuchem kluczy - %ld.";
+"00046" = "Nie znaleziono elementu łańcucha kluczy.";
+"00047" = "Błąd systemu podczas podpisywania - %ld.";
+"00048" = "Podpis wejściowy nie może być pusty.";
+"00049" = "Błąd systemu podczas weryfikacji - %ld.";
+"00050" = "Błąd systemu podczas deszyfrowania - %ld.";
+"00051" = "Element łańcucha kluczy już został znaleziony.";
+"00052" = "Nieznany lub nieobsługiwany typ klucza";
+"00053" = "Podano niepoprawny poziom ochrony danych łańcucha kluczy";
+"00054" = "Błąd systemu podczas generowania klucza PBKDF2 - %ld.";
+
+"00100" = "Niepoprawna nazwa użytkownika lub hasło.";
+"00101" = "Użytkownik nie jest autoryzowany.";
+"00102" = "Niepoprawny URL logowania.";
+"00103" = "Aplikacja kliencka nie jest zarejestrowana. Nie można przeprowadzić identyfikacji w trybie offline.";
+"00104" = "Aplikacja kliencka nie jest autoryzowana do uczestnictwa w SSO.";
+"00105" = "Tryb przeglądarki zewnętrznej nie jest obsługiwany";
+"00106" = "Niestandardowa strona identyfikacji nie ma wszystkich wymaganych pól uwierzytelnień.";
+"00107" = "Trwa wylogowywanie. Proszę się zalogować, gdy wylogowywanie zostanie ukończone.";
+"00108" = "W żądaniu nie ma wymaganego parametru, jest zawarta niepoprawna wartość parametru albo jest powtórzony parametr bądź żądanie to ma niepoprawną postać z innego powodu.";
+"00109" = "Ten klient nie jest autoryzowany do uzyskiwania kodu (kodu autoryzacji) za pomocą tej metody.";
+"00110" = "Właściciel zasobu lub serwer autoryzacji odmawia dostępu.";
+"00111" = "Serwer autoryzacji nie obsługuje uzyskiwania kodu (kodu autoryzacji) za pomocą tej metody.";
+"00112" = "Żądany zakres jest niepoprawny, nieznany lub ma niepoprawną postać.";
+"00113" = "Serwer autoryzacji wykrył nieoczekiwany warunek, który uniemożliwił spełnienie żądania.";
+"00114" = "Serwer autoryzacji nie może obecnie obsłużyć żądania z powodu tymczasowego przeciążenia serwera lub prac konserwacyjnych.";
+"00116" = "Właśnie trwa identyfikacja.";
+"00117" = "Podany punkt końcowy tokenu jest niepoprawny.";
+"00118" = "Punkt końcowy tokenu jest niepoprawny lub w żądaniu tokenu brak niektórych wymaganych parametrów lub dla niektórych parametrów podano niepoprawne wartości.";
+"00119" = "Nazwa użytkownika jest wymagana.";
+"00120" = "Upłynął limit czasu identyfikacji.";
+
+"00121" = "Zasób nie jest dostępny na podanej ścieżce pliku.";
+"00122" = "Domena tożsamości jest wymagana.";
+"00123" = "Nazwa użytkownika i domena tożsamości są wymagane.";
+"00124" = "Certyfikat serwera odrzucony przez użytkownika.";
+"00125" = "Niepoprawne nazwa użytkownika, lub hasło lub domena tożsamości.";
+
+"00126" = "Otrzymano niepoprawną odpowiedź z aplikacji. Proszę spróbować ponownie.";
+"00127" = "Niepoprawna odpowiedź na identyfikację tożsamości Social.";
+"00128" = "Token użytkownika jest pusty";
+"00129" = "Uchwyt rejestracji klienta jest pusty.";
+
+"00130" = "Identyfikacja zablokowana przez serwer.";
+"00131" = "Otrzymano polecenie \"wipe\" z serwera. Czyszczenie wrażliwych danych aplikacji.";
+
+"00132" = "Żądany URL nie istnieje. Aby uzyskać pomoc, proszę się skontaktować z administratorem.";
+"00133" = "Żądany URL jest niepoprawny. Proszę sprawdzić URL, do którego ma zostać uzyskany dostęp.";
+"00134" = "Sieć jest niedostępna. Proszę sprawdzić, czy istnieje połączenie z Internetem, po czym ponowić próbę.";
+"00135" = "Serwer nie jest osiągalny pod podanym adresem. Aby uzyskać pomoc, proszę się skontaktować z administratorem.";
+"00136" = "Serwer napotkał błąd: %@. Aby uzyskać pomoc, proszę się skontaktować z administratorem.";
+"00137" = "Niepoprawny URL wylogowywania";
+"00138" = "Hasło jest niepoprawne.";
+"00139" = "Nie ma żadnych tożsamości.";
+"00140" = "Użytkownik anulował import certyfikatu klienta";
+
+"00141" = "Klient nie zezwolił na użycie przekazanego typu przyznania autoryzacji przez OAuth.";
+"00142" = "SSO po stronie serwera jest obsługiwane tylko z przyznania OAM_CREDENTIAL";
+"00143" = "Niepoprawne uwierzytelnienia klienta";
+"00144" = "Czynność niedozwolona";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Zaloguj";
+"10002" = "Anuluj";
+"10003" = "Nazwa użytkownika";
+"10004" = "Hasło";
+"10005" = "Proszę udzielić odpowiedzi na pytanie zabezpieczające";
+"10006" = "Internet Identity Authentication";
+"10007" = "Proszę podać hasło";
+"10008" = "Proszę podać nazwę użytkownika";
+"10009" = "Proszę podać odpowiedź";
+"10010" = "Proszę podać swoje uwierzytelnienia";
+"10011" = "Zaloguj";
+"10012" = "Certyfikat zabezpieczeń jest niepoprawny. Aby mimo to się połączyć, proszę wybrać \"Akceptuję\"";
+"10013" = "Akceptuję";
+"10014" = "Ostrzeżenie związane z zabezpieczeniami!";
+"10015" = "Podsumowanie certyfikatu";
+"10016" = "Identyfikacja sfederowana";
+"10017" = "Ładowanie...";
+"10018" = "Trwa identyfikowanie...";
+"10019" = "Automatyczne logowanie";
+"10020" = "Zapamiętaj uwierzytelnienia";
+"10021" = "Zapamiętaj tylko nazwę użytkownika";
+"10022" = "Domena tożsamości";
+"10023" = "Proszę podać domenę tożsamości";
+"10024" = "Tożsamość jest chroniona hasłem. Aby można było odblokować i zaimportować, proszę podać hasło.";
+"10025" = "Tożsamość klienta";
+"10026" = "Importuj";
+"10027" = "Wybór tożsamości klienta";
+"10028" = "Ważność";
+"10029" = "Błąd";
+"10030" = "OK";

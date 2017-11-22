@@ -85,3 +85,6 @@ import RNOracleMobileCloud from 'react-native-oracle-mobile-cloud';
         }
       });
 ```
+
+## TODO
+  `Location, Storage, Notification, Analytics and Database`

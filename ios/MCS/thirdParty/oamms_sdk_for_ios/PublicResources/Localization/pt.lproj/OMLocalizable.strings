@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "A operação foi concluída com êxito.";
+"00001" = "Não foi possível ligar ao servidor %1$@.";
+"00002" = "O servidor do OIC devolveu o erro: %ld - %1$@";
+"00003" = "O URL %1$@ é inválido. Não está em conformidade com a norma RFC 2396.";
+"00004" = "O URL do Servidor do OIC é obrigatório.";
+"00005" = "O utilizador cancelou a operação de entrada em sessão.";
+"00006" = "Este dispositivo ainda não está autenticado no Servidor do OIC.";
+"00007" = "Não foi encontrada nenhuma classe correspondente para o esquema de autenticação %1$@.";
+"00008" = "Não foi especificado nenhum esquema de autenticação.";
+"00009" = "Falha no registo do dispositivo.";
+"00010" = "Falha na autenticação do utilizador.";
+"00011" = "O esquema de autenticação %1$@ é desconhecido para este SDK.";
+"00012" = "Incapaz de abrir o URL de Autenticação de RP.";
+"00013" = "Incapaz de abrir o URL de Autenticação de SSO.";
+"00014" = "A aplicação do cliente não está autorizada a participar no SSO.";
+"00015" = "O perfil da aplicação é inválido ou não foi exportado.";
+"00016" = "Foi recusado o acesso do utilizador à localização";
+"00017" = "Não é possível que o controlador de visualização do apresentador seja nulo.";
+"00018" = "O Pedido de REST é inválido";
+"00019" = "O utilizador ainda não está autenticado";
+"00020" = "O servidor do OIC recusou o pedido de símbolo de acesso.";
+"00021" = "A API de configuração não foi invocada.";
+"00022" = "A chave KeyChainItem é nula";
+"00023" = "O valor de entrada de dados é inválido";
+
+/*  OMCryptoService Messages */
+"00024" = "Falha na atribuição de memória.";
+"00025" = "Erro do sistema de geração de números aleatórios - %ld.";
+"00026" = "O comprimento pedido é demasiado pequeno.";
+"00027" = "Não é possível que o texto de entrada de dados esteja vazio.";
+"00028" = "Algoritmo desconhecido ou não suportado.";
+"00029" = "Não é possível que a chave esteja vazia.";
+"00030" = "A dimensão da chave não é suportada pelo algoritmo.";
+"00031" = "É necessário que o comprimento do Vetor de Inicialização corresponda à dimensão do bloco do algoritmo.";
+"00032" = "O comprimento do Texto Simples não é um múltiplo da dimensão do bloco. Preenchimento Necessário.";
+"00033" = "Preenchimento desconhecido ou não suportado.";
+"00034" = "Erro do sistema de codificação - %ld.";
+"00035" = "O comprimento pedido não é um múltiplo de 4.";
+"00036" = "Salt necessário para o algoritmo escolhido.";
+"00037" = "Salt não suportado para o algoritmo escolhido.";
+"00038" = "Não é possível utilizar Salt como prefixo quando é utilizado um algoritmo sem Salt.";
+"00039" = "Entrada de dados sem o nome do algoritmo como prefixo.";
+"00040" = "É necessário que a entrada de dados seja NSString quando a codificação Base64 está ativada.";
+"00041" = "Tipo de entrada de dados desconhecido. É necessário que seja NSString ou NSData.";
+"00042" = "É necessário que o comprimento da entrada de dados seja menor que ou igual a %ld.";
+"00043" = "Erro do sistema de geração do par de chaves - %ld.";
+"00044" = "Identificador necessário para identificar a chave na cadeia de chaves.";
+"00045" = "Erro do sistema da cadeia de chaves - %ld.";
+"00046" = "O item da cadeia de chaves não foi encontrado.";
+"00047" = "Erro do sistema de assinatura - %ld.";
+"00048" = "Não é possível que a assinatura de entrada de dados esteja vazia.";
+"00049" = "Erro do sistema de verificação - %ld.";
+"00050" = "Erro do sistema de descodificação - %ld.";
+"00051" = "O Item da cadeia de chaves já foi encontrado.";
+"00052" = "Tipo de chave desconhecido ou não suportado";
+"00053" = "Foi especificado um nível de proteção de dados da cadeia de chaves inválido.";
+"00054" = "Erro do sistema de geração da chave PBKDF2 - %ld.";
+
+"00100" = "Nome de utilizador ou senha inválido.";
+"00101" = "O utilizador não está autorizado.";
+"00102" = "URL entr. sessão inválido.";
+"00103" = "A aplicação do cliente não foi registada. Não é possível efetuar a autenticação em modo não interativo.";
+"00104" = "A aplicação do cliente não está autorizada a participar no SSO.";
+"00105" = "O modo de navegador externo não é suportado";
+"00106" = "A página de autenticação personalizada não tem todos os campos de credenciais obrigatórios.";
+"00107" = "A saída de sessão está a decorrer. Entre em sessão depois de concluída a saída de sessão.";
+"00108" = "Falta um parâmetro obrigatório no pedido, inclui um valor de parâmetro inválido, inclui mais do que um parâmetro ou está incorreto.";
+"00109" = "O cliente não está autorizado a pedir um código de autorização através deste método.";
+"00110" = "O proprietário do recurso ou servidor de autorização recusou o pedido.";
+"00111" = "O servidor de autorização não suporta a obtenção de um código de autorização através deste método.";
+"00112" = "O âmbito pedido é inválido, desconhecido ou está incorreto.";
+"00113" = "O servidor de autorização encontrou uma condição inesperada que o impediu de satisfazer o pedido.";
+"00114" = "Atualmente, o servidor de autorização não consegue tratar do pedido, devido a uma sobrecarga ou manutenção temporária do servidor.";
+"00116" = "A autenticação está a decorrer.";
+"00117" = "O Ponto Final do Símbolo fornecido não é válido.";
+"00118" = "O Ponto Final do Símbolo é inválido, faltam alguns parâmetros obrigatórios no Pedido de símbolo ou foi fornecido um valor inválido para alguns parâmetros.";
+"00119" = "Nome de utilizador obrigatório.";
+"00120" = "O tempo de espera da autenticação foi esgotado.";
+
+"00121" = "O recurso não está disponível no percurso do fich. fornecido.";
+"00122" = "Domínio da Identidade obrigatório.";
+"00123" = "Nome de utilizador e domínio da identidade obrigatórios.";
+"00124" = "O utilizador rejeitou o certificado do servidor.";
+"00125" = "Nome de utilizador, senha ou domínio da identidade inválido.";
+
+"00126" = "Foi recebida uma resposta inválida da aplicação. Tente novamente.";
+"00127" = "Resposta de autenticação da Identidade Social inválida.";
+"00128" = "Símbolo do utilizador vazio.";
+"00129" = "Parâm. identificador do registo do cliente vazio.";
+
+"00130" = "Autenticação bloqueada pelo servidor.";
+"00131" = "Foi recebido o comando de limpeza do servidor. A limpar os dados sensíveis da aplicação.";
+
+"00132" = "O URL pedido não existe. Contacte o administrador para obter auxílio.";
+"00133" = "O URL pedido é inválido. Verifique o URL ao qual está a tentar ter acesso.";
+"00134" = "A rede não está disponível. Certifique-se de que está ligado à Internet e tente novamente.";
+"00135" = "Não é possível ter acesso ao servidor no endereço especificado. Contacte o administrador para obter auxílio.";
+"00136" = "O servidor encontrou um erro %@. Contacte o administrador para obter auxílio.";
+"00137" = "O URL de Saída de Sessão é inválido";
+"00138" = "A senha está incorreta.";
+"00139" = "Não existem identidades.";
+"00140" = "O utilizador cancelou importação do certific. cliente";
+
+"00141" = "Cliente sem permissão p/ utilizar tipo de concessão de Autorização OAuth transmitido.";
+"00142" = "O SSO do Servidor só é suportado a partir da concessão OAM_CREDENTIAL.";
+"00143" = "Credenciais do cliente inválidas";
+"00144" = "Ação não permitida";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Entrar em Sessão";
+"10002" = "Cancelar";
+"10003" = "Nome de utilizador";
+"10004" = "Senha";
+"10005" = "Responder à pergunta de permissão de acesso";
+"10006" = "Autenticação de Identidades da Internet";
+"10007" = "Introduzir senha";
+"10008" = "Introduzir nome de utilizador";
+"10009" = "Introduzir resposta";
+"10010" = "Introduzir credenciais";
+"10011" = "Entrar em Sessão";
+"10012" = "O certificado de permissão de acesso é inválido. Selecione Aceitar para ligar na mesma.";
+"10013" = "Aceitar";
+"10014" = "Aviso de Permissão de Acesso!";
+"10015" = "Resumo do Certificado";
+"10016" = "Autenticação Federada";
+"10017" = "A carregar...";
+"10018" = "A autenticação está a decorrer...";
+"10019" = "Entrada em Sessão Automática";
+"10020" = "Memorizar Credenciais";
+"10021" = "Memorizar Nome de Utilizador Apenas";
+"10022" = "Domínio da Identidade";
+"10023" = "Introduzir domínio da identidade";
+"10024" = "A identidade está protegida com uma senha. Introduza a senha para desbloquear e importar";
+"10025" = "Identidade do Cliente";
+"10026" = "Importar";
+"10027" = "Selecionar Identid. do Cliente";
+"10028" = "Validade";
+"10029" = "Erro";
+"10030" = "OK";

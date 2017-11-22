@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Toiminnon suoritus onnistui.";
+"00001" = "Ei voitu luoda yhteyttä palvelimeen %1$@.";
+"00002" = "OIC-palvelin palautti virheen: %ld - %1$@";
+"00003" = "URL %1$@ on virheellinen. Se ei noudata RFC 2396 -standardia.";
+"00004" = "OIC-palvelimen URL on pakollinen.";
+"00005" = "Käyttäjä peruutti sisäänkirjaustoiminnon.";
+"00006" = "Laitetta ei ole vielä todennettu OIC-palvelimella.";
+"00007" = "%1$@ -valtuutuskaavalle ei löytynyt vastaavaa luokkaa.";
+"00008" = "Todennuskaavaa ei ole määritetty.";
+"00009" = "Laitteen rekisteröinti epäonnistui.";
+"00010" = "Käyttäjän todennus epäonnistui.";
+"00011" = "SDK ei tunnista todennuskaavaa %1$@.";
+"00012" = "RP-todennuksen URL-osoitetta ei voi avata.";
+"00013" = "SSO-todennuksen URL-osoitetta ei voi avata.";
+"00014" = "Työasemasovelluksella ei ole valtuuksia osallistua SSO-todennukseen.";
+"00015" = "Sovellusprofiili on virheellinen tai sitä ei ole ladattu.";
+"00016" = "Käyttäjä on estänyt sijainnin käytön";
+"00017" = "Esittäjänäkymän ohjain ei voi olla tyhjä.";
+"00018" = "REST-pyyntö on virheellinen";
+"00019" = "Käyttäjää ei ole vielä todennettu";
+"00020" = "OIC-palvelin esti käyttömerkin pyynnön.";
+"00021" = "Määrityksen API:a ei kutsuttu.";
+"00022" = "KeyChainItem-avain on tyhjä";
+"00023" = "Syötearvo on virheellinen";
+
+/*  OMCryptoService Messages */
+"00024" = "Muistin varaus epäonnistui.";
+"00025" = "Satunnaislukugeneraattorijärjestelmän virhe - %ld.";
+"00026" = "Pyydetty pituus on liian lyhyt.";
+"00027" = "Syötteen teksti ei voi olla tyhjä.";
+"00028" = "Tuntematon tai ei-tuettu algoritmi.";
+"00029" = "Avain ei voi olla tyhjä.";
+"00030" = "Algoritmi ei tue avaimen kokoa.";
+"00031" = "Alustusvektorin pituuden on vastattava algoritmin lohkokokoa.";
+"00032" = "Pelkän tekstin pituus ei ole lohkokoon kerrannainen. Täyte vaaditaan.";
+"00033" = "Täyte on tuntematon tai sitä ei tueta.";
+"00034" = "Salausjärjestelmän virhe - %ld.";
+"00035" = "Pyydetty pituus ei ole neljän kerrannainen.";
+"00036" = "Valitulle algoritmille vaaditaan vaihtuva tekijä.";
+"00037" = "Valittu algoritmi ei tue vaihtuvaa tekijää.";
+"00038" = "Vaihtuvaan tekijään ei voi lisätä etuliitettä, kun käytetään algoritmia, jossa ei ole muuttuvaa tekijää.";
+"00039" = "Syötteen etuliitteeksi ei ole määritetty algoritmin nimeä.";
+"00040" = "Syötteen on oltava NSString, kun Base64-salaus on otettu käyttöön.";
+"00041" = "Tuntematon syötetyyppi. Sen on oltava NSString tai NSData.";
+"00042" = "Syötteen pituuden on oltava pienempi tai yhtä suuri kuin %ld.";
+"00043" = "Avainparin luontijärjestelmän virhe - %ld.";
+"00044" = "Tunniste vaaditaan avaimen tunnistamiseen avainketjussa.";
+"00045" = "Avainketjujärjestelmän virhe - %ld.";
+"00046" = "Avainketjualkiota ei löydy.";
+"00047" = "Allekirjoitusjärjestelmän virhe - %ld.";
+"00048" = "Syötteen allekirjoitus ei voi olla tyhjä.";
+"00049" = "Tarkistusjärjestelmän virhe - %ld.";
+"00050" = "Salauksen purkujärjestelmän virhe - %ld.";
+"00051" = "Avainketjualkio löytyi.";
+"00052" = "Avaintyyppi on tuntematon tai sitä ei tueta";
+"00053" = "Määritettiin virheellinen avainketjun tietojen suojaustaso.";
+"00054" = "PBKDF2-avaimen luontijärjestelmän virhe - %ld.";
+
+"00100" = "Väärä käyttäjätunnus tai salasana.";
+"00101" = "Käyttäjällä ei ole valtuuksia.";
+"00102" = "Virh. sisäänkirjaus-URL.";
+"00103" = "Työasemasovellusta ei ole rekisteröity. Offline-todennusta ei voi suorittaa.";
+"00104" = "Työasemasovelluksella ei ole valtuuksia osallistua SSO-todennukseen.";
+"00105" = "Ulkoista selaintilaa ei tueta";
+"00106" = "Räätälöidyllä todennussivulla ei ole kaikkia vaadittuja valtuuskenttiä.";
+"00107" = "Uloskirjaus on käynnissä. Kirjaudu sisään, kun uloskirjaus on valmis.";
+"00108" = "Pyynnöltä puuttuu pakollinen parametri, sillä on virheellinen parametrin arvo tai toistuva parametri tai se on muuten väärin muodostettu.";
+"00109" = "Työasemalla ei ole valtuutta pyytää valtuutuskoodia tällä menetelmällä.";
+"00110" = "Resurssin omistaja tai valtuutuspalvelin hylkäsi pyynnön.";
+"00111" = "Valtuutuspalvelin ei tue valtuutuskoodin noutoa tällä menetelmällä.";
+"00112" = "Pyydetty alue on virheellinen, tuntematon tai väärin muodostettu.";
+"00113" = "Valtuutuspalvelin kohtasi odottamattoman tilan, joka esti sitä toteuttamasta pyyntöä.";
+"00114" = "Valtuutuspalvelin ei voi juuri nyt käsitellä pyyntöä palvelimen tilapäisen ylikuormituksen tai huollon vuoksi.";
+"00116" = "Todennus on jo käynnissä.";
+"00117" = "Annettu merkin loppupiste on virheellinen.";
+"00118" = "Merkin loppupiste on virheellinen, merkin pyynnöstä puuttuu pakollisia parametreja tai joillekin parametreille on annettu virheellinen arvo.";
+"00119" = "Käyttäjätunnus on pakollinen.";
+"00120" = "Todennus aikakatkaistiin.";
+
+"00121" = "Resurssi ei ole käytettävissä annetussa tiedostopolussa.";
+"00122" = "Tunnistuksen toimialue on pakollinen.";
+"00123" = "Käyttäjätunnus ja tunnistuksen toimialue ovat pakollisia.";
+"00124" = "Käyttäjä hylkäsi palvelinvarmenteen.";
+"00125" = "Virheellinen käyttäjätunnus, salasana tai tunnistuksen toimialue.";
+
+"00126" = "Vastaanotettiin virheellinen vastaus sovelluksesta. Yritä uudelleen.";
+"00127" = "Virheellinen sosiaalisen tunnistuksen todennuksen vastaus.";
+"00128" = "Käyttäjän merkki on tyhjä.";
+"00129" = "Työaseman rekisteröintikahva on tyhjä.";
+
+"00130" = "Palvelin esti todennuksen.";
+"00131" = "Vastaanotettiin tyhjennyskomento palvelimesta. Luottamukselliset sovellustiedot poistetaan.";
+
+"00132" = "Pyydettyä URL-osoitetta ei ole. Pyydä apua pääkäyttäjältä.";
+"00133" = "Pyydetty URL-osoite on virheellinen. Tarkista URL-osoite, jota yrität käyttää.";
+"00134" = "Verkko ei ole käytettävissä. Varmista, että sinulla on yhteys Internetiin, ja yritä uudelleen.";
+"00135" = "Palvelimeen ei saada yhteyttä määritetyssä osoitteessa. Pyydä apua pääkäyttäjältä.";
+"00136" = "Virhe palvelimessa: %@. Pyydä apua pääkäyttäjältä.";
+"00137" = "Virheellinen uloskirjauksen URL";
+"00138" = "Salasana on virheellinen.";
+"00139" = "Tunnistuksia ei ole.";
+"00140" = "Käyttäjä peruutti työasemavarmenteen tuonnin";
+
+"00141" = "Työasema ei saa käyttää välitettyä OAuth-valtuutuksien myöntötyyppiä.";
+"00142" = "Palvelinpuolen SSO:ta tuetaan vain OAM_CREDENTIAL-myönnössä.";
+"00143" = "Virheelliset työaseman valtuudet";
+"00144" = "Toimi ei ole sallittu";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Sisäänkirjaus";
+"10002" = "Peruuta";
+"10003" = "Käyttäjätunnus";
+"10004" = "Salasana";
+"10005" = "Vastaa suojauskysymykseen";
+"10006" = "Internetin tunnistuksen todennus";
+"10007" = "Syötä salasana";
+"10008" = "Syötä käyttäjätunnus";
+"10009" = "Syötä vastaus";
+"10010" = "Syötä valtuustiedot";
+"10011" = "Kirjaudu sisään";
+"10012" = "Suojausvarmenne on virheellinen. Muodosta yhteys tästä huolimatta valitsemalla Hyväksy.";
+"10013" = "Hyväksy";
+"10014" = "Suojausvaroitus!";
+"10015" = "Varmenteen yhteenveto";
+"10016" = "Yhdistetty todennus";
+"10017" = "Ladataan...";
+"10018" = "Todennus on käynnissä...";
+"10019" = "Automaattinen sisäänkirjaus";
+"10020" = "Muista valtuudet";
+"10021" = "Muista vain käyttäjätunnus";
+"10022" = "Tunnistuksen toimialue";
+"10023" = "Syötä tunnistuksen toimialue";
+"10024" = "Tunnistus on suojattu salasanalla. Poista lukitus ja tuo antamalla salasana";
+"10025" = "Työaseman tunnistus";
+"10026" = "Tuo";
+"10027" = "Valitse työaseman tunnistus";
+"10028" = "Voimassaolo";
+"10029" = "Virhe";
+"10030" = "OK";

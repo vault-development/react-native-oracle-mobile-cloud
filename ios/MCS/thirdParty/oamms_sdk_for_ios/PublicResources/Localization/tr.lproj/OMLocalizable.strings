@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "İşlem başarıyla tamamlandı.";
+"00001" = "Sunucuya bağlanılamadı: %1$@.";
+"00002" = "OIC sunucusu hata döndürdü: %ld - %1$@";
+"00003" = "%1$@ URL'si geçersiz. RFC 2396 ile uyumlu değil.";
+"00004" = "OIC Sunucusu URL'si gereklidir.";
+"00005" = "Oturum açma işlemi kullanıcı tarafından iptal edildi.";
+"00006" = "Bu aygıtın kimliği OIC Sunucusuyla henüz doğrulanmadı.";
+"00007" = "%1$@ kimlik doğrulama şeması için eşleşen sınıf bulunamadı.";
+"00008" = "Kimlik doğrulama şeması belirtilmedi.";
+"00009" = "Aygıt kaydı gerçekleştirilemedi.";
+"00010" = "Kullanıcı kimlik doğrulaması gerçekleştirilemedi.";
+"00011" = "Kimlik doğrulama şeması %1$@ bu SDK tarafından bilinmiyor.";
+"00012" = "RP Kimlik Doğrulama URL'si açılamadı.";
+"00013" = "SSO Kimlik Doğrulama URL'si açılamadı.";
+"00014" = "İstemci uygulaması SSO'ya dahil olma yetkisine sahip değil.";
+"00015" = "Uygulama profili geçersiz veya indirilmedi.";
+"00016" = "Kullanıcı bu konuma erişimi reddetti";
+"00017" = "Sunucu görünümü denetleyicisi boş olamaz.";
+"00018" = "REST İsteği geçersiz";
+"00019" = "Kullanıcı kimliği henüz doğrulanmadı";
+"00020" = "OIC sunucusu erişim belirteci isteğini reddetti.";
+"00021" = "Kurulum API'si çağrılmadı.";
+"00022" = "KeyChainItem anahtarı boş";
+"00023" = "Girdi değeri geçersiz";
+
+/*  OMCryptoService Messages */
+"00024" = "Bellek ayırma hatası.";
+"00025" = "Rasgele numara oluşturma sistemi hatası - %ld.";
+"00026" = "İstenen uzunluk çok kısa.";
+"00027" = "Girdi metni boş olamaz.";
+"00028" = "Bilinmeyen veya desteklenmeyen algoritma.";
+"00029" = "Anahtar boş olamaz.";
+"00030" = "Anahtar boyutu algoritma tarafından desteklenmiyor.";
+"00031" = "Başlatma Vektörü uzunluğu, algoritma blok boyutuyla eşleşmelidir.";
+"00032" = "Düz Metin uzunluğu, blok  boyutunun çarpanı değil. Dolgu Gerekli.";
+"00033" = "Bilinmeyen veya desteklenmeyen dolgu.";
+"00034" = "Şifreleme sistemi hatası - %ld.";
+"00035" = "İstenen uzunluk 4'ün çarpanı değil.";
+"00036" = "Seçilen algoritma için SALT gerekli.";
+"00037" = "Seçilen algoritma için SALT desteklenmiyor.";
+"00038" = "SALT uygulanmayan bir algoritma kullanıldığında önek olarak SALT eklenemez.";
+"00039" = "Algoritma adı, girdiye önek olarak getirilmedi.";
+"00040" = "Base64 kodlaması etkinleştirildiğinde girdi NSString olmalıdır.";
+"00041" = "Bilinmeyen girdi türü. NSString veya NSData olmalıdır.";
+"00042" = "Girdi uzunluğu %ld değerine eşit veya daha küçük olmalıdır.";
+"00043" = "Anahtar çifti oluşturma sistemi hatası - %ld.";
+"00044" = "Anahtar deposundaki anahtarın belirlenmesi için etiket gerekli.";
+"00045" = "Anahtar deposu sistem hatası - %ld.";
+"00046" = "Anahtar deposu öğesi bulunamadı.";
+"00047" = "İmzalama sistemi hatası - %ld.";
+"00048" = "Girdi imzası boş olamaz.";
+"00049" = "Doğrulama sistemi hatası - %ld.";
+"00050" = "Şifre çözme sistemi hatası - %ld.";
+"00051" = "Anahtar deposu Öğesi zaten bulundu.";
+"00052" = "Bilinmeyen veya desteklenmeyen anahtar türü";
+"00053" = "Geçersiz anahtar deposu koruma düzeyi belirtildi.";
+"00054" = "PBKDF2 anahtarı oluşturma sistemi hatası - %ld.";
+
+"00100" = "Geçersiz kullanıcı adı veya parola.";
+"00101" = "Kullanıcı yetkili değil.";
+"00102" = "Otrm açma URL'si geçersiz.";
+"00103" = "İstemci uygulaması kaydedilmedi. Çevrimdışı kimlik doğrulama gerçekleştirilemiyor.";
+"00104" = "İstemci uygulaması SSO'ya dahil olma yetkisine sahip değil.";
+"00105" = "Harici gözatıcı modu desteklenmez";
+"00106" = "Özel kimlik doğrulama sayfasında gerekli olan bazı kimlik bilgisi alanları yok.";
+"00107" = "Oturum kapatma işlemi devam ediyor. Oturum kapatma tamamlandıktan sonra oturum açın.";
+"00108" = "İstek için gerekli bir parametre eksik, geçersiz bir parametre değeri içeriyor, birden çok aynı parametreyi içeriyor veya başka bir hata oluştu.";
+"00109" = "İstemci bu yöntemi kullanan bir yetki kodu isteme yetkisine sahip değil.";
+"00110" = "Kaynak sahibi veya yetkilendirme sunucusu isteği geri çevirdi.";
+"00111" = "Yetkilendirme sunucusu bu yöntemi kullanarak yetki kodu temin etmeyi desteklemiyor.";
+"00112" = "İstenen kapsam geçersiz, bilinmiyor veya hatalı.";
+"00113" = "Yetkilendirme sunucusu, isteği karşılamasını engelleyen beklenmeyen bir durumla karşılaştı.";
+"00114" = "Yetkilendirme sunucusu geçicici olarak aşırı yüklendiğinden veya bakımda olduğundan şu an isteği işleyemiyor.";
+"00116" = "Kimlik doğrulaması zaten devam ediyor.";
+"00117" = "Belirtilen Belirteç Uç Noktası geçerli değil.";
+"00118" = "Belirteç Uç Noktası geçersiz veya belirteç İsteğinde eksik parametre var veya bazı parametreler için geçersiz değer belirtildi.";
+"00119" = "Kullanıcı adı gereklidir.";
+"00120" = "Kimlik doğrulaması zaman aşımına uğradı.";
+
+"00121" = "Kaynak, girilen dosya dizin yolunda değil.";
+"00122" = "Kimlik Etki Alanı gereklidir.";
+"00123" = "Kullanıcı adı ve kimlik etki alanı gereklidir.";
+"00124" = "Kullanıcı, sunucu sertifikasını reddetti.";
+"00125" = "Kullanıcı adı, parola veya kimlik etki alanı geçersiz.";
+
+"00126" = "Uygulamadan geçersiz yanıt alındı. Tekrar deneyin.";
+"00127" = "Geçersiz Sosyal Kimlik doğrulama yanıtı.";
+"00128" = "Kullanıcı Belirteci boş.";
+"00129" = "İstemci kaydı işlemi boş.";
+
+"00130" = "Kimlik doğrulaması sunucu trfndn engellendi.";
+"00131" = "Sunucudan temizleme komutu alındı. Duyarlı uygulama verileri temizleniyor.";
+
+"00132" = "İstenen URL mevcut değil. Yardım için yöneticiye başvurun.";
+"00133" = "İstenen URL geçersiz. Erişmeye çalıştığınız URL'yi kontrol edin.";
+"00134" = "Ağlar kullanılamıyor. Internet'e bağlı olduğunuzdan emin olun ve tekrar deneyin.";
+"00135" = "Sunucu belirtilen adreste erişilebilir değil. Yardım için yöneticiye başvurun.";
+"00136" = "Sunucuda bir hata oluştu: %@. Yardım için yöneticiye başvurun.";
+"00137" = "Oturum Kapatma URL'si geçersiz";
+"00138" = "Parola yanlış.";
+"00139" = "Kimlikler mevcut değil.";
+"00140" = "Kllnc, istemci sertifikasını içe aktarmayı iptal etti";
+
+"00141" = "İstemcinin geçen OAuth Yetki verme tipini kullanmaya izni yok.";
+"00142" = "SSO sunucu tarafı sadece OAM_CREDENTIAL devrinden desteklenir.";
+"00143" = "Geçersiz istemci kimlik bilgileri";
+"00144" = "Eyleme izin verilmiyor";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Oturum Aç";
+"10002" = "İptal";
+"10003" = "Kullanıcı adı";
+"10004" = "Parola";
+"10005" = "Güvenlik sorunuzu yanıtlayın";
+"10006" = "İnternet Kimliği Doğrulama";
+"10007" = "Parola girin";
+"10008" = "Kullanıcı adı girin";
+"10009" = "Yanıtı girin";
+"10010" = "Kimlik bilgilerinizi girin";
+"10011" = "Oturum Aç";
+"10012" = "Güvenlik sertifikası geçersiz. Yine de bağlanmak istiyorsanız Kabul Et'e dokunun.";
+"10013" = "Kabul Et";
+"10014" = "Güvenlik Uyarısı !";
+"10015" = "Sertifika Özeti";
+"10016" = "Birleşik Kimlik Doğrulaması";
+"10017" = "Yükleniyor ...";
+"10018" = "Kimlik doğrulaması devam ediyor ...";
+"10019" = "Otomatik Oturum Açma";
+"10020" = "Kimlik Bilgilerini Hatırla";
+"10021" = "Sadece Kullanıcı Adını Hatırla";
+"10022" = "Kimlik Etki Alanı";
+"10023" = "Kimlik etki alanını girin";
+"10024" = "Kimlik bir parola ile korunuyor. Kilidi açmak ve içe aktarmak için parolayı girin";
+"10025" = "İstemci Kimliği";
+"10026" = "İçe Aktar";
+"10027" = "İstemci Kimliği Seç";
+"10028" = "Geçerlilik";
+"10029" = "Hata";
+"10030" = "Tamam";

@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Åtgärden har utförts.";
+"00001" = "Kunde inte ansluta till servern %1$@.";
+"00002" = "OIC-servern returnerade felkod: %ld - %1$@";
+"00003" = "URL %1$@ är ogiltig. Den matchar inte RFC 2396.";
+"00004" = "URL för OIC-servern är obligatorisk.";
+"00005" = "Användaren avbröt inloggningsåtgärden.";
+"00006" = "Den här enheten är ännu inte autentiserad med OIC-servern.";
+"00007" = "Ingen matchande klass hittades för %1$@-autentiseringsschemat.";
+"00008" = "Inget autentiseringsschema är angivet.";
+"00009" = "Enhetsregistreringen utfördes inte.";
+"00010" = "Användarautentiseringen utfördes inte.";
+"00011" = "Autentiseringsschemat %1$@ är okänt för den här SDK.";
+"00012" = "Kunde inte öppna URL:en för RP-autentisering.";
+"00013" = "Kunde inte öppna URL:en för SSO-autentisering.";
+"00014" = "Kundapplikationen är inte auktoriserad för deltagande i SSO.";
+"00015" = "Applikationsprofilen är ogiltig eller har inte hämtats.";
+"00016" = "Användaren har nekad åtkomst till platsen";
+"00017" = "Styrenheten för presentatören får inte vara noll.";
+"00018" = "REST-begäran är ogiltig";
+"00019" = "Användaren är ännu inte autentiserad";
+"00020" = "Igenkänningsteckenbegäran för nekad åtkomst till OIC-servern.";
+"00021" = "Inställnings-API har inte anropats.";
+"00022" = "KeyChainItem-nyckeln är noll";
+"00023" = "Indatavärdet är ogiltigt";
+
+/*  OMCryptoService Messages */
+"00024" = "Minnestilldelningsfel.";
+"00025" = "Systemfel vid generering av slumpmässigt nummer - %ld.";
+"00026" = "Den begärda längden är för kort.";
+"00027" = "Indatatext måste anges.";
+"00028" = "Okänd eller ogiltig algoritm.";
+"00029" = "Nyckel måste anges.";
+"00030" = "Nyckelstorleken stöds inte av algoritmen.";
+"00031" = "Initieringsvektorns längd måste matcha algoritmens blockstorlek.";
+"00032" = "Längden på den oformaterade texten är inte en multipel av blockstorleken. Utfyllnad krävs.";
+"00033" = "Okänd eller ogiltig utfyllnad.";
+"00034" = "Systemfel vid kryptering - %ld.";
+"00035" = "Den begärda längden är inte en multipel av 4.";
+"00036" = "Salt måste anges för den valda algoritmen.";
+"00037" = "Salt stöds inte för den valda algoritmen.";
+"00038" = "Prefix kan inte användas för salt när en osaltad algoritm används.";
+"00039" = "Indata kan inte ha algoritmnamnet som prefix.";
+"00040" = "Indata måste vara NSString när Base64-kodning har aktiverats.";
+"00041" = "Okänd indatatyp. Måste vara NSString eller NSData.";
+"00042" = "Indatalängden måste vara mindre än eller lika med %ld.";
+"00043" = "Systemfel vid generering av nyckelpar - %ld.";
+"00044" = "En tagg krävs för att identifiera nyckeln i nyckelkedjan.";
+"00045" = "Systemfel i nyckelkedjan - %ld.";
+"00046" = "Nyckelkedjeobjektet hittades inte.";
+"00047" = "Systemfel vid signering - %ld.";
+"00048" = "Indatasignaturen måste anges.";
+"00049" = "Systemfel vid verifiering - %ld.";
+"00050" = "Systemfel vid dekryptering - %ld.";
+"00051" = "Nyckelkedjeobjektet har redan hittats.";
+"00052" = "Okänd eller ogiltig nyckeltyp";
+"00053" = "Ogiltig nivå angiven för dataskydd av nyckelkedja.";
+"00054" = "Systemfel vid generering av PBKDF2-nyckel - %ld.";
+
+"00100" = "Ogiltigt användarnamn eller lösenord.";
+"00101" = "Användaren är inte behörig.";
+"00102" = "Ogiltig inloggnings-URL.";
+"00103" = "Kundapplikationen är inte registrerad. Kan inte utföra autentisering offline.";
+"00104" = "Kundapplikationen är inte auktoriserad för deltagande i SSO.";
+"00105" = "Läge för extern webbläsare stöds inte";
+"00106" = "Den anpassade autentiseringssidan har inte alla obligatoriska fält för inloggningsuppgifter.";
+"00107" = "Utloggning pågår. Inloggning efter utloggning har slutförts.";
+"00108" = "Begäran saknar en obligatorisk parameter, inkluderar ett ogiltigt parametervärde, inkluderar en parameter mer än en gång eller är på annat sätt felaktigt utformad.";
+"00109" = "Klienten är inte behörig att begära en auktoriseringskod med den här metoden.";
+"00110" = "Resursägaren eller auktoriseringsservern nekade begäran.";
+"00111" = "Auktoriseringsservern stöder inte hämtning av auktoriseringskod med den här metoden.";
+"00112" = "Begärd omfattning är ogiltig, okänd eller felaktigt utformad.";
+"00113" = "Auktoriseringsservern påträffade ett oväntat villkor som förhindrade den från att utföra begäran.";
+"00114" = "Auktoriseringsservern kan för närvarande inte hantera begäran på grund av tillfällig överbelastning eller serverunderhåll.";
+"00116" = "Autentisering pågår redan.";
+"00117" = "Den givna tokenslutpunkten är ogiltig.";
+"00118" = "En ogiltig tokenslutpunkt eller tokenbegäran saknar vissa obligatoriska parametrar eller har ogiltiga värden för vissa parametrar.";
+"00119" = "Användarnamn krävs.";
+"00120" = "Tidsgränsen för autentiseringen överskreds.";
+
+"00121" = "Resursen är inte tillgänglig på den angivna filsökvägen.";
+"00122" = "Identitetsdomän krävs.";
+"00123" = "Användarnamn och identitetsdomän krävs.";
+"00124" = "Användaren avslog servercertifikat.";
+"00125" = "Ogiltigt användarnamn, lösenord eller identitetsdomän.";
+
+"00126" = "Tog emot ogiltigt svar från applikationen. Försök igen.";
+"00127" = "Ogiltigt svar på autentisering av social identitet.";
+"00128" = "Användartecknet är tomt.";
+"00129" = "Klientregistreringshandtaget är tomt.";
+
+"00130" = "Autentisering blockerades av servern.";
+"00131" = "Tog emot raderingskommando från servern. Rensar känsliga applikationsdata.";
+
+"00132" = "Den begärda URL:en finns inte. Kontakta administratören för hjälp.";
+"00133" = "Den begärda URL:en är ogiltig. Kontrollera den URL du försöker få åtkomst till.";
+"00134" = "Nätverket är inte tillgängligt. Kontrollera att du är ansluten till internet och försök igen.";
+"00135" = "Servern kan inte nås på den angivna adressen. Kontakta administratören för hjälp.";
+"00136" = "Servern påträffade ett fel %@. Kontakta administratören för hjälp.";
+"00137" = "Ogiltig utloggnings-URL";
+"00138" = "Lösenordet är felaktigt.";
+"00139" = "Det finns inga identiteter.";
+"00140" = "Användaren avbröt klientcertifikatimporten";
+
+"00141" = "Klienten är inte tillåten att använda tilldelningstypen för OAuth-autentisering.";
+"00142" = "Serverside-SSO stöds endast från OAM_CREDENTIAL-tilldelning.";
+"00143" = "Ogiltiga klientinloggningsuppgifter";
+"00144" = "Åtgärden är inte tillåten";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Inloggning";
+"10002" = "Avbryt";
+"10003" = "Användarnamn";
+"10004" = "Lösenord";
+"10005" = "Besvara din säkerhetsfråga";
+"10006" = "Autentisering av internetidentitet";
+"10007" = "Ange lösenord";
+"10008" = "Ange användarnamnet";
+"10009" = "Ange svar";
+"10010" = "Ange dina uppgifter";
+"10011" = "Logga in";
+"10012" = "Säkerhetscertifikatet är ogiltigt. Knacka på Acceptera för att ansluta ändå.";
+"10013" = "Acceptera";
+"10014" = "Säkerhetsvarning!";
+"10015" = "Certifikatöversikt";
+"10016" = "Samordnad autentisering";
+"10017" = "Laddar...";
+"10018" = "Autentisering pågår ...";
+"10019" = "Automatisk inloggning";
+"10020" = "Kom ihåg inloggningsuppgifter";
+"10021" = "Kom endast ihåg användarnamn";
+"10022" = "Identitetsdomän";
+"10023" = "Ange identitetsdomän";
+"10024" = "Identiteten skyddas med ett lösenord. Ange ett lösenord för att låsa upp och importera";
+"10025" = "Klientidentitet";
+"10026" = "Importera";
+"10027" = "Välj klientidentitet";
+"10028" = "Giltighet";
+"10029" = "Fel";
+"10030" = "OK";

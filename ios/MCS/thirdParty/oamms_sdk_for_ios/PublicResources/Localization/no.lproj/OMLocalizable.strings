@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Operasjonen er fullført.";
+"00001" = "Kan ikke koble til tjeneren %1$@.";
+"00002" = "OIC-tjeneren returnerte feil: %ld - %1$@";
+"00003" = "URL-adressen %1$@ er ugyldig. Den er ikke i samsvar med RFC 2396.";
+"00004" = "URL-adressen til OIC-tjeneren må angis.";
+"00005" = "Brukeren avbrøt påloggingsoperasjonen.";
+"00006" = "Denne enheten er ennå ikke autentisert med OIC-tjener.";
+"00007" = "Finner ingen samsvarende klasse for autentiseringsskjemaet %1$@.";
+"00008" = "Det er ikke angitt noe autentiseringsskjema.";
+"00009" = "Enhetsregistrering mislyktes.";
+"00010" = "Brukerautentiseringen mislyktes.";
+"00011" = "Autentiseringsskjemaet %1$@ er ukjent for SDK.";
+"00012" = "Kan ikke åpne URL-adresse for RP-autentisering.";
+"00013" = "Kan ikke åpne URL-adresse for SSO-autentisering.";
+"00014" = "Klientapplikasjonen er ikke autorisert til å delta i SSO.";
+"00015" = "Applikasjonsprofilen er ugyldig, eller den er ikke lastet ned.";
+"00016" = "Brukeren har nektet tilgang til plasseringsoppdatering";
+"00017" = "Presentatørvisningskontrolleren kan ikke være null.";
+"00018" = "REST-forespørselen er ugyldig";
+"00019" = "Brukeren er ennå ikke autentisert";
+"00020" = "OIC-tjeneren nektet forespørsel om tilgangssymbol.";
+"00021" = "API for oppsett er ikke startet.";
+"00022" = "KeyChainItem-nøkkelen er null";
+"00023" = "Inndataverdien er ugyldig";
+
+/*  OMCryptoService Messages */
+"00024" = "Minnetildelingsfeil.";
+"00025" = "Systemfeil ved generering av tilfeldige tall - %ld.";
+"00026" = "Den forespurte lengden er for kort.";
+"00027" = "Inndatateksten kan ikke være tom.";
+"00028" = "Ukjent eller ikke støttet algoritme.";
+"00029" = "Nøkkelen kan ikke være tom.";
+"00030" = "Nøkkelstørrelsen støttes ikke av algoritmen.";
+"00031" = "Lengden på initialiseringsvektoren må samsvare med blokkstørrelsen for algoritmen.";
+"00032" = "Lengden på ren tekst er ikke et multiplum av blokkstørrelsen. Utfylling er nødvendig.";
+"00033" = "Ukjent eller ikke støttet utfylling.";
+"00034" = "Systemfeil ved kryptering - %ld.";
+"00035" = "Den forespurte lengden er ikke et multiplum av 4.";
+"00036" = "Salt er nødvendig for den valgte algoritmen.";
+"00037" = "Salt støttes ikke for den valgte algoritmen.";
+"00038" = "Kan ikke sette salt som prefiks ved bruk av en ikke-saltet algoritme.";
+"00039" = "Inndataverdien har ikke algoritmenavnet som prefiks.";
+"00040" = "Inndataverdien må være NSString når Base64-koding er aktivert.";
+"00041" = "Ukjent inndatatype. Må være NSString eller NSData.";
+"00042" = "Inndatalengden må være mindre enn eller lik %ld.";
+"00043" = "Systemfeil ved generering av nøkkelpar - %ld.";
+"00044" = "Kode er nødvendig for identifisering av nøkkel i nøkkelring.";
+"00045" = "Systemfeil for nøkkelring - %ld.";
+"00046" = "Finner ikke nøkkelringelementet.";
+"00047" = "Systemfeil ved signering - %ld.";
+"00048" = "Inndatasignaturen kan ikke være tom.";
+"00049" = "Systemfeil ved verifisering - %ld.";
+"00050" = "Systemfeil ved dekryptering - %ld.";
+"00051" = "Nøkkelringelementet er allerede funnet.";
+"00052" = "Ukjent eller ikke støttet nøkkeltype";
+"00053" = "Det er angitt et ugyldig beskyttelsesnivå for nøkkelringdataene.";
+"00054" = "Systemfeil ved generering av PBKDF2-nøkkel - %ld.";
+
+"00100" = "Ugyldig brukernavn eller passord.";
+"00101" = "Brukeren er ikke autorisert.";
+"00102" = "Ugyldig påloggings-URL.";
+"00103" = "Klientapplikasjonen er ikke registrert. Kan ikke utføre frakoblet autentisering.";
+"00104" = "Klientapplikasjonen er ikke autorisert til å delta i SSO.";
+"00105" = "Modus for ekstern nettleser støttes ikke";
+"00106" = "Siden for egendefinert autentisering har ikke alle de obligatoriske feltene for påloggingsinformasjon.";
+"00107" = "Avlogging pågår. Logg på når avloggingen er fullført.";
+"00108" = "Forespørselen mangler en obligatorisk parameter, inkluderer en ugyldig parameterverdi, inkluderer en parameter flere ganger eller har ugyldig format på andre måter.";
+"00109" = "Klienten er ikke autorisert til å be om en autoriseringskode ved hjelp av denne metoden.";
+"00110" = "Ressurseieren eller autoriseringstjeneren avslo forespørselen.";
+"00111" = "Autoriseringstjeneren støtter ikke henting av en autoriseringskode ved hjelp av denne metoden.";
+"00112" = "Det forespurte omfanget er ugyldig, er ukjent eller har feil format.";
+"00113" = "Autoriseringstjeneren fant en uventet tilstand som hindret den i å fullføre forespørselen.";
+"00114" = "Autoriseringstjeneren er for tiden ikke i stand til å håndtere forespørselen på grunn av midlertidig overbelastning eller vedlikehold på tjeneren.";
+"00116" = "Autentisering pågår allerede.";
+"00117" = "Det angitte symbolsluttpunktet er ikke gyldig.";
+"00118" = "Ugyldig symbolsluttpunkt, symbolforespørselen mangler obligatoriske parametre, eller det er angitt en ugyldig verdi for enkelte parametre.";
+"00119" = "Brukernavn er obligatorisk.";
+"00120" = "Autentisering ble tidsavbrutt.";
+
+"00121" = "Ressursen er ikke tilgjengelig i den gitte filbanen.";
+"00122" = "Identitetsdomene er obligatorisk.";
+"00123" = "Brukernavn og identitetsdomene er obligatorisk.";
+"00124" = "Brukeren avviste tjenersertifikatet.";
+"00125" = "Ugyldig brukernavn, passord eller identitetsdomene.";
+
+"00126" = "Mottok ugyldig svar fra applikasjonen. Prøv på nytt.";
+"00127" = "Ugyldig svar på autentisering av sosial identitet.";
+"00128" = "Brukersymbolet er tomt.";
+"00129" = "Referansen til klientregistreringen er tom.";
+
+"00130" = "Autentiseringen er blokkert av tjeneren.";
+"00131" = "Mottok en tømmekommando fra tjeneren. Fjerner sensitive applikasjonsdata.";
+
+"00132" = "Den forespurte URL-adressen finnes ikke. Ta kontakt med administratoren.";
+"00133" = "Den forespurte URL-adressen er ugyldig. Kontroller URL-adressen du prøver å få tilgang til.";
+"00134" = "Nettverket er utilgjengelig. Forsikre deg om at du er koblet til Internett, og prøv på nytt.";
+"00135" = "Tjeneren kan ikke nås på den angitte adressen. Ta kontakt med administratoren hvis du trenger hjelp.";
+"00136" = "Tjeneren fant en feil, %@. Ta kontakt med administratoren hvis du trenger hjelp.";
+"00137" = "Ugyldig avloggings-URL-adresse";
+"00138" = "Passordet er feil.";
+"00139" = "Det finnes ingen identiteter.";
+"00140" = "Brukeren annullerte import av klientsertifikat";
+
+"00141" = "Klienten kan ikke bruke den sendte tildelingstypen for OAuth-autorisasjon.";
+"00142" = "Engangspålogging på tjenersiden støttes bare fra OAM_CREDENTIAL-tildelingen.";
+"00143" = "Ugyldig klientpåloggingsinformasjon";
+"00144" = "Handlingen er ikke tillatt";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Pålogging";
+"10002" = "Avbryt";
+"10003" = "Brukernavn";
+"10004" = "Passord";
+"10005" = "Svar på sikkerhetsspørsmålet";
+"10006" = "Identitetsautentisering for Internett";
+"10007" = "Angi passord";
+"10008" = "Angi brukernavn";
+"10009" = "Angi svaret";
+"10010" = "Angi påloggingsinformasjonen din";
+"10011" = "Logg på";
+"10012" = "Sikkerhetssertifikatet er ugyldig. Trykk på Godta for å koble til likevel.";
+"10013" = "Godta";
+"10014" = "Sikkerhetsadvarsel!";
+"10015" = "Sertifikatsammendrag";
+"10016" = "Sammensluttet autentisering";
+"10017" = "Laster ...";
+"10018" = "Autentisering pågår ...";
+"10019" = "Automatisk pålogging";
+"10020" = "Husk påloggingsinformasjon";
+"10021" = "Husk bare brukernavn";
+"10022" = "Identitetsdomene";
+"10023" = "Angi identitetsdomene";
+"10024" = "Identiteten er beskyttet med et passord. Angi passord når du vil låse opp og importere";
+"10025" = "Klientidentitet";
+"10026" = "Importer";
+"10027" = "Velg klientidentitet";
+"10028" = "Gyldighet";
+"10029" = "Feil";
+"10030" = "OK";

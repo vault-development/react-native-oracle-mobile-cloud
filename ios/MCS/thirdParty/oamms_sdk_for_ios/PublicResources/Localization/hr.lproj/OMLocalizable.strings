@@ -1,0 +1,155 @@
+﻿/* 
+ Copyright 2011, 2012 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "Operacija je uspješno dovršena.";
+"00001" = "Neuspješno povezivanje s poslužiteljem %1$@.";
+"00002" = "OIC poslužitelj vratio je pogrešku: %ld - %1$@";
+"00003" = "URL %1$@ nije valjan. Nije u skladu s RFC 2396.";
+"00004" = "Potreban je URL OIC poslužitelja.";
+"00005" = "Korisnik je poništio operaciju prijave.";
+"00006" = "OIC poslužitelj još nije potvrdio autentičnost uređaja.";
+"00007" = "Nije pronađena podudarna klasa za shemu provjere autentičnosti %1$@.";
+"00008" = "Nije navedena shema provjere autentičnosti.";
+"00009" = "Registracija uređaja nije uspjela.";
+"00010" = "Neuspjela provjera autentičnosti korisnika.";
+"00011" = "Shema provjere autentičnosti %1$@ nepoznata za ovaj SDK.";
+"00012" = "Ne može se otvoriti URL RP provjere autentičnosti.";
+"00013" = "Ne može se otvoriti URL za provj. aut. jed. prijave.";
+"00014" = "Klijentska aplikacija nema ovlaštenja za sudjelovanje u jedinstvenoj prijavi.";
+"00015" = "Profil aplikacije nije valjan ili nije preuzet.";
+"00016" = "Korisnik je onemogućio pristup lokaciji";
+"00017" = "Kontroler za prezentacijski prikaz ne može biti nil.";
+"00018" = "Zahtjev REST nije valjan";
+"00019" = "Još nije potvrđena autentičnost korisnika";
+"00020" = "OIC poslužitelj onemogućio pristup zahtjevu tokena.";
+"00021" = "API za postavljanje nije pozvan.";
+"00022" = "Ključ KeyChainItem je nil";
+"00023" = "Ulazna vrijednost nije valjana";
+
+/*  OMCryptoService Messages */
+"00024" = "Alokacija memorije nije uspjela.";
+"00025" = "Sistemska pogreška generiranja slučajnih brojeva - %ld.";
+"00026" = "Zatražena duljina je prekratka.";
+"00027" = "Ulazni tekst ne može biti prazan.";
+"00028" = "Algoritam nije poznat ili nije podržan.";
+"00029" = "Ključ ne može biti prazan.";
+"00030" = "Algoritam ne podržava veličinu ključa.";
+"00031" = "Duljina početnog vektora mora odgovarati veličini bloka algoritma.";
+"00032" = "Duljina običnog teksta nije višekratnik veličine bloka. Potrebno je popunjavanje.";
+"00033" = "Popunjavanje nepoznato ili nije podržano.";
+"00034" = "Sistemska pogreška šifriranja - %ld.";
+"00035" = "Tražena duljina nije višekratnik broja 4.";
+"00036" = "Odabrani algoritam zahtijeva SALT.";
+"00037" = "Odabrani algoritam ne podržava SALT.";
+"00038" = "Prefiks SALT ne može se koristiti za algoritam koji ne podržava SALT.";
+"00039" = "Naziv algoritma nije postavljen kao ulazni prefiks.";
+"00040" = "Ako je omogućeno šifriranje Base64, ulaz mora biti NSString.";
+"00041" = "Nepoznata ulazna vrsta. Mora biti NSString ili NSData.";
+"00042" = "Ulazna duljina mora biti %ld ili manja.";
+"00043" = "Sistemska pogreška generiranja para ključeva - %ld.";
+"00044" = "Za identifikaciju ključa u nizu ključeva obvezna oznaka.";
+"00045" = "Sistemska pogreška niza ključeva - %ld.";
+"00046" = "Stavka niza ključeva nepronađena.";
+"00047" = "Sistemska pogreška potpisivanja - %ld.";
+"00048" = "Ulazni potpis ne može biti prazan.";
+"00049" = "Sistemska pogreška potvrde valjanosti - %ld.";
+"00050" = "Sistemska pogreška dešifriranja - %ld.";
+"00051" = "Stavka niza ključeva već je pronađena.";
+"00052" = "Vrsta ključa nije poznata ili nije podržana";
+"00053" = "Navedena razina zaštite podataka niza ključeva nije valjana.";
+
+"00100" = "Neispravno ime ili lozinka korisnika.";
+"00101" = "Korisnik nema ovlasti.";
+"00102" = "URL za prijavu nije valjan";
+"00103" = "Klijentska aplikacija nije instalirana. Ne može se izvršiti izvanmrežna provjera autentičnosti.";
+"00104" = "Klijentska aplikacija nema ovlaštenja za sudjelovanje u jedinst. prijavi.";
+"00105" = "Nije podržan rad u vanjskom pregledniku";
+"00106" = "Prilagođena stranica za provjeru autentičnosti nema sva potrebna polja sa sigurnosnim podacima.";
+"00107" = "Odjava je u tijeku. Prijava nakon odjave je dovršena.";
+"00108" = "Zahtjevu nedostaje obavezan parametar, sadrži vrijednost parametra koja nije valjana, sadrži ponovljene parametre ili je na drugi način neispravno oblikovan.";
+"00109" = "Klijent nije ovlašten za traženje šifre za autorizaciju pomoću ove metode.";
+"00110" = "Zahtjev je odbio vlasnik resursa ili poslužitelj za autorizaciju.";
+"00111" = "Poslužitelj za autorizaciju ne podržava traženje šifre za autorizaciju ovom metodom.";
+"00112" = "Zatraženi raspon nije valjan, nije poznat ili nije ispravno oblikovan.";
+"00113" = "Poslužitelj za autorizaciju naišao je na neočekivano stanje koje je spriječilo ispunjavanje zahtjeva.";
+"00114" = "Poslužitelj za autorizaciju trenutno ne može obraditi zahtjev zbog privremenog preopterećenja ili održavanja poslužitelja.";
+"00116" = "Provjera autentičnosti već je u tijeku.";
+"00117" = "Navedena završna točka tokena nije valjana.";
+"00118" = "Završna točka tokena nije valjana, zahtjevu tokena nedostaju obvezni parametri ili vrijednost unesena za određene parametre nije valjana.";
+"00119" = "Potrebno je korisničko ime.";
+"00120" = "Provjera autentičnosti je istekla.";
+
+"00121" = "Resurs nije dostupan u navedenoj stazi datoteke.";
+"00122" = "Potrebna je domena identiteta.";
+"00123" = "Potrebni su korisničko ime i domena identiteta.";
+"00124" = "Korisnik je odbio certifikat poslužitelja.";
+"00125" = "Neispravno ime, lozinka korisnika ili domena identiteta.";
+
+"00126" = "Odgovor dobiven iz aplikacije nije valjan. Pokušajte ponovo.";
+"00127" = "Odgovor provjere autentičnosti društvenog identiteta nije valjan.";
+"00128" = "Token korisnika je prazan.";
+"00129" = "Obrada registracije klijenta je prazna.";
+
+"00130" = "Poslužitelj blokirao provjeru autentičnosti.";
+"00131" = "Poslužitelj je izdao naredbu za brisanje. U tijeku je brisanje osjetljivih podataka aplikacije.";
+
+"00132" = "Traženi URL ne postoji. Za pomoć se obratite administratoru.";
+"00133" = "Traženi URL nije valjan. Provjerite URL kojemu pokušavate pristupiti.";
+"00134" = "Mreža je nedostupna. Provjerite jeste li uspostavili internetsku vezu i pokušajte ponovo.";
+"00135" = "Poslužitelj nije dostupan na navedenoj adresi. Za pomoć se obratite administratoru.";
+"00136" = "Na poslužitelju je došlo do pogreške %@. Za pomoć se obratite administratoru.";
+"00137" = "URL za odjavu nije valjan";
+"00138" = "Lozinka nije ispravna.";
+"00139" = "Nijedan identitet nije prisutan.";
+"00140" = "Korisnik je poništio uvoz klijentskog certifikata";
+
+"00141" = "Klijent ne smije koristiti prenesenu vrstu dodjele za OAuth autorizaciju.";
+"00142" = "Jedin. prijava na str. poslužitelja podržana je samo za OAM_CREDENTIAL dodjelu.";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Prijava";
+"10002" = "Odustani";
+"10003" = "Korisničko ime";
+"10004" = "Lozinka";
+"10005" = "Odgovorite na sigurnosno pitanje";
+"10006" = "Potvrdi autentičnost internetskog identiteta";
+"10007" = "Unesite lozinku";
+"10008" = "Unesite korisničko ime";
+"10009" = "Unesite odgovor";
+"10010" = "Unesite svoje sigurn. podatke";
+"10011" = "Prijava";
+"10012" = "Sigurnosni certifikat nije valjan. Želite li se ipak spojiti, dodirnite Prihvati.";
+"10013" = "Prihvati";
+"10014" = "Sigurnosno upozorenje!";
+"10015" = "Sažetak certifikata";
+"10016" = "Združena provjera autentičnosti";
+"10017" = "Učitavanje ...";
+"10018" = "Provjera autentičnosti u tijeku ...";
+"10019" = "Autom. prijava";
+"10020" = "Zapamti sigurnosne podatke";
+"10021" = "Zapamti samo korisničko ime";
+"10022" = "Domena identiteta";
+"10023" = "Unesite domenu identiteta";

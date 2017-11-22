@@ -1,0 +1,169 @@
+﻿/* 
+ Copyright 2011, 2015 oracle. All rights reserved.
+ OMLocalizable.strings for English
+ Oracle Access Management - Mobile and Social
+ 
+ MODIFIED   (MM/DD/YY)
+ vismishr    04/06/14 - Using External webView
+ vismishr    01/19/15 - Bug 20378944
+ asashiss    08/11/14 - Client certificate strings
+ vismishr    09/16/14 - Bug 19579450
+ vismishr    06/21/14 - OAuth PS3 enhamcements
+ vismishr    18/04/14 - MAF OAuth logout
+ asashiss    04/21/13 - User friendly error messages for network errors 
+ asashiss    03/28/13 - Bug 18155121
+ asashiss    02/13/14 - Bug 18053156
+ vismishr    01/17/14 - error message parity with Android
+ asashiss    12/16/13 - File path error
+ sativenk    09/13/25 - Authentication time-out error added
+ asashiss    09/24/13 - Empty username error message
+ asashiss    09/12/13 - Support for identity domain in native view
+ sativenk    06/06/13 - Bug 16907007 
+ sativenk    05/21/13 - Moved "authentication in progress" message here
+ sativenk    03/10/13 - Support for Federated Authentication
+ sativenk    11/06/12 - Bugs 14841041 and 14692298
+ msadasiv    09/26/12 - OMCryptoService errors
+ sativenk    10/03/12 - Creation
+ */
+
+/* All SDK errors and SDK non-UI messages shall go here. 
+   They start with 0. They can go up to 09999. */
+"00000" = "La operación se ha realizado correctamente.";
+"00001" = "No se ha podido conectar al servidor %1$@.";
+"00002" = "El servidor de OIC ha devuelto el error: %ld - %1$@";
+"00003" = "La URL %1$@ no es válida. No cumple con RFC 2396.";
+"00004" = "Se necesita la URL del servidor de OIC.";
+"00005" = "El usuario ha cancelado la operación de conexión.";
+"00006" = "Este dispositivo aún no se ha autenticado en el servidor de OIC.";
+"00007" = "No se ha encontrado ninguna clase coincidente para el esquema de autenticación %1$@.";
+"00008" = "No se ha especificado ningún esquema de autenticación.";
+"00009" = "Fallo del registro de dispositivo.";
+"00010" = "Fallo de la autenticación de usuario.";
+"00011" = "El esquema de autenticación %1$@ es desconocido para este SDK.";
+"00012" = "No se ha podido abrir la URL de autenticación de RP.";
+"00013" = "No se ha podido abrir la URL de autenticación de SSO.";
+"00014" = "La aplicación cliente no está autorizado a participar en SSO.";
+"00015" = "El perfil de la aplicación no es válido o no se ha descargado.";
+"00016" = "El usuario ha denegado el acceso a la ubicación";
+"00017" = "El controlador de vista de presentador no puede ser nulo.";
+"00018" = "La solicitud REST no es válida";
+"00019" = "El usuario aún no se ha autenticado";
+"00020" = "El servidor de OIC ha denegado el acceso a la solicitud de token.";
+"00021" = "No se ha llamado a la API de configuración.";
+"00022" = "La clave KeyChainItem es nula";
+"00023" = "El valor de entrada no es válido";
+
+/*  OMCryptoService Messages */
+"00024" = "Fallo de asignación de memoria.";
+"00025" = "Error del sistema de generación de número aleatorio: %ld.";
+"00026" = "Longitud solicitada demasiado corta.";
+"00027" = "El texto de entrada no puede estar vacío.";
+"00028" = "Algoritmo desconocido o no soportado.";
+"00029" = "La clave no puede estar vacía.";
+"00030" = "El algoritmo no soporta el tamaño de clave.";
+"00031" = "La longitud del vector de inicialización debe coincidir con el tamaño de bloque del algoritmo.";
+"00032" = "La longitud de texto sin formato no es un múltiplo del tamaño del bloque. Se necesita relleno.";
+"00033" = "Relleno desconocido o no soportado.";
+"00034" = "Error del sistema de cifrado: %ld.";
+"00035" = "La longitud solicitada no es un múltiplo de 4.";
+"00036" = "Salt necesario para el algoritmo seleccionado.";
+"00037" = "Salt no está soportado para el algoritmo seleccionado.";
+"00038" = "No se puede agregar salt como prefijo al utilizar un algoritmo que no es salt.";
+"00039" = "La entrada no tiene el prefijo con el nombre de algoritmo.";
+"00040" = "La entrada debe ser NSString cuando la codificación Base64 está activada.";
+"00041" = "Tipo de entrada desconocida. Debe ser NSString o NSData.";
+"00042" = "La longitud de entrada debe ser menor o igual que %ld.";
+"00043" = "Error del sistema de generación del par de claves: %ld.";
+"00044" = "Etiqueta necesaria para identificar la clave en el llavero.";
+"00045" = "Error del sistema de llavero: %ld.";
+"00046" = "No se ha encontrado el elemento de llavero.";
+"00047" = "Error del sistema de firma: %ld.";
+"00048" = "La firma de entrada no puede estar vacía.";
+"00049" = "Error del sistema de verificación: %ld.";
+"00050" = "Error del sistema de descifrado: %ld.";
+"00051" = "Ya se ha encontrado el elemento de llavero.";
+"00052" = "Tipo de clave desconocido o no soportado";
+"00053" = "Se ha especificado un nivel de protección de datos de llavero no válido.";
+"00054" = "Error del sistema de generación de claves PBKDF2: %ld.";
+
+"00100" = "Nombre de usuario o contraseña no válidos.";
+"00101" = "El usuario no está autorizado.";
+"00102" = "URL de conexión no válida.";
+"00103" = "La aplicación cliente no se ha registrado. No se puede realizar la autenticación fuera de línea.";
+"00104" = "La aplicación cliente no está autorizada a participar en SSO.";
+"00105" = "El modo de explorador externo no está soportado";
+"00106" = "La página de autenticación personalizada no tiene todos los campos de credenciales necesarias.";
+"00107" = "Desconexión en curso. Se ha completado la conexión tras la desconexión.";
+"00108" = "Falta un parámetro necesario en la solicitud, incluye un valor de parámetro no válido, repite un parámetro más de una vez o no tiene el formato adecuado.";
+"00109" = "El cliente no está autorizado a solicitar el código de autorización con este método.";
+"00110" = "El propietario del recurso o el servidor de autenticación ha denegado la solicitud.";
+"00111" = "La obtención del código de autorización con este método no está soportada por el servidor de autorización.";
+"00112" = "El ámbito solicitado no es válido, es desconocido o no tiene el formato correcto.";
+"00113" = "El servidor de autorización ha encontrado una condición inesperada que ha impedido que cumpla la solicitud.";
+"00114" = "El servidor de autorización no puede manejar actualmente la solicitud debido a una superposición temporal o al mantenimiento del servidor.";
+"00116" = "La autenticación ya está en curso.";
+"00117" = "El punto final del token proporcionado no es válido.";
+"00118" = "El punto final del token no es válido o la solicitud de token no tiene algunos parámetros necesarios, o bien se ha proporcionado un valor no válido para algunos parámetros.";
+"00119" = "Se necesita un nombre de usuario.";
+"00120" = "Timeout en la autenticación.";
+
+"00121" = "Recurso no disponible en la ruta del archivo proporcionada.";
+"00122" = "Se necesita el dominio de identidad.";
+"00123" = "Se necesita el nombre de usuario y el dominio de identidad.";
+"00124" = "Certificado de servidor rechazado por el usuario.";
+"00125" = "Nombre de usuario, contraseña o dominio de identidad no válidos.";
+
+"00126" = "Recibida una respuesta no válida de la aplicación. Vuelva a intentarlo.";
+"00127" = "Respuesta de autenticación de identidad social no válida.";
+"00128" = "Token de usuario vacío.";
+"00129" = "El manejador de registro de cliente está vacío.";
+
+"00130" = "Autenticación bloqueada por servidor.";
+"00131" = "Recibido un comando de anulación del servidor. Borrando datos confidenciales de la aplicación.";
+
+"00132" = "La URL solicitada no existe. Póngase en contacto con el administrador para obtener ayuda.";
+"00133" = "La URL solicitada no es válida. Compruebe la URL a la que está intentando acceder.";
+"00134" = "La red no está disponible. Asegúrese de que está conectado a Internet y vuelva a intentarlo.";
+"00135" = "No se puede acceder al servidor en la dirección indicada. Póngase en contacto con el administrador para ayuda.";
+"00136" = "El servidor ha detectado un error %@. Póngase en contacto con el administrador para ayuda.";
+"00137" = "URL de desconexión no válida";
+"00138" = "Contraseña incorrecta.";
+"00139" = "No hay ninguna identidad presente.";
+"00140" = "El usuario canceló importación certificado cliente";
+
+"00141" = "Cliente sin permiso para usar tipo otorgamiento de autorización OAuth transferido.";
+"00142" = "SSO de servidor solo soportada desde otorgamiento de OAM_CREDENTIAL.";
+"00143" = "Credenciales de cliente no válidas";
+"00144" = "Acción no permitida";
+
+/* All UI messages shall start from 10001 */
+"10001" = "Conectar";
+"10002" = "Cancelar";
+"10003" = "Usuario";
+"10004" = "Contraseña    ";
+"10005" = "Responda a la pregunta de seguridad";
+"10006" = "Autenticación de Internet Identity";
+"10007" = "Introduzca la contraseña";
+"10008" = "Introduzca el nombre de usuario";
+"10009" = "Introduzca una respuesta.";
+"10010" = "Introduzca sus credenciales.";
+"10011" = "Conexión";
+"10012" = "El certificado de seguridad no es válido. Toque Aceptar para conectarse de todas formas.";
+"10013" = "Aceptar";
+"10014" = "Advertencia de Seguridad";
+"10015" = "Resumen de Certificación";
+"10016" = "Autenticación Federada";
+"10017" = "Cargando...";
+"10018" = "Autenticación en curso ...";
+"10019" = "Conexión Automática";
+"10020" = "Recordar Credenciales";
+"10021" = "Recordar Solo Nombre de Usuario";
+"10022" = "Dominio de Identidad";
+"10023" = "Introducir Dominio de Identidad";
+"10024" = "La identidad está protegida por una contraseña. Introduzca la contraseña para desbloquear e importar";
+"10025" = "Identidad de Cliente";
+"10026" = "Importar";
+"10027" = "Seleccionar Identidad Cliente";
+"10028" = "Validez";
+"10029" = "Error";
+"10030" = "OK";
