@@ -40,11 +40,10 @@
 ## Usage
 ```javascript
 import RNOracleMobileCloud from 'react-native-oracle-mobile-cloud';
+```
 
-What to do with the module?
-
-  #### Login
-
+#### Login
+```javascript
     RNOracleMobileCloud.loginUser(this.state.usuario, this.state.password,
       (success, data) => {
         if(success) {
@@ -71,18 +70,18 @@ What to do with the module?
           console.log("Error", data);
         }
       });
+```
 
-
-  #### Invoke custom api
-
-      RNOracleMobileCloud.invokeEndPoint("oracle_dev_api/movies",
-        null, //Body for POST, PUT, DELETE
-        OracleMobileCloud.HTTP_METHOD_GET,
-        (success, data) => {
-          if(success) {
-            console.log("Success", data.moviesList);
-          } else {
-            console.log("Error", data);
-          }
-        });
+#### Invoke custom api
+```javascript
+    RNOracleMobileCloud.invokeEndPoint("oracle_dev_api/movies",
+      null, //Body for POST, PUT, DELETE
+      OracleMobileCloud.HTTP_METHOD_GET,
+      (success, data) => {
+        if(success) {
+          console.log("Success", data.moviesList);          
+        } else {
+          console.log("Error", data);
+        }
+      });
 ```
