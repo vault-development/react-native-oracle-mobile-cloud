@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.vault.ar.omc;
 
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
