@@ -86,8 +86,10 @@
 4. Open up `android/app/src/main/[...]/AndroidManifest.xml`
   - Add `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>`
 
-5. In `android/app/src/main/` create a folder name assets.
-   Move to assets folder and create a file oracle_mobile_cloud_config.xml
+5.
+
+6. In `android/app/src/main/   (at the same level as the java and res folders)` create a folder name assets if not exist.
+   Move to assets folder and create a file name oracle_mobile_cloud_config.xml
    ```
    <?xml version="1.0" encoding="utf-8" ?>
    <mobileBackends>
