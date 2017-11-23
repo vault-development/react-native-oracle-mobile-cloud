@@ -31,14 +31,7 @@ repositories {
 }
 
 dependencies {
+    compile project(':IDMMobileSDK')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.facebook.react:react-native:+'
-    compile files('libs/IDMMobileSDK.jar')
-    compile files('libs/mcs-android-sdk-vanalytics-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vIDMSDK-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vlocation-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vnotifications-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vshared-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vsocial-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vstorage-17.2.5.3.201709271753-9c7c3ab.jar')
-    compile files('libs/mcs-android-sdk-vsync-17.2.5.3.201709271753-9c7c3ab.jar')
 }
