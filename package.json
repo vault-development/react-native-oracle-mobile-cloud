@@ -1,8 +1,7 @@
-
 {
   "name": "react-native-oracle-mobile-cloud",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Native library for consuming services on Oracle Mobile Cloud",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +9,17 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Vault Development",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vault-development/react-native-oracle-mobile-cloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vault-development/react-native-oracle-mobile-cloud/issues"
+  },
+  "homepage": "https://github.com/vault-development/react-native-oracle-mobile-cloud#readme"
 }
