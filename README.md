@@ -90,25 +90,22 @@
 4. Open up `android/app/src/main/[...]/AndroidManifest.xml`
   - Add `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>`
 
-
 5. Open up `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
   - Unzip IDMMobileSDK.zip
   - Copy IDMMobileSDK folder to `[project_name]/android/`
   - Delete IDMMobileSDK folder from `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
-  - Append `, ':IDMMobileSDK'` line to `android/settings.gradle`:
-
+  - Insert the following lines to `android/settings.gradle`:
     ```
-    include ':react-native-oracle-mobile-cloud', ':IDMMobileSDK'
+    include ':IDMMobileSDK'
   	```
-  - Append `compile project(':IDMMobileSDK')` line in `android/app/build.gradle`:
-
-  	```
+  - Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+    ```
     dependencies {
-      compile project(':react-native-oracle-mobile-cloud')
+      ...
       compile project(':IDMMobileSDK')
       ...
     }
-  	```
+    ```
 
 6. In `android/app/src/main/   (at the same level as the java and res folders)` create a folder name assets if not exist.
    Move to assets folder and create a file name oracle_mobile_cloud_config.xml
