@@ -31,7 +31,5 @@ repositories {
 }
 
 dependencies {
-    compile project(':IDMMobileSDK')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.facebook.react:react-native:+'
 }
