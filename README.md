@@ -74,6 +74,7 @@
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.reactlibrary.RNOracleMobileCloudPackage;` to the imports at the top of the file
   - Add `new RNOracleMobileCloudPackage()` to the list returned by the `getPackages()` method
+
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-oracle-mobile-cloud'
@@ -89,17 +90,18 @@
 4. Open up `android/app/src/main/[...]/AndroidManifest.xml`
   - Add `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>`
 
+
 5. Open up `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
   - Unzip IDMMobileSDK.zip
   - Copy IDMMobileSDK folder to `[project_name]/android/`
   - Delete IDMMobileSDK folder from `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
-  - Append the following lines to `android/settings.gradle`:
+  - Append `, ':IDMMobileSDK'` line to `android/settings.gradle`:
 
     ```
     include ':react-native-oracle-mobile-cloud', ':IDMMobileSDK'
   	```
   - Insert the following line inside the dependencies block in `android/app/build.gradle`:
-  
+
   	```
     dependencies {
       compile project(':react-native-oracle-mobile-cloud')
