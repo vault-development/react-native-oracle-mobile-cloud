@@ -100,7 +100,7 @@
     ```
     include ':react-native-oracle-mobile-cloud', ':IDMMobileSDK'
   	```
-  - Insert the following line inside the dependencies block in `android/app/build.gradle`:
+  - Insert `compile project(':IDMMobileSDK')` line in `android/app/build.gradle`:
 
   	```
     dependencies {
