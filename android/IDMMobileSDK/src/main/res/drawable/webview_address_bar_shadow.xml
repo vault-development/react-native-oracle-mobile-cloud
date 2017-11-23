@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Header: idmmobile/src/Android/IDMMobileSDK/res/drawable/webview_address_bar_shadow.xml /main/1 2013/09/06 07:25:16 arunpras Exp $ -->
+
+<!--
+ Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved. 
+
+   NAME
+     webview_address_bar_shadow.xml
+
+   DESCRIPTION
+     Defines border and shadow effect for the address bar above Embedded Browser
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   arunpras    09/02/13 - Creation
+
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#727272" />
+
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+    <item android:top="1dp">
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="90"
+                android:endColor="#e1e1e1"
+                android:startColor="#F5F5F5" />
+
+            <stroke
+                android:width="1dp"
+                android:color="#727272" />
+
+            <corners android:radius="7dp" />
+        </shape>
+    </item>
+
+</layer-list>

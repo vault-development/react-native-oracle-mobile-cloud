@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-cs/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/10 05:08:53 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile a Social SDK for Android</string>
+    <string name="oamms_processing">Zpracování...</string>
+    <string name="oamms_activity_excep">Aktivita nemůže mít hodnotu null. Zaregistrujte aktuální aktivitu pomocí OMMobileSecurityService#registerActivity(aktivita), nejlépe ve funkci onResume().</string>
+    <string name="oamms_sec_profile_excep">Setup API není ještě voláno.</string>
+    <string name="oamms_servicename_null">Není zadáno žádné schéma ověřování.</string>
+    <string name="oamms_invalid_server_type">Typ serveru ověřování není platný</string>
+    <string name="oamms_not_connect_to_server">Server není na zadané adrese dostupný. Požádejte správce o pomoc.</string>
+    <string name="oamms_network_unavailable">Síť je nedostupná. Ujistěte se, že jste připojen k internetu a zkuste to znovu.</string>
+    <string name="oamms_not_parse_response">Nelze analyzovat odpověď odeslanou ze serveru.</string>
+    <string name="oamms_certificate_not_accepted">Uživatel odmítl certifikát serveru.</string>
+    <string name="oamms_internal_error">Vnitřní chyba</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Argumenty nemohou mít hodnotu null nebo prázdný řetězec</string>
+    <string name="oamms_update_cookies_validation_failure">Aktualizace hodnoty cookie selhala, protože atributy cookie nelze ověřit</string>
+    <string name="oamms_cookie_not_found">Položka cookie pro aktualizaci neexistuje</string>
+    <string name="oamms_invalid_arguments_null">Argumenty nemohou mít hodnotu null</string>
+    <string name="oamms_clear_username_password_failed">Uživatelské jméno a heslo uložené ve vloženém webovém zobrazení nebylo možné odstranit, protože registrace činnosti byla mezitím zrušena.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Nelze přidat některé hlavičky HTTP, zadané v předané mapě jako hodnota pro případ klíče OM_PROP_CUSTOM_AUTH_HEADERS. Pročtěte si v dokumentaci seznam nepovolených hlaviček HTTP.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Počet vlastních ověřovacích hlaviček, které jsou zadány jako část OM_PROP_CUSTOM_AUTH_HEADERS, překročil maximální povolený počet (%1$d).</string>
+    <string name="oamms_application_not_available">Požadovaná aplikace není dostupná.</string>
+    <string name="oamms_http_callback_null">Zpětné volání pro asynchronní požadavek nemůže mít hodnotu null</string>
+    <string name="oamms_http_res_url_null">Adresa URL zdroje Http nemůže mít hodnotu null</string>
+    <string name="oamms_logout_in_progress">Probíhá odhlášení. Zkuste to za chvíli znovu.</string>
+    <string name="oamms_logout_timed_out">Operace odhlášení selhala kvůli vypršení platnosti připojení.</string>
+    <string name="oamms_logout_failure">Operace odhlášení selhala kvůli následující chybě: %1$s</string>
+    <string name="oamms_not_found">Požadovaná adresa URL neexistuje. Požádejte správce o pomoc.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Uživatelské jméno je povinné.</string>
+    <string name="oamms_identity_domain_required">Doména identity je povinný údaj.</string>
+    <string name="oamms_username_identity_domain_required">Uživatelské jméno a doména identity jsou povinné údaje.</string>
+    <string name="oamms_password_null">Požaduje se heslo.</string>
+    <string name="oamms_un_pwd_missing">Neplatné uživatelské jméno nebo heslo.</string>
+    <string name="oamms_un_pwd_tenant_missing">Neplatné uživatelské jméno, heslo nebo doména identity.</string>
+    <string name="oamms_chalg_missing">Odpověď na otázku výzvy je neplatná.</string>
+    <string name="oamms_user_canceled">Uživatel zrušil operaci přihlášení.</string>
+    <string name="oamms_auth_failed">Ověření uživatele selhalo.</string>
+    <string name="oamms_auth_success">Ověření uživatele bylo úspěšné.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Uživ. jméno</string>
+    <string name="oamms_username_hint">Zadejte uživatelské jméno</string>
+    <string name="oamms_password">Heslo</string>
+    <string name="oamms_password_hint">Zadejte heslo</string>
+    <string name="oamms_tenant">Doména identity</string>
+    <string name="oamms_tenant_hint">Zadejte doménu identity</string>
+    <string name="oamms_login">Přihlásit se</string>
+    <string name="oamms_cancel">Zrušit</string>
+    <string name="oamms_challenge_head">Zadejte další informace</string>
+    <string name="oamms_challenge_ques">Otázka</string>
+    <string name="oamms_challenge_ans">Odpověď</string>
+    <string name="oamms_challenge_answer_hint">Zadejte odpověď na bezpečnostní otázku</string>
+    <string name="oamms_submit">Odeslat</string>
+    <string name="oamms_remember_username">Zapamatovat uživatelské jméno</string>
+    <string name="oamms_remember_credentials">Pamatovat si ověřovací údaje</string>
+    <string name="oamms_auto_login">Automatické přihlášení</string>
+    <string name="oamms_back_button">Zpět</string>
+    <string name="oamms_forward_button">Vpřed</string>
+    <string name="oamms_refresh_button">Aktualizovat</string>
+    <string name="oamms_cancel_button">Zrušit</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Vlastnosti konfigurace nebyly v SharedPreferences nalezeny</string>
+    <string name="oamms_config_intent_uri_null">Předaný záměr neobsahuje identifikátor URI podrobností konfigurace serveru.</string>
+    <string name="oamms_config_intent_uri_invalid">Předaný záměr neobsahuje platný identifikátor URI podrobností konfigurace serveru.</string>
+    <string name="oamms_could_not_retrieve_configuration">Nelze načíst vlastnosti konfigurace z SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Vlastnosti konfigurace nelze uložit do SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Inicializace SDK selhala, protože nejsou zadány požadované informace o serveru.</string>
+    <string name="oamms_setup_failed_ms">Profil aplikace nelze stáhnout z důvodu chybějící konfigurace</string>
+    <string name="oamms_setup_failed_default">Profil nebo název aplikace je neplatný</string>
+    <string name="oamms_setup_failed_oauth">Profil klientu OAuth nelze stáhnout.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Název aplikace je neplatný.</string>
+    <string name="oamms_invalid_server_url">Adresa URL serveru je neplatná.</string>
+    <string name="oamms_invalid_service_domain">Doména služby je neplatná.</string>
+    <string name="oamms_token_missing">Toto zařízení nebylo ještě ověřeno na serveru Mobile and Social Server.</string>
+    <string name="oamms_no_user_token">Uživatel ještě není ověřen</string>
+    <string name="oamms_no_rp_login_url">Nelze otevřít adresu URL pro ověření RL.</string>
+    <string name="oamms_req_failed">Požadavek na ověření pro uživatele %1$s selhal.</string>
+    <string name="oamms_req_denied">Požadavek na ověření byl odepřen.</string>
+    <string name="oamms_oaam_denied_action">Ověření blokováno serverem. Požádejte správce o pomoc.</string>
+    <string name="oamms_oaam_wipeout_action">Ze serveru byl obdržen příkaz k vymazání. Probíhá mazání citlivých dat aplikace.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Chyba při ověřování volání podpisu aplikace.</string>
+    <string name="oamms_sso_activity_missing">Název aplikace SSO není zadán.</string>
+    <string name="oamms_init_SSOAgent_success">Aplikace agentu SSO byla úspěšně inicializována.</string>
+    <string name="oamms_service_domain_not_same">Ověření bylo agentem odmítnuto, protože doména služby se neshoduje.</string>
+    <string name="oamms_invalid_config">Klientská aplikace není autorizována ke spoluúčasti v SSO.</string>
+    <string name="oamms_no_agent_avail">Nelze otevřít adresu URL pro ověření SSO.</string>
+    <string name="oamms_tokens_not_available">Lexikální jednotka OAM_ID není dostupná. Zkontrolujte nastavení serveru. Jednou z možných chybných konfigurací je, že schéma ověření není nastaveno jako MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Neplatná URL přihlášení.</string>
+    <string name="oamms_server_returned_error">Na serveru došlo k chybě %1$s. Požádejte správce o pomoc.</string>
+    <string name="oamms_forbidden">Uživatel nemá oprávnění.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Vypršel čas ověřování.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Uživatelská stránka ověření neobsahuje pole s ověřovacími údaji.</string>
+    <string name="oamms_kba_html_fields_invalid">Stránka s uživatelským silným ověřováním neobsahuje pole pro ověřovací údaje.</string>
+    <string name="oamms_html_file_exception">Uživatelský soubor HTML nemůže mít hodnotu null.</string>
+    <string name="oamms_invalid_html_file">Cesta uživatelského souboru HTML je neplatného typu</string>
+    <string name="oamms_remote_html_file">Vlastní stránka HTML nemůže být vzdálená, SDK podporuje jen načítání místních stránek HTML.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Tento certifikát není od důvěryhodné autority.</string>
+    <string name="oamms_ssl_security_certificate">Bezpečnostní certifikát</string>
+    <string name="oamms_ssl_issued_to">Předmět:</string>
+    <string name="oamms_ssl_common_name">Běžný název:</string>
+    <string name="oamms_ssl_organization">Organizace :</string>
+    <string name="oamms_ssl_organization_unit">Organizační jednotka</string>
+    <string name="oamms_ssl_issued_by">Výstavce:</string>
+    <string name="oamms_ssl_validity">Platnost:</string>
+    <string name="oamms_ssl_issued_on">Počáteční datum:</string>
+    <string name="oamms_ssl_expires_on">Koncové datum:</string>
+    <string name="oamms_security_warning">Varování zabezpečení</string>
+    <string name="oamms_ssl_continue">Přijmout</string>
+    <string name="oamms_ssl_view_certificate">Podrobnosti</string>
+    <string name="oamms_ssl_message">Došlo k potížím s bezpečnostním certifikátem pro tuto adresu URL.</string>
+    <string name="oamms_serial_number">Sériové číslo:</string>
+    <string name="oamms_fingerprint">Otisky prstu:</string>
+    <string name="oamms_sha_fp">Otisk prstu SHA1:</string>
+    <string name="oamms_md5_fp">Otisk prstu MD5:</string>
+    <string name="oamms_ssl_alert_icon">Ikona výstrahy</string>
+    <string name="oamms_import_certificate_failure">Nelze instalovat certifikát.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Ověřování OAuth selhalo.</string>
+    <string name="oamms_oauth_invalid_state">Neplatný stav obnovený z odpovědi.</string>
+    <string name="oamms_oauth_context_invalid">Pro daný požadavek není k dispozici žádná platná přístupová lexikální jednotka. Ověřte pomocí příslušného rozsahu.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Požadavek nemá požadovaný parametr, obsahuje nepodporovanou hodnotu parametru, opakuje parametr, obsahuje více ověřovacích údajů, používá více než jeden mechanizmus ověření klientu nebo je jinak poškozen.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Ověřovaný klient není oprávněn používat tento udělený typ ověření.</string>
+    <string name="oamms_oauth_access_denied_desc">Vlastník zdroje nebo ověřovací server požadavek zamítl.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Server ověření nepodporuje získávání kódu ověření pomocí této metody.</string>
+    <string name="oamms_oauth_server_error_desc">Ověřovací server narazil na neočekávaný stav, který mu zabránil ve splnění požadavku.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Ověřovací server nyní nemůže zpracovat požadavek, protože je dočasně přetížen nebo ve stavu údržby.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Rozsah požadavku je neplatný, neznámý, poškozený nebo překračuje rozsah udělený vlastníkem zdroje.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Typ uděleného ověření není podporován serverem ověření.</string>
+    <string name="oamms_oauth_invalid_client_desc">Ověření na straně klientu selhalo.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Poskytnuté udělení ověření nebo token aktualizace je neplatné, má skončenou platnost, odejmuté, neshoduje se s použitým URI přesměrování v požadavku ověření nebo bylo vydáno pro jiný klient.</string>
+    <string name="oamms_oauth_auth_url_invalid">Neplatné koncové body pro ověření OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Neplatné tvrzení klientu. Znovu spusťte proces ověřování.</string>
+    <string name="oamms_oauth_client_secret_invalid">Pro tento typ udělení nesmí být tajemství klientu null nebo prázdné.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Kód předběžného ověření pro registraci klientu je neplatný.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Selhalo vytvoření lex. jednotek OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Selhalo vytvoření tvrzení uživatele.</string>
+    <string name="oamms_oauth_user_assertion_null">Tvrzení uživatele je null.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Certifikát identity klientu.</string>
+    <string name="oamms_client_certificate_import_empty_password">Heslo nemůže být prázdné.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Neplatné heslo.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Uživatel zrušil import certifikátu.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Neplatný certifikát.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Během vzájemného ověřování SSL byl předložen neplatný alias klientu.</string>
+    <string name="oamms_client_certificate_dialog_title">Zvolte identitu klientu.</string>
+    <string name="oamms_client_certificate_import_enter_password">Zadejte heslo pro extrahování certifikátu.</string>
+    <string name="oamms_client_certificate_import_failed">Import certifikátu selhal.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Server ověřování %1$s požádal o certifikát. Vyberte certifikát z dostupných identit.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

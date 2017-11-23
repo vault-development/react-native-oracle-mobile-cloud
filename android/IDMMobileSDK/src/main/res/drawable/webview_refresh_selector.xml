@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Header: idmmobile/src/Android/IDMMobileSDK/res/drawable/webview_refresh_selector.xml /main/1 2013/09/06 07:25:16 arunpras Exp $ -->
+
+<!--
+ Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved. 
+
+   NAME
+     webview_refresh_selector.xml
+
+   DESCRIPTION
+     Defines the drawables for different states of refresh button.
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   arunpras    09/02/13 - Creation
+
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/oracle_access_ic_refresh_pressed" />
+    <item android:state_focused="true" android:drawable="@drawable/oracle_access_ic_refresh_pressed" />
+    <item android:drawable="@drawable/oracle_access_ic_refresh" />
+
+</selector>

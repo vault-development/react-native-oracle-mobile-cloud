@@ -1,0 +1,219 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-hr/oamms_strings.xml /st_wptg_11.1.1.9.0/7 2014/09/15 02:32:22 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile and Social SDK za Android</string>
+    <string name="oamms_processing">Obrada u tijeku...</string>
+    <string name="oamms_activity_excep">Aktivnost ne može biti null. Registrirajte trenutnu aktivnost, OMMobileSecurityService#registerActivity(Activity), po mogućnosti u onResume().</string>
+    <string name="oamms_sec_profile_excep">API za postavljanje nije pozvan.</string>
+    <string name="oamms_servicename_null">Nije navedena shema provjere autentičnosti.</string>
+    <string name="oamms_invalid_server_type">Vrsta poslužitelja za provjeru autentičnosti nije valjana.</string>
+    <string name="oamms_not_connect_to_server">Poslužitelj nije dostupan na navedenoj adresi. Za pomoć se obratite administratoru.</string>
+    <string name="oamms_network_unavailable">Mreža je nedostupna. Provjerite jeste li uspostavili internetsku vezu i pokušajte ponovo.</string>
+    <string name="oamms_not_parse_response">Ne može se analizirati odgovor poslan s poslužitelja.</string>
+    <string name="oamms_certificate_not_accepted">Korisnik je odbio certifikat poslužitelja.</string>
+    <string name="oamms_internal_error">Interna pogreška</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Argumenti ne mogu biti null ili prazni reci</string>
+    <string name="oamms_update_cookies_validation_failure">Vrijednosti kolačića nije ažurirana jer je se ne može potvrditi valjanost atributa kolačića</string>
+    <string name="oamms_cookie_not_found">Kolačić koji želite ažurirati ne postoji</string>
+    <string name="oamms_invalid_arguments_null">Argumenti ne mogu biti null</string>
+    <string name="oamms_clear_username_password_failed">Korisničko ime i lozinka pohranjeni u ugrađenom web-prikazu ne mogu se izbrisati jer je u međuvremenu poništena registracija aktivnosti.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Neka od HTTP zaglavlja iz mape koja su navedena kao vrijednost za ključ OM_PROP_CUSTOM_AUTH_HEADERS ne mogu se dodati. U dokumentaciji potražite popis nedopuštenih HTTP zaglavlja.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Broj prilagođenih zaglavlja za provjeru autentičnosti koja su specificirana u sklopu OM_PROP_CUSTOM_AUTH_HEADERS prekoračuju maksimalan broj (%1$d).</string>
+    <string name="oamms_application_not_available">Tražena aplikacija nije dostupna.</string>
+    <string name="oamms_http_callback_null">Povratni poziv za asinkroni zahtjev ne može biti null</string>
+    <string name="oamms_http_res_url_null">URL http resursa ne može biti null</string>
+    <string name="oamms_logout_in_progress">Odjava je u tijeku. Nakon određenog vremena pokušajte ponovo.</string>
+    <string name="oamms_logout_timed_out">Veza je istekla i operacija odjave nije uspjela.</string>
+    <string name="oamms_logout_failure">Odjava nije uspjela zbog sljedeće pogreške: %1$s</string>
+    <string name="oamms_not_found">Traženi URL ne postoji. Za pomoć se obratite administratoru.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Potrebno je korisničko ime.</string>
+    <string name="oamms_identity_domain_required">Potrebna je domena identiteta.</string>
+    <string name="oamms_username_identity_domain_required">Potrebni su korisničko ime i domena identiteta.</string>
+    <string name="oamms_password_null">Potrebna je lozinka.</string>
+    <string name="oamms_un_pwd_missing">Neispravno ime ili lozinka korisnika.</string>
+    <string name="oamms_un_pwd_tenant_missing">Neispravno ime, lozinka korisnika ili domena identiteta.</string>
+    <string name="oamms_chalg_missing">Odgovor na izazov nije valjan.</string>
+    <string name="oamms_user_canceled">Korisnik je otkazao operaciju prijave.</string>
+    <string name="oamms_auth_failed">Neuspjela provjera autentičnosti korisnika.</string>
+    <string name="oamms_auth_success">Provjera autentičnosti korisnika uspjela.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Kor. ime</string>
+    <string name="oamms_username_hint">Unesite korisničko ime</string>
+    <string name="oamms_password">Lozinka</string>
+    <string name="oamms_password_hint">Unesite lozinku</string>
+    <string name="oamms_tenant">Domena identiteta</string>
+    <string name="oamms_tenant_hint">Unesite domenu identiteta</string>
+    <string name="oamms_login">Prijava</string>
+    <string name="oamms_cancel">Odustani</string>
+    <string name="oamms_challenge_head">Unesite dodatne informacije</string>
+    <string name="oamms_challenge_ques">Pitanje</string>
+    <string name="oamms_challenge_ans">Odgovor</string>
+    <string name="oamms_challenge_answer_hint">Odgovorite na sigurnosno pitanje</string>
+    <string name="oamms_submit">Podnesi</string>
+    <string name="oamms_remember_username">Zapamti korisničko ime</string>
+    <string name="oamms_remember_credentials">Zapamti sigurnosne podatke</string>
+    <string name="oamms_auto_login">Automatska prijava</string>
+    <string name="oamms_back_button">Natrag</string>
+    <string name="oamms_forward_button">Naprijed</string>
+    <string name="oamms_refresh_button">Osvježi</string>
+    <string name="oamms_cancel_button">Odustani</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Zajedničke preference ne sadrže svojstva konfiguracije</string>
+    <string name="oamms_config_intent_uri_null">Navedena namjera ne sadrži URI za pojedinosti konfiguracije poslužitelja.</string>
+    <string name="oamms_config_intent_uri_invalid">Navedena namjera ne sadrži valjani URI za pojedinosti konfiguracije poslužitelja.</string>
+    <string name="oamms_could_not_retrieve_configuration">Ne mogu se učitati svojstva konfiguracije iz zajedničkih preferenci</string>
+    <string name="oamms_could_not_store_configuration">Ne mogu se spremiti svojstva konfiguracije u zajedničke preference</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Pokretanje SDK nije uspjelo; nisu navedene potrebne informacije poslužitelja.</string>
+    <string name="oamms_setup_failed_ms">Profil aplikacije ne može se preuzeti jer nedostaje konfiguracija</string>
+    <string name="oamms_setup_failed_default">Profil ili naziv aplikacije nisu valjani</string>
+    <string name="oamms_setup_failed_oauth">OAuth klijentski profil ne može se preuzeti.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Naziv aplikacije nije valjan.</string>
+    <string name="oamms_invalid_server_url">URL poslužitelja nije valjan.</string>
+    <string name="oamms_invalid_service_domain">Domena usluge nije valjana.</string>
+    <string name="oamms_token_missing">Mobile and Social poslužitelj još nije potvrdio autentičnost uređaja.</string>
+    <string name="oamms_no_user_token">Još nije potvrđena autentičnost korisnika.</string>
+    <string name="oamms_no_rp_login_url">Ne može se otvoriti URL RP provjere autentičnosti.</string>
+    <string name="oamms_req_failed">Zahtjev za provjeru autentičnosti nije uspio za korisnika %1$s.</string>
+    <string name="oamms_req_denied">Zahtjev za provjeru autentičnosti odbijen je.</string>
+    <string name="oamms_oaam_denied_action">Poslužitelj je blokirao provjeru autentičnosti. Za pomoć se obratite administratoru.</string>
+    <string name="oamms_oaam_wipeout_action">Poslužitelj je izdao naredbu za brisanje. U tijeku je brisanje osjetljivih podataka aplikacije.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Nije uspjela provjera valjanosti potpisa pozivne aplikacije.</string>
+    <string name="oamms_sso_activity_missing">Nije unesen naziv aplikacije za jedinstvenu prijavu.</string>
+    <string name="oamms_init_SSOAgent_success">Aplikacija agenta za jedinstvenu prijavu uspješno je pokrenuta.</string>
+    <string name="oamms_service_domain_not_same">Agent je odbio provjeru autentičnosti jer se ne podudara domena usluge.</string>
+    <string name="oamms_invalid_config">Klijentska aplikacija nema ovlaštenja za sudjelovanje u jedinstvenoj prijavi.</string>
+    <string name="oamms_no_agent_avail">Ne može se otvoriti URL provjere autentičnosti za jedinstvenu prijavu</string>
+    <string name="oamms_tokens_not_available">Token OAM_ID nedostupan. Provjerite postavke poslužitelja. Prema jednoj od mogućih pogrešnih konfiguracija, shema za provjeru autentičnosti nije postavljena kao MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">URL prijave nije valjan.</string>
+    <string name="oamms_server_returned_error">Na poslužitelju je došlo do pogreške %1$s. Za pomoć se obratite administratoru.</string>
+    <string name="oamms_forbidden">Korisnik nema ovlasti.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Provjera autentičnosti je istekla.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Prilagođena stranica za provjeru autentičnosti nema polje za sigurnosne podatke.</string>
+    <string name="oamms_kba_html_fields_invalid">Prilagođena stranica za snažnu provjeru autentičnosti nema polje za sigurnosne podatke</string>
+    <string name="oamms_html_file_exception">Prilagođena HTML datoteka ne može biti null.</string>
+    <string name="oamms_invalid_html_file">Vrsta staze prilagođene HTML datoteke nije valjana</string>
+    <string name="oamms_remote_html_file">Prilagođena HTML stranica ne može biti udaljena stranica; SDK podržava učitavanje samo lokalnih HTML stranica</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Certifikat ne dolazi iz pouzdanog izvora.</string>
+    <string name="oamms_ssl_security_certificate">Sigurnosni certifikat</string>
+    <string name="oamms_ssl_issued_to">Predmet:</string>
+    <string name="oamms_ssl_common_name">Uobičajeni naziv:</string>
+    <string name="oamms_ssl_organization">Organizacija:</string>
+    <string name="oamms_ssl_organization_unit">Organizacijska jedinica:</string>
+    <string name="oamms_ssl_issued_by">Izdavatelj:</string>
+    <string name="oamms_ssl_validity">Valjanost:</string>
+    <string name="oamms_ssl_issued_on">Datum početka:</string>
+    <string name="oamms_ssl_expires_on">Datum završetka:</string>
+    <string name="oamms_security_warning">Sigurnosno upozorenje</string>
+    <string name="oamms_ssl_continue">Prihvati</string>
+    <string name="oamms_ssl_view_certificate">Pojedinosti</string>
+    <string name="oamms_ssl_message">Postoje poteškoće sa sigurnosnim certifikatom za ovaj URL.</string>
+    <string name="oamms_serial_number">Serijski broj:</string>
+    <string name="oamms_fingerprint">Otisci prstiju:</string>
+    <string name="oamms_sha_fp">SHA1 otisak prsta:</string>
+    <string name="oamms_md5_fp">MD5 otisak prsta:</string>
+    <string name="oamms_ssl_alert_icon">Ikona upozorenja</string>
+    <string name="oamms_import_certificate_failure">Instalacija certifikata nije uspjela.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth provjera aut. nije uspjela.</string>
+    <string name="oamms_oauth_invalid_state">Stanje koje je učitano iz odgovora nije valjano.</string>
+    <string name="oamms_oauth_context_invalid">Navedenom zahtjevu nije pridodan valjani token za pristup. Provjerite autentičnost u odgovarajućem opsegu.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Zahtjevu nedostaje obavezan parametar, sadrži vrijednost parametra koja nije podržana, sadrži ponovljene parametre, sadrži više sigurnosnih podataka, koristi više od jednog mehanizma za provjeru autentičnosti klijenta ili je na drugi način neispravno oblikovan.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Klijent za autorizaciju nije ovlašten za upotrebu ove vrste dodjele za autorizaciju.</string>
+    <string name="oamms_oauth_access_denied_desc">Zahtjev je odbio vlasnik resursa ili poslužitelj za autorizaciju.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Poslužitelj za autorizaciju ne podržava traženje šifre za autorizaciju ovom metodom.</string>
+    <string name="oamms_oauth_server_error_desc">Poslužitelj za autorizaciju naišao je na neočekivano stanje koje je spriječilo ispunjavanje zahtjeva.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Poslužitelj za autorizaciju trenutno ne može obraditi zahtjev zbog privremenog preopterećenja ili održavanja poslužitelja.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Zatraženi raspon nije valjan, nije poznat, nije ispravno oblikovan ili izlazi iz opsega koji je odredio vlasnik resursa.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Poslužitelj za autorizaciju ne podržava vrstu dodjele autorizacije.</string>
+    <string name="oamms_oauth_invalid_client_desc">Provjera autentičnosti klijenta nije uspjela.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Navedena dodjela autorizacije ili token za osvježavanje nije valjan, istekao je, opozvan je, nije u skladu s URI-jem za preusmjeravanje koji se koristi u zahtjevu za autorizaciju ili je izdan za drugi klijent.</string>
+    <string name="oamms_oauth_auth_url_invalid">Krajnje točke nisu valjane za OAuth provjeru auten.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Pridruživanje klijenta nije valjano. Ponovo pokrenite provjeru autentičnosti.</string>
+    <string name="oamms_oauth_client_secret_invalid">Tajno pitanje klijenta ne može biti null ni prazno za ovu vrstu dodjele.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">AuthZ predšifra za registraciju klijenta nije valjana.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Stvaranje OAM tokena nije uspjelo.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Stvaranje pridruživanja korisnika nije uspjelo.</string>
+    <string name="oamms_oauth_user_assertion_null">Pridruž. korisnika je null.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate_import_invalid_password">Lozinka ne može biti prazna.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Certifikat nije valjan.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Alias klijenta naveden tijekom obostrane SSL provjere autentičnosti nije valjan.</string>
+    <string name="oamms_client_certificate_dialog_title">Odaberite identitet klijenta.</string>
+    <string name="oamms_client_certificate_import_enter_password">Unesite lozinku kako biste izdvojili certifikat.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Poslužitelj za provjeru autentičnosti %1$s zatražio je certifikat. U dostupnim identitetima odaberite certifikat.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

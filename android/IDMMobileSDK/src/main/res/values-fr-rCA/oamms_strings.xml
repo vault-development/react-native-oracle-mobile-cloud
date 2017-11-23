@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-fr-rCA/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 13:13:10 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Trousse SDK Mobile and Social pour Android</string>
+    <string name="oamms_processing">Traitement...</string>
+    <string name="oamms_activity_excep">L\'activité ne peut pas être nulle. Enregistrez l\'activité courante à l\'aide de OMMobileSecurityService#registerActivity(Activity), préférablement dans onResume().</string>
+    <string name="oamms_sec_profile_excep">API de configuration non appelée.</string>
+    <string name="oamms_servicename_null">Aucun modèle d\'authentification spécifié.</string>
+    <string name="oamms_invalid_server_type">Le type de serveur d\'authentification n\'est pas valide.</string>
+    <string name="oamms_not_connect_to_server">Le serveur n\'est pas accessible à l\'adresse spécifiée. Communiquez avec l\'administrateur pour obtenir de l\'aide.</string>
+    <string name="oamms_network_unavailable">Le réseau n\'est pas disponible. Assurez-vous que vous êtes connecté à Internet et réessayez.</string>
+    <string name="oamms_not_parse_response">Impossible d\'analyser la réponse du serveur.</string>
+    <string name="oamms_certificate_not_accepted">Certificat de serveur rejeté par l\'utilisateur.</string>
+    <string name="oamms_internal_error">Erreur interne</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Les arguments ne peuvent pas être nuls ou vides.</string>
+    <string name="oamms_update_cookies_validation_failure">Échec de la mise à jour de la valeur du témoin car les attributs du témoin ne peuvent pas être validés</string>
+    <string name="oamms_cookie_not_found">Le témoin à mettre à jour n\'existe pas</string>
+    <string name="oamms_invalid_arguments_null">Les arguments ne peuvent pas être nuls</string>
+    <string name="oamms_clear_username_password_failed">Le nom d\'utilisateur et le mot de passe stockés dans l\'affichage Web intégré n\'ont pas pu être supprimés car l\'activité a été désenregistrée.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Impossible d\'ajouter certains des en-têtes HTTP spécifiés dans le mappage transmis comme valeur par rapport à la clé OM_PROP_CUSTOM_AUTH_HEADERS. Consultez la documentation pour connaître la liste des en-têtes HTTP non autorisés.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Le nombre maximal d\'en-têtes d\'authentification personnalisés appartenant à OM_PROP_CUSTOM_AUTH_HEADERS a été dépassé (%1$d).</string>
+    <string name="oamms_application_not_available">L\'application demandée n\'est pas disponible.</string>
+    <string name="oamms_http_callback_null">Le rappel de la demande asynchrone ne peut pas être nul</string>
+    <string name="oamms_http_res_url_null">L\'URL de la ressource HTTP ne peut pas être nulle</string>
+    <string name="oamms_logout_in_progress">Déconnexion en cours. Réessayez ultérieurement.</string>
+    <string name="oamms_logout_timed_out">L\'opération de déconnexion a échoué en raison de la temporisation de la connexion.</string>
+    <string name="oamms_logout_failure">La déconnexion a échoué en raison de l\'erreur suivante : %1$s</string>
+    <string name="oamms_not_found">L\'URL demandée n\'existe pas. Communiquez avec l\'administrateur pour obtenir de l\'aide.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Nom d\'utilisateur obligatoire.</string>
+    <string name="oamms_identity_domain_required">Le domaine d\'identité est obligatoire.</string>
+    <string name="oamms_username_identity_domain_required">Nom d\'utilisateur et domaine d\'identité obligatoires.</string>
+    <string name="oamms_password_null">Le mot de passe est obligatoire.</string>
+    <string name="oamms_un_pwd_missing">Nom utilisateur/mot de passe non valide.</string>
+    <string name="oamms_un_pwd_tenant_missing">Nom d\'utilisateur, mot de passe ou domaine d\'identité non valide.</string>
+    <string name="oamms_chalg_missing">Réponse d\'identification non valide.</string>
+    <string name="oamms_user_canceled">L\'utilisateur a annulé la connexion.</string>
+    <string name="oamms_auth_failed">Échec de l\'authentification de l\'utilisateur.</string>
+    <string name="oamms_auth_success">Authentification de l\'utilisateur réussie.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Nom d\'util.</string>
+    <string name="oamms_username_hint">Entrer le nom d\'utilisateur</string>
+    <string name="oamms_password">Mot de passe</string>
+    <string name="oamms_password_hint">Entrer le mot de passe</string>
+    <string name="oamms_tenant">Domaine Identity</string>
+    <string name="oamms_tenant_hint">Entrer un domaine d\'identité</string>
+    <string name="oamms_login">Connexion</string>
+    <string name="oamms_cancel">Annuler</string>
+    <string name="oamms_challenge_head">Fournir des informations supplémentaires</string>
+    <string name="oamms_challenge_ques">Question</string>
+    <string name="oamms_challenge_ans">Réponse</string>
+    <string name="oamms_challenge_answer_hint">Répondez à la question de sécurité</string>
+    <string name="oamms_submit">Soumettre</string>
+    <string name="oamms_remember_username">Mémoriser le nom d\'utilisateur</string>
+    <string name="oamms_remember_credentials">Mémoriser les données d\'identification</string>
+    <string name="oamms_auto_login">Connexion auto</string>
+    <string name="oamms_back_button">Précédent</string>
+    <string name="oamms_forward_button">Suivant</string>
+    <string name="oamms_refresh_button">Actualiser</string>
+    <string name="oamms_cancel_button">Annuler</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Les propriétés de configuration sont introuvables dans SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">L\'intention transmise ne contient pas d\'URI pour les détails de configuration du serveur.</string>
+    <string name="oamms_config_intent_uri_invalid">L\'intention transmise ne contient pas d\'URI valide pour les détails de configuration du serveur.</string>
+    <string name="oamms_could_not_retrieve_configuration">Impossible d\'extraire les propriétés de configuration de SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Impossible de stocker les propriétés de configuration dans SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">L\'initialisation de la trousse SDK a échoué car les informations obligatoires sur le serveur n\'ont pas été fournies.</string>
+    <string name="oamms_setup_failed_ms">Le profil de l\'application ne peut pas être téléchargé car la configuration est manquante</string>
+    <string name="oamms_setup_failed_default">Le profil ou le nom d\'application n\'est pas valide</string>
+    <string name="oamms_setup_failed_oauth">Le profil client OAuth ne peut pas être téléchargé.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Le nom d\'application n\'est pas valide.</string>
+    <string name="oamms_invalid_server_url">L\'URL du serveur n\'est pas valide.</string>
+    <string name="oamms_invalid_service_domain">Le domaine de service n\'est pas valide.</string>
+    <string name="oamms_token_missing">Cet appareil n\'a pas encore été authentifié auprès du serveur Mobile and Social.</string>
+    <string name="oamms_no_user_token">L\'utilisateur n\'est pas encore authentifié.</string>
+    <string name="oamms_no_rp_login_url">Impossible d\'ouvrir l\'URL d\'authentification RP.</string>
+    <string name="oamms_req_failed">Échec de la demande d\'authentification de l\'utilisateur %1$s.</string>
+    <string name="oamms_req_denied">La demande d\'authentification a été refusée.</string>
+    <string name="oamms_oaam_denied_action">Authentification bloquée par le serveur. Communiquez avec l\'administrateur pour obtenir de l\'aide.</string>
+    <string name="oamms_oaam_wipeout_action">Commande de nettoyage reçue du serveur. Effacement des données d\'application sensibles.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Échec de la validation de la signature de l\'application d\'appel.</string>
+    <string name="oamms_sso_activity_missing">Le nom de l\'application d\'authentification unique n\'a pas été fourni.</string>
+    <string name="oamms_init_SSOAgent_success">L\'application d\'agent d\'authentification unique a été correctement initialisée.</string>
+    <string name="oamms_service_domain_not_same">L\'authentification a été rejetée par l\'agent car le domaine de service ne correspond pas.</string>
+    <string name="oamms_invalid_config">Application cliente non autorisée à participer à l\'authentification unique.</string>
+    <string name="oamms_no_agent_avail">Impossible d\'ouvrir l\'URL d\'authentification unique.</string>
+    <string name="oamms_tokens_not_available">Le jeton OAM_ID n\'est pas disponible. Vérifiez les paramètres du serveur. Le modèle d\'authentification n\'est peut-être pas réglé à MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">URL connexion non valide.</string>
+    <string name="oamms_server_returned_error">Erreur %1$s sur le serveur. Communiquez avec l\'administrateur pour obtenir de l\'aide.</string>
+    <string name="oamms_forbidden">L\'utilisateur n\'est pas autorisé.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Temporisation de l\'authentification</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">La page d\'authentification personnalisée ne comprend pas de champs de données d\'identification.</string>
+    <string name="oamms_kba_html_fields_invalid">La page d\'authentification forte personnalisée ne comprend pas de champs de données d\'identification.</string>
+    <string name="oamms_html_file_exception">Le fichier HTML personnalisé ne peut pas être nul.</string>
+    <string name="oamms_invalid_html_file">Le type de chemin d\'accès du fichier HTML personnalisé n\'est pas valide</string>
+    <string name="oamms_remote_html_file">La page HTML personnalisée ne peut pas être distante, la trousse SDK ne peut prendre en charge qu\'une page HTML locale</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Le certificat ne provient pas d\'une autorité sécurisée.</string>
+    <string name="oamms_ssl_security_certificate">Certificat de sécurité</string>
+    <string name="oamms_ssl_issued_to">Objet :</string>
+    <string name="oamms_ssl_common_name">Nom commun :</string>
+    <string name="oamms_ssl_organization">Organisation :</string>
+    <string name="oamms_ssl_organization_unit">Unité organisationnelle :</string>
+    <string name="oamms_ssl_issued_by">Émetteur :</string>
+    <string name="oamms_ssl_validity">Validité :</string>
+    <string name="oamms_ssl_issued_on">Date de début :</string>
+    <string name="oamms_ssl_expires_on">Date de fin :</string>
+    <string name="oamms_security_warning">Avertissement de sécurité</string>
+    <string name="oamms_ssl_continue">Accepter</string>
+    <string name="oamms_ssl_view_certificate">Détails</string>
+    <string name="oamms_ssl_message">Le certificat de sécurité de cette URL présente des problèmes.</string>
+    <string name="oamms_serial_number">Numéro de série :</string>
+    <string name="oamms_fingerprint">Empreintes digitales :</string>
+    <string name="oamms_sha_fp">Empreintes digitales SHA1 :</string>
+    <string name="oamms_md5_fp">Empreintes digitales MD5 :</string>
+    <string name="oamms_ssl_alert_icon">Icône d\'alerte</string>
+    <string name="oamms_import_certificate_failure">Impossible d\'installer le certificat.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Échec de l\'authentification OAuth.</string>
+    <string name="oamms_oauth_invalid_state">La réponse a récupéré un état non valide.</string>
+    <string name="oamms_oauth_context_invalid">La demande ne contient aucun jeton d\'accès valide. Assurez l\'authentification avec la portée appropriée.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">La demande a un paramètre obligatoire manquant, inclut une valeur de paramètre non prise en charge, inclut des données d\'identification multiples, utilise plus d\'un mécanisme pour authentifier le client, ou a une syntaxe incorrecte.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Le client authentifié n\'est pas autorisé à utiliser ce type d\'autorisation.</string>
+    <string name="oamms_oauth_access_denied_desc">Demande refusée par le responsable de la ressource ou le serveur d\'autorisations.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Le serveur d\'autorisations ne permet pas d\'obtenir un code d\'autorisation selon cette méthode.</string>
+    <string name="oamms_oauth_server_error_desc">Le serveur d\'autorisations a rencontré une condition inattendue l\'empêchant d\'acquitter la demande.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Le serveur d\'autorisations est actuellement incapable de traiter la demande à cause d\'une surcharge temporaire ou d\'une opération de maintenance.</string>
+    <string name="oamms_oauth_invalid_scope_desc">La portée demandée est non valide, inconnue, mal formée ou dépasse l\'étendue autorisée par le propriétaire de la ressource.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Le type d\'octroi de l\'autorisation n\'est pas pris en charge par le serveur d\'autorisations.</string>
+    <string name="oamms_oauth_invalid_client_desc">Échec de l\'authentification du client.</string>
+    <string name="oamms_oauth_invalid_grant_desc">L\'autorisation octroyée ou le jeton d\'actualisation est non valide, expiré, révoqué ou ne correspond pas à l\'URI de redirection utilisé dans la demande d\'autorisation, ou encore, a été émis pour un autre client.</string>
+    <string name="oamms_oauth_auth_url_invalid">Points extrémité non valides pour authentification OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Assertion de client non valide. Redémarrer le processus d\'authentification.</string>
+    <string name="oamms_oauth_client_secret_invalid">Le code secret du client ne peut pas être nul ni vide pour ce type d\'octroi.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Code de préautorisation pour l\'inscription du client non valide.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Échec de création des jetons OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Échec de création de l\'assertion de l\'util.</string>
+    <string name="oamms_oauth_user_assertion_null">Assertion de l\'util. nulle.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Certificat d\'identité du client.</string>
+    <string name="oamms_client_certificate_import_empty_password">Le mot de passe ne peut pas être vide.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Mot de passe non valide.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Importation certificat annulée par utilisateur.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Certificat non valide.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Alias de client non valide présenté lors de l\'authentification mutuelle SSL.</string>
+    <string name="oamms_client_certificate_dialog_title">Sélectionner identité du client.</string>
+    <string name="oamms_client_certificate_import_enter_password">Entrer le mot de passe pour extraire le certificat.</string>
+    <string name="oamms_client_certificate_import_failed">Échec de l\'import. du certificat.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Le serveur d\'authentification %1$s a demandé un certificat. Sélectionner un certificat dans les identités disponibles.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

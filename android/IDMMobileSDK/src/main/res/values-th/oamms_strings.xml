@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-th/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/12 03:11:02 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">SDK ของอุปกรณ์เคลื่อนที่และสังคมออนไลน์สำหรับ Android</string>
+    <string name="oamms_processing">กำลังประมวลผล...</string>
+    <string name="oamms_activity_excep">การทำงานต้องไม่เป็นนัล รีจิสเตอร์การทำงานปัจจุบันโดยใช้ OMMobileSecurityService#registerActivity(Activity) ที่แนะนำใน onResume()</string>
+    <string name="oamms_sec_profile_excep">ไม่ได้เรียกใช้ API การตั้งค่า</string>
+    <string name="oamms_servicename_null">ไม่ได้ระบุสคีมการตรวจสอบสิทธิ์</string>
+    <string name="oamms_invalid_server_type">ประเภทของเซิร์ฟเวอร์การตรวจสอบสิทธิ์ไม่ถูกต้อง</string>
+    <string name="oamms_not_connect_to_server">ไม่สามารถติดต่อเซิร์ฟเวอร์ตามแอดเดรสที่ระบุ โปรดติดต่อผู้ดูแลระบบเพื่อขอความช่วยเหลือ</string>
+    <string name="oamms_network_unavailable">เน็ตเวิร์กไม่พร้อมใช้งาน โปรดตรวจสอบว่าคุณเชื่อมต่อกับอินเตอร์เน็ตและลองอีกครั้ง</string>
+    <string name="oamms_not_parse_response">ไม่สามารถพาร์ซการตอบกลับที่ส่งจากเซิร์ฟเวอร์</string>
+    <string name="oamms_certificate_not_accepted">ผู้ใช้ปฏิเสธข้อมูลการรับรองของเซิร์ฟเวอร์</string>
+    <string name="oamms_internal_error">เกิดข้อผิดพลาดภายใน</string>
+    <string name="oamms_invalid_arguments_null_or_empty">อาร์กิวเมนต์ต้องไม่เป็นนัลหรือสตริงว่างเปล่า</string>
+    <string name="oamms_update_cookies_validation_failure">การอัปเดตค่าคุกกี้ล้มเหลว เนื่องจากไม่สามารถตรวจสอบแอททริบิวของคุกกี้</string>
+    <string name="oamms_cookie_not_found">ไม่มีคุกกี้ที่จะอัปเดต</string>
+    <string name="oamms_invalid_arguments_null">อาร์กิวเมนต์ต้องไม่เป็นนัล</string>
+    <string name="oamms_clear_username_password_failed">ไม่สามารถลบชื่อผู้ใช้และรหัสผ่านที่เก็บในวิวแบบเว็บภายใน เนื่องจากมีการยกเลิกการรีจิสเตอร์การทำงานในระหว่างกระบวนการ</string>
+    <string name="oamms_custom_auth_headers_not_allowed">ไม่สามารถเพิ่มส่วนหัว HTTP บางรายการที่ระบุไว้ในการแมป ซึ่งมีการระบุเป็นค่าที่ขัดแย้งกับคีย์ OM_PROP_CUSTOM_AUTH_HEADERS โปรดดูลิสต์ของส่วนหัว HTTP ที่ไม่สามารถใช้ได้จากเอกสาร</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">จำนวนส่วนหัวของการตรวจสอบสิทธิ์ที่กำหนดเอง ซึ่งระบุเป็นส่วนหนึ่งของ OM_PROP_CUSTOM_AUTH_HEADERS เกินจำนวนสูงสุด (%1$d)</string>
+    <string name="oamms_application_not_available">แอปพลิเคชันที่ส่งคำขอไม่สามารถใช้ได้</string>
+    <string name="oamms_http_callback_null">สำหรับคำขอแบบอะซิงโครนัส การเรียกกลับต้องไม่เป็นนัล</string>
+    <string name="oamms_http_res_url_null">URL ของทรัพยากร HTTP ต้องไม่เป็นนัล</string>
+    <string name="oamms_logout_in_progress">กำลังล็อกเอาต์ โปรดลองใหม่ภายหลัง</string>
+    <string name="oamms_logout_timed_out">ไม่สามารถล็อกเอาต์ได้เนื่องจากหมดเวลาการเชื่อมต่อ</string>
+    <string name="oamms_logout_failure">ไม่สามารถล็อกเอาต์ได้เนื่องจากข้อผิดพลาดต่อไปนี้: %1$s</string>
+    <string name="oamms_not_found">ไม่มี URL ที่ต้องการ โปรดติดต่อผู้ดูแลระบบเพื่อขอความช่วยเหลือ</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">ต้องระบุชื่อผู้ใช้</string>
+    <string name="oamms_identity_domain_required">ต้องระบุโดเมนของข้อมูลผู้ใช้</string>
+    <string name="oamms_username_identity_domain_required">ต้องระบุชื่อผู้ใช้และโดเมนของข้อมูลผู้ใช้</string>
+    <string name="oamms_password_null">ต้องการรหัสผ่าน</string>
+    <string name="oamms_un_pwd_missing">ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</string>
+    <string name="oamms_un_pwd_tenant_missing">ชื่อผู้ใช้ รหัสผ่าน หรือโดเมนของข้อมูลผู้ใช้ไม่ถูกต้อง</string>
+    <string name="oamms_chalg_missing">คำตอบของคำถามทดสอบไม่ถูกต้อง</string>
+    <string name="oamms_user_canceled">ผู้ใช้ยกเลิกการล็อกอินแล้ว</string>
+    <string name="oamms_auth_failed">การตรวจสอบสิทธิ์ผู้ใช้ล้มเหลว</string>
+    <string name="oamms_auth_success">การตรวจสอบสิทธิ์ผู้ใช้เสร็จสมบูรณ์</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">ชื่อผู้ใช้</string>
+    <string name="oamms_username_hint">ป้อนชื่อผู้ใช้</string>
+    <string name="oamms_password">รหัสผ่าน</string>
+    <string name="oamms_password_hint">ป้อนรหัสผ่าน</string>
+    <string name="oamms_tenant">โดเมนของข้อมูลผู้ใช้</string>
+    <string name="oamms_tenant_hint">ป้อนโดเมนของข้อมูลผู้ใช้</string>
+    <string name="oamms_login">เข้าสู่ระบบ</string>
+    <string name="oamms_cancel">ยกเลิก</string>
+    <string name="oamms_challenge_head">ระบุข้อมูลเพิ่มเติม</string>
+    <string name="oamms_challenge_ques">คำถาม</string>
+    <string name="oamms_challenge_ans">คำตอบ</string>
+    <string name="oamms_challenge_answer_hint">ป้อนคำตอบของคำถามสำหรับการรักษาความปลอดภัย</string>
+    <string name="oamms_submit">ส่ง</string>
+    <string name="oamms_remember_username">จำชื่อผู้ใช้</string>
+    <string name="oamms_remember_credentials">จำชื่อผู้ใช้และรหัสผ่าน</string>
+    <string name="oamms_auto_login">ล็อกอินอัตโนมัติ</string>
+    <string name="oamms_back_button">ย้อนกลับ</string>
+    <string name="oamms_forward_button">ไปข้างหน้า</string>
+    <string name="oamms_refresh_button">รีเฟรช</string>
+    <string name="oamms_cancel_button">ยกเลิก</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">ไม่พบคุณสมบัติของคอนฟิเกอเรชันใน SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">ความต้องการที่ระบุไม่มี URI สำหรับรายละเอียดคอนฟิเกอเรชันของเซิร์ฟเวอร์</string>
+    <string name="oamms_config_intent_uri_invalid">ความต้องการที่ระบุไม่มี URI ที่ถูกต้องสำหรับรายละเอียดคอนฟิเกอเรชันของเซิร์ฟเวอร์</string>
+    <string name="oamms_could_not_retrieve_configuration">ไม่สามารถเรียกคุณสมบัติของคอนฟิเกอเรชันจาก SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">ไม่สามารถเก็บคุณสมบัติของคอนฟิเกอเรชันใน SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">การเริ่มต้น SDK ล้มเหลว เนื่องจากไม่ได้ระบุข้อมูลเซิร์ฟเวอร์ที่จำเป็น</string>
+    <string name="oamms_setup_failed_ms">ไม่สามารถดาวน์โหลดโปรไฟล์ของแอปพลิเคชัน เนื่องจากไม่มีคอนฟิเกอเรชัน</string>
+    <string name="oamms_setup_failed_default">โปรไฟล์ของแอปพลิเคชันหรือชื่อแอปพลิเคชันไม่ถูกต้อง</string>
+    <string name="oamms_setup_failed_oauth">ไม่สามารถดาวน์โหลดโปรไฟล์ของไคลเอนต์ OAuth</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">ชื่อแอปพลิเคชันไม่ถูกต้อง</string>
+    <string name="oamms_invalid_server_url">URL ของเซิร์ฟเวอร์ไม่ถูกต้อง</string>
+    <string name="oamms_invalid_service_domain">โดเมนของเซอร์วิสไม่ถูกต้อง</string>
+    <string name="oamms_token_missing">อุปกรณ์นี้ยังไม่ได้ตรวจสอบสิทธิ์กับเซิร์ฟเวอร์อุปกรณ์เคลื่อนที่และสังคมออนไลน์</string>
+    <string name="oamms_no_user_token">ยังไม่ได้ตรวจสอบสิทธิ์ของผู้ใช้</string>
+    <string name="oamms_no_rp_login_url">ไม่สามารถเปิด URL การตรวจสอบสิทธิ์ของ RP</string>
+    <string name="oamms_req_failed">คำขอการตรวจสอบสิทธิ์ล้มเหลวสำหรับผู้ใช้ %1$s</string>
+    <string name="oamms_req_denied">คำขอสำหรับการตรวจสอบสิทธิ์ถูกปฏิเสธ</string>
+    <string name="oamms_oaam_denied_action">การตรวจสอบสิทธิ์ถูกบล็อคโดยเซิร์ฟเวอร์ โปรดติดต่อผู้ดูแลระบบเพื่อขอความช่วยเหลือ</string>
+    <string name="oamms_oaam_wipeout_action">ได้รับคำสั่ง wipe จากเซิร์ฟเวอร์ กำลังล้างข้อมูลแอปพลิเคชันที่สำคัญ</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">ไม่สามารถตรวจสอบลายเซ็นของแอปพลิเคชันการเรียก</string>
+    <string name="oamms_sso_activity_missing">ไม่ได้ระบุชื่อแอปพลิเคชัน SSO</string>
+    <string name="oamms_init_SSOAgent_success">เริ่มต้นแอปพลิเคชันของเอเจนต์ SSO สำเร็จแล้ว</string>
+    <string name="oamms_service_domain_not_same">การตรวจสอบสิทธิ์ถูกปฏิเสธโดยเอเจนต์ เนื่องจากโดเมนของเซอร์วิสไม่ตรงกัน</string>
+    <string name="oamms_invalid_config">แอปพลิเคชันไคลเอนต์ไม่ได้รับสิทธิ์ให้เข้าร่วมใน SSO</string>
+    <string name="oamms_no_agent_avail">ไม่สามารถเปิด URL การตรวจสอบสิทธิ์ของ SSO</string>
+    <string name="oamms_tokens_not_available">โทเค็น OAM_ID ไม่สามารถใช้ได้ โปรดตรวจสอบการตั้งค่าเซิร์ฟเวอร์ คอนฟิเกอเรชันที่ผิดพลาดที่เป็นไปได้อย่างหนึ่งคือไม่ได้ตั้งค่าสคีมการตรวจสอบสิทธิ์เป็น MobileOAMAuthentication</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">URL ล็อกอินไม่ถูกต้อง</string>
+    <string name="oamms_server_returned_error">เซิร์ฟเวอร์พบข้อผิดพลาด %1$s โปรดติดต่อผู้ดูแลระบบเพื่อขอความช่วยเหลือ</string>
+    <string name="oamms_forbidden">ผู้ใช้ไม่ได้รับสิทธิ์</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">หมดเวลาการตรวจสอบสิทธิ์</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">เพจการตรวจสอบสิทธิ์ที่กำหนดเองไม่มีฟิลด์ชื่อผู้ใช้และรหัสผ่าน</string>
+    <string name="oamms_kba_html_fields_invalid">เพจการตรวจสอบสิทธิ์แบบละเอียดที่กำหนดเองไม่มีฟิลด์ชื่อผู้ใช้และรหัสผ่าน</string>
+    <string name="oamms_html_file_exception">ไฟล์ HTML ที่กำหนดเองต้องไม่เป็นนัล</string>
+    <string name="oamms_invalid_html_file">พาธของไฟล์ HTML ที่กำหนดเองเป็นประเภทที่ไม่ถูกต้อง</string>
+    <string name="oamms_remote_html_file">เพจ HTML ที่กำหนดเองต้องไม่เป็นเพจระยะไกล SDK รองรับเพจ HTML ในระบบที่จะโหลดเท่านั้น</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">ข้อมูลการรับรองนี้ไม่ได้มาจากหน่วยงานที่เชื่อถือ</string>
+    <string name="oamms_ssl_security_certificate">ข้อมูลการรับรองความปลอดภัย</string>
+    <string name="oamms_ssl_issued_to">เรื่อง:</string>
+    <string name="oamms_ssl_common_name">ชื่อทั่วไป:</string>
+    <string name="oamms_ssl_organization">หน่วยงาน:</string>
+    <string name="oamms_ssl_organization_unit">หน่วยของหน่วยงาน:</string>
+    <string name="oamms_ssl_issued_by">ผู้ออก:</string>
+    <string name="oamms_ssl_validity">มีผลบังคับใช้:</string>
+    <string name="oamms_ssl_issued_on">วันที่เริ่มต้น:</string>
+    <string name="oamms_ssl_expires_on">วันที่สิ้นสุด:</string>
+    <string name="oamms_security_warning">คำเตือนเกี่ยวกับความปลอดภัย</string>
+    <string name="oamms_ssl_continue">ยอมรับ</string>
+    <string name="oamms_ssl_view_certificate">รายละเอียด</string>
+    <string name="oamms_ssl_message">เกิดปัญหากับข้อมูลการรับรองความปลอดภัยสำหรับ URL นี้</string>
+    <string name="oamms_serial_number">เลขลำดับ:</string>
+    <string name="oamms_fingerprint">ลายนิ้วมือ:</string>
+    <string name="oamms_sha_fp">ลายนิ้วมือ SHA1:</string>
+    <string name="oamms_md5_fp">ลายนิ้วมือ MD5:</string>
+    <string name="oamms_ssl_alert_icon">ไอคอนของอเลิต</string>
+    <string name="oamms_import_certificate_failure">ไม่สามารถติดตั้งข้อมูลการรับรอง</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">การตรวจสอบสิทธิ์ OAuth ล้มเหลว</string>
+    <string name="oamms_oauth_invalid_state">มีการเรียกคืนสภาวะที่ไม่ถูกต้องจากการตอบกลับ</string>
+    <string name="oamms_oauth_context_invalid">ไม่มีโทเค็นการเข้าใช้ที่ถูกต้องสำหรับคำขอที่กำหนด โปรดตรวจสอบสิทธิ์ด้วยขอบเขตที่เหมาะสม</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">คำขอไม่มีพารามิเตอร์ที่ต้องระบุ มีค่าพารามิเตอร์ที่ไม่รองรับ ทำซ้ำพารามิเตอร์ มีชื่อผู้ใช้และรหัสผ่านหลายรายการ ใช้กลไกมากกว่าหนึ่งอย่างสำหรับการตรวจสอบสิทธิ์ไคลเอนต์ หรือมีรูปแบบไม่ถูกต้อง</string>
+    <string name="oamms_oauth_unauthorized_client_desc">ไคลเอนต์ที่ผ่านการตรวจสอบสิทธิ์ไม่ได้รับสิทธิ์ให้ใช้ประเภทการให้สิทธิ์นี้</string>
+    <string name="oamms_oauth_access_denied_desc">เจ้าของทรัพยากรหรือเซิร์ฟเวอร์การให้สิทธิ์ปฏิเสธคำขอ</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">เซิร์ฟเวอร์การให้สิทธิ์ไม่รองรับการเรียกรหัสการให้สิทธิ์โดยใช้เมทธอดนี้</string>
+    <string name="oamms_oauth_server_error_desc">เซิร์ฟเวอร์การให้สิทธิ์พบเงื่อนไขที่ไม่คาดหมาย ซึ่งทำให้ไม่สามารถดำเนินการตามคำขอได้</string>
+    <string name="oamms_oauth_temp_unavailable_desc">ขณะนี้ เซิร์ฟเวอร์การให้สิทธิ์ไม่สามารถจัดการคำขอได้ เนื่องจากเซิร์ฟเวอร์เกิดปัญหาโอเวอร์โหลดหรืออยู่ระหว่างการบำรุงรักษาชั่วคราว</string>
+    <string name="oamms_oauth_invalid_scope_desc">ขอบเขตที่ส่งคำขอไม่ถูกต้อง มีรูปแบบไม่ถูกต้อง เกินขอบเขตที่ให้สิทธิ์โดยเจ้าของทรัพยากร หรือเป็นขอบเขตที่ไม่รู้จัก</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">เซิร์ฟเวอร์การให้สิทธิ์ไม่รองรับประเภทการให้สิทธิ์นี้</string>
+    <string name="oamms_oauth_invalid_client_desc">การตรวจสอบสิทธิ์ไคลเอนต์ล้มเหลว</string>
+    <string name="oamms_oauth_invalid_grant_desc">การให้สิทธิ์ที่ระบุหรือโทเค็นที่รีเฟรชไม่ถูกต้อง หมดอายุ ถูกยกเลิก ไม่ตรงกับ URI ของการเปลี่ยนเส้นทางที่ใช้ในคำขอการให้สิทธิ์ หรือมีการออกให้กับไคลเอนต์อื่น</string>
+    <string name="oamms_oauth_auth_url_invalid">จุดสิ้นสุดของการตรวจสอบสิทธิ์ OAuth ไม่ถูกต้อง</string>
+    <string name="oamms_oauth_client_assertion_invalid">การรักษาสิทธิ์ไคลเอนต์ไม่ถูกต้อง เริ่มต้นกระบวนการตรวจสอบสิทธิ์ใหม่</string>
+    <string name="oamms_oauth_client_secret_invalid">ข้อมูลลับของไคลเอนต์ต้องไม่เป็นนัลหรือว่างเปล่าสำหรับประเภทการให้สิทธิ์นี้</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">รหัส Pre AuthZ ของการรีจิสเตอร์ไคลเอนต์ไม่ถูกต้อง</string>
+    <string name="oamms_oauth_oam_token_request_failed">ไม่สามารถสร้างโทเค็น OAM</string>
+    <string name="oamms_oauth_user_assertion_request_failed">ไม่สามารถสร้าง User Assertion</string>
+    <string name="oamms_oauth_user_assertion_null">User Assertion เป็นนัล</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">การรับรองข้อมูลผู้ใช้ของไคลเอนต์</string>
+    <string name="oamms_client_certificate_import_empty_password">รหัสผ่านต้องไม่ว่างเปล่า</string>
+    <string name="oamms_client_certificate_import_invalid_password">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="oamms_client_certificate_import_user_canceled">ผู้ใช้ยกเลิกการอิมปอร์ตข้อมูลการรับรองแล้ว</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">ข้อมูลการรับรองไม่ถูกต้อง</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">ชื่อแทนของไคลเอนต์ที่แสดงในระหว่างการตรวจสอบสิทธิ์ร่วมกันของ SSL ไม่ถูกต้อง</string>
+    <string name="oamms_client_certificate_dialog_title">เลือกข้อมูลผู้ใช้ของไคลเอนต์</string>
+    <string name="oamms_client_certificate_import_enter_password">ป้อนรหัสผ่านเพื่อดึงข้อมูลการรับรอง</string>
+    <string name="oamms_client_certificate_import_failed">การอิมปอร์ตข้อมูลการรับรองล้มเหลว</string>
+    <string name="oamms_client_certificate_dialog_sub_title">เซิร์ฟเวอร์การตรวจสอบสิทธิ์ %1$s ต้องการข้อมูลการรับรอง เลือกข้อมูลการรับรองจากข้อมูลผู้ใช้ที่มี</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

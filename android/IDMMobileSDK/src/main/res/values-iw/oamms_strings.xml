@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-he/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 00:41:44 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile and Social SDK for Android</string>
+    <string name="oamms_processing">מעבד...</string>
+    <string name="oamms_activity_excep">הפעילות אינה יכולה להיות null. רשום את הפעילות הנוכחית באמצעות OMMobileSecurityService#registerActivity(Activity) עדיף ב-onResume().</string>
+    <string name="oamms_sec_profile_excep">API ההקמה לא הופעל.</string>
+    <string name="oamms_servicename_null">לא צוינה תוכנית אימות זהות.</string>
+    <string name="oamms_invalid_server_type">סוג שרת אימות הזהות אינו תקף.</string>
+    <string name="oamms_not_connect_to_server">השרת אינו נגיש בכתובת שצוינה. פנה למנהלן לקבלת עזרה.</string>
+    <string name="oamms_network_unavailable">הרשת אינה זמינה. ודא שאתה מחובר לאינטרנט ונסה שוב.</string>
+    <string name="oamms_not_parse_response">אי אפשר לנתח את התגובה שנשלחה מהשרת.</string>
+    <string name="oamms_certificate_not_accepted">המשתמש דחה את אישור השרת.</string>
+    <string name="oamms_internal_error">שגיאה פנימית</string>
+    <string name="oamms_invalid_arguments_null_or_empty">הארגומנטים לא יכולים להיות null ולא מחרוזות ריקות</string>
+    <string name="oamms_update_cookies_validation_failure">נכשל עדכון ערך cookie כיוון שאי אפשר לאמת את תכונות ה-cookie</string>
+    <string name="oamms_cookie_not_found">ה-cookie לעדכון לא קיימת</string>
+    <string name="oamms_invalid_arguments_null">הארגומנטים לא יכולים להיות null</string>
+    <string name="oamms_clear_username_password_failed">לא ניתן למחוק את שם המשתמש והסיסמה המאוחסנים ב-Embedded Webview כיוון שבוטל רישום של פעילות ביניהם.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">לא ניתן להוסיף כמה מכותרות HTTP שצוינו במפה שהועברה כערך כנגד OM_PROP_CUSTOM_AUTH_HEADERS של המפתח. לקבלת רשימת כותרות HTTP האסורות, עיין בתיעוד.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">מספר כותרות ההרשאה המותאמות אישית שצוינו כחלק של OM_PROP_CUSTOM_AUTH_HEADERS עובד את המספר המרבי (%1$d).</string>
+    <string name="oamms_application_not_available">היישום המבוקש אינו זמין.</string>
+    <string name="oamms_http_callback_null">לבקשה אסינכרונית, call back לא יכול להיות null</string>
+    <string name="oamms_http_res_url_null">כתובת URL של משאב Http לא יכולה להיות null</string>
+    <string name="oamms_logout_in_progress">מתבצעת התנתקות. נסה שוב בעוד זמן מה.</string>
+    <string name="oamms_logout_timed_out">פעולת ההתנתקות נכשלה כיוון שהחיבור בפסק זמן.</string>
+    <string name="oamms_logout_failure">ההתנתקות נכשלה עקב השגיאה הבאה: %1$s</string>
+    <string name="oamms_not_found">כתובת ה-URL המבוקשת לא קיימת. פנה למנהלן לקבלת עזרה.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">שם משתמש דרוש.</string>
+    <string name="oamms_identity_domain_required">דומיין זהויות דרוש.</string>
+    <string name="oamms_username_identity_domain_required">שם משתמש ודומיין זהויות דרושים.</string>
+    <string name="oamms_password_null">סיסמה הכרחית</string>
+    <string name="oamms_un_pwd_missing">שם משתמש או סיסמה בלתי תקפים.</string>
+    <string name="oamms_un_pwd_tenant_missing">שם משתמש, סיסמה או דומיין זהויות לא תקפים.</string>
+    <string name="oamms_chalg_missing">שאלת האתגר לא תקפה.</string>
+    <string name="oamms_user_canceled">המשתמש ביטל את פעולת ההתחברות.</string>
+    <string name="oamms_auth_failed">אימות זהות המשתמש נכשל.</string>
+    <string name="oamms_auth_success">אימות זהות המשתמש הצליח.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">שם משתמש</string>
+    <string name="oamms_username_hint">הזן שם משתמש</string>
+    <string name="oamms_password">סיסמה</string>
+    <string name="oamms_password_hint">הזן סיסמה</string>
+    <string name="oamms_tenant">דומיין זהויות</string>
+    <string name="oamms_tenant_hint">הזן דומיין זהויות</string>
+    <string name="oamms_login">התחבר</string>
+    <string name="oamms_cancel">בטל</string>
+    <string name="oamms_challenge_head">ציין מידע נוסף</string>
+    <string name="oamms_challenge_ques">שאלה</string>
+    <string name="oamms_challenge_ans">תשובה</string>
+    <string name="oamms_challenge_answer_hint">הזן תשובה לשאלת האבטחה</string>
+    <string name="oamms_submit">שלח</string>
+    <string name="oamms_remember_username">זכור את שם המשתמש</string>
+    <string name="oamms_remember_credentials">זכור את פרטי האימות</string>
+    <string name="oamms_auto_login">התחברות אוטומטית</string>
+    <string name="oamms_back_button">הקודם</string>
+    <string name="oamms_forward_button">הבא</string>
+    <string name="oamms_refresh_button">רענון</string>
+    <string name="oamms_cancel_button">בטל</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">לא נמצאו מאפייני תצורה ב-SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">הכוונה שהועברה לא מכילה URI לפרטי תצורת השרת.</string>
+    <string name="oamms_config_intent_uri_invalid">הכוונה שהועברה לא מכילה URI תקף לפרטי תצורת השרת.</string>
+    <string name="oamms_could_not_retrieve_configuration">אי אפשר לאחזר מאפייני תצורה מ-SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">לא ניתן לאחסן מאפייני תצורה ב-SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">האתחול של SDK נכשל, כיוון שלא סופק המידע הדרוש על השרת.</string>
+    <string name="oamms_setup_failed_ms">אי אפשר להוריד את פרופיל היישום בגלל שהתצורה חסרה</string>
+    <string name="oamms_setup_failed_default">פרופיל היישום או שם היישום לא תקפים</string>
+    <string name="oamms_setup_failed_oauth">אי אפשר להוריד את פרופיל לקוח OAuth.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">שם היישום אינו תקף.</string>
+    <string name="oamms_invalid_server_url">כתובת ה-Url של השרת אינה תקפה.</string>
+    <string name="oamms_invalid_service_domain">דומיין השירות לא תקף.</string>
+    <string name="oamms_token_missing">המכשיר טרם אומת בשרת Mobile and Social.</string>
+    <string name="oamms_no_user_token">טרם אומתה זהות המשתמש.</string>
+    <string name="oamms_no_rp_login_url">אי אפשר לפתוח את כתובת URL של אימות זהות RP.</string>
+    <string name="oamms_req_failed">בקשת אימות הזהות נכשלה למשתמש %1$s.</string>
+    <string name="oamms_req_denied">בקשת אימות הזהות נדחתה.</string>
+    <string name="oamms_oaam_denied_action">פעולת האימות נחסמה על-ידי השרת. פנה למנהלן לקבלת עזרה.</string>
+    <string name="oamms_oaam_wipeout_action">התקבלה פקודת הסטה מהשרת. מנקה נתוני יישום רגישים.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">נכשל אימות הקריאה לחתימת היישום.</string>
+    <string name="oamms_sso_activity_missing">שם יישום SSO לא צוין.</string>
+    <string name="oamms_init_SSOAgent_success">יישום של סוכן SSO אותחל בהצלחה.</string>
+    <string name="oamms_service_domain_not_same">אימות הזהות נדחה על-ידי הסוכן כיוון שדומיין השירות לא מתאים.</string>
+    <string name="oamms_invalid_config">יישום הלקוח לא מורשה להשתתף ב-SSO.</string>
+    <string name="oamms_no_agent_avail">אי אפשר לפתוח את כתובת URL של אימות זהות SSO.</string>
+    <string name="oamms_tokens_not_available">האסימון OAM_ID אינו זמין. בדוק את הגדרות השרת. אחת משגיאות התצורה האפשריות היא ששיטת האימות אינה מוגדרת כ-MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">URL לא תקף להתחברות.</string>
+    <string name="oamms_server_returned_error">השרת נתקל בשגיאה %1$s. פנה למנהלן לקבלת עזרה.</string>
+    <string name="oamms_forbidden">המשתמש אינו מורשה.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">פסק זמן באימות.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">בדף אימות הזהות המותאם אישית אין שדה פרטי אימות.</string>
+    <string name="oamms_kba_html_fields_invalid">בדף אימות הזהות החזק המותאם אישית אין שדה פרטי אימות.</string>
+    <string name="oamms_html_file_exception">קובץ ה-HTML המותאם אישית אינו יכול להיות null.</string>
+    <string name="oamms_invalid_html_file">סוג הנתיב של קובץ ה-HTML המותאם אישית אינו תקף</string>
+    <string name="oamms_remote_html_file">דף ה-HTML המותאם אישית לא יכול להיות דף מרוחק; SDK תומך בדף HTML מקומי בלבד לטעינה</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">אישור זה אינו מרשות אישורים אמינה.</string>
+    <string name="oamms_ssl_security_certificate">אישור אבטחה</string>
+    <string name="oamms_ssl_issued_to">נושא:</string>
+    <string name="oamms_ssl_common_name">כינוי:</string>
+    <string name="oamms_ssl_organization">ארגון:</string>
+    <string name="oamms_ssl_organization_unit">יחידה ארגונית:</string>
+    <string name="oamms_ssl_issued_by">מנפיק:</string>
+    <string name="oamms_ssl_validity">תקפות:</string>
+    <string name="oamms_ssl_issued_on">תאריך התחלה:</string>
+    <string name="oamms_ssl_expires_on">תאריך סיום:</string>
+    <string name="oamms_security_warning">אזהרת אבטחה</string>
+    <string name="oamms_ssl_continue">קבל</string>
+    <string name="oamms_ssl_view_certificate">פרטים</string>
+    <string name="oamms_ssl_message">יש בעיות בנוגע לאישור האבטחה של כתובת URL זו.</string>
+    <string name="oamms_serial_number">מספר סידורי:</string>
+    <string name="oamms_fingerprint">טביעות אצבע:</string>
+    <string name="oamms_sha_fp">טביעת אצבע SHA1:</string>
+    <string name="oamms_md5_fp">טביעת אצבע MD5:</string>
+    <string name="oamms_ssl_alert_icon">סמל התראה</string>
+    <string name="oamms_import_certificate_failure">אי אפשר להתקין את האישור.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">אימות OAuth נכשל.</string>
+    <string name="oamms_oauth_invalid_state">שוחזר מצב לא תקף מהתגובה.</string>
+    <string name="oamms_oauth_context_invalid">לא נמצא אסימון גישה תקף לבקשה הנתונה. עליך לאמת בתוך הטווח המתאים.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">בבקשה אירעה אחת מהבעיות הבאות: חסר פרמטר דרוש; הבקשה כוללת ערך פרמטר לא נתמך; הבקשה כוללת פרמטר חוזר; כוללת ריבוי של פרטי אימות; נעשה שימוש ביותר ממנגנון אחד לאימות הלקוח; מבנה הבקשה שגוי.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">הלקוח שעובר אימות אינו מורשה להשתמש בסוג הרשאה זה.</string>
+    <string name="oamms_oauth_access_denied_desc">בעלי המשאב או שרת ההרשאות דחו את הבקשה.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">שרת ההרשאות אינו תומך בהבאת קוד הרשאה באמצעות שיטה זו.</string>
+    <string name="oamms_oauth_server_error_desc">שרת ההרשאות נתקל בתנאי בלתי צפוי אשר מנע ממנו למלא את הבקשה.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">שרת ההרשאות לא יכול כעת לטפל בבקשה עקב עומס-יתר זמני בשרת או תחזוקה המבוצעת בו.</string>
+    <string name="oamms_oauth_invalid_scope_desc">ייתכן שהטווח המבוקש אינו תקף, לא מוכר, בעל מבנה שגוי או שהוא חורג מהטווח שקיבל הרשאה מבעלי המשאב.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">שרת ההרשאות אינו תומך בסוג הענקת ההרשאה.</string>
+    <string name="oamms_oauth_invalid_client_desc">אימות הלקוח נכשל.</string>
+    <string name="oamms_oauth_invalid_grant_desc">ייתכן שאירע אחד מהבאים לגבי ההרשאה שהוענקה או אסימון הרענון: לא תקפים, פג תוקפם, בוטלו, לא מתאימים ל-URI של הניתוב מחדש המשמש בבקשת האימות או נופקו ללקוח אחר.</string>
+    <string name="oamms_oauth_auth_url_invalid">נקודות קצה לא תקפות עבור אימות OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">טענת לקוח לא תקפה. אתחל מחדש את תהליך האימות.</string>
+    <string name="oamms_oauth_client_secret_invalid">סוד של לקוח לא יכול להיות null ולא ריק, עבור סוג הרשאה זה.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">קוד קדם אימות לרישום לקוח, אינו תקף.</string>
+    <string name="oamms_oauth_oam_token_request_failed">כשל ביצירת אסימוני OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">כשל ביצירת טענת משתמש.</string>
+    <string name="oamms_oauth_user_assertion_null">טענת המשתמש ריק (null).</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">אישור זהות לקוח</string>
+    <string name="oamms_client_certificate_import_empty_password">סיסמה לא יכולה להיות ריקה.</string>
+    <string name="oamms_client_certificate_import_invalid_password">סיסמה לא תקפה.\n</string>
+    <string name="oamms_client_certificate_import_user_canceled">המשתמש ביטל את יבוא האישור.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">אישור לא תקף.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">הוצג כינוי לקוח לא תקף בעת אימות SSL משותף.</string>
+    <string name="oamms_client_certificate_dialog_title">בחר זהות לקוח.</string>
+    <string name="oamms_client_certificate_import_enter_password">הזן את הסיסמה כדי לשלוף את נתוני האישור.</string>
+    <string name="oamms_client_certificate_import_failed">יבוא האישור נכשל.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">שרת האימות %1$s ביקש אישור. בחר אישור מהזהויות הזמינות.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

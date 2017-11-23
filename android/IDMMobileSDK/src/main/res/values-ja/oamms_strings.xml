@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-ja/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/10 22:57:57 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobile and Social SDK for Android</string>
+    <string name="oamms_processing">処理中...</string>
+    <string name="oamms_activity_excep">アクティビティはnullにできません。onResume()ではできるだけOMMobileSecurityService#registerActivity(Activity)を使用して現在のアクティビティを登録します。</string>
+    <string name="oamms_sec_profile_excep">設定APIが起動されていません。</string>
+    <string name="oamms_servicename_null">認証スキームが指定されていません。</string>
+    <string name="oamms_invalid_server_type">認証サーバー・タイプが無効です。</string>
+    <string name="oamms_not_connect_to_server">指定のアドレスでサーバーに接続できません。管理者に問い合せてください。</string>
+    <string name="oamms_network_unavailable">ネットワークが使用できません。インターネットに接続していることを確認してから再試行してください。</string>
+    <string name="oamms_not_parse_response">サーバーから送信されたレスポンスを解析できませんでした。</string>
+    <string name="oamms_certificate_not_accepted">ユーザーはサーバー証明書を拒否しました。</string>
+    <string name="oamms_internal_error">内部エラー</string>
+    <string name="oamms_invalid_arguments_null_or_empty">引数はnullまたは空の文字列にできません</string>
+    <string name="oamms_update_cookies_validation_failure">Cookie属性を検証できないため、Cookie値の更新に失敗しました</string>
+    <string name="oamms_cookie_not_found">更新対象のCookieが存在しません</string>
+    <string name="oamms_invalid_arguments_null">引数はnullにできません</string>
+    <string name="oamms_clear_username_password_failed">途中でアクティビティが登録解除されたため、埋込みWebビューに格納されたユーザー名とパスワードを削除できませんでした。</string>
+    <string name="oamms_custom_auth_headers_not_allowed">キーOM_PROP_CUSTOM_AUTH_HEADERSに対する値として渡されたマップで指定されたHTTPヘッダーの一部を追加できません。許可されていないHTTPヘッダーのリストは、ドキュメントを参照してください。</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">OM_PROP_CUSTOM_AUTH_HEADERSの一部として指定されているカスタム認証ヘッダーの数が、最大数(%1$d)を超えました。</string>
+    <string name="oamms_application_not_available">リクエストされたアプリケーションは使用できません。</string>
+    <string name="oamms_http_callback_null">非同期リクエストの場合、コールバックはnullにできません</string>
+    <string name="oamms_http_res_url_null">HTTPリソースURLはnullにできません</string>
+    <string name="oamms_logout_in_progress">ログアウトの実行中です。しばらくしてから再試行してください。</string>
+    <string name="oamms_logout_timed_out">接続がタイムアウトしたため、ログアウト操作に失敗しました。</string>
+    <string name="oamms_logout_failure">次のエラーが原因で、ログアウトに失敗しました: %1$s</string>
+    <string name="oamms_not_found">リクエストされたURLが存在しません。管理者に問い合せてください。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">ユーザー名が必要です。</string>
+    <string name="oamms_identity_domain_required">アイデンティティ・ドメインは必須です。</string>
+    <string name="oamms_username_identity_domain_required">ユーザー名およびアイデンティティ・ドメインが必要です。</string>
+    <string name="oamms_password_null">パスワードが必要です。</string>
+    <string name="oamms_un_pwd_missing">ユーザー名またはパスワードが無効です。</string>
+    <string name="oamms_un_pwd_tenant_missing">ユーザー名、パスワードまたはアイデンティティ・ドメインが無効です。</string>
+    <string name="oamms_chalg_missing">チャレンジ回答が無効です。</string>
+    <string name="oamms_user_canceled">ユーザーによってログイン操作が取り消されました。</string>
+    <string name="oamms_auth_failed">ユーザー認証に失敗しました。</string>
+    <string name="oamms_auth_success">ユーザー認証に成功しました。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">ユーザー名</string>
+    <string name="oamms_username_hint">ユーザー名を入力</string>
+    <string name="oamms_password">パスワード</string>
+    <string name="oamms_password_hint">パスワードを入力</string>
+    <string name="oamms_tenant">Identityドメイン</string>
+    <string name="oamms_tenant_hint">アイデンティティ・ドメインを入力</string>
+    <string name="oamms_login">サインイン</string>
+    <string name="oamms_cancel">取消</string>
+    <string name="oamms_challenge_head">追加情報を指定</string>
+    <string name="oamms_challenge_ques">質問</string>
+    <string name="oamms_challenge_ans">回答</string>
+    <string name="oamms_challenge_answer_hint">セキュリティ質問の回答を入力</string>
+    <string name="oamms_submit">送信</string>
+    <string name="oamms_remember_username">ユーザー名を記憶</string>
+    <string name="oamms_remember_credentials">資格証明を記憶</string>
+    <string name="oamms_auto_login">自動ログイン</string>
+    <string name="oamms_back_button">戻る</string>
+    <string name="oamms_forward_button">進む</string>
+    <string name="oamms_refresh_button">リフレッシュ</string>
+    <string name="oamms_cancel_button">取消</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">SharedPreferencesに構成プロパティが見つかりません</string>
+    <string name="oamms_config_intent_uri_null">渡されたインテントには、サーバー構成詳細のURIが含まれていません。</string>
+    <string name="oamms_config_intent_uri_invalid">渡されたインテントには、サーバー構成詳細の有効なURIが含まれていません。</string>
+    <string name="oamms_could_not_retrieve_configuration">SharedPreferencesから構成プロパティを取得できませんでした</string>
+    <string name="oamms_could_not_store_configuration">SharedPreferencesに構成プロパティを格納できませんでした</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">SDKの初期化は、必要なサーバー情報が指定されていないため、失敗しました。</string>
+    <string name="oamms_setup_failed_ms">構成がないため、アプリケーション・プロファイルをダウンロードできません</string>
+    <string name="oamms_setup_failed_default">アプリケーション・プロファイルまたはアプリケーション名が無効です</string>
+    <string name="oamms_setup_failed_oauth">OAuthクライアント・プロファイルをダウンロードできません。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">アプリケーション名が無効です。</string>
+    <string name="oamms_invalid_server_url">サーバーURLが無効です。</string>
+    <string name="oamms_invalid_service_domain">サーバー・ドメインが無効です。</string>
+    <string name="oamms_token_missing">このデバイスはMobile and Socialサーバーでまだ認証されていません。</string>
+    <string name="oamms_no_user_token">ユーザーはまだ認証されていません。</string>
+    <string name="oamms_no_rp_login_url">RP認証URLを開けません。</string>
+    <string name="oamms_req_failed">ユーザー%1$sの認証リクエストに失敗しました。</string>
+    <string name="oamms_req_denied">認証のリクエストは拒否されました。</string>
+    <string name="oamms_oaam_denied_action">サーバーによって認証がブロックされました。管理者に問い合せてください。</string>
+    <string name="oamms_oaam_wipeout_action">サーバーからワイプ・コマンドを受信しました。機密アプリケーション・データをクリアします。</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">呼出し側アプリケーション署名の検証で失敗しました。</string>
+    <string name="oamms_sso_activity_missing">SSOアプリケーション名が指定されていません。</string>
+    <string name="oamms_init_SSOAgent_success">SSOエージェント・アプリケーションは正常に初期化されました。</string>
+    <string name="oamms_service_domain_not_same">サービス・ドメインが一致しないため、認証がエージェントにより拒否されました。</string>
+    <string name="oamms_invalid_config">クライアント・アプリケーションには、SSOに参加する権限がありません。</string>
+    <string name="oamms_no_agent_avail">SSO認証URLを開けません。</string>
+    <string name="oamms_tokens_not_available">OAM_IDトークンは使用できません。サーバー設定を確認してください。構成の誤りの1つとして、認証スキームがMobileOAMAuthenticationとして設定されていないことが考えられます。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">ログインURLが無効です。</string>
+    <string name="oamms_server_returned_error">サーバーでエラー%1$sが検出されました。管理者に問い合せてください。</string>
+    <string name="oamms_forbidden">ユーザーに権限がありません。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">認証がタイムアウトしました。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">カスタム認証ページに資格証明フィールドがありません。</string>
+    <string name="oamms_kba_html_fields_invalid">カスタムの強力な認証ページに資格証明フィールドがありません。</string>
+    <string name="oamms_html_file_exception">カスタムHTMLファイルはnullにできません。</string>
+    <string name="oamms_invalid_html_file">カスタムHTMLファイル・パスは無効なタイプです</string>
+    <string name="oamms_remote_html_file">カスタムHTMLページはリモート・ページにはなりません。SDKは、ロードされるローカルHTMLページのみをサポートします</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">この証明書は信頼できる認証局からのものではありません。</string>
+    <string name="oamms_ssl_security_certificate">セキュリティ証明書</string>
+    <string name="oamms_ssl_issued_to">件名:</string>
+    <string name="oamms_ssl_common_name">共通名:</string>
+    <string name="oamms_ssl_organization">組織:</string>
+    <string name="oamms_ssl_organization_unit">組織単位:</string>
+    <string name="oamms_ssl_issued_by">発行者:</string>
+    <string name="oamms_ssl_validity">有効期間:</string>
+    <string name="oamms_ssl_issued_on">開始日:</string>
+    <string name="oamms_ssl_expires_on">終了日:</string>
+    <string name="oamms_security_warning">セキュリティ警告</string>
+    <string name="oamms_ssl_continue">受入れ</string>
+    <string name="oamms_ssl_view_certificate">詳細</string>
+    <string name="oamms_ssl_message">このURLのセキュリティ証明書に問題があります。</string>
+    <string name="oamms_serial_number">シリアル番号:</string>
+    <string name="oamms_fingerprint">フィンガープリント:</string>
+    <string name="oamms_sha_fp">SHA1フィンガープリント:</string>
+    <string name="oamms_md5_fp">MD5フィンガープリント:</string>
+    <string name="oamms_ssl_alert_icon">アラート・アイコン</string>
+    <string name="oamms_import_certificate_failure">証明書をインストールできません。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth認証に失敗しました。</string>
+    <string name="oamms_oauth_invalid_state">レスポンスからリカバリされた状態が無効です。</string>
+    <string name="oamms_oauth_context_invalid">指定されたリクエストに対する有効なアクセス・トークンがありません。適切な範囲で認証してください。</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">リクエストは、必須パラメータがないか、サポートされないパラメータ値が含まれているか、同じパラメータが繰り返されているか、複数の資格証明が含まれているか、複数のクライアント認証メカニズムを利用しているか、あるいはその他の点で形式が正しくありません。</string>
+    <string name="oamms_oauth_unauthorized_client_desc">認可されたクライアントには、この認可付与タイプを使用する権限がありません。</string>
+    <string name="oamms_oauth_access_denied_desc">リソース所有者または認可サーバーがリクエストを拒否しました。</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">認可サーバーは、この方式を使用した認可コードの取得をサポートしていません。</string>
+    <string name="oamms_oauth_server_error_desc">認可サーバーで予期しない条件が検出されたため、リクエストを実行できません。</string>
+    <string name="oamms_oauth_temp_unavailable_desc">一時的なオーバーロードまたはサーバーのメンテナンスのため、認可サーバーは現在、リクエストを処理できません。</string>
+    <string name="oamms_oauth_invalid_scope_desc">リクエストされた範囲は無効か、不明か、形式が正しくないか、リソース所有者が付与した範囲を超えています。</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">認可付与タイプは認可サーバーでサポートされていません。</string>
+    <string name="oamms_oauth_invalid_client_desc">クライアント認証に失敗しました。</string>
+    <string name="oamms_oauth_invalid_grant_desc">指定された認可付与またはリフレッシュ・トークンは、無効か、期限切れか、取り消されているか、認可リクエストで使用されるリダイレクトURIに一致していないか、別のクライアントに対して発行されています。</string>
+    <string name="oamms_oauth_auth_url_invalid">OAuth認証のエンドポイントが無効です。</string>
+    <string name="oamms_oauth_client_assertion_invalid">無効なクライアント・アサーションです。認証プロセスを再起動してください。</string>
+    <string name="oamms_oauth_client_secret_invalid">この付与タイプのクライアント・シークレットはnullまたは空にできません。</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">クライアント登録の認可前コードが無効です。</string>
+    <string name="oamms_oauth_oam_token_request_failed">OAMトークンの作成に失敗しました。</string>
+    <string name="oamms_oauth_user_assertion_request_failed">ユーザー・アサーションの作成に失敗しました。</string>
+    <string name="oamms_oauth_user_assertion_null">ユーザー・アサーションがnullです。</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">クライアント・アイデンティティ証明書。</string>
+    <string name="oamms_client_certificate_import_empty_password">パスワードは空にできません。</string>
+    <string name="oamms_client_certificate_import_invalid_password">パスワードが無効です。</string>
+    <string name="oamms_client_certificate_import_user_canceled">ユーザーが証明書のインポートを取り消しました。</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">証明書が無効です。</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">SSL相互認証時に無効なクライアント別名が提示されました。</string>
+    <string name="oamms_client_certificate_dialog_title">クライアント・アイデンティティを選択してください。</string>
+    <string name="oamms_client_certificate_import_enter_password">証明書を抽出するにはパスワードを入力します。</string>
+    <string name="oamms_client_certificate_import_failed">証明書のインポートに失敗しました。</string>
+    <string name="oamms_client_certificate_dialog_sub_title">認証サーバー%1$sは証明書を要求しました。使用可能なアイデンティティから証明書を選択してください。</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

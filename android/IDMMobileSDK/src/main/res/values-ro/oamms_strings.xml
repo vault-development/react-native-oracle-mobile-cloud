@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-ro/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 08:51:19 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">SDK pt. aplicaţii mobile şi reţele de socializare pt. Android</string>
+    <string name="oamms_processing">Se procesează...</string>
+    <string name="oamms_activity_excep">Activitatea nu poate fi nulă. Înregistraţi activitatea curentă utilizând OMMobileSecurityService#registerActivity(Activity) preferabil în onResume().</string>
+    <string name="oamms_sec_profile_excep">API-ul de configurare nu este invocat.</string>
+    <string name="oamms_servicename_null">Nu a fost specificată nicio schemă de autentificare.</string>
+    <string name="oamms_invalid_server_type">Tipul de server de autentificare este nevalid.</string>
+    <string name="oamms_not_connect_to_server">Serverul nu poate fi găsit la adresa specificată. Contactaţi administratorul pt. asistenţă.</string>
+    <string name="oamms_network_unavailable">Reţeaua nu este disponibilă. Verificaţi dacă sunteţi conectat la internet şi încercaţi din nou.</string>
+    <string name="oamms_not_parse_response">Nu s-a putut interpreta răspunsul trimis de la server.</string>
+    <string name="oamms_certificate_not_accepted">Utilizatorul a respins certificatul serverului.</string>
+    <string name="oamms_internal_error">Eroare internă</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Argumentele nu pot fi nule sau şiruri necompletate</string>
+    <string name="oamms_update_cookies_validation_failure">Actualizarea valorii cookie-ului a eşuat, deoarece atributele cookie-ului nu au putut fi validate</string>
+    <string name="oamms_cookie_not_found">Cookie-ul de actualizat nu există</string>
+    <string name="oamms_invalid_arguments_null">Argumentele nu pot fi nule</string>
+    <string name="oamms_clear_username_password_failed">Numele de utilizator şi parola stocate în vizualizarea web înglobată nu au putut fi şterse, deoarece activitatea a fost dez-înregistrată între timp.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Anumite anteturi HTTP specificate în maparea transferată ca valoare pt. cheia OM_PROP_CUSTOM_AUTH_HEADERS nu au putut fi şterse. Consultaţi documentaţia pt. lista de anteturi HTTP nepermise.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Nr. de anteturi de autentificare personalizate, care sunt specificate ca parte din OM_PROP_CUSTOM_AUTH_HEADERS, a depăşit nr. maxim (%1$d).</string>
+    <string name="oamms_application_not_available">Aplicaţia solicitată nu este disponibilă.</string>
+    <string name="oamms_http_callback_null">Callbackul nu poate fi nul pt. cererea asincronă</string>
+    <string name="oamms_http_res_url_null">URL-ul resursei HTTP nu poate fi nul</string>
+    <string name="oamms_logout_in_progress">Deconectare în curs. Încercaţi din nou mai târziu.</string>
+    <string name="oamms_logout_timed_out">Operaţia de deconectare a eşuat, deoarece conexiunea a expirat.</string>
+    <string name="oamms_logout_failure">Deconectarea a eşuat din cauza următoarei erori: %1$s</string>
+    <string name="oamms_not_found">Adresa URL solicitată nu există. Contactaţi administratorul pt. asistenţă.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Nume de utiliz. obligatoriu.</string>
+    <string name="oamms_identity_domain_required">Domeniul de identităţi este obligatoriu.</string>
+    <string name="oamms_username_identity_domain_required">Numele de utilizator şi domeniul de identităţi sunt obligatorii.</string>
+    <string name="oamms_password_null">Este nevoie de parolă.</string>
+    <string name="oamms_un_pwd_missing">Numele de utilizator sau parola sunt incorecte.</string>
+    <string name="oamms_un_pwd_tenant_missing">Nume de utilizator, parolă sau domeniu de identităţi nevalid.</string>
+    <string name="oamms_chalg_missing">Întrebarea de interogare este nevalidă.</string>
+    <string name="oamms_user_canceled">Utilizatorul a anulat operaţia de conectare.</string>
+    <string name="oamms_auth_failed">Autentificarea utilizatorului a eşuat.</string>
+    <string name="oamms_auth_success">Autentificarea utilizatorului a reuşit.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Nume utiliz.</string>
+    <string name="oamms_username_hint">Introduceţi numele de utilizator</string>
+    <string name="oamms_password">Parolă</string>
+    <string name="oamms_password_hint">Introduceţi parola</string>
+    <string name="oamms_tenant">Domeniu de identităţi</string>
+    <string name="oamms_tenant_hint">Introduceţi domeniu de identităţi</string>
+    <string name="oamms_login">Conectare</string>
+    <string name="oamms_cancel">Anulare</string>
+    <string name="oamms_challenge_head">Furnizaţi informaţii suplimentare</string>
+    <string name="oamms_challenge_ques">Întrebare</string>
+    <string name="oamms_challenge_ans">Răspuns</string>
+    <string name="oamms_challenge_answer_hint">Introduceţi răspunsul la întrebarea de securitate</string>
+    <string name="oamms_submit">Trimitere</string>
+    <string name="oamms_remember_username">Reţinere nume de utilizator</string>
+    <string name="oamms_remember_credentials">Reţinere acreditări</string>
+    <string name="oamms_auto_login">Conectare automată</string>
+    <string name="oamms_back_button">Înapoi</string>
+    <string name="oamms_forward_button">Înainte</string>
+    <string name="oamms_refresh_button">Reîmprospătare</string>
+    <string name="oamms_cancel_button">Anulare</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Proprietăţile configuraţiei nu au fost găsite în SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">Intenţia transmisă nu conţine un URI pt. detaliile configuraţiei serverului.</string>
+    <string name="oamms_config_intent_uri_invalid">Intenţia transmisă nu conţine un URI valid pt. detaliile configuraţiei serverului.</string>
+    <string name="oamms_could_not_retrieve_configuration">Nu s-au putut prelua proprietăţile configuraţiei din SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Nu s-au putut stoca proprietăţile configuraţiei în SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Iniţializarea SDK a eşuat, deoarece informaţiile obligatorii despre server nu au fost specificate.</string>
+    <string name="oamms_setup_failed_ms">Profilul aplicaţiei nu poate fi descărcat, deoarece lipseşte configuraţia</string>
+    <string name="oamms_setup_failed_default">Profilul sau numele aplicaţiei este nevalid</string>
+    <string name="oamms_setup_failed_oauth">Profilul clientului OAuth nu a putut fi descărcat.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Numele aplicaţiei este nevalid.</string>
+    <string name="oamms_invalid_server_url">URL-ul serverului este nevalid.</string>
+    <string name="oamms_invalid_service_domain">Domeniul serviciului este nevalid.</string>
+    <string name="oamms_token_missing">Acest dispozitiv nu este autentificat încă pe serverul de aplicaţii mobile şi reţele de socializare.</string>
+    <string name="oamms_no_user_token">Utilizatorul nu este autentificat încă.</string>
+    <string name="oamms_no_rp_login_url">Nu se poate deschide URL-ul de autentificare RP.</string>
+    <string name="oamms_req_failed">Cererea de autentificare a eşuat pt. utilizatorul %1$s.</string>
+    <string name="oamms_req_denied">Cererea pt. autentificare este refuzată.</string>
+    <string name="oamms_oaam_denied_action">Autentificarea a fost blocată de server. Contactaţi administratorul pt. asistenţă.</string>
+    <string name="oamms_oaam_wipeout_action">S-a primit de pe server o comandă de ştergere definitivă. Se şterg datele de aplicaţie confidenţiale.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Eşec la validarea semnăturii aplicaţiei apelante.</string>
+    <string name="oamms_sso_activity_missing">Numele aplicaţiei SSO nu a fost specificat.</string>
+    <string name="oamms_init_SSOAgent_success">Aplicaţia agent SSO a fost iniţializată cu succes.</string>
+    <string name="oamms_service_domain_not_same">Autentificarea este respinsă de agent, deoarece domeniului serviciului nu corespunde.</string>
+    <string name="oamms_invalid_config">Aplicaţia client nu este autorizată să participe la SSO.</string>
+    <string name="oamms_no_agent_avail">Nu se poate deschide URL-ul de autentificare SSO.</string>
+    <string name="oamms_tokens_not_available">Tokenul OAM_ID nu este disponibil. Verificaţi setările serverului. Una dintre posibilele configuraţii greşite este faptul că schema de autentificare nu este setată la MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">URL de conectare nevalid.</string>
+    <string name="oamms_server_returned_error">A survenit eroarea %1$s pe server. Contactaţi administratorul pt. asistenţă.</string>
+    <string name="oamms_forbidden">Utilizatorul nu este autorizat.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Autentificarea a expirat.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Pagina de autentificare personalizată nu are câmpul Acreditări.</string>
+    <string name="oamms_kba_html_fields_invalid">Pagina de autentificare severă personalizată nu are câmpul Acreditări.</string>
+    <string name="oamms_html_file_exception">Fişierul HTML personalizat nu poate fi nul.</string>
+    <string name="oamms_invalid_html_file">Calea fişierului HTML personalizat are un tip nevalid </string>
+    <string name="oamms_remote_html_file">Pagina HTML personalizată nu poate fi o pagină la distanţă; SDK acceptă doar încărcarea unei pagini HTML locale</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Acest certificat nu provine de la un autoritate sigură.</string>
+    <string name="oamms_ssl_security_certificate">Certificat de securitate</string>
+    <string name="oamms_ssl_issued_to">Subiect:</string>
+    <string name="oamms_ssl_common_name">Nume comun:</string>
+    <string name="oamms_ssl_organization">Organizaţie:</string>
+    <string name="oamms_ssl_organization_unit">Unitate organizaţională:</string>
+    <string name="oamms_ssl_issued_by">Emitent: </string>
+    <string name="oamms_ssl_validity">Valabilitate:</string>
+    <string name="oamms_ssl_issued_on">Data iniţială:</string>
+    <string name="oamms_ssl_expires_on">Data finală:</string>
+    <string name="oamms_security_warning">Avertisment de securitate</string>
+    <string name="oamms_ssl_continue">Acceptare</string>
+    <string name="oamms_ssl_view_certificate">Detalii</string>
+    <string name="oamms_ssl_message">Există probleme cu certificatul de securitate pt. acest URL.</string>
+    <string name="oamms_serial_number">Nr. de serie: </string>
+    <string name="oamms_fingerprint">Amprente:</string>
+    <string name="oamms_sha_fp">Amprentă SHA1:</string>
+    <string name="oamms_md5_fp">Amprentă MD5:</string>
+    <string name="oamms_ssl_alert_icon">Pictogramă pt. alertă</string>
+    <string name="oamms_import_certificate_failure">Nu s-a putut instala certificatul.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Autentificarea OAuth a eşuat.</string>
+    <string name="oamms_oauth_invalid_state">A fost restabilită o stare nevalidă din răspuns.</string>
+    <string name="oamms_oauth_context_invalid">Nu există niciun token de acces valid pt. cererea dată; autentificaţi-vă cu domeniul corespunzător.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Din cerere lipseşte un parametru obligatoriu, cererea include o valoare neacceptată a parametrului, repetă un parametru, include mai multe acreditări, utilizează mai multe mecanisme pt. autentificarea clientului sau este formatată greşit în alt mod.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Clientul autentificat nu este autorizat să utilizeze acest tip de drept de autorizare.</string>
+    <string name="oamms_oauth_access_denied_desc">Proprietarul resursei sau serverul de autorizare a refuzat cererea.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Serverul de autorizare nu acceptă obţinerea unui cod de autorizare care utilizează această metodă.</string>
+    <string name="oamms_oauth_server_error_desc">Serverul de autorizare a generat o condiţie neaşteptată, care l-a împiedicat să onoreze cererea.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Serverul de autorizare nu poate trata cererea momentan, din cauza unei supraîncărcări sau a întreţinerii temporare a serverului.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Domeniul solicitat este nevalid, necunoscut, formatat greşit sau depăşeşte domeniul acordat de proprietarul resursei.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Tipul dreptului de autorizare nu este acceptat de serverul de autorizare.</string>
+    <string name="oamms_oauth_invalid_client_desc">Autentificarea clientului a eşuat.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Dreptul de autorizare specificat sau tokenul de reîmprospătare este nevalid, expirat, revocat, nu corespunde URI-ului de redirecţionare utilizat în cererea de autorizare sau a fost emis pt. alt client.</string>
+    <string name="oamms_oauth_auth_url_invalid">Puncte finale nevalide pt. autentificarea OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Aserţiune nevalidă a clientului. Reporniţi procesul de autentificare.</string>
+    <string name="oamms_oauth_client_secret_invalid">Secretul clientului nu poate fi nul sau gol pt. acest tip de drept.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Codul de pre-autorizare pt. înregistrarea clientului este nevalid.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Eşec la crearea tokenurilor OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Eşec la crearea aserţiunii utilizatorului.</string>
+    <string name="oamms_oauth_user_assertion_null">Aserţiunea utiliz. este nulă.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Certificat identitate client.</string>
+    <string name="oamms_client_certificate_import_empty_password">Parola nu poate fi goală</string>
+    <string name="oamms_client_certificate_import_invalid_password">Parolă nevalidă.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Utilizatorul a anulat importul certificatului.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Certificat nevalid.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Alias nevalid al clientului, prezentat în cursul autentificării reciproce SSL.</string>
+    <string name="oamms_client_certificate_dialog_title">Select. identitatea clientului.</string>
+    <string name="oamms_client_certificate_import_enter_password">Introduceţi parola pt. a extrage certificatul.</string>
+    <string name="oamms_client_certificate_import_failed">Importul certificatului a eşuat</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Serverul de autentificare %1$s a solicitat un certificat. Selectaţi un certificat din identităţile disponibile.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-zh-rTW/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 03:01:43 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">適用於 Android 的 Mobile and Social SDK</string>
+    <string name="oamms_processing">正在處理...</string>
+    <string name="oamms_activity_excep">活動不可為空值. 建議使用 OMMobileSecurityService#registerActivity(Activity) 在 onResume() 中註冊目前的活動.</string>
+    <string name="oamms_sec_profile_excep">未呼叫設定 API.</string>
+    <string name="oamms_servicename_null">未指定認證配置.</string>
+    <string name="oamms_invalid_server_type">認證伺服器類型無效.</string>
+    <string name="oamms_not_connect_to_server">無法連線至位於指定位址的伺服器. 請洽詢管理員尋求協助.</string>
+    <string name="oamms_network_unavailable">網路無法使用. 請確定您已連線至網際網路, 然後再試一次.</string>
+    <string name="oamms_not_parse_response">無法剖析伺服器傳送的回應.</string>
+    <string name="oamms_certificate_not_accepted">使用者拒絕伺服器憑證.</string>
+    <string name="oamms_internal_error">內部錯誤</string>
+    <string name="oamms_invalid_arguments_null_or_empty">引數不可為空值或空字串</string>
+    <string name="oamms_update_cookies_validation_failure">更新 Cookie 值失敗, 因為無法驗證 Cookie 屬性</string>
+    <string name="oamms_cookie_not_found">要更新的 Cookie 不存在</string>
+    <string name="oamms_invalid_arguments_null">引數不可為空值</string>
+    <string name="oamms_clear_username_password_failed">無法將儲存在「內嵌 Webview」中的使用者名稱與密碼刪除, 因為已取消註冊活動.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">無法新增「對應」中所指定以值形式針對 OM_PROP_CUSTOM_AUTH_HEADERS 索引鍵傳送的部分 HTTP 標頭. 如需不允許使用的 HTTP 標頭清單, 請參閱文件.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">指定作為 OM_PROP_CUSTOM_AUTH_HEADERS 之一部分的自訂授權標頭數目超過個數上限 (%1$d).</string>
+    <string name="oamms_application_not_available">要求的應用程式無法使用.</string>
+    <string name="oamms_http_callback_null">非同步要求的回呼不可為空值</string>
+    <string name="oamms_http_res_url_null">「HTTP 資源 URL」不可為空值</string>
+    <string name="oamms_logout_in_progress">正在登出. 請稍後再試.</string>
+    <string name="oamms_logout_timed_out">連線逾時, 登出作業失敗.</string>
+    <string name="oamms_logout_failure">登出失敗, 因為發生下列錯誤: %1$s</string>
+    <string name="oamms_not_found">要求的 URL 不存在. 請洽詢管理員尋求協助.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">必須輸入使用者名稱.</string>
+    <string name="oamms_identity_domain_required">必須輸入「識別網域」.</string>
+    <string name="oamms_username_identity_domain_required">必須輸入使用者名稱與識別網域.</string>
+    <string name="oamms_password_null">必須輸入密碼.</string>
+    <string name="oamms_un_pwd_missing">無效的使用者名稱或密碼.</string>
+    <string name="oamms_un_pwd_tenant_missing">無效的使用者名稱、密碼或識別網域.</string>
+    <string name="oamms_chalg_missing">安全提示答覆無效.</string>
+    <string name="oamms_user_canceled">使用者已取消登入作業.</string>
+    <string name="oamms_auth_failed">使用者認證失敗.</string>
+    <string name="oamms_auth_success">使用者認證成功.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">使用者名稱</string>
+    <string name="oamms_username_hint">輸入使用者名稱</string>
+    <string name="oamms_password">密碼</string>
+    <string name="oamms_password_hint">輸入密碼</string>
+    <string name="oamms_tenant">識別網域</string>
+    <string name="oamms_tenant_hint">輸入識別網域</string>
+    <string name="oamms_login">登入</string>
+    <string name="oamms_cancel">取消</string>
+    <string name="oamms_challenge_head">提供其他資訊</string>
+    <string name="oamms_challenge_ques">問題</string>
+    <string name="oamms_challenge_ans">回答</string>
+    <string name="oamms_challenge_answer_hint">輸入安全問題的回答</string>
+    <string name="oamms_submit">送出</string>
+    <string name="oamms_remember_username">記住使用者名稱</string>
+    <string name="oamms_remember_credentials">記住證明資料</string>
+    <string name="oamms_auto_login">自動登入</string>
+    <string name="oamms_back_button">上一頁</string>
+    <string name="oamms_forward_button">下一頁</string>
+    <string name="oamms_refresh_button">重新整理</string>
+    <string name="oamms_cancel_button">取消</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">在 SharedPreferences 中找不到組態特性</string>
+    <string name="oamms_config_intent_uri_null">傳送的 intent 未包含伺服器組態詳細資訊所需的 URI.</string>
+    <string name="oamms_config_intent_uri_invalid">傳送的 intent 未包含伺服器組態詳細資訊所需的有效 URI.</string>
+    <string name="oamms_could_not_retrieve_configuration">無法從 SharedPreferences 擷取組態特性</string>
+    <string name="oamms_could_not_store_configuration">無法在 SharedPreferences 中儲存組態特性</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">SDK 初始化失敗, 因為未提供必要的伺服器資訊.</string>
+    <string name="oamms_setup_failed_ms">無法下載應用程式設定檔, 因為遺漏組態</string>
+    <string name="oamms_setup_failed_default">應用程式設定檔或應用程式名稱無效</string>
+    <string name="oamms_setup_failed_oauth">無法下載 OAuth 從屬端設定檔.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">應用程式名稱無效.</string>
+    <string name="oamms_invalid_server_url">伺服器 URL 無效.</string>
+    <string name="oamms_invalid_service_domain">服務網域無效.</string>
+    <string name="oamms_token_missing">裝置尚未經過 Mobile and Social 伺服器認證.</string>
+    <string name="oamms_no_user_token">尚未認證使用者.</string>
+    <string name="oamms_no_rp_login_url">無法開啟 RP 認證 URL.</string>
+    <string name="oamms_req_failed">使用者 %1$s 的認證要求失敗.</string>
+    <string name="oamms_req_denied">認證要求被拒.</string>
+    <string name="oamms_oaam_denied_action">認證被伺服器封鎖. 請洽詢管理員尋求協助.</string>
+    <string name="oamms_oaam_wipeout_action">從伺服器收到消除命令. 正在清除機密應用程式資料.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">驗證呼叫應用程式簽章失敗.</string>
+    <string name="oamms_sso_activity_missing">尚未提供「SSO 應用程式」名稱.</string>
+    <string name="oamms_init_SSOAgent_success">已順利起始「SSO 代理程式」應用程式.</string>
+    <string name="oamms_service_domain_not_same">代理程式已拒絕認證, 因為服務網域不符.</string>
+    <string name="oamms_invalid_config">未授權從屬端應用程式參與 SSO.</string>
+    <string name="oamms_no_agent_avail">無法開啟 SSO 認證 URL.</string>
+    <string name="oamms_tokens_not_available">沒有 OAM_ID 記號. 請檢查伺服器設定值. 其中一個可能的組態錯誤原因就是認證配置未設為 MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">無效的登入 URL.</string>
+    <string name="oamms_server_returned_error">伺服器發生錯誤 %1$s. 請洽詢管理員尋求協助.</string>
+    <string name="oamms_forbidden">此使用者未獲授權.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">認證逾時.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">自訂認證頁面沒有證明資料欄位.</string>
+    <string name="oamms_kba_html_fields_invalid">自訂強式認證頁面中沒有證明資料欄位.</string>
+    <string name="oamms_html_file_exception">自訂 HTML 檔案不可為空值.</string>
+    <string name="oamms_invalid_html_file">自訂 HTML 檔案路徑的類型無效</string>
+    <string name="oamms_remote_html_file">自訂 HTML 頁面不可以是遠端頁面, SDK 僅支援載入本機 HTML 頁面</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">此憑證不是來自信任的授權單位.</string>
+    <string name="oamms_ssl_security_certificate">安全憑證</string>
+    <string name="oamms_ssl_issued_to">主體:</string>
+    <string name="oamms_ssl_common_name">一般名稱:</string>
+    <string name="oamms_ssl_organization">組織:</string>
+    <string name="oamms_ssl_organization_unit">組織單位:</string>
+    <string name="oamms_ssl_issued_by">發照者:</string>
+    <string name="oamms_ssl_validity">有效期:</string>
+    <string name="oamms_ssl_issued_on">開始日期:</string>
+    <string name="oamms_ssl_expires_on">結束日期:</string>
+    <string name="oamms_security_warning">安全警告</string>
+    <string name="oamms_ssl_continue">接受</string>
+    <string name="oamms_ssl_view_certificate">詳細資訊</string>
+    <string name="oamms_ssl_message">此 URL 的安全憑證有問題.</string>
+    <string name="oamms_serial_number">序號:</string>
+    <string name="oamms_fingerprint">指紋:</string>
+    <string name="oamms_sha_fp">SHA1 指紋:</string>
+    <string name="oamms_md5_fp">MD5 指紋:</string>
+    <string name="oamms_ssl_alert_icon">警示圖示</string>
+    <string name="oamms_import_certificate_failure">無法安裝憑證.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth 認證失敗.</string>
+    <string name="oamms_oauth_invalid_state">從回應復原的狀態無效.</string>
+    <string name="oamms_oauth_context_invalid">指定的要求沒有有效的存取記號. 請以適當的範圍進行認證.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">要求遺漏必要的參數、包含不支援的參數值、某個參數重複、包含多個證明資料、使用多個機制認證從屬端, 或是格式錯誤.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">未授權已認證的從屬端使用此授權授予類型.</string>
+    <string name="oamms_oauth_access_denied_desc">資源擁有者或授權伺服器拒絕該項要求.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">授權伺服器不支援使用此方法取得授權代碼.</string>
+    <string name="oamms_oauth_server_error_desc">授權伺服器遇到未預期的狀況, 無法執行要求.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">授權伺服器暫時超載或進行維護中, 目前無法處理要求.</string>
+    <string name="oamms_oauth_invalid_scope_desc">要求的範圍無效、不明、格式錯誤, 或超過資源擁有者授予的範圍.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">授權伺服器不支援此授權授予類型.</string>
+    <string name="oamms_oauth_invalid_client_desc">從屬端認證失敗.</string>
+    <string name="oamms_oauth_invalid_grant_desc">提供的授權或重新整理記號無效、已過期、已撤銷、與授權要求中使用的重導 URI 不符, 或者是已發給其他從屬端.</string>
+    <string name="oamms_oauth_auth_url_invalid">無效的 OAuth 認證端點.</string>
+    <string name="oamms_oauth_client_assertion_invalid">無效的從屬端宣告. 請重新啟動認證處理作業.</string>
+    <string name="oamms_oauth_client_secret_invalid">此授予類型的從屬端密碼不可為空值或空白.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">從屬端註冊的預先授權代碼無效.</string>
+    <string name="oamms_oauth_oam_token_request_failed">建立 OAM 記號失敗.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">建立「使用者宣告」失敗.</string>
+    <string name="oamms_oauth_user_assertion_null">「使用者宣告」為空值.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">從屬端識別憑證.</string>
+    <string name="oamms_client_certificate_import_empty_password">密碼不可空白.</string>
+    <string name="oamms_client_certificate_import_invalid_password">無效的密碼.</string>
+    <string name="oamms_client_certificate_import_user_canceled">使用者已取消憑證匯入.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">無效的憑證.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">進行 SSL 相互認證時顯示的「從屬端」別名無效.</string>
+    <string name="oamms_client_certificate_dialog_title">選擇從屬端識別</string>
+    <string name="oamms_client_certificate_import_enter_password">輸入擷取憑證所使用的密碼.</string>
+    <string name="oamms_client_certificate_import_failed">憑證匯入失敗.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">認證伺服器 %1$s 要求提供憑證. 請從可用的識別中選取一個憑證.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

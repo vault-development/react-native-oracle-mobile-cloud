@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-ru/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 07:38:36 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Комплект разработчика ПО для социальных сетей и мобильных устройств на базе Android</string>
+    <string name="oamms_processing">Выполняется обработка...</string>
+    <string name="oamms_activity_excep">Действие не может иметь значение null. Зарегистрируйте текущее действие с помощью OMMobileSecurityService#registerActivity(Activity), предпочтительно в onResume().</string>
+    <string name="oamms_sec_profile_excep">API-интерфейс настройки не вызван.</string>
+    <string name="oamms_servicename_null">Не указана схема аутентификации.</string>
+    <string name="oamms_invalid_server_type">Недопустимый тип сервера аутентификации.</string>
+    <string name="oamms_not_connect_to_server">Не удается получить доступ к серверу по указанному адресу. Обратитесь за помощью к администратору.</string>
+    <string name="oamms_network_unavailable">Сеть недоступна. Убедитесь, что подключение к сети Интернет установлено, и повторите попытку.</string>
+    <string name="oamms_not_parse_response">Невозможно выполнить синтаксический анализ отклика с сервера.</string>
+    <string name="oamms_certificate_not_accepted">Пользователь отклонил сертификат сервера.</string>
+    <string name="oamms_internal_error">Внутренняя ошибка</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Аргументы не могут быть неопределенными или пустыми строками</string>
+    <string name="oamms_update_cookies_validation_failure">Сбой обновления значения cookie: невозможно проверить корректность атрибутов cookie</string>
+    <string name="oamms_cookie_not_found">Выбранный для обновления cookie не существует</string>
+    <string name="oamms_invalid_arguments_null">Аргументы не могут быть неопределенными</string>
+    <string name="oamms_clear_username_password_failed">Не удалось удалить имя пользователя и пароль, сохраненные в Embedded Webview, так как регистрация данной комбинации была отменена.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Не удается добавить некоторые заголовки HTTP, которые указаны в сопоставлении, переданном как значение ключа OM_PROP_CUSTOM_AUTH_HEADERS. См. в документации список неразрешенных заголовков HTTP.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Число пользовательских заголовков auth, которые указаны как часть OM_PROP_CUSTOM_AUTH_HEADERS, превышает максимально допустимое количество (%1$d).</string>
+    <string name="oamms_application_not_available">Запрошенное приложение недоступно.</string>
+    <string name="oamms_http_callback_null">Отклик для асинхронного запроса не может быть неопределенным</string>
+    <string name="oamms_http_res_url_null">URL-адрес HTTP-ресурса не может быть неопределенным</string>
+    <string name="oamms_logout_in_progress">Выполняется выход. Повторите попытку позже.</string>
+    <string name="oamms_logout_timed_out">Сбой операции выхода - истекло время ожидания для соединения.</string>
+    <string name="oamms_logout_failure">Сбой выхода из-за следующей ошибки: %1$s</string>
+    <string name="oamms_not_found">Запрошенного URL-адреса не существует. Обратитесь за помощью к администратору.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Требуется имя пользователя.</string>
+    <string name="oamms_identity_domain_required">Требуется домен удостоверения.</string>
+    <string name="oamms_username_identity_domain_required">Требуются имя пользователя и домен удостоверения.</string>
+    <string name="oamms_password_null">Требуется пароль.</string>
+    <string name="oamms_un_pwd_missing">Недопустимое имя пользователя или пароль.</string>
+    <string name="oamms_un_pwd_tenant_missing">Недопустимое имя пользователя, пароль или домен удостоверения.</string>
+    <string name="oamms_chalg_missing">Неверный ответ на контрольный вопрос.</string>
+    <string name="oamms_user_canceled">Пользователь отменил операцию входа.</string>
+    <string name="oamms_auth_failed">Сбой при аутентификации пользователя.</string>
+    <string name="oamms_auth_success">Аутентификация пользователя выполнена успешно.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Пользователь</string>
+    <string name="oamms_username_hint">Введите имя пользователя</string>
+    <string name="oamms_password">Пароль</string>
+    <string name="oamms_password_hint">Введите пароль</string>
+    <string name="oamms_tenant">Домен удостоверения</string>
+    <string name="oamms_tenant_hint">Введите домен удостоверения</string>
+    <string name="oamms_login">Зарегистрироваться</string>
+    <string name="oamms_cancel">Отменить</string>
+    <string name="oamms_challenge_head">Укажите дополнительную информацию</string>
+    <string name="oamms_challenge_ques">Вопрос</string>
+    <string name="oamms_challenge_ans">Ответ</string>
+    <string name="oamms_challenge_answer_hint">Введите ответ на контрольный вопрос</string>
+    <string name="oamms_submit">Отправить</string>
+    <string name="oamms_remember_username">Запомнить имя пользователя</string>
+    <string name="oamms_remember_credentials">Запомнить учетные данные</string>
+    <string name="oamms_auto_login">Автоматический вход</string>
+    <string name="oamms_back_button">Назад</string>
+    <string name="oamms_forward_button">Переслать</string>
+    <string name="oamms_refresh_button">Обновить</string>
+    <string name="oamms_cancel_button">Отменить</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Свойства конфигурации не найдены в SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">В переданном значении не содержится URI для сведений о конфигурации сервера.</string>
+    <string name="oamms_config_intent_uri_invalid">В переданном значении не содержится допустимый URI для сведений о конфигурации сервера.</string>
+    <string name="oamms_could_not_retrieve_configuration">Не удалось извлечь свойства конфигурации из общих предпочтений</string>
+    <string name="oamms_could_not_store_configuration">Не удалось сохранить свойства конфигурации в SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Сбой при инициализации комплекта разработчика ПО: отсутствует обязательная серверная информация.</string>
+    <string name="oamms_setup_failed_ms">Невозможно загрузить профиль приложения из-за отсутствия конфигурации</string>
+    <string name="oamms_setup_failed_default">Профиль приложения или имя приложения является недопустимым</string>
+    <string name="oamms_setup_failed_oauth">Не удается загрузить профиль клиента OAuth.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Недопустимое имя приложения.</string>
+    <string name="oamms_invalid_server_url">Недопустимый Url-адрес сервера.</string>
+    <string name="oamms_invalid_service_domain">Недопустимый служебный домен.</string>
+    <string name="oamms_token_missing">Устройство еще не прошло аутентификацию на сервере приложений для мобильных устройств и социальных сетей.</string>
+    <string name="oamms_no_user_token">Пользователь еще не аутентифицирован.</string>
+    <string name="oamms_no_rp_login_url">Невозможно открыть URL-адрес аутентификации RP.</string>
+    <string name="oamms_req_failed">Сбой запроса на аутентификацию пользователя %1$s.</string>
+    <string name="oamms_req_denied">Запрос на аутентификацию отклонен.</string>
+    <string name="oamms_oaam_denied_action">Аутентификация заблокирована сервером. Обратитесь за помощью к администратору.</string>
+    <string name="oamms_oaam_wipeout_action">Получена команда стирания от сервера. Выполняется очистка конфиденциальных данных приложения.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Сбой при проверке подписи вызывающего приложения.</string>
+    <string name="oamms_sso_activity_missing">Не указано имя приложения SSO.</string>
+    <string name="oamms_init_SSOAgent_success">Приложение-агент SSO инициализировано успешно.</string>
+    <string name="oamms_service_domain_not_same">Аутентификация отклонена агентом: неверно указан служебный домен.</string>
+    <string name="oamms_invalid_config">Клиентское приложение не авторизовано для участия в SSO.</string>
+    <string name="oamms_no_agent_avail">Невозможно открыть URL-адрес аутентификации SSO.</string>
+    <string name="oamms_tokens_not_available">Маркер OAM_ID недоступен. Проверьте настройки сервера. Одна из возможных ошибок конфигурации: для схемы аутентификации не установлено значение MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Неверный URL-адрес входа.</string>
+    <string name="oamms_server_returned_error">Сервер обнаружил ошибку %1$s. Обратитесь за помощью к администратору.</string>
+    <string name="oamms_forbidden">Пользователь не авторизован.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Таймаут аутентификации.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Пользовательская страница аутентификации не имеет поля для учетных данных.</string>
+    <string name="oamms_kba_html_fields_invalid">Пользовательская страница строгой аутентификации не имеет поля для учетных данных.</string>
+    <string name="oamms_html_file_exception">Пользовательский файл HTML не может иметь значения null.</string>
+    <string name="oamms_invalid_html_file">Путь к пользовательскому файлу HTML не может иметь недопустимый тип</string>
+    <string name="oamms_remote_html_file">Пользовательская HTML-страница не может быть удаленной страницей, SDK поддерживает загрузку только локальных HTML-страниц</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Сертификат выдан не доверенным источником.</string>
+    <string name="oamms_ssl_security_certificate">Сертификат безопасности</string>
+    <string name="oamms_ssl_issued_to">Тема:</string>
+    <string name="oamms_ssl_common_name">Общее имя:</string>
+    <string name="oamms_ssl_organization">Организация:</string>
+    <string name="oamms_ssl_organization_unit">Подразделение:</string>
+    <string name="oamms_ssl_issued_by">Кем выдан:</string>
+    <string name="oamms_ssl_validity">Срок действия:</string>
+    <string name="oamms_ssl_issued_on">Дата начала:</string>
+    <string name="oamms_ssl_expires_on">Дата окончания:</string>
+    <string name="oamms_security_warning">Предупреждение о защите</string>
+    <string name="oamms_ssl_continue">Принять</string>
+    <string name="oamms_ssl_view_certificate">Сведения</string>
+    <string name="oamms_ssl_message">Существуют проблемы с сертификатом безопасности этого URL-адреса.</string>
+    <string name="oamms_serial_number">Серийный номер:</string>
+    <string name="oamms_fingerprint">Отпечатки пальцев:</string>
+    <string name="oamms_sha_fp">Отпечаток пальца SHA1:</string>
+    <string name="oamms_md5_fp">Отпечаток пальца MD5:</string>
+    <string name="oamms_ssl_alert_icon">Значок оповещения</string>
+    <string name="oamms_import_certificate_failure">Невозможно установить сертификат.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">Сбой аутентификации OAuth.</string>
+    <string name="oamms_oauth_invalid_state">В ответе получено недопустимое состояние.</string>
+    <string name="oamms_oauth_context_invalid">Отсутствует действительный маркер доступа для указанного запроса. Выполните аутентификацию с соответствующими данными.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">В запросе отсутствует требуемый параметр, содержится неподдерживаемое значение параметра, повторяется параметр, содержится несколько реквизитов, используется несколько механизмов аутентификации клиента, либо запрос неверно сформирован по другой причине.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Аутентифицированный клиент не имеет прав на использование данного типа предоставления аутентификации.</string>
+    <string name="oamms_oauth_access_denied_desc">Владелец ресурса или сервер авторизации отклонил запрос.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Сервер авторизации не поддерживает получение кода авторизации с помощью данного метода.</string>
+    <string name="oamms_oauth_server_error_desc">В сервере авторизации возникло непредвиденное состояние, которое не позволило ему выполнить этот запрос.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">В текущий момент сервер авторизации не может обработать запрос из-за временной перегрузки или технического обслуживания этого сервера.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Запрашиваемый объем данных является недопустимым, неизвестным, неверно сформированным, или превышает объем данных, предоставляемый владельцем ресурса.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Этот тип предоставления авторизации не поддерживается сервером авторизации.</string>
+    <string name="oamms_oauth_invalid_client_desc">Сбой при аутентификации клиента.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Предоставленные данные авторизации или маркера обновления являются недопустимыми, просроченными, аннулированными, не совпадают с URI перенаправления, используемом в запросе авторизации, или были сформированы для другого клиента.</string>
+    <string name="oamms_oauth_auth_url_invalid">Недопустимые конечные точки для аутентификации OAuth.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Недопустимое утверждение клиента. Перезапустите процесс аутентификации.</string>
+    <string name="oamms_oauth_client_secret_invalid">Секрет клиента не может быть null или пустым для этого типа предоставления.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Недопустимый предварительный код AuthZ для регистрации клиента.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Не удалось создать маркеры OAM.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Сбой при создании утверждения пользователя.</string>
+    <string name="oamms_oauth_user_assertion_null">Подтвержд. польз. равно null.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Сертификат удостоверения клиента.</string>
+    <string name="oamms_client_certificate_import_empty_password">Пароль не может быть пустым.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Недопустимый пароль. </string>
+    <string name="oamms_client_certificate_import_user_canceled">Пользователь отменил импорт сертификата.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Недействительный сертификат.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Во время SSL-аутентификации вручную представлен недопустимый псевдоним клиента.</string>
+    <string name="oamms_client_certificate_dialog_title">Выберите удостоверение клиента.</string>
+    <string name="oamms_client_certificate_import_enter_password">Введите пароль, чтобы извлечь сертификат.</string>
+    <string name="oamms_client_certificate_import_failed">Сбой при импорте сертификата.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">У сервера аутентификации %1$s запрошен сертификат. Выберите сертификат из доступных удостоверений.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

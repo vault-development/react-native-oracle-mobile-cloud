@@ -13,7 +13,7 @@
   Do step 4 of Manual installation
 
 #### Android
-  Do step 4 and 5 of Manual installation
+  Do step 4, 5 and 6 of Manual installation
 
 
 ### Manual installation

@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<!-- $Header: wptg/idmmobile/src/Android/IDMMobileSDK/res/values-no/oamms_strings.xml /st_wptg_11.1.1.9.0/14 2015/03/11 11:55:18 gmolloy Exp $ -->
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     oamms_strings.xml
+
+   DESCRIPTION
+     Contains the strings being used by the SDK
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/22/14 - 1.Bug Fix - 17426504
+						  2.Made the string names more readable.   						
+   ajulka      07/12/14 - Added support for Client Certificate Authentication.
+   ajulka      06/24/14 - Added support for Mobile and Social OAuth flows and OAuth grant types (Assertion, client_credentials , oam_credentials)
+   ayjindal    04/08/14 - Bug 18477622
+   arunpras    01/17/14 - Bug fix: 17623143
+   arunpras    12/31/13 - Added an error message to be shown during the negative use case: Invoking logout method before performing authentication
+   arunpras	   10/03/13 - Added a string a part of the fix for bug - 16186113
+   arunpras    09/02/13 - Added custom HTTP headers
+-->
+<resources>
+
+    <!-- General Messages -->
+    <string name="oamms_app_name">Mobil og sosial SDK for Android</string>
+    <string name="oamms_processing">Behandler ...</string>
+    <string name="oamms_activity_excep">Aktivitet kan ikke være null. Registrer den gjeldende aktiviteten ved hjelp av OMMobileSecurityService#registerActivity(Activity), helst i onResume().</string>
+    <string name="oamms_sec_profile_excep">API for oppsett er ikke startet.</string>
+    <string name="oamms_servicename_null">Det er ikke angitt noe autentiseringsskjema.</string>
+    <string name="oamms_invalid_server_type">Autentiseringstjenertypen er ugyldig.</string>
+    <string name="oamms_not_connect_to_server">Tjeneren kan ikke nås på den angitte adressen. Ta kontakt med administratoren hvis du trenger hjelp.</string>
+    <string name="oamms_network_unavailable">Nettverket er utilgjengelig. Forsikre deg om at du er koblet til Internett, og prøv på nytt.</string>
+    <string name="oamms_not_parse_response">Kan ikke analysere svaret som ble sendt fra tjeneren.</string>
+    <string name="oamms_certificate_not_accepted">Brukeren avviste tjenersertifikatet.</string>
+    <string name="oamms_internal_error">Intern feil</string>
+    <string name="oamms_invalid_arguments_null_or_empty">Argumentene kan ikke være null eller tomme strenger.</string>
+    <string name="oamms_update_cookies_validation_failure">Oppdatering av informasjonskapselverdi mislyktes fordi informasjonskapselattributtene ikke kan valideres</string>
+    <string name="oamms_cookie_not_found">Informasjonskapselen som skal oppdateres, finnes ikke</string>
+    <string name="oamms_invalid_arguments_null">Argumentene kan ikke være null</string>
+    <string name="oamms_clear_username_password_failed">Kan ikke slette brukernavnet og passordet som er lagret i innebygd Web-visning, ettersom aktivitet ble avregistrert i mellomtiden.</string>
+    <string name="oamms_custom_auth_headers_not_allowed">Noen av HTTP-hodene som er angitt i tilordningen som ble sendt som en verdi mot nøkkelen OM_PROP_CUSTOM_AUTH_HEADERS, kan ikke legges til. Se i dokumentasjonen hvis du vil ha en liste over HTTP-hoder som ikke er tillatt.</string>
+    <string name="oamms_custom_auth_headers_count_exceeded">Antallet hoder for egendefinert autentisering som er angitt som en del av OM_PROP_CUSTOM_AUTH_HEADERS, overskred det maksimale antallet (%1$d).</string>
+    <string name="oamms_application_not_available">Den forespurte applikasjonen er ikke tilgjengelig.</string>
+    <string name="oamms_http_callback_null">Tilbakekallet kan ikke være null for asynkron forespørsel</string>
+    <string name="oamms_http_res_url_null">URL-adressen for HTTP-ressursen kan ikke være null</string>
+    <string name="oamms_logout_in_progress">Avlogging pågår. Prøv på nytt om en stund.</string>
+    <string name="oamms_logout_timed_out">Avloggingen mislyktes fordi tilkoblingen ble tidsavbrutt.</string>
+    <string name="oamms_logout_failure">Avloggingen mislyktes på grunn av følgende feil: %1$s</string>
+    <string name="oamms_not_found">Den forespurte URL-adressen finnes ikke. Ta kontakt med administratoren hvis du trenger hjelp.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************ Success/Error Messages ************************* -->
+    <string name="oamms_username_required">Brukernavn er obligatorisk.</string>
+    <string name="oamms_identity_domain_required">Identitetsdomene er obligatorisk.</string>
+    <string name="oamms_username_identity_domain_required">Brukernavn og identitetsdomene er obligatorisk.</string>
+    <string name="oamms_password_null">Passord er nødvendig.</string>
+    <string name="oamms_un_pwd_missing">Ugyldig brukernavn eller passord.</string>
+    <string name="oamms_un_pwd_tenant_missing">Ugyldig brukernavn, passord eller identitetsdomene.</string>
+    <string name="oamms_chalg_missing">Identifiseringssvaret er ugyldig.</string>
+    <string name="oamms_user_canceled">Brukeren avbrøt påloggingsoperasjonen.</string>
+    <string name="oamms_auth_failed">Brukerautentiseringen mislyktes.</string>
+    <string name="oamms_auth_success">Brukerautentiseringen er fullført.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********** UI Messages and Descriptions of Images ************* -->
+    <string name="oamms_username">Brukernavn</string>
+    <string name="oamms_username_hint">Angi brukernavn</string>
+    <string name="oamms_password">Passord</string>
+    <string name="oamms_password_hint">Angi passord</string>
+    <string name="oamms_tenant">Identitetsdomene</string>
+    <string name="oamms_tenant_hint">Angi identitetsdomene</string>
+    <string name="oamms_login">Logg på</string>
+    <string name="oamms_cancel">Avbryt</string>
+    <string name="oamms_challenge_head">Angi tilleggsopplysninger</string>
+    <string name="oamms_challenge_ques">Spørsmål</string>
+    <string name="oamms_challenge_ans">Svar</string>
+    <string name="oamms_challenge_answer_hint">Angi svar på sikkerhetsspørsmål</string>
+    <string name="oamms_submit">Send</string>
+    <string name="oamms_remember_username">Husk brukernavn</string>
+    <string name="oamms_remember_credentials">Husk påloggingsinformasjon</string>
+    <string name="oamms_auto_login">Automatisk pålogging</string>
+    <string name="oamms_back_button">Tilbake</string>
+    <string name="oamms_forward_button">Frem</string>
+    <string name="oamms_refresh_button">Oppdater</string>
+    <string name="oamms_cancel_button">Avbryt</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- URL-Based Configuration -->
+    <string name="oamms_config_properties_missing">Finner ikke konfigurasjonsegenskaper i SharedPreferences</string>
+    <string name="oamms_config_intent_uri_null">Det sendte forsøket inneholder ikke en URI for tjenerkonfigurasjonsdetaljer.</string>
+    <string name="oamms_config_intent_uri_invalid">Det sendte forsøket inneholder ikke en gyldig URI for tjenerkonfigurasjonsdetaljer.</string>
+    <string name="oamms_could_not_retrieve_configuration">Kan ikke hente konfigurasjonsegenskaper fra SharedPreferences</string>
+    <string name="oamms_could_not_store_configuration">Kan ikke lagre konfigurasjonsegenskaper i SharedPreferences</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Setup failure -->
+    <string name="oamms_mss_init_failed">Initialiseringen av SDK-en mislyktes fordi de nødvendige tjeneropplysningene ikke er angitt.</string>
+    <string name="oamms_setup_failed_ms">Applikasjonsprofilen kan ikke lastes ned på grunn av manglende konfigurasjon</string>
+    <string name="oamms_setup_failed_default">Applikasjonsprofilen eller applikasjonsnavnet er ugyldig</string>
+    <string name="oamms_setup_failed_oauth">OAuth-klientprofilen kan ikke lastes ned.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Mobile & Social Server -->
+    <string name="oamms_invalid_appname">Applikasjonsnavnet er ugyldig.</string>
+    <string name="oamms_invalid_server_url">URL-adressen til tjeneren er ugyldig.</string>
+    <string name="oamms_invalid_service_domain">Tjenestedomenet er ugyldig.</string>
+    <string name="oamms_token_missing">Denne enheten er ennå ikke autentisert med mobil og sosial tjener.</string>
+    <string name="oamms_no_user_token">Brukeren er ennå ikke autentisert.</string>
+    <string name="oamms_no_rp_login_url">Kan ikke åpne URL-adresse for RP-autentisering.</string>
+    <string name="oamms_req_failed">Autentiseringsforespørselen mislyktes for brukeren %1$s.</string>
+    <string name="oamms_req_denied">Forespørsel om autentisering avvises.</string>
+    <string name="oamms_oaam_denied_action">Autentiseringen er blokkert av tjeneren. Ta kontakt med administratoren hvis du trenger hjelp.</string>
+    <string name="oamms_oaam_wipeout_action">Mottok en tømmekommando fra tjeneren. Fjerner sensitive applikasjonsdata.</string>
+
+    <!-- SSO Messages -->
+    <string name="oamms_sign_not_valid">Mislyktes ved validering av kall til applikasjonssignatur.</string>
+    <string name="oamms_sso_activity_missing">Applikasjonsnavn for engangspålogging er ikke angitt.</string>
+    <string name="oamms_init_SSOAgent_success">Agentapplikasjonen for engangspålogging er initialisert.</string>
+    <string name="oamms_service_domain_not_same">Autentiseringen ble avvist av agenten fordi tjenestedomenet ikke samsvarer.</string>
+    <string name="oamms_invalid_config">Klientapplikasjonen er ikke autorisert til å delta i SSO.</string>
+    <string name="oamms_no_agent_avail">Kan ikke åpne URL-adresse for SSO-autentisering.</string>
+    <string name="oamms_tokens_not_available">OAM_ID-symbolet er ikke tilgjengelig. Kontroller tjenerinnstillingene. Én av de mulige feilkonfigurasjonene er at autentiseringsskjemaet ikke er angitt som MobileOAMAuthentication.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+
+    <!-- Basic Authentication Messages -->
+    <string name="oamms_invalid_basic_url">Ugyldig påloggings-URL.</string>
+    <string name="oamms_server_returned_error">Tjeneren fant en feil, %1$s. Ta kontakt med administratoren hvis du trenger hjelp.</string>
+    <string name="oamms_forbidden">Brukeren er ikke autorisert.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- Federated Authentication Messages -->
+    <string name="oamms_authentication_timed_out">Autentisering ble tidsavbrutt.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- HTML Login View Customization -->
+    <string name="oamms_custom_html_fields_invalid">Siden for egendefinert autentisering har ikke noe felt for påloggingsinformasjon.</string>
+    <string name="oamms_kba_html_fields_invalid">Siden for egendefinert sterk autentisering har ikke noe felt for påloggingsinformasjon.</string>
+    <string name="oamms_html_file_exception">Filen for egendefinert HTML kan ikke være null.</string>
+    <string name="oamms_invalid_html_file">Banen til filen for egendefinert HTML er av en ugyldig type</string>
+    <string name="oamms_remote_html_file">Den egendefinerte HTML-siden kan ikke være en ekstern side, SDK støtter bare lasting av en lokal HTML-side</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************* SSL Certificate Warning ********************* -->
+    <string name="oamms_ssl_settings_header">Dette sertifikatet er ikke fra en klarert instans.</string>
+    <string name="oamms_ssl_security_certificate">Sikkerhetssertifikat</string>
+    <string name="oamms_ssl_issued_to">Emne:</string>
+    <string name="oamms_ssl_common_name">Allment navn:</string>
+    <string name="oamms_ssl_organization">Organisasjon:</string>
+    <string name="oamms_ssl_organization_unit">Organisasjonsenhet:</string>
+    <string name="oamms_ssl_issued_by">Utsteder:</string>
+    <string name="oamms_ssl_validity">Gyldighet:</string>
+    <string name="oamms_ssl_issued_on">Startdato:</string>
+    <string name="oamms_ssl_expires_on">Sluttdato:</string>
+    <string name="oamms_security_warning">Sikkerhetsadvarsel</string>
+    <string name="oamms_ssl_continue">Godta</string>
+    <string name="oamms_ssl_view_certificate">Detaljer</string>
+    <string name="oamms_ssl_message">Det er problemer med sikkerhetssertifikatet for denne URL-adressen.</string>
+    <string name="oamms_serial_number">Serienummer:</string>
+    <string name="oamms_fingerprint">Fingeravtrykk:</string>
+    <string name="oamms_sha_fp">SHA1-fingeravtrykk:</string>
+    <string name="oamms_md5_fp">MD5-fingeravtrykk:</string>
+    <string name="oamms_ssl_alert_icon">Varselsikon</string>
+    <string name="oamms_import_certificate_failure">Kan ikke installere sertifikatet.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- ************************OAuth2.0 Known errors************************** -->
+    <string name="oamms_oauth_failed">OAuth-autentisering mislyktes.</string>
+    <string name="oamms_oauth_invalid_state">Ugyldig tilstand gjenopprettet fra svaret.</string>
+    <string name="oamms_oauth_context_invalid">Det finnes ikke noe gyldig tilgangssymbol for den angitte forespørselen. Autentiser med det riktige omfanget.</string>
+
+    <!-- ********* Description messages if server returns no description ****** -->
+    <string name="oamms_oauth_invalid_request_desc">Forespørselen mangler en obligatorisk parameter, inkluderer en parameterverdi som ikke støttes, gjentar en parameter, inkluderer flere sett med påloggingsinformasjon, utnytter flere mekanismer for autentisering av klienten eller er misformet på andre måter.</string>
+    <string name="oamms_oauth_unauthorized_client_desc">Den autentiserte klienten er ikke autorisert for bruk av denne tildelingstypen for autorisering.</string>
+    <string name="oamms_oauth_access_denied_desc">Ressurseieren eller autoriseringstjeneren avslo forespørselen.</string>
+    <string name="oamms_oauth_unsupported_response_type_desc">Autoriseringstjeneren støtter ikke henting av en autoriseringskode ved hjelp av denne metoden.</string>
+    <string name="oamms_oauth_server_error_desc">Autoriseringstjeneren fant en uventet tilstand som hindret den i å fullføre forespørselen.</string>
+    <string name="oamms_oauth_temp_unavailable_desc">Autoriseringstjeneren er for tiden ikke i stand til å håndtere forespørselen på grunn av midlertidig overbelastning eller vedlikehold på tjeneren.</string>
+    <string name="oamms_oauth_invalid_scope_desc">Det forespurte omfanget er ugyldig, er ukjent, har feil format eller overskrider omfanget som er tildelt av ressurseieren.</string>
+    <string name="oamms_oauth_unsupported_grant_type_desc">Tildelingstypen for autorisering støttes ikke av autoriseringstjeneren.</string>
+    <string name="oamms_oauth_invalid_client_desc">Klientautentisering mislyktes.</string>
+    <string name="oamms_oauth_invalid_grant_desc">Den angitte autoriseringstildelingen eller oppdateringssymbolet er ugyldig, utløpt eller tilbakekalt, samsvarer ikke med URI-en for omdirigering som brukes i autoriseringsforespørselen, eller ble utstedt til en annen klient.</string>
+    <string name="oamms_oauth_auth_url_invalid">Ugyldige sluttpunkt for OAuth-autentisering.</string>
+    <string name="oamms_oauth_client_assertion_invalid">Ugyldig klientpåstand. Start autentiseringsprosessen på nytt.</string>
+    <string name="oamms_oauth_client_secret_invalid">Klienthemmeligheten kan ikke være null eller tom for denne tildelingstypen.</string>
+    <string name="oamms_oauth_pre_authz_code_invalid">Før-AuthZ-kode for klientregistrering er ugyldig.</string>
+    <string name="oamms_oauth_oam_token_request_failed">Kan ikke opprette OAM-symboler.</string>
+    <string name="oamms_oauth_user_assertion_request_failed">Kan ikke opprette brukerpåstand.</string>
+    <string name="oamms_oauth_user_assertion_null">Brukerpåstanden er tom.</string>
+    <!-- *********************************************************************** -->
+    <!-- ******************** Client Certificate ****************************** -->
+    <string name="oamms_client_certificate">Klientidentitetssertifikat.</string>
+    <string name="oamms_client_certificate_import_empty_password">Passordet kan ikke være tomt.</string>
+    <string name="oamms_client_certificate_import_invalid_password">Ugyldig passord.</string>
+    <string name="oamms_client_certificate_import_user_canceled">Brukeren avbrøt sertifikatimporten.</string>
+    <string name="oamms_client_certificate_import_invalid_certificate">Ugyldig sertifikat.</string>
+    <string name="oamms_client_certifcate_invalid_certifcate_presented">Ugyldig klientalias ble vist under gjensidig SSL-autentisering.</string>
+    <string name="oamms_client_certificate_dialog_title">Velg klientidentitet.</string>
+    <string name="oamms_client_certificate_import_enter_password">Angi passordet hvis du vil trekke ut sertifikatet.</string>
+    <string name="oamms_client_certificate_import_failed">Kan ikke importere sertifikat.</string>
+    <string name="oamms_client_certificate_dialog_sub_title">Autentiseringstjeneren %1$s har bedt om et sertifikat. Velg et sertifikat fra de tilgjengelige identitetene.</string>
+    <!-- *********************************************************************** -->
+
+
+    <!-- *********************************************************************** -->
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Header: idmmobile/src/Android/IDMMobileSDK/res/layout/sslwarning.xml /main/5 2014/08/24 09:04:32 ajulka Exp $ -->
+
+
+<!--
+ Copyright (c) 2013, 2014, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     sslwarning.xml
+
+   DESCRIPTION
+     This is the layout for displaying Untrusted Certificate warning in a dialog
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   ajulka      08/23/14 - Bug Fix - 17426504.
+   arunpras    09/02/13 - Incorporated new icon for alert and changed the order of accept and cancel buttons
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/sslTitleLyt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/alertView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/oamms_ssl_alert_icon"
+            android:padding="5dp"
+            android:src="@drawable/oracle_access_ic_dialog_alert" />
+
+        <TextView
+            android:id="@+id/sslTitle"
+            style="@android:style/TextAppearance.DialogWindowTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/alertView"
+            android:text="@string/oamms_security_warning" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oamms_seperator"
+        android:layout_below="@+id/sslTitleLyt"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/sslMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:padding="@dimen/oamms_border"
+        android:text="@string/oamms_ssl_message" />
+
+    <TextView
+        android:id="@+id/sslSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sslMsg"
+        android:paddingBottom="@dimen/oamms_border"
+        android:paddingLeft="@dimen/oamms_border"
+        android:text="@string/oamms_ssl_settings_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sslSettings"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/btn_view_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:text="@string/oamms_ssl_view_certificate" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/oamms_ssl_continue" />
+    </LinearLayout>
+
+</RelativeLayout>
