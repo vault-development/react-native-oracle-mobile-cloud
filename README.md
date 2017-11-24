@@ -1,6 +1,6 @@
 
 # react-native-oracle-mobile-cloud
-Is a wrapper around the iOS SDK and Android SDK that Oracle Mobile Cloud Service (MCS) provides, allowing for MCS integration in [React Native](https://facebook.github.io/react-native/) apps.
+A wrapper around the iOS/Android SDK provided by Oracle Mobile Cloud Service (MCS), allowing for MCS integration in [React Native](https://facebook.github.io/react-native/) apps.
 
 Functionality is provided through one single npm package so you can use it for both platforms without downloading any extra packages. Follow this guide to use react-native-oracle-mobile-cloud in your react-native app. You can also visit https://docs.oracle.com/en/cloud/paas/mobile-cloud/index.html for tutorials and reference documentation.
 
