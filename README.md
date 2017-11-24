@@ -1,5 +1,8 @@
 
 # react-native-oracle-mobile-cloud
+Is a wrapper around the iOS SDK and Android SDK that Oracle Mobile Cloud Service (MCS) provides, allowing for MCS integration in [React Native](https://facebook.github.io/react-native/) apps.
+
+Functionality is provided through one single npm package so you can use it for both platforms without downloading any extra packages. Follow this guide to use react-native-oracle-mobile-cloud in your react-native app. You can also visit https://docs.oracle.com/en/cloud/paas/mobile-cloud/index.html for tutorials and reference documentation.
 
 ## Getting started
 
@@ -93,7 +96,6 @@
 5. Open up `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
   - Unzip IDMMobileSDK.zip
   - Copy IDMMobileSDK folder to `[project_name]/android/`
-  - Delete IDMMobileSDK folder from `[project_name]/node_modules/react-native-oracle-mobile-cloud/android/`
   - Insert the following lines to `android/settings.gradle`:
     ```
     include ':IDMMobileSDK'
